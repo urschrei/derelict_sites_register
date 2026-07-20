@@ -46,7 +46,6 @@ function renderKpis() {
     document.getElementById(id).textContent = value;
   };
   set("vkpi-count", String(features.length));
-  set("vkpi-count-note", "on the Vacant Sites Register");
 
   const hectares = features.reduce((sum, f) => sum + turf.area(f), 0) / 10000;
   set("vkpi-area", `${hectares.toFixed(1)} ha`);
@@ -54,9 +53,15 @@ function renderKpis() {
   const valuations = props.map((p) => p.valuation ?? 0);
   set("vkpi-valuation", EURO.format(valuations.reduce((a, b) => a + b, 0)));
   const valued = valuations.filter((v) => v > 0).length;
-  set("vkpi-valuation-note", `${valued} of ${features.length} sites valued`);
+  set(
+    "vkpi-valuation-note",
+    `${valued} of ${features.length} sites have a published value`
+  );
 
-  set("vkpi-council", String(props.filter(isCouncilOwned).length));
+  const council = props.filter(isCouncilOwned).length;
+  set("vkpi-council", String(council));
+  set("vkpi-council-note", `${features.length - council} privately owned`);
+
   set(
     "vkpi-apps",
     String(props.reduce((sum, p) => sum + (p.linked_planning_ref_count ?? 0), 0))

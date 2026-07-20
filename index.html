@@ -34,7 +34,6 @@
       <a class="button" href="data/active_cases_grid.geojson" download><span class="dl-name">Under Review (aggregated)</span><span class="dl-fmt">GeoJSON</span></a>
       <a class="button" href="data/vacant_sites_register.geojson" download><span class="dl-name">Vacant Sites</span><span class="dl-fmt">GeoJSON</span></a>
       <a class="button" href="data/vacant_sites_planning_links.csv" download><span class="dl-name">Planning links</span><span class="dl-fmt">CSV</span></a>
-      <a class="button button-ghost" href="https://github.com/urschrei/derelict_sites_register/issues/new/choose">Report a problem</a>
     </p>
   </header>
 
@@ -105,7 +104,7 @@
       <div class="stat-tile">
         <span class="stat-label">Sites on the register</span>
         <span class="stat-value" id="vkpi-count">&ndash;</span>
-        <span class="stat-note" id="vkpi-count-note"></span>
+        <span class="stat-note">statutory vacant sites</span>
       </div>
       <div class="stat-tile">
         <span class="stat-label">Total site area</span>
@@ -113,14 +112,14 @@
         <span class="stat-note">combined boundary extent</span>
       </div>
       <div class="stat-tile">
-        <span class="stat-label">Total market valuation</span>
+        <span class="stat-label">Combined valuation</span>
         <span class="stat-value" id="vkpi-valuation">&ndash;</span>
         <span class="stat-note" id="vkpi-valuation-note"></span>
       </div>
       <div class="stat-tile">
         <span class="stat-label">Council-owned</span>
         <span class="stat-value" id="vkpi-council">&ndash;</span>
-        <span class="stat-note">owned by Dublin City Council</span>
+        <span class="stat-note" id="vkpi-council-note"></span>
       </div>
       <div class="stat-tile">
         <span class="stat-label">Planning applications</span>
@@ -226,7 +225,7 @@
     </section>
 
     <section class="table-section derelict-only" aria-label="Register table">
-      <h2>The register</h2>
+      <h2>Derelict Sites Register</h2>
       <div class="table-wrap">
         <table id="register-table">
           <caption class="visually-hidden">All derelict sites matching the current filters. Click a column header to sort, click a row to locate the site on the map.</caption>
@@ -239,14 +238,17 @@
 
   <footer class="site-footer">
     <p>
-      Data: Dublin City Council, Derelict Sites Register (public ArcGIS feature
-      service), retrieved twice daily. Basemap &copy;
+      Data: Dublin City Council &mdash; Derelict Sites Register (public ArcGIS
+      feature service) and Vacant Sites Register (MapZone planning viewer),
+      retrieved twice daily. Basemap &copy;
       <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
       contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>.
       Built with <a href="https://maplibre.org/">MapLibre GL JS</a>,
       <a href="https://turfjs.org/">Turf.js</a>, and
       <a href="https://d3js.org/">D3</a>. Source and data:
-      <a href="https://github.com/urschrei/derelict_sites_register">GitHub</a>.
+      <a href="https://github.com/urschrei/derelict_sites_register">GitHub</a>
+      &middot;
+      <a href="https://github.com/urschrei/derelict_sites_register/issues/new/choose">Report a problem</a>.
     </p>
   </footer>
 
