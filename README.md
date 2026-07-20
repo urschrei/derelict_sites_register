@@ -1,5 +1,7 @@
 # Dublin Derelict Sites Register
 
+Live site: https://urschrei.github.io/derelict_sites_register/
+
 An open re-publication and visualisation of Dublin City Council's Derelict
 Sites Register. The register is public data, but the council publishes it
 through an ArcGIS Experience Builder application that makes the underlying
@@ -23,8 +25,16 @@ Source: Dublin City Council, DCC Derelict Sites Register Public points view
 
 ## Site
 
-The visualisation is a static page served from GitHub Pages: MapLibre GL for
-the map, Turf.js for client-side spatial analysis, no build step.
+The visualisation is a static page served from GitHub Pages, with no build
+step. MapLibre GL renders the map (points coloured by time on the register,
+plus an optional hexagonal density overlay), D3 renders the charts, and
+Turf.js does the client-side spatial analysis: hexagonal binning, distance
+from the city centre, and a Clark-Evans nearest-neighbour clustering index.
+The points are also loaded into an RBush spatial index, which powers the
+"closest derelict site" geolocation lookup.
+
+Problems with the site or the data can be reported through the issue
+templates: https://github.com/urschrei/derelict_sites_register/issues/new/choose
 
 ## Development
 
