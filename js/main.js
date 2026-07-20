@@ -4,6 +4,7 @@ import {
   clarkEvans,
   describeClustering,
   hexDensity,
+  voronoiCatchments,
   median,
   countByArea,
   countByYearAdded,
@@ -131,7 +132,7 @@ function render() {
     `Showing ${filtered.length} of ${allFeatures.length} sites`;
   renderKpis(filtered);
   renderCharts(filtered);
-  updateMapData(filtered, hexDensity(filtered));
+  updateMapData(filtered, hexDensity(filtered), voronoiCatchments(filtered));
   renderTable(filtered, focusSite);
   hideTooltip();
 }

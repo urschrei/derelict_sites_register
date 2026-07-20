@@ -9,7 +9,10 @@ const DUBLIN_CENTRE = [-6.2718, 53.3455];
 let map;
 let currentSites = { type: "FeatureCollection", features: [] };
 let currentHexes = { type: "FeatureCollection", features: [] };
+let currentVoronoi = { type: "FeatureCollection", features: [] };
 let hexVisible = false;
+let voronoiVisible = false;
+let emphasiseProtected = false;
 let popup;
 
 function basemapStyle() {
@@ -44,6 +47,28 @@ function rampExpression() {
     t.ramp[3],
     t.ramp[1],
   ];
+}
+
+const PROTECTED = [
+  "==",
+  ["get", "is_on_current_record_of_protected_structures"],
+  "Yes",
+];
+
+// With emphasis on, protected structures keep the ramp colour and everything
+// else drops to the de-emphasis gray.
+function siteColourExpression() {
+  const t = tokens();
+  return emphasiseProtected
+    ? ["case", PROTECTED, rampExpression(), t.seriesDim]
+    : rampExpression();
+}
+
+function siteRadiusExpression() {
+  const base = ["interpolate", ["linear"], ["zoom"], 10, 4, 14, 7];
+  return emphasiseProtected
+    ? ["+", base, ["case", PROTECTED, 1.5, 0]]
+    : base;
 }
 
 function hexColourExpression(maxCount) {
@@ -81,14 +106,27 @@ function addDataLayers() {
     },
   });
 
+  map.addSource("voronoi", { type: "geojson", data: currentVoronoi });
+  map.addLayer({
+    id: "voronoi",
+    type: "line",
+    source: "voronoi",
+    layout: { visibility: voronoiVisible ? "visible" : "none" },
+    paint: {
+      "line-color": t.textMuted,
+      "line-width": 1,
+      "line-opacity": 0.7,
+    },
+  });
+
   map.addSource("sites", { type: "geojson", data: currentSites });
   map.addLayer({
     id: "sites",
     type: "circle",
     source: "sites",
     paint: {
-      "circle-radius": ["interpolate", ["linear"], ["zoom"], 10, 4, 14, 7],
-      "circle-color": rampExpression(),
+      "circle-radius": siteRadiusExpression(),
+      "circle-color": siteColourExpression(),
       "circle-stroke-color": t.surface,
       "circle-stroke-width": 1.5,
     },
@@ -205,15 +243,38 @@ export function initMap() {
     }
   });
 
+  document.getElementById("toggle-voronoi").addEventListener("change", (e) => {
+    voronoiVisible = e.target.checked;
+    if (map.getLayer("voronoi")) {
+      map.setLayoutProperty(
+        "voronoi",
+        "visibility",
+        voronoiVisible ? "visible" : "none"
+      );
+    }
+  });
+
+  document
+    .getElementById("toggle-protected")
+    .addEventListener("change", (e) => {
+      emphasiseProtected = e.target.checked;
+      if (map.getLayer("sites")) {
+        map.setPaintProperty("sites", "circle-color", siteColourExpression());
+        map.setPaintProperty("sites", "circle-radius", siteRadiusExpression());
+      }
+    });
+
   buildLegend();
   return map;
 }
 
-export function updateMapData(sites, hexes) {
+export function updateMapData(sites, hexes, voronoi) {
   currentSites = { type: "FeatureCollection", features: sites };
   currentHexes = hexes;
+  currentVoronoi = voronoi;
   if (!map || !map.isStyleLoaded()) return;
   map.getSource("sites")?.setData(currentSites);
+  map.getSource("voronoi")?.setData(currentVoronoi);
   const hexSource = map.getSource("hexes");
   if (hexSource) {
     hexSource.setData(currentHexes);

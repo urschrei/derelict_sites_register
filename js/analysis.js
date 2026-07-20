@@ -71,16 +71,44 @@ export function describeClustering(ratio) {
 
 // Hexagonal density grid over the current sites (600 m cells).
 //
-// turf.hexGrid converts the cell side from kilometres to degrees with a
-// single spherical factor applied to both axes, so in WGS84 at Dublin's
-// latitude the cells would come out about 600 m tall but only 360 m wide.
-// To get ground-regular hexagons we build the grid in a locally corrected
-// frame (longitudes scaled by cos of the mid-latitude, making a degree
-// metrically equal on both axes), then scale the cell geometry back. The
-// city spans well under a degree of latitude, so a single correction
-// factor is accurate here.
+// No latitude correction is needed here: since Turf issue #758, hexGrid
+// sizes cell width and height separately from real haversine distances
+// across the bbox, so the cells it returns are already ground-regular in
+// WGS84. (Correcting again stretches them east-west by 1/cos(latitude).)
 export function hexDensity(features) {
   if (!features.length) return turf.featureCollection([]);
+  const points = turf.featureCollection(
+    features.map((f) => turf.point(f.geometry.coordinates))
+  );
+  const bbox = turf.bbox(points);
+  const padded = [
+    bbox[0] - 0.01,
+    bbox[1] - 0.01,
+    bbox[2] + 0.01,
+    bbox[3] + 0.01,
+  ];
+  const grid = turf.hexGrid(padded, 0.6, { units: "kilometers" });
+  const cells = [];
+  for (const cell of grid.features) {
+    const inside = turf.pointsWithinPolygon(points, cell);
+    if (inside.features.length > 0) {
+      cell.properties.count = inside.features.length;
+      cells.push(cell);
+    }
+  }
+  return turf.featureCollection(cells);
+}
+
+// Voronoi catchments: the region closest to each site.
+//
+// Unlike hexGrid, turf.voronoi passes raw coordinates to d3-voronoi's
+// planar algorithm with no latitude handling, so equidistance in degree
+// space would misplace boundaries at this latitude. Build the diagram in a
+// locally corrected frame (longitudes scaled by cos of the mid-latitude,
+// making planar distance proportional to ground distance), then scale the
+// polygons back.
+export function voronoiCatchments(features) {
+  if (features.length < 3) return turf.featureCollection([]);
   const bbox = turf.bbox(
     turf.featureCollection(features.map((f) => turf.point(f.geometry.coordinates)))
   );
@@ -93,23 +121,18 @@ export function hexDensity(features) {
   );
   const pBbox = turf.bbox(projected);
   const padded = [
-    pBbox[0] - 0.01,
-    pBbox[1] - 0.01,
-    pBbox[2] + 0.01,
-    pBbox[3] + 0.01,
+    pBbox[0] - 0.02,
+    pBbox[1] - 0.02,
+    pBbox[2] + 0.02,
+    pBbox[3] + 0.02,
   ];
-  const grid = turf.hexGrid(padded, 0.6, { units: "kilometers" });
-  const cells = [];
-  for (const cell of grid.features) {
-    const inside = turf.pointsWithinPolygon(projected, cell);
-    if (inside.features.length > 0) {
-      cell.properties.count = inside.features.length;
-      cell.geometry.coordinates = cell.geometry.coordinates.map((ring) =>
-        ring.map(([x, y]) => [x / k, y])
-      );
-      cells.push(cell);
-    }
-  }
+  const diagram = turf.voronoi(projected, { bbox: padded });
+  const cells = diagram.features.filter(Boolean).map((cell) => {
+    cell.geometry.coordinates = cell.geometry.coordinates.map((ring) =>
+      ring.map(([x, y]) => [x / k, y])
+    );
+    return cell;
+  });
   return turf.featureCollection(cells);
 }
 

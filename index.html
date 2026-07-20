@@ -13,9 +13,8 @@
   <header class="site-header">
     <h1>Dublin Derelict Sites Register</h1>
     <p class="lede">
-      Dublin City Council's register of derelict sites is public data, but the
-      council publishes it through a closed ArcGIS application. This page
-      republishes the register in open formats and keeps it fresh: the data is
+      This page republishes Dublin City Council's register of derelict sites
+      in open formats and keeps it fresh: the data is
       retrieved from the council's public feature service twice a day.
     </p>
     <p class="meta-line">
@@ -91,11 +90,19 @@
             <input type="checkbox" id="toggle-hex">
             <span>Density grid</span>
           </label>
+          <label class="filter-check map-toggle">
+            <input type="checkbox" id="toggle-voronoi">
+            <span>Voronoi catchments</span>
+          </label>
+          <label class="filter-check map-toggle">
+            <input type="checkbox" id="toggle-protected">
+            <span>Highlight protected structures</span>
+          </label>
           <button type="button" class="button map-locate" id="locate-button">Where's the closest derelict site?</button>
         </div>
       </div>
       <p class="map-hint" id="locate-status" role="status"></p>
-      <p class="map-hint">Click a point for site details. The density grid aggregates sites into 600&nbsp;m hexagons.</p>
+      <p class="map-hint">Click a point for site details. The density grid aggregates sites into hexagons with 600&nbsp;m sides; the Voronoi catchments show the area closest to each site.</p>
     </section>
 
     <section class="charts" aria-label="Charts">
