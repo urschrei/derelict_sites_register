@@ -2,3 +2,8 @@
 node_modules/
 docs/dcc_feature_services.md
 scripts/catalogue_services.py
+
+# A global gitignore may exclude *.csv; the register CSVs are published data
+# outputs, so re-include them here (repo rules take precedence over the global
+# excludes file).
+!data/*.csv
