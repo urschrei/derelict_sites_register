@@ -527,6 +527,68 @@ section {
   font-weight: 600;
 }
 
+/* Embed mode: map only, used for the social preview image and for
+   embedding the map elsewhere (append ?embed to the URL). */
+
+.embed-title {
+  display: none;
+}
+
+body.embed .site-header,
+body.embed .filters,
+body.embed .kpis,
+body.embed .charts,
+body.embed .table-section,
+body.embed .site-footer,
+body.embed .map-chrome,
+body.embed .map-hint,
+body.embed .maplibregl-ctrl-top-right {
+  display: none;
+}
+
+body.embed main {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+body.embed .map-section {
+  margin: 0;
+}
+
+body.embed .map-card {
+  border: none;
+  border-radius: 0;
+}
+
+body.embed #map {
+  height: 100vh;
+}
+
+body.embed .embed-title {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.9rem 1.2rem;
+}
+
+.embed-title-main {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.embed-title-sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
 /* Footer */
 
 .site-footer {

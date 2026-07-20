@@ -312,6 +312,16 @@ export function showNearestSite(userLngLat, feature) {
   openPopup(feature);
 }
 
+// Fit the camera to the current sites (used by embed mode).
+export function fitToSites(padding = 70) {
+  if (!map || !currentSites.features.length) return;
+  map.fitBounds(turf.bbox(currentSites), {
+    padding,
+    duration: 0,
+    maxZoom: 13,
+  });
+}
+
 export function focusSite(feature) {
   if (!map) return;
   map.flyTo({

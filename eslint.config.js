@@ -8,6 +8,7 @@ export default [
         window: "readonly",
         document: "readonly",
         navigator: "readonly",
+        URLSearchParams: "readonly",
         fetch: "readonly",
         setTimeout: "readonly",
         clearTimeout: "readonly",
@@ -22,6 +23,24 @@ export default [
       "no-var": "error",
       "prefer-const": "error",
       eqeqeq: ["error", "smart"],
+    },
+  },
+  {
+    files: ["scripts/**/*.cjs"],
+    languageOptions: {
+      ecmaVersion: 2023,
+      sourceType: "commonjs",
+      globals: {
+        require: "readonly",
+        process: "readonly",
+        console: "readonly",
+        setTimeout: "readonly",
+      },
+    },
+    rules: {
+      "no-undef": "error",
+      "no-unused-vars": "error",
+      "prefer-const": "error",
     },
   },
 ];

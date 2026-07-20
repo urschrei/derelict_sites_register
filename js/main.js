@@ -22,6 +22,7 @@ import {
   refreshMapStyle,
   focusSite,
   showNearestSite,
+  fitToSites,
 } from "./map.js";
 import { renderTable } from "./table.js";
 import { buildIndex, nearestSites } from "./spatial.js";
@@ -257,12 +258,21 @@ async function init() {
     Math.max(...allFeatures.map((f) => f.properties.distance_from_centre_km))
   );
 
+  const embed = new URLSearchParams(window.location.search).has("embed");
+  if (embed) document.body.classList.add("embed");
+
   buildIndex(allFeatures);
   renderHeaderMeta();
   wireFilters();
   wireLocateButton();
   initMap();
   render();
+
+  if (embed) {
+    document.getElementById("embed-count").textContent =
+      `${allFeatures.length} sites, mapped and refreshed twice daily`;
+    fitToSites();
+  }
 
   onSchemeChange(() => {
     refreshMapStyle();
