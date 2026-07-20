@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dublin Derelict Sites Register</title>
+  <meta name="description" content="An open map, table, and analysis of Dublin City Council's Derelict Sites Register, refreshed twice daily.">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Dublin Derelict Sites Register</h1>
+    <p class="lede">
+      Dublin City Council's register of derelict sites is public data, but the
+      council publishes it through a closed ArcGIS application. This page
+      republishes the register in open formats and keeps it fresh: the data is
+      retrieved from the council's public feature service twice a day.
+    </p>
+    <p class="meta-line">
+      <span id="site-count-line">Loading register data&hellip;</span>
+    </p>
+    <p class="downloads">
+      <a class="button" href="data/derelict_sites_register.geojson" download>Download GeoJSON</a>
+      <a class="button" href="data/derelict_sites_register.csv" download>Download CSV</a>
+    </p>
+  </header>
+
+  <main>
+    <section class="filters" aria-label="Filters">
+      <label class="filter-field">
+        <span>Administrative area</span>
+        <select id="filter-area">
+          <option value="">All areas</option>
+        </select>
+      </label>
+      <label class="filter-check">
+        <input type="checkbox" id="filter-protected">
+        <span>Protected structures only</span>
+      </label>
+      <label class="filter-check">
+        <input type="checkbox" id="filter-council">
+        <span>Council-owned only</span>
+      </label>
+      <label class="filter-field filter-search">
+        <span>Search address or reference</span>
+        <input type="search" id="filter-search" placeholder="e.g. Phibsborough or DS576">
+      </label>
+      <p class="filter-status" id="filter-status" role="status"></p>
+      <button type="button" class="button button-ghost" id="filter-reset">Reset</button>
+    </section>
+
+    <section class="kpis" aria-label="Key figures">
+      <div class="stat-tile">
+        <span class="stat-label">Sites shown</span>
+        <span class="stat-value" id="kpi-count">&ndash;</span>
+        <span class="stat-note" id="kpi-count-note"></span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Median time on register</span>
+        <span class="stat-value" id="kpi-median-years">&ndash;</span>
+        <span class="stat-note" id="kpi-oldest"></span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Protected structures</span>
+        <span class="stat-value" id="kpi-protected">&ndash;</span>
+        <span class="stat-note">on the Record of Protected Structures</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Council-owned</span>
+        <span class="stat-value" id="kpi-council">&ndash;</span>
+        <span class="stat-note">owned by Dublin City Council</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Clustering index</span>
+        <span class="stat-value" id="kpi-cluster">&ndash;</span>
+        <span class="stat-note" id="kpi-cluster-note">Clark&ndash;Evans nearest-neighbour ratio</span>
+      </div>
+    </section>
+
+    <section class="map-section" aria-label="Map of derelict sites">
+      <div class="map-card">
+        <div id="map" aria-label="Interactive map of derelict sites in Dublin"></div>
+        <div class="map-chrome">
+          <div class="map-legend" id="map-legend" aria-hidden="false">
+            <span class="legend-title">Time on register</span>
+          </div>
+          <label class="filter-check map-toggle">
+            <input type="checkbox" id="toggle-hex">
+            <span>Density grid</span>
+          </label>
+        </div>
+      </div>
+      <p class="map-hint">Click a point for site details. The density grid aggregates sites into 600&nbsp;m hexagons.</p>
+    </section>
+
+    <section class="charts" aria-label="Charts">
+      <div class="chart-card">
+        <h2>Sites by administrative area</h2>
+        <div class="chart" id="chart-area"></div>
+        <details class="chart-data"><summary>View data</summary><div id="chart-area-table"></div></details>
+      </div>
+      <div class="chart-card">
+        <h2>Additions to the register by year</h2>
+        <div class="chart" id="chart-year"></div>
+        <details class="chart-data"><summary>View data</summary><div id="chart-year-table"></div></details>
+      </div>
+      <div class="chart-card">
+        <h2>Distance from the Spire</h2>
+        <p class="chart-sub">Straight-line distance from the O'Connell Street Spire, 1&nbsp;km bins</p>
+        <div class="chart" id="chart-distance"></div>
+        <details class="chart-data"><summary>View data</summary><div id="chart-distance-table"></div></details>
+      </div>
+    </section>
+
+    <section class="table-section" aria-label="Register table">
+      <h2>The register</h2>
+      <div class="table-wrap">
+        <table id="register-table">
+          <caption class="visually-hidden">All derelict sites matching the current filters. Click a column header to sort, click a row to locate the site on the map.</caption>
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Data: Dublin City Council, Derelict Sites Register (public ArcGIS feature
+      service), retrieved twice daily. Basemap &copy;
+      <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
+      contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>.
+      Built with <a href="https://maplibre.org/">MapLibre GL JS</a> and
+      <a href="https://turfjs.org/">Turf.js</a>.
+    </p>
+  </footer>
+
+  <div class="viz-tooltip" id="viz-tooltip" role="presentation" hidden></div>
+
+  <script src="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7.2.0/turf.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
