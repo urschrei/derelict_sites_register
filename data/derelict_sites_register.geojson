@@ -1,0 +1,4196 @@
+{
+  "crs": {
+    "properties": {
+      "name": "EPSG:4326"
+    },
+    "type": "name"
+  },
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -6.271667849,
+          53.36415059
+        ],
+        "type": "Point"
+      },
+      "id": 3,
+      "properties": {
+        "GlobalID": "5d0e7235-2a03-4b75-8360-d225e9df9a2f",
+        "OBJECTID": 3,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-04-14",
+        "derelict_site_description": "Phibsborough Road, 113A, Dublin 7",
+        "derelict_site_reference_number": "DS576",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "113A Phibsborough Road Dublin 7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "dc1aab5c-99fc-43b5-804b-5614fc6d8885",
+        "site_location_latitude": 53.36415059,
+        "site_location_longitude": -6.271667849
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.317294299,
+          53.32739662
+        ],
+        "type": "Point"
+      },
+      "id": 97,
+      "properties": {
+        "GlobalID": "b265ce95-5d6c-477e-bc26-b975115cecb6",
+        "OBJECTID": 97,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2025-06-26",
+        "derelict_site_description": "Slievemore Road, 17, Crumlin, Dublin 12",
+        "derelict_site_reference_number": "DS2096",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "17 Slievemore Road Dublin 12 D12WT25",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "fa2e9b70-732a-4ecf-b98f-b31899480537",
+        "site_location_latitude": 53.32739662,
+        "site_location_longitude": -6.317294299
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.20109317,
+          53.36297539
+        ],
+        "type": "Point"
+      },
+      "id": 98,
+      "properties": {
+        "GlobalID": "48853f5a-315e-4b05-9df0-d667b88ce3fb",
+        "OBJECTID": 98,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2025-08-11",
+        "derelict_site_description": "Kincora Road, 17, Clontarf, Dublin 3",
+        "derelict_site_reference_number": "DS2043",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "17 Kincora Road Dublin 3 D03AK59",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "4b32247c-0de4-471e-b6f9-c34a44f117a1",
+        "site_location_latitude": 53.36297539,
+        "site_location_longitude": -6.20109317
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3150976959,
+          53.33456199
+        ],
+        "type": "Point"
+      },
+      "id": 99,
+      "properties": {
+        "GlobalID": "7cd3ea9d-12e3-4a19-9386-4bf3aa68ead0",
+        "OBJECTID": 99,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2025-06-26",
+        "derelict_site_description": "Benmadigan Road, 144, Crumlin, Dublin 12",
+        "derelict_site_reference_number": "DS2105",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "144 Benmadigan Road Dublin 12 D12ED90",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "af3fd410-acd4-4200-b9ef-8cf1014a9d5c",
+        "site_location_latitude": 53.33456199,
+        "site_location_longitude": -6.3150976959
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2963244639,
+          53.38102355
+        ],
+        "type": "Point"
+      },
+      "id": 100,
+      "properties": {
+        "GlobalID": "011f85ea-2780-4687-be5e-7bc908e198bb",
+        "OBJECTID": 100,
+        "administrative_area_name": "North West",
+        "date_added_to_the_derelict_sites_register": "2025-08-05",
+        "derelict_site_description": "Cloonlara Drive, 14, Finglas, Dublin 11",
+        "derelict_site_reference_number": "DS2068",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "14 Cloonlara Drive Dublin 11 D11N7F3",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "07cba0cf-ae9b-4aa8-a99b-8b57d8f41e04",
+        "site_location_latitude": 53.38102355,
+        "site_location_longitude": -6.2963244639
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2645829805,
+          53.3551771042
+        ],
+        "type": "Point"
+      },
+      "id": 101,
+      "properties": {
+        "GlobalID": "1013fd42-beaa-4d90-ae8c-0de9248cde73",
+        "OBJECTID": 101,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-04-18",
+        "derelict_site_description": "Frederick Street North, 30, Dublin 1",
+        "derelict_site_reference_number": "DS743",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "30 Frederick Street North Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "c57ec6de-e02d-441d-8190-867062f688f4",
+        "site_location_latitude": 53.3551771042,
+        "site_location_longitude": -6.2645829805
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.24269542,
+          53.36481234
+        ],
+        "type": "Point"
+      },
+      "id": 102,
+      "properties": {
+        "GlobalID": "b4e66725-7eb7-41ef-a9c1-8d68f945a12e",
+        "OBJECTID": 102,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2012-12-13",
+        "derelict_site_description": "Richmond Avenue, 21 & 27-29 & lands at rear, Dublin 3",
+        "derelict_site_reference_number": "DS784",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "27 Richmond Avenue Dublin 3~|~29 Richmond Avenue Dublin 3~|~21 Richmond Avenue Dublin 3 D03A9C2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "39899d6e-55c9-47b7-a7e0-512e6713ea7c",
+        "site_location_latitude": 53.36481234,
+        "site_location_longitude": -6.24269542
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2514152053,
+          53.3545336745
+        ],
+        "type": "Point"
+      },
+      "id": 103,
+      "properties": {
+        "GlobalID": "a1fc9bb5-9cc6-4963-8722-d13c1ab0f4b4",
+        "OBJECTID": 103,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2008-10-20",
+        "derelict_site_description": "Terrace Place, 6 (rear 23 Rutland St. Lr.), Dublin 1",
+        "derelict_site_reference_number": "DS514A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 Terrace Place Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "7ff47d4a-d95b-40ca-98fb-8d0b92ab9a44",
+        "site_location_latitude": 53.3545336745,
+        "site_location_longitude": -6.2514152053
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2742221083,
+          53.3626265405
+        ],
+        "type": "Point"
+      },
+      "id": 104,
+      "properties": {
+        "GlobalID": "25fd7587-e986-4cb7-9e59-6991e241c3c0",
+        "OBJECTID": 104,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2018-03-23",
+        "derelict_site_description": "Connaught Street 19, Phibsborough, Dublin 7",
+        "derelict_site_reference_number": "DS704",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "19 Connaught Street Dublin 7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "801a90e4-476b-4ae7-97a6-bbb23fde2061",
+        "site_location_latitude": 53.3626265405,
+        "site_location_longitude": -6.2742221083
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2743172387,
+          53.3626354268
+        ],
+        "type": "Point"
+      },
+      "id": 105,
+      "properties": {
+        "GlobalID": "8f3a2521-3617-44ff-975a-5b4f3eb95ea8",
+        "OBJECTID": 105,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2018-03-23",
+        "derelict_site_description": "Connaught Street 21, Phibsborough, Dublin 7",
+        "derelict_site_reference_number": "DS705",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "21 Connaught Street Dublin 7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "37e4eb7b-e183-48c5-8feb-fccbdb622863",
+        "site_location_latitude": 53.3626354268,
+        "site_location_longitude": -6.2743172387
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.28148193,
+          53.34286128
+        ],
+        "type": "Point"
+      },
+      "id": 106,
+      "properties": {
+        "GlobalID": "9420fbb6-a67e-4968-86ca-fab44368ec7a",
+        "OBJECTID": 106,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2016-02-18",
+        "derelict_site_description": "Thomas Court, 37, Dublin 8",
+        "derelict_site_reference_number": "DS911",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "37 Thomas Court Dublin 8 D08T2R7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ed9a2aee-05fe-4fec-89bb-970076b41fc7",
+        "site_location_latitude": 53.34286128,
+        "site_location_longitude": -6.28148193
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.256028606,
+          53.3264646899
+        ],
+        "type": "Point"
+      },
+      "id": 107,
+      "properties": {
+        "GlobalID": "f427ce6a-4691-4534-893f-01090cc2dd6a",
+        "OBJECTID": 107,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2021-11-12",
+        "derelict_site_description": "Ranelagh, 2, Dublin 6",
+        "derelict_site_reference_number": "DS871A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "2 RANELAGH DUBLIN 6 D06KX78  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "6de6de6f-fcc9-442e-a603-5b9514997ea3",
+        "site_location_latitude": 53.3264646899,
+        "site_location_longitude": -6.256028606
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.25988168,
+          53.37083884
+        ],
+        "type": "Point"
+      },
+      "id": 108,
+      "properties": {
+        "GlobalID": "736300d1-3a31-42a1-8cdc-2222a1894c46",
+        "OBJECTID": 108,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2017-09-26",
+        "derelict_site_description": "Ferguson Road, 10, Drumcondra, Dublin 9",
+        "derelict_site_reference_number": "DS934",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "10 Ferguson Road Dublin 9 D09K2N2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "86d1ce4e-ba18-4e66-bd29-fed152b2978b",
+        "site_location_latitude": 53.37083884,
+        "site_location_longitude": -6.25988168
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345586868,
+          53.35025816
+        ],
+        "type": "Point"
+      },
+      "id": 109,
+      "properties": {
+        "GlobalID": "85caef2d-680e-406c-a393-f211c2a2a8ca",
+        "OBJECTID": 109,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-06-26",
+        "derelict_site_description": "Mulberry Cottages, 1, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS898",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "1 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20KW29",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "358f4df3-e50a-4bf4-9fd7-79012f6f3648",
+        "site_location_latitude": 53.35025816,
+        "site_location_longitude": -6.345586868
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345528723,
+          53.3502278199
+        ],
+        "type": "Point"
+      },
+      "id": 110,
+      "properties": {
+        "GlobalID": "83bc6e83-908d-4440-98b0-ea574c688934",
+        "OBJECTID": 110,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-06-26",
+        "derelict_site_description": "Mulberry Cottages, 2, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS899",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "2 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20WY20",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "2c7d0960-56c1-46c0-b42f-bc648c261c70",
+        "site_location_latitude": 53.3502278199,
+        "site_location_longitude": -6.345528723
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345232093,
+          53.3500730699
+        ],
+        "type": "Point"
+      },
+      "id": 111,
+      "properties": {
+        "GlobalID": "7c958a53-1a6b-4faa-86fd-1006e4274721",
+        "OBJECTID": 111,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-06-26",
+        "derelict_site_description": "Mulberry Cottages, 7, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS900",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "7 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20F582",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "5ff8d89f-1aa6-43f9-8546-ea93a229b9db",
+        "site_location_latitude": 53.3500730699,
+        "site_location_longitude": -6.345232093
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345093496,
+          53.3501663899
+        ],
+        "type": "Point"
+      },
+      "id": 112,
+      "properties": {
+        "GlobalID": "81dad4ca-ab0e-4897-8cb2-e6640bf21fe6",
+        "OBJECTID": 112,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-06-26",
+        "derelict_site_description": "Mulberry Cottages, 10, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS901",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "10 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20TX99",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "05ddace9-4bdc-4452-b5eb-d89f9aca476d",
+        "site_location_latitude": 53.3501663899,
+        "site_location_longitude": -6.345093496
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345050444,
+          53.35019843
+        ],
+        "type": "Point"
+      },
+      "id": 113,
+      "properties": {
+        "GlobalID": "1ee83836-0146-4471-b9fc-75fd65e4b45e",
+        "OBJECTID": 113,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-06-26",
+        "derelict_site_description": "Mulberry Cottages, 11, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS902",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "11 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20E524",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "cbc555f4-17eb-49bb-973c-85f6798ff9b2",
+        "site_location_latitude": 53.35019843,
+        "site_location_longitude": -6.345050444
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.344914516,
+          53.32867106
+        ],
+        "type": "Point"
+      },
+      "id": 114,
+      "properties": {
+        "GlobalID": "dd4a3023-56a5-4727-afe4-ad3588295af3",
+        "OBJECTID": 114,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-09-04",
+        "derelict_site_description": "Old Naas Road, Coolfan House, Bluebell, Dublin 12",
+        "derelict_site_reference_number": "DS905",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "Coolfan House Old Naas Road Dublin 12",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3d1b2d9e-1e71-4aca-be23-19aa0a6aebb9",
+        "site_location_latitude": 53.32867106,
+        "site_location_longitude": -6.344914516
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.246672101,
+          53.34564519
+        ],
+        "type": "Point"
+      },
+      "id": 115,
+      "properties": {
+        "GlobalID": "a3bc1468-7d33-4203-afc8-31e26296e976",
+        "OBJECTID": 115,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2016-11-16",
+        "derelict_site_description": "Creighton Street, 6, Dublin 2",
+        "derelict_site_reference_number": "DS937",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 Creighton Street Dublin 2 D02CF66",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3b6b1350-50ab-4867-8a98-fbbd4e6ce810",
+        "site_location_latitude": 53.34564519,
+        "site_location_longitude": -6.246672101
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345363001,
+          53.3501413599
+        ],
+        "type": "Point"
+      },
+      "id": 116,
+      "properties": {
+        "GlobalID": "6e9034ba-12c3-4b9a-9c1e-2ef04fd8f4da",
+        "OBJECTID": 116,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2019-04-10",
+        "derelict_site_description": "Mulberry Cottages, 5, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS953",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20PF29",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "aadbc863-9163-48c7-9bb7-0a96d972fbe8",
+        "site_location_latitude": 53.3501413599,
+        "site_location_longitude": -6.345363001
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.273557605,
+          53.3404139299
+        ],
+        "type": "Point"
+      },
+      "id": 117,
+      "properties": {
+        "GlobalID": "e8878697-fe2c-4756-874f-e2baa238b9e1",
+        "OBJECTID": 117,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2017-05-17",
+        "derelict_site_description": "Hanover Lane, adj. No.34, Dublin 8",
+        "derelict_site_reference_number": "DS980",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "e48bc06e-d857-4558-b6a0-c282e1ca619c",
+        "site_location_latitude": 53.3404139299,
+        "site_location_longitude": -6.273557605
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.259915267,
+          53.3707937699
+        ],
+        "type": "Point"
+      },
+      "id": 118,
+      "properties": {
+        "GlobalID": "952dae08-744e-460b-abdf-b527648569a3",
+        "OBJECTID": 118,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2017-09-28",
+        "derelict_site_description": "Ferguson Road, 8, Drumcondra, Dublin 9",
+        "derelict_site_reference_number": "DS982",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "8 Ferguson Road Dublin 9 D09E3E5",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3fb66eda-eb0d-47a7-a815-84748102c4ea",
+        "site_location_latitude": 53.3707937699,
+        "site_location_longitude": -6.259915267
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.267470368,
+          53.3567665
+        ],
+        "type": "Point"
+      },
+      "id": 119,
+      "properties": {
+        "GlobalID": "5e304fb8-3230-4245-b6dd-de5d75340036",
+        "OBJECTID": 119,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2017-09-29",
+        "derelict_site_description": "Blessington Street, 23, Dublin 7",
+        "derelict_site_reference_number": "DS1006",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "23 Blessington Street Dublin 7 D07DT6D",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "f08caa9e-7db6-4100-8402-83f7778996b5",
+        "site_location_latitude": 53.3567665,
+        "site_location_longitude": -6.267470368
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.247086816,
+          53.3421656599
+        ],
+        "type": "Point"
+      },
+      "id": 120,
+      "properties": {
+        "GlobalID": "6fc3518d-61e7-4e68-992d-5946edf141a6",
+        "OBJECTID": 120,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2023-04-04",
+        "derelict_site_description": "Bass Place, 11, Dublin 2",
+        "derelict_site_reference_number": "DS1053",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "11 Bass Place Dublin 2 D02R5P3",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "332413f4-9e26-4a4e-85e9-6dd19130a38e",
+        "site_location_latitude": 53.3421656599,
+        "site_location_longitude": -6.247086816
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2513834136,
+          53.3544649911
+        ],
+        "type": "Point"
+      },
+      "id": 121,
+      "properties": {
+        "GlobalID": "c4edac57-20ee-4603-9349-5eb776a60c7b",
+        "OBJECTID": 121,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2019-06-14",
+        "derelict_site_description": "Terrace Place, 7 & 8, Dublin 1",
+        "derelict_site_reference_number": "DS1371",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "7 Terrace Place Dublin 1~|~8 Terrace Place Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "0f69bae6-c2bd-4161-82a0-9fa8772cee43",
+        "site_location_latitude": 53.3544649911,
+        "site_location_longitude": -6.2513834136
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.300714415,
+          53.3879806599
+        ],
+        "type": "Point"
+      },
+      "id": 122,
+      "properties": {
+        "GlobalID": "65f5c22e-a462-47c4-bd11-22d2d913607d",
+        "OBJECTID": 122,
+        "administrative_area_name": "North West",
+        "date_added_to_the_derelict_sites_register": "2024-01-30",
+        "derelict_site_description": "Church Street, 2, Finglas, Dublin 11",
+        "derelict_site_reference_number": "DS1417",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "2 Church Street Dublin 11",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "625f35b9-9a81-464e-9f9d-16d958c56d9a",
+        "site_location_latitude": 53.3879806599,
+        "site_location_longitude": -6.300714415
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2797533559,
+          53.3911684599
+        ],
+        "type": "Point"
+      },
+      "id": 124,
+      "properties": {
+        "GlobalID": "689f12b6-b588-49a0-ae0d-0fb7a9efc42d",
+        "OBJECTID": 124,
+        "administrative_area_name": "North West",
+        "date_added_to_the_derelict_sites_register": "2024-08-29",
+        "derelict_site_description": "Willow Park Road, 5, Ballymun, Dublin 11",
+        "derelict_site_reference_number": "DS2004",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Willow Park Road Dublin 11 D11P898",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "90c6d982-d6fb-4aac-a08d-00dbd21bc5ef",
+        "site_location_latitude": 53.3911684599,
+        "site_location_longitude": -6.2797533559
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2391310539,
+          53.35640745
+        ],
+        "type": "Point"
+      },
+      "id": 125,
+      "properties": {
+        "GlobalID": "d71e790f-a749-4ae4-9e3f-008cdf79c51b",
+        "OBJECTID": 125,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-11-29",
+        "derelict_site_description": "West Road, Coady's Yard, North Strand, Dublin 3",
+        "derelict_site_reference_number": "DS2030",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "7cc981b3-6444-42f3-b506-e933729fc96d",
+        "site_location_latitude": 53.35640745,
+        "site_location_longitude": -6.2391310539
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.279611808,
+          53.32453796
+        ],
+        "type": "Point"
+      },
+      "id": 127,
+      "properties": {
+        "GlobalID": "09c92d2a-5a2a-480d-805d-d204a8488cc3",
+        "OBJECTID": 127,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2007-06-08",
+        "derelict_site_description": "Harold's Cross Road, 144, Dublin 6W",
+        "derelict_site_reference_number": "DS250",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "144 Harold's Cross Road Dublin 6W",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "faab8459-fe11-472e-bedb-d6e86f931d79",
+        "site_location_latitude": 53.32453796,
+        "site_location_longitude": -6.279611808
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2568554689,
+          53.33573904
+        ],
+        "type": "Point"
+      },
+      "id": 128,
+      "properties": {
+        "GlobalID": "ffddbbbf-fbc1-4d2f-a1d4-05dca2d4fb32",
+        "OBJECTID": 128,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2019-04-16",
+        "derelict_site_description": "Leeson Street Lower, 6, Dublin 2",
+        "derelict_site_reference_number": "DS575A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 LEESON STREET LOWER DUBLIN 2 D02H283  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ea3f78cf-0d13-4484-a60d-5ab755d3c943",
+        "site_location_latitude": 53.33573904,
+        "site_location_longitude": -6.2568554689
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.239097538,
+          53.36181523
+        ],
+        "type": "Point"
+      },
+      "id": 129,
+      "properties": {
+        "GlobalID": "9ef8a8e9-8b29-442b-8cab-f57d9724b6cc",
+        "OBJECTID": 129,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2022-07-08",
+        "derelict_site_description": "Cadogan Road, 18, Fairview, Dublin 3",
+        "derelict_site_reference_number": "DS912",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "18 Cadogan Road Dublin 3 D03K650",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "2d1e63be-1e44-40e0-90df-c888f4e40c38",
+        "site_location_latitude": 53.36181523,
+        "site_location_longitude": -6.239097538
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.345303913,
+          53.35011054
+        ],
+        "type": "Point"
+      },
+      "id": 130,
+      "properties": {
+        "GlobalID": "704b05e8-3c36-4bb9-917e-c91ea93479aa",
+        "OBJECTID": 130,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2019-04-10",
+        "derelict_site_description": "Mulberry Cottages, 6, Martin's Row, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS954",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20ED28",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8df04bb9-cf25-49e4-8924-424db3b29de6",
+        "site_location_latitude": 53.35011054,
+        "site_location_longitude": -6.345303913
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.343980653,
+          53.3490735199
+        ],
+        "type": "Point"
+      },
+      "id": 132,
+      "properties": {
+        "GlobalID": "fb78eea7-5e08-4d39-b8ae-b2fff36b63a8",
+        "OBJECTID": 132,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2023-01-23",
+        "derelict_site_description": "Main Street, 39a, Chapelizod, Dublin 20",
+        "derelict_site_reference_number": "DS1380",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "39A Main Street Dublin 20 D20H971",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "d4ff291b-05ae-465d-ad04-93a913ec4524",
+        "site_location_latitude": 53.3490735199,
+        "site_location_longitude": -6.343980653
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.260798441,
+          53.3526428199
+        ],
+        "type": "Point"
+      },
+      "id": 133,
+      "properties": {
+        "GlobalID": "bd9ec544-09cd-4e43-a618-5221830f4a27",
+        "OBJECTID": 133,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2022-01-14",
+        "derelict_site_description": "Parnell Street, 77, Dublin 1",
+        "derelict_site_reference_number": "DS1040B",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "77 Parnell Street, Dublin 1, D01 P8Y7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "dae551b0-9a77-4353-91e5-5ad95cb630c4",
+        "site_location_latitude": 53.3526428199,
+        "site_location_longitude": -6.260798441
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2607145519,
+          53.3526663099
+        ],
+        "type": "Point"
+      },
+      "id": 134,
+      "properties": {
+        "GlobalID": "037c9afa-ae79-453d-a08c-4a030d974bd8",
+        "OBJECTID": 134,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2022-01-14",
+        "derelict_site_description": "Parnell Street, 78, Dublin 1",
+        "derelict_site_reference_number": "DS1040C",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "78 Parnell Street, Dublin 1, D01 A074 ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "125ef529-359e-4dc6-aa30-a95f5f60caa7",
+        "site_location_latitude": 53.3526663099,
+        "site_location_longitude": -6.2607145519
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2648540535,
+          53.3559241653
+        ],
+        "type": "Point"
+      },
+      "id": 136,
+      "properties": {
+        "GlobalID": "614ad156-e2db-4594-a2ed-200084ae2688",
+        "OBJECTID": 136,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-08-27",
+        "derelict_site_description": "Frederick Street North, 18, Dublin 1",
+        "derelict_site_reference_number": "DS1748B",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "17/18 Frederick Street North Dublin 1 D01XP84~|~18 Frederick Street North Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "5e4cd453-2cf5-4c04-a43e-46dae40f0b3f",
+        "site_location_latitude": 53.3559241653,
+        "site_location_longitude": -6.2648540535
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.26686222,
+          53.3545110399
+        ],
+        "type": "Point"
+      },
+      "id": 176,
+      "properties": {
+        "GlobalID": "92bf4a33-b792-4708-9c62-7efceaf90071",
+        "OBJECTID": 176,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-09-02",
+        "derelict_site_description": "Dorset Street Upper, 119, Dublin 1",
+        "derelict_site_reference_number": "DS2072",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "119 Dorset Street Upper, Dublin 1, D01 E7K4",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "03045d2d-3fc7-4760-977c-d7a961bb5161",
+        "site_location_latitude": 53.3545110399,
+        "site_location_longitude": -6.26686222
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.222475214,
+          53.33897471
+        ],
+        "type": "Point"
+      },
+      "id": 177,
+      "properties": {
+        "GlobalID": "b19d775a-4c77-409c-b51f-398e5ddc155f",
+        "OBJECTID": 177,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-09-17",
+        "derelict_site_description": "Bath Street, 7-9, Dublin 4",
+        "derelict_site_reference_number": "DS2006",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "7-9 Bath Street Dublin 4 D04E294",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "df4626ed-1580-4d0f-88b6-3496f94f302a",
+        "site_location_latitude": 53.33897471,
+        "site_location_longitude": -6.222475214
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2671765099,
+          53.3462698299
+        ],
+        "type": "Point"
+      },
+      "id": 180,
+      "properties": {
+        "GlobalID": "5fd16a21-8ff1-4926-95aa-f32ed312c19c",
+        "OBJECTID": 180,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-06-29",
+        "derelict_site_description": "Ormond Quay Lower, 5, Dublin 1 (Protected) ",
+        "derelict_site_reference_number": "DS2178",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Ormond Quay Lower, Dublin 1, D01 F4A0",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "4d25486e-13e4-47c4-aa94-a6e28e7e7186",
+        "site_location_latitude": 53.3462698299,
+        "site_location_longitude": -6.2671765099
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2874285369,
+          53.3549725099
+        ],
+        "type": "Point"
+      },
+      "id": 218,
+      "properties": {
+        "GlobalID": "9bd07656-e16e-430d-b2dd-895eac9ffaeb",
+        "OBJECTID": 218,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-04-03",
+        "derelict_site_description": "Prussia Street, 68-68a, Dublin 7",
+        "derelict_site_reference_number": "DS691",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "68 Prussia Street Dublin 7~|~68A Prussia Street Dublin 7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "024c1a4f-c8af-4877-a20e-db7f896a762f",
+        "site_location_latitude": 53.3549725099,
+        "site_location_longitude": -6.2874285369
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.262079288,
+          53.36188965
+        ],
+        "type": "Point"
+      },
+      "id": 222,
+      "properties": {
+        "GlobalID": "010d011a-bd05-42e9-82cb-6dd9711b431d",
+        "OBJECTID": 222,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-12-19",
+        "derelict_site_description": "Saint Ignatius Road, The School of Irish Wrestling Building, Dublin 7",
+        "derelict_site_reference_number": "DS1688",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "THE SCHOOL OF IRISH WRESTLING SAINT IGNATIUS ROAD DUBLIN 7 D07HD26 ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "030938d5-1e4e-43c3-9e79-2d9d10e6d0fe",
+        "site_location_latitude": 53.36188965,
+        "site_location_longitude": -6.262079288
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3162725999,
+          53.32068768
+        ],
+        "type": "Point"
+      },
+      "id": 228,
+      "properties": {
+        "GlobalID": "724869d9-fb7b-4bd3-9101-a54f3810df3a",
+        "OBJECTID": 228,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2026-07-10",
+        "derelict_site_description": "Windmill Road, The Hub Bar, Crumlin, Dublin 12",
+        "derelict_site_reference_number": "DS2108",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "WINDMILL ROAD DUBLIN 12 D12TR23  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "04a1ca64-4e5a-42dc-83fc-2a40f2b184c7",
+        "site_location_latitude": 53.32068768,
+        "site_location_longitude": -6.3162725999
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.232277086,
+          53.33571042
+        ],
+        "type": "Point"
+      },
+      "id": 233,
+      "properties": {
+        "GlobalID": "c98bfd3d-57b9-4275-bd11-f0b2a584ca4d",
+        "OBJECTID": 233,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-12-05",
+        "derelict_site_description": "Shelbourne Road, 58, Dublin 4",
+        "derelict_site_reference_number": "DS1247",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "58 Shelbourne Road Dublin 4 D04T2Y9",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "06fbb400-2bf1-43c7-8023-16382797869d",
+        "site_location_latitude": 53.33571042,
+        "site_location_longitude": -6.232277086
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.295912472,
+          53.3532867399
+        ],
+        "type": "Point"
+      },
+      "id": 237,
+      "properties": {
+        "GlobalID": "fa650631-8f6f-48bb-896d-bd1849ff3705",
+        "OBJECTID": 237,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-04-13",
+        "derelict_site_description": "North Circular Road, 44, Dublin 7",
+        "derelict_site_reference_number": "DS2141",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "44 North Circular Road Dublin 7 D07Y6TE",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "07b75c07-cda0-489d-9ca3-370cf0448b7d",
+        "site_location_latitude": 53.3532867399,
+        "site_location_longitude": -6.295912472
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2936399609,
+          53.3427750193
+        ],
+        "type": "Point"
+      },
+      "id": 239,
+      "properties": {
+        "GlobalID": "319fd747-5705-4470-9707-df361c311aeb",
+        "OBJECTID": 239,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2019-06-17",
+        "derelict_site_description": "James's Street, 162-165, Dublin 8 (163 Protected)",
+        "derelict_site_reference_number": "DS1368",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "162 James's Street Dublin 8~|~163 James's Street Dublin 8~|~164 James's Street Dublin 8~|~165 James's Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "0828e103-3e55-491d-a2bf-2e898f3e0aca",
+        "site_location_latitude": 53.3427750193,
+        "site_location_longitude": -6.2936399609
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.302649871,
+          53.3293649699
+        ],
+        "type": "Point"
+      },
+      "id": 261,
+      "properties": {
+        "GlobalID": "e16e2a8f-f100-442a-aeda-bc40b52b0925",
+        "OBJECTID": 261,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2023-06-26",
+        "derelict_site_description": "Brickfield Drive, site beside 2, Crumlin, Dublin 12",
+        "derelict_site_reference_number": "DS1281",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "0f5a9ed2-e1a8-42fb-a1a6-f67245d60722",
+        "site_location_latitude": 53.3293649699,
+        "site_location_longitude": -6.302649871
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.299796033,
+          53.3708821
+        ],
+        "type": "Point"
+      },
+      "id": 267,
+      "properties": {
+        "GlobalID": "7f67bf55-7ea4-4535-92fd-58369147aa7b",
+        "OBJECTID": 267,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-01-14",
+        "derelict_site_description": "Carnlough Road, 531, Cabra, Dublin 7",
+        "derelict_site_reference_number": "DS2034",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "531 Carnlough Road Dublin 7 D07F2V9",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "11bf6529-9f4f-4c11-b20f-84f1f1770ea2",
+        "site_location_latitude": 53.3708821,
+        "site_location_longitude": -6.299796033
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3193348588,
+          53.3393401855
+        ],
+        "type": "Point"
+      },
+      "id": 271,
+      "properties": {
+        "GlobalID": "39cfd713-6a6f-4cf1-b50e-dbd47de64d24",
+        "OBJECTID": 271,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2025-04-11",
+        "derelict_site_description": "Emmet Road, 124, Unit 1, Inchicore, Dublin 8",
+        "derelict_site_reference_number": "DS1999",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "Unit 1 124 Emmet Road Dublin 8 D08V085",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "12b2ca1d-d4ad-44b1-b8d1-a614318dae12",
+        "site_location_latitude": 53.3393401855,
+        "site_location_longitude": -6.3193348588
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2600634861,
+          53.353003758
+        ],
+        "type": "Point"
+      },
+      "id": 284,
+      "properties": {
+        "GlobalID": "466abaa0-ba03-477e-a470-7b8742cf3510",
+        "OBJECTID": 284,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-04-14",
+        "derelict_site_description": "Parnell Street, 88, Dublin 1",
+        "derelict_site_reference_number": "DS1655",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "88 Parnell Street, Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "154f5655-66d5-4d8e-b63a-20058759ea07",
+        "site_location_latitude": 53.353003758,
+        "site_location_longitude": -6.2600634861
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.266053533,
+          53.33550321
+        ],
+        "type": "Point"
+      },
+      "id": 285,
+      "properties": {
+        "GlobalID": "d4c7de5a-5337-4439-a67a-327f8ab7b2e0",
+        "OBJECTID": 285,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2022-10-14",
+        "derelict_site_description": "Pleasants Street, 48, Dublin 8",
+        "derelict_site_reference_number": "DS843",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "48 Pleasants Street Dublin 8 D08K0T3",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "16ebd0ec-2acb-483c-875f-4bfce3aba5e6",
+        "site_location_latitude": 53.33550321,
+        "site_location_longitude": -6.266053533
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3035192077,
+          53.3392699536
+        ],
+        "type": "Point"
+      },
+      "id": 290,
+      "properties": {
+        "GlobalID": "62bc7eb9-6dcb-4cb1-a1a2-1205f9ada649",
+        "OBJECTID": 290,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2024-07-09",
+        "derelict_site_description": "South Circular Road, 646-648, Kilmainham, Dublin 8",
+        "derelict_site_reference_number": "DS1581",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "646 South Circular Road, Dublin 8~|~648 South Circular Road, Dublin 8, D08 XDK4",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "184d6b4f-8aee-4015-86d5-dfa293c0503c",
+        "site_location_latitude": 53.3392699536,
+        "site_location_longitude": -6.3035192077
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2488633,
+          53.34544565
+        ],
+        "type": "Point"
+      },
+      "id": 295,
+      "properties": {
+        "GlobalID": "b5c3572d-e261-44cc-a1e0-bffe54909630",
+        "OBJECTID": 295,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2024-06-25",
+        "derelict_site_description": "Townsend Street, 112-114, Dublin 2",
+        "derelict_site_reference_number": "DS1789",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "113/114 TOWNSEND STREET DUBLIN 2 D02X956  ~|~112 Townsend Street Dublin 2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "19a68f84-3fce-42f9-924e-94945eb7bb92",
+        "site_location_latitude": 53.34544565,
+        "site_location_longitude": -6.2488633
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3040179436,
+          53.3416458153
+        ],
+        "type": "Point"
+      },
+      "id": 305,
+      "properties": {
+        "GlobalID": "60a5d57a-5d1b-4048-96e8-9708c4e4e64b",
+        "OBJECTID": 305,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2014-09-10",
+        "derelict_site_description": "Rowserstown Lane, 6 (a.k.a. 6 High Road), Kilmainham, Dublin 8",
+        "derelict_site_reference_number": "DS868",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 Rowserstown Lane Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "1d47911a-0210-4c76-ac22-7d800429a2f8",
+        "site_location_latitude": 53.3416458153,
+        "site_location_longitude": -6.3040179436
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.284349439,
+          53.3463603399
+        ],
+        "type": "Point"
+      },
+      "id": 320,
+      "properties": {
+        "GlobalID": "7f07f5d3-8452-49a7-a6a2-1d20c184d2cf",
+        "OBJECTID": 320,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2025-12-01",
+        "derelict_site_description": "Watling Street, 40, The Liberties, Dublin 8",
+        "derelict_site_reference_number": "DS2196",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "40 WATLING STREET DUBLIN 8 D08X7Y2  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "22b40f10-fb7f-481c-b0a3-84cdf4139878",
+        "site_location_latitude": 53.3463603399,
+        "site_location_longitude": -6.284349439
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2561394769,
+          53.3549521499
+        ],
+        "type": "Point"
+      },
+      "id": 328,
+      "properties": {
+        "GlobalID": "174104b0-3ea6-487b-8677-e1372ac472d0",
+        "OBJECTID": 328,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-11-14",
+        "derelict_site_description": "Langrishe Place, 5, Summerhill, Dublin 1",
+        "derelict_site_reference_number": "DS1772",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Langrishe Place Dublin 1 D01R8E8 ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "2547cdcd-86cc-4fb9-af51-a47d806569ca",
+        "site_location_latitude": 53.3549521499,
+        "site_location_longitude": -6.2561394769
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.266374278,
+          53.37677954
+        ],
+        "type": "Point"
+      },
+      "id": 337,
+      "properties": {
+        "GlobalID": "cbb822fd-2aa8-46a8-b6be-fcd41d7db94f",
+        "OBJECTID": 337,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-06-02",
+        "derelict_site_description": "Saint Mobhi Boithirin, Balnagowan House, Glasnevin, D9",
+        "derelict_site_reference_number": "DS2163",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "    Bealnagown Saint Mobhi Boithirin  Dublin 9 D09K5X2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "26f9a2ce-9e16-496f-a43e-218a6f3f883a",
+        "site_location_latitude": 53.37677954,
+        "site_location_longitude": -6.266374278
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.285477809,
+          53.3317156399
+        ],
+        "type": "Point"
+      },
+      "id": 340,
+      "properties": {
+        "GlobalID": "8e548341-e987-411e-a1e9-dbcbca0ddf51",
+        "OBJECTID": 340,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2025-07-09",
+        "derelict_site_description": "South Circular Road, 231, Dublin 8",
+        "derelict_site_reference_number": "DS1753",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "231 South Circular Road Dublin 8 D08E6HH",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "27924d18-2757-44d7-8b85-752bbcd4f0f8",
+        "site_location_latitude": 53.3317156399,
+        "site_location_longitude": -6.285477809
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.320600183,
+          53.365447
+        ],
+        "type": "Point"
+      },
+      "id": 357,
+      "properties": {
+        "GlobalID": "f913f4ae-9b3c-4601-a1db-c81fbd5a7f62",
+        "OBJECTID": 357,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-09-02",
+        "derelict_site_description": "Blackhorse Avenue, 487, Ashtown, Dublin 7",
+        "derelict_site_reference_number": "DS1662",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "487 Blackhorse Avenue Dublin 7 D07N6V2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "2cd743d2-cd4c-4ec7-8e3c-45622f838723",
+        "site_location_latitude": 53.365447,
+        "site_location_longitude": -6.320600183
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2368559579,
+          53.35855493
+        ],
+        "type": "Point"
+      },
+      "id": 361,
+      "properties": {
+        "GlobalID": "6f93267a-66f3-4316-b1a5-c5f9139b528e",
+        "OBJECTID": 361,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-07-23",
+        "derelict_site_description": "Faith Avenue, 20, Dublin 3",
+        "derelict_site_reference_number": "DS1916",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "20 Faith Avenue Dublin 3 D03PP21",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "2f891138-e82d-4c99-a290-b72234faf01b",
+        "site_location_latitude": 53.35855493,
+        "site_location_longitude": -6.2368559579
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2900181934,
+          53.3349251863
+        ],
+        "type": "Point"
+      },
+      "id": 364,
+      "properties": {
+        "GlobalID": "bee04b62-d630-4041-8d26-f7c7625d3a66",
+        "OBJECTID": 364,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 44, Dublin 8",
+        "derelict_site_reference_number": "DS1122",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "44 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3030792b-9332-4c99-aade-ebbedb4b2901",
+        "site_location_latitude": 53.3349251863,
+        "site_location_longitude": -6.2900181934
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2899767403,
+          53.3350202924
+        ],
+        "type": "Point"
+      },
+      "id": 370,
+      "properties": {
+        "GlobalID": "210b310b-fc92-49b5-89d5-facfc2096617",
+        "OBJECTID": 370,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 46, Dublin 8",
+        "derelict_site_reference_number": "DS1124",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "46 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "316e7f28-9bad-4ae1-8151-0bd614121ce4",
+        "site_location_latitude": 53.3350202924,
+        "site_location_longitude": -6.2899767403
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.296121522,
+          53.3480199
+        ],
+        "type": "Point"
+      },
+      "id": 379,
+      "properties": {
+        "GlobalID": "18a37ef1-88b4-4ec8-9548-7274f8d3fa70",
+        "OBJECTID": 379,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2019-08-07",
+        "derelict_site_description": "Conyngham Road, site at 10-13, Dublin 8 (Protected Structures facades of 10-12)",
+        "derelict_site_reference_number": "DS040",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "10 Conyngham Road Dublin 8~|~11 Conyngham Road Dublin 8~|~12 Conyngham Road Dublin 8~|~13 Conyngham Road Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "34ea67e7-5382-4cc9-9ebf-767ec87f1957",
+        "site_location_latitude": 53.3480199,
+        "site_location_longitude": -6.296121522
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.312619812,
+          53.34771541
+        ],
+        "type": "Point"
+      },
+      "id": 388,
+      "properties": {
+        "GlobalID": "e2013cc1-6eb8-489f-b192-614b0fd259b6",
+        "OBJECTID": 388,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2015-06-04",
+        "derelict_site_description": "Chapelizod Road, 2A/B/C, Dublin 8",
+        "derelict_site_reference_number": "DS887",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "2B Chapelizod Road Dublin 8~|~2C Chapelizod Road Dublin 8~|~2A Chapelizod Road Dublin 8 D08YTE5~|~2 Chapelizod Road Dublin 8 D08HX9A",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "38120d15-3448-41eb-8b58-faf3a0cd58d0",
+        "site_location_latitude": 53.34771541,
+        "site_location_longitude": -6.312619812
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.269279929,
+          53.3307252899
+        ],
+        "type": "Point"
+      },
+      "id": 398,
+      "properties": {
+        "GlobalID": "9b2a47a1-0509-46ac-8277-cb765075b659",
+        "OBJECTID": 398,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2023-06-15",
+        "derelict_site_description": "Walworth Road, 5, Portobello, Dublin 8",
+        "derelict_site_reference_number": "DS1669",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Walworth Road Dublin 8 D08Y7C7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3b3e9df4-aa19-4064-898c-5ab44f9f7247",
+        "site_location_latitude": 53.3307252899,
+        "site_location_longitude": -6.269279929
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.308468744,
+          53.3336332699
+        ],
+        "type": "Point"
+      },
+      "id": 399,
+      "properties": {
+        "GlobalID": "1a0c2871-dac7-4242-a921-02338dcc3b23",
+        "OBJECTID": 399,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2026-03-30",
+        "derelict_site_description": "Mourne Road, 492, Crumlin, Dublin 12",
+        "derelict_site_reference_number": "DS1693",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "492 Mourne Road Dublin 12 D12NA71",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3baf2f65-a101-450b-9066-e7cab58e99df",
+        "site_location_latitude": 53.3336332699,
+        "site_location_longitude": -6.308468744
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.250196712,
+          53.35287514
+        ],
+        "type": "Point"
+      },
+      "id": 402,
+      "properties": {
+        "GlobalID": "bbaec821-21c1-434d-a405-e3877620bc2a",
+        "OBJECTID": 402,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-02-06",
+        "derelict_site_description": "Beaver Street, 7/8, Dublin 1",
+        "derelict_site_reference_number": "DS1547",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "7/8 BEAVER STREET DUBLIN 1 D01WF59  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "3c1ca953-e51d-412c-8faf-5266a9c6f208",
+        "site_location_latitude": 53.35287514,
+        "site_location_longitude": -6.250196712
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2244286409,
+          53.34007247
+        ],
+        "type": "Point"
+      },
+      "id": 432,
+      "properties": {
+        "GlobalID": "337c4a80-6db4-403e-b57f-3b0cad63eb1e",
+        "OBJECTID": 432,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-07-10",
+        "derelict_site_description": "Irishtown Road/Rosary Terrace, Site on laneway, Dublin 4",
+        "derelict_site_reference_number": "DS1744",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "4790e4f6-d2ad-473f-8939-07a76ae1a685",
+        "site_location_latitude": 53.34007247,
+        "site_location_longitude": -6.2244286409
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.270852983,
+          53.3315352999
+        ],
+        "type": "Point"
+      },
+      "id": 438,
+      "properties": {
+        "GlobalID": "fbca1780-5687-4d8b-803c-e1fa600613a3",
+        "OBJECTID": 438,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2026-04-08",
+        "derelict_site_description": "Avenue Road, Site to rear of 43 Bloomfield Avenue, Dublin 8",
+        "derelict_site_reference_number": "DS1296",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "49a66ff0-de2b-47c6-ace8-fdc31dbf04f6",
+        "site_location_latitude": 53.3315352999,
+        "site_location_longitude": -6.270852983
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.172477765,
+          53.38181502
+        ],
+        "type": "Point"
+      },
+      "id": 461,
+      "properties": {
+        "GlobalID": "880033bf-cc0a-4e79-a10f-98dd0417a7a8",
+        "OBJECTID": 461,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2017-10-19",
+        "derelict_site_description": "Rathmore Park, 49, Raheny, Dublin 5",
+        "derelict_site_reference_number": "DS1012",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "49 Rathmore Park Dublin 5 D05K853",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "53438e11-4f75-4025-9904-58211318bb52",
+        "site_location_latitude": 53.38181502,
+        "site_location_longitude": -6.172477765
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2930404601,
+          53.3341982357
+        ],
+        "type": "Point"
+      },
+      "id": 470,
+      "properties": {
+        "GlobalID": "ab5150d3-cf2c-4a3f-b650-8d6a4b1b31e8",
+        "OBJECTID": 470,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-01-06",
+        "derelict_site_description": "South Circular Road, 355-361, Dublin 8 (façade Protected)",
+        "derelict_site_reference_number": "DS928",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "361 South Circular Road Dublin 8~|~359 South Circular Road Dublin 8~|~357 South Circular Road Dublin 8~|~355 SOUTH CIRCULAR ROAD DUBLIN 8 D08TX20  ~|~360 South Circular Road Dublin 8 D08K6Y1~|~358 South Circular Road Dublin 8 D08A8H7~|~356 South Circular Road Dublin 8 D08PP9Y",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "5687d830-bcc4-42c2-816e-378a3c6c6bf4",
+        "site_location_latitude": 53.3341982357,
+        "site_location_longitude": -6.2930404601
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2802564138,
+          53.3282982125
+        ],
+        "type": "Point"
+      },
+      "id": 471,
+      "properties": {
+        "GlobalID": "76814279-a132-4ed4-bbd5-87f3734aab58",
+        "OBJECTID": 471,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2015-04-29",
+        "derelict_site_description": "Greenmount Industrial Estate, Unit 4, D12",
+        "derelict_site_reference_number": "DS884",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "UNIT 4 GREENMOUNT INDUSTRIAL ESTATE GREENMOUNT AVENUE DUBLIN 12 D12K883",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "572377b3-e06e-41af-9d91-63e30f07747e",
+        "site_location_latitude": 53.3282982125,
+        "site_location_longitude": -6.2802564138
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.28114143,
+          53.34570217
+        ],
+        "type": "Point"
+      },
+      "id": 474,
+      "properties": {
+        "GlobalID": "6ab90b95-dc1a-4f3b-994f-85b3a6f857f4",
+        "OBJECTID": 474,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2024-02-23",
+        "derelict_site_description": "Bridgefoot Street 39-40, Dublin 8",
+        "derelict_site_reference_number": "DS1363",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "39/40 BRIDGEFOOT STREET DUBLIN 8 D08T6F7  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "579b5065-11a7-461c-aa9f-b998d8d53c8b",
+        "site_location_latitude": 53.34570217,
+        "site_location_longitude": -6.28114143
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.292093058,
+          53.33420651
+        ],
+        "type": "Point"
+      },
+      "id": 505,
+      "properties": {
+        "GlobalID": "9e0a1f70-da01-47d2-8d3a-0378e2623943",
+        "OBJECTID": 505,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2023-02-13",
+        "derelict_site_description": "South Circular Road, 414-416, Dublin 8",
+        "derelict_site_reference_number": "DS1336",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "414 South Circular Road Dublin 8~|~415 South Circular Road Dublin 8~|~416 SOUTH CIRCULAR ROAD DUBLIN 8 D08RF25  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "612e4a0b-fd19-4517-ac29-5b38343336d6",
+        "site_location_latitude": 53.33420651,
+        "site_location_longitude": -6.292093058
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3063243123,
+          53.3280496732
+        ],
+        "type": "Point"
+      },
+      "id": 512,
+      "properties": {
+        "GlobalID": "aa10ed41-3105-4306-b120-53af619ef691",
+        "OBJECTID": 512,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2024-03-11",
+        "derelict_site_description": "Crumlin Road, 201, Crumlin, Dublin 12",
+        "derelict_site_reference_number": "DS1644",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "201 Crumlin Road Dublin 12 D12HT21",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "6338eb74-05d1-4e7b-b5a0-6ea7ac0eb179",
+        "site_location_latitude": 53.3280496732,
+        "site_location_longitude": -6.3063243123
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2899145997,
+          53.3351413624
+        ],
+        "type": "Point"
+      },
+      "id": 514,
+      "properties": {
+        "GlobalID": "ed57cecb-4abe-4645-aeec-1362777fd368",
+        "OBJECTID": 514,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 48/48A, Dublin 8",
+        "derelict_site_reference_number": "DS1126",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "48A Dolphin's Barn Street Dublin 8~|~48B Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "63a693d6-d4e4-465a-b0eb-87e103d214b9",
+        "site_location_latitude": 53.3351413624,
+        "site_location_longitude": -6.2899145997
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2900026344,
+          53.3349729332
+        ],
+        "type": "Point"
+      },
+      "id": 516,
+      "properties": {
+        "GlobalID": "a1ccfc9f-770b-4e6c-882e-4558eb40da64",
+        "OBJECTID": 516,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 45, Dublin 8",
+        "derelict_site_reference_number": "DS1123",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "45 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "64ad6e40-3b3a-47b2-900a-4dce9f0e7942",
+        "site_location_latitude": 53.3349729332,
+        "site_location_longitude": -6.2900026344
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.291380167,
+          53.3428407799
+        ],
+        "type": "Point"
+      },
+      "id": 519,
+      "properties": {
+        "GlobalID": "090e0cc5-878a-4641-862c-0b239ef108d7",
+        "OBJECTID": 519,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2023-02-23",
+        "derelict_site_description": "James's Street, 23, Dublin 8 (Protected Structure)",
+        "derelict_site_reference_number": "DS1161",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "23 James's Street Dublin 8 D08V3P2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "6654f83c-9b2d-4e9c-87c6-c34911993aff",
+        "site_location_latitude": 53.3428407799,
+        "site_location_longitude": -6.291380167
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.275328937,
+          53.3291122399
+        ],
+        "type": "Point"
+      },
+      "id": 521,
+      "properties": {
+        "GlobalID": "ddff44ac-5cd7-4ccd-abc3-4904356ef26e",
+        "OBJECTID": 521,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2014-04-01",
+        "derelict_site_description": "Wharton Terrace, Wharton Hall, Harold's Cross, Dublin 6W",
+        "derelict_site_reference_number": "DS851",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "Wharton Hall Harolds Cross Dublin 6W D6WW838",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "66d681f5-4626-4f2d-8037-976435a23570",
+        "site_location_latitude": 53.3291122399,
+        "site_location_longitude": -6.275328937
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2749442542,
+          53.3324638815
+        ],
+        "type": "Point"
+      },
+      "id": 530,
+      "properties": {
+        "GlobalID": "c737ba97-8607-4564-b1ed-dd681592f068",
+        "OBJECTID": 530,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2024-06-11",
+        "derelict_site_description": "Clanbrassil Street Lower, 53, Dublin 8",
+        "derelict_site_reference_number": "DS1280B",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "53 Clanbrassil Street Lower Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "6ad16b97-c642-4826-9219-f540011a73ef",
+        "site_location_latitude": 53.3324638815,
+        "site_location_longitude": -6.2749442542
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.261057792,
+          53.36276978
+        ],
+        "type": "Point"
+      },
+      "id": 532,
+      "properties": {
+        "GlobalID": "5f11bcf3-0253-41ed-a1e8-72fbd0fe9f54",
+        "OBJECTID": 532,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-08-20",
+        "derelict_site_description": "Saint Patrick's Road, 5, Dublin 9",
+        "derelict_site_reference_number": "DS1844",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Saint Patrick's Road Dublin 5 D09N2R0",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "6addc5c8-57d7-4816-bbec-03d4a53b37de",
+        "site_location_latitude": 53.36276978,
+        "site_location_longitude": -6.261057792
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.239423188,
+          53.35787423
+        ],
+        "type": "Point"
+      },
+      "id": 539,
+      "properties": {
+        "GlobalID": "0e2b4c8e-a62d-4b13-84c0-2cc2b5ffea7b",
+        "OBJECTID": 539,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-06-27",
+        "derelict_site_description": "Spencer Place, 4, North Strand, Dublin 3",
+        "derelict_site_reference_number": "DS1218",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "4 Spencer Place Dublin 3 D03X651",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "6d0e2885-dbce-4120-9f6a-a78695c5382e",
+        "site_location_latitude": 53.35787423,
+        "site_location_longitude": -6.239423188
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.1756283449,
+          53.3845918899
+        ],
+        "type": "Point"
+      },
+      "id": 563,
+      "properties": {
+        "GlobalID": "89e2736b-9bf6-4f35-a6c4-cc0a0702dd57",
+        "OBJECTID": 563,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2025-10-13",
+        "derelict_site_description": "Raheny Road, 91, Raheny, Dublin 5",
+        "derelict_site_reference_number": "DS1562",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "91 Raheny Road Dublin 5 D05F9W2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "73a25620-7a1f-4aa4-9433-9ec03c1af7d7",
+        "site_location_latitude": 53.3845918899,
+        "site_location_longitude": -6.1756283449
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.300362061,
+          53.3184614399
+        ],
+        "type": "Point"
+      },
+      "id": 565,
+      "properties": {
+        "GlobalID": "5beb82d0-128a-4ce0-a34e-4cf79ce91184",
+        "OBJECTID": 565,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-01-22",
+        "derelict_site_description": "Clonard Road, 607, Kimmage, Dublin 12",
+        "derelict_site_reference_number": "DS2062",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "607 Clonard Road Dublin 12 D12F2D0",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "740765f8-7de2-43df-a517-2fe4cda6c423",
+        "site_location_latitude": 53.3184614399,
+        "site_location_longitude": -6.300362061
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.299987587,
+          53.3176902399
+        ],
+        "type": "Point"
+      },
+      "id": 571,
+      "properties": {
+        "GlobalID": "87e8dbf6-21fe-496f-807b-69a2cbb00293",
+        "OBJECTID": 571,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2023-03-06",
+        "derelict_site_description": "Clonard Road, 398/398A, Kimmage, Dublin 12",
+        "derelict_site_reference_number": "DS1526",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "398 Clonard Road Dublin 12 D12H5P2~|~398A Clonard Road Dublin 12 D12K663",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "7703debd-c6f2-47ef-b0ff-31bed1e5fe31",
+        "site_location_latitude": 53.3176902399,
+        "site_location_longitude": -6.299987587
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.236036233,
+          53.3891911299
+        ],
+        "type": "Point"
+      },
+      "id": 596,
+      "properties": {
+        "GlobalID": "ba2cf987-200c-4f8e-b3ad-999a599f3ca6",
+        "OBJECTID": 596,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2025-09-16",
+        "derelict_site_description": "Coolgariff Road, 32, Beaumont, Dublin 9",
+        "derelict_site_reference_number": "DS1982",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "32 Coolgariff Road Dublin 9 D09AE62",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "7cdf3b6f-8c02-448e-90bf-ec482378e30e",
+        "site_location_latitude": 53.3891911299,
+        "site_location_longitude": -6.236036233
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3247206407,
+          53.3368225631
+        ],
+        "type": "Point"
+      },
+      "id": 603,
+      "properties": {
+        "GlobalID": "9607e5b5-c6a7-4125-ad86-22e2279a5a4a",
+        "OBJECTID": 603,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2023-06-19",
+        "derelict_site_description": "Tyrconnell Road, 129, The Grotto, Inchicore, Dublin 8",
+        "derelict_site_reference_number": "DS1601",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "129 Tyrconnell Road Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "7ed8f1f7-20f5-45db-b017-e76704690e57",
+        "site_location_latitude": 53.3368225631,
+        "site_location_longitude": -6.3247206407
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.320247607,
+          53.3172504799
+        ],
+        "type": "Point"
+      },
+      "id": 609,
+      "properties": {
+        "GlobalID": "676688b6-48d5-431a-a3a9-9b819fcf9501",
+        "OBJECTID": 609,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2024-11-11",
+        "derelict_site_description": "Moeran Road & Cromwellsfort Road (Site to Rear), Walkinstown, Dublin 12",
+        "derelict_site_reference_number": "DS1412",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8017e935-9bab-41cf-9bb5-3c7a8730f9e6",
+        "site_location_latitude": 53.3172504799,
+        "site_location_longitude": -6.320247607
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.290038617,
+          53.3348764499
+        ],
+        "type": "Point"
+      },
+      "id": 610,
+      "properties": {
+        "GlobalID": "406c0739-2cfa-4e1f-8d89-6dba5f1de168",
+        "OBJECTID": 610,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 43, Dublin 8",
+        "derelict_site_reference_number": "DS1518",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "43 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8062dd91-e5fa-437f-9e45-74fc395fe72f",
+        "site_location_latitude": 53.3348764499,
+        "site_location_longitude": -6.290038617
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.28994803,
+          53.33506563
+        ],
+        "type": "Point"
+      },
+      "id": 614,
+      "properties": {
+        "GlobalID": "14ac58cb-b5fe-4b8e-9f94-bb97037b06fa",
+        "OBJECTID": 614,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 47, Dublin 8",
+        "derelict_site_reference_number": "DS1125",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "47 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "80d2705d-e54d-45c6-b909-133d3e2ab76c",
+        "site_location_latitude": 53.33506563,
+        "site_location_longitude": -6.28994803
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2099024289,
+          53.3800239199
+        ],
+        "type": "Point"
+      },
+      "id": 616,
+      "properties": {
+        "GlobalID": "80988681-de4a-44cb-9588-5d55d5c990dd",
+        "OBJECTID": 616,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2024-11-27",
+        "derelict_site_description": "Artane Cottages Lower 12, Malahide Road, Dublin 5",
+        "derelict_site_reference_number": "DS1287",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "12 Artane Cottages Lower Malahide Road Dublin 5 D05V4Y8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "813aa520-c508-4af8-8567-034883b0b4a5",
+        "site_location_latitude": 53.3800239199,
+        "site_location_longitude": -6.2099024289
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.266808149,
+          53.37217483
+        ],
+        "type": "Point"
+      },
+      "id": 617,
+      "properties": {
+        "GlobalID": "9020644f-1d04-47ef-955d-b3782cca1c0e",
+        "OBJECTID": 617,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-07-04",
+        "derelict_site_description": "Botanic Avenue, 19, Glasnevin, Dublin 9",
+        "derelict_site_reference_number": "DS1563",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "19 Botanic Avenue Dublin 9 D09A6W8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8145bcbc-8d08-4e9a-9820-8cd7763e17f7",
+        "site_location_latitude": 53.37217483,
+        "site_location_longitude": -6.266808149
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.28984706,
+          53.33529322
+        ],
+        "type": "Point"
+      },
+      "id": 618,
+      "properties": {
+        "GlobalID": "49ad2d39-533c-434d-b674-305a99c47085",
+        "OBJECTID": 618,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 50, Dublin 8",
+        "derelict_site_reference_number": "DS1128",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "50 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8198fba9-469c-4700-af47-7ab00b43329f",
+        "site_location_latitude": 53.33529322,
+        "site_location_longitude": -6.28984706
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.25752294,
+          53.36636433
+        ],
+        "type": "Point"
+      },
+      "id": 622,
+      "properties": {
+        "GlobalID": "315d2855-ca3e-44de-a234-95a77b8d03a0",
+        "OBJECTID": 622,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2022-11-24",
+        "derelict_site_description": "Glenarm Avenue, 5, Dublin 9",
+        "derelict_site_reference_number": "DS1066",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "5 Glenarm Avenue, Dublin 9, D09 E8H7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "82e13471-402d-47e9-9d31-e253d98145e1",
+        "site_location_latitude": 53.36636433,
+        "site_location_longitude": -6.25752294
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.3149031026,
+          53.340594705
+        ],
+        "type": "Point"
+      },
+      "id": 631,
+      "properties": {
+        "GlobalID": "633a9708-d569-46f9-8c1a-7ed383889dcf",
+        "OBJECTID": 631,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2023-05-11",
+        "derelict_site_description": "Emmet Road, 105-107, Former Horse & Jockey Pub, Dublin 8",
+        "derelict_site_reference_number": "DS1105",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "~|~~|~",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "854463af-f34c-4239-b8d3-c563b843e81d",
+        "site_location_latitude": 53.340594705,
+        "site_location_longitude": -6.3149031026
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.278855814,
+          53.3498636999
+        ],
+        "type": "Point"
+      },
+      "id": 635,
+      "properties": {
+        "GlobalID": "89718d8e-0751-4f2c-8bc3-97ede101f847",
+        "OBJECTID": 635,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2020-07-14",
+        "derelict_site_description": "North King Street, 86, Smithfield, Dublin 7",
+        "derelict_site_reference_number": "DS580",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "86 King Street North Dublin 7",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "86c36176-1750-4cb9-8465-d11598c56983",
+        "site_location_latitude": 53.3498636999,
+        "site_location_longitude": -6.278855814
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2898849901,
+          53.3352093262
+        ],
+        "type": "Point"
+      },
+      "id": 651,
+      "properties": {
+        "GlobalID": "7e1b2c3a-fcd9-4303-b7f0-cad80c363325",
+        "OBJECTID": 651,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2021-05-25",
+        "derelict_site_description": "Dolphin's Barn Street, 49, Dublin 8",
+        "derelict_site_reference_number": "DS1127",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "49 Dolphin's Barn Street Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8be805bc-6a86-4c3c-a164-d8b7545a6a31",
+        "site_location_latitude": 53.3352093262,
+        "site_location_longitude": -6.2898849901
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.240732458,
+          53.35946506
+        ],
+        "type": "Point"
+      },
+      "id": 656,
+      "properties": {
+        "GlobalID": "ddbf46f7-34ea-4570-a6d0-7f978750257f",
+        "OBJECTID": 656,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-04-14",
+        "derelict_site_description": "Annesley Place, 2, North Strand, Dublin 3",
+        "derelict_site_reference_number": "DS1005",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "2 ANNESLEY PLACE DUBLIN 3 D03T620  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "8d486046-6834-4e63-a35a-84b167c563b8",
+        "site_location_latitude": 53.35946506,
+        "site_location_longitude": -6.240732458
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.237689358,
+          53.3228594199
+        ],
+        "type": "Point"
+      },
+      "id": 665,
+      "properties": {
+        "GlobalID": "e56aa05e-180a-43c1-a104-252cf66b7b70",
+        "OBJECTID": 665,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2024-07-30",
+        "derelict_site_description": "Morehampton Road, 132, Donnybrook, Dublin 4",
+        "derelict_site_reference_number": "DS1616",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "132 Morehampton Road, Dublin 4,  D04 K2P5",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "906fe110-7c6f-4256-96b6-5d6ab5ecab40",
+        "site_location_latitude": 53.3228594199,
+        "site_location_longitude": -6.237689358
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.233677188,
+          53.3551543599
+        ],
+        "type": "Point"
+      },
+      "id": 672,
+      "properties": {
+        "GlobalID": "b2b08720-35bd-42c9-a3f3-1945d77ecb20",
+        "OBJECTID": 672,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-09-14",
+        "derelict_site_description": "Shelmalier Road, 53, East Wall, Dublin 3",
+        "derelict_site_reference_number": "DS1386",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "53 Shelmalier Road Dublin 3 D03X512",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "92801fcb-d55c-487c-bc53-d3b5ada37722",
+        "site_location_latitude": 53.3551543599,
+        "site_location_longitude": -6.233677188
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.302931085,
+          53.34065614
+        ],
+        "type": "Point"
+      },
+      "id": 683,
+      "properties": {
+        "GlobalID": "3ee235f5-6570-4e1d-82b1-52756c961e5c",
+        "OBJECTID": 683,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2024-09-26",
+        "derelict_site_description": "Old Kilmainham, 72-74, Carrigan's Pub, Dublin 8",
+        "derelict_site_reference_number": "DS1373",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "72 OLD KILMAINHAM DUBLIN 8 D08K2E4  ~|~74 OLD KILMAINHAM DUBLIN 8 D08A6CP  ~|~73 Old Kilmainham Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "96a78616-63c7-4ff0-8c1d-04a957a517f0",
+        "site_location_latitude": 53.34065614,
+        "site_location_longitude": -6.302931085
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.26561811,
+          53.3396877599
+        ],
+        "type": "Point"
+      },
+      "id": 703,
+      "properties": {
+        "GlobalID": "238b4920-c044-4173-920c-ac8d3daf83e2",
+        "OBJECTID": 703,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2023-11-01",
+        "derelict_site_description": "Aungier Street, 25, Dublin 2 (Protected Struture)",
+        "derelict_site_reference_number": "DS1311",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "25 AUNGIER STREET DUBLIN 2 D02X277  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "9c423b76-3dad-4eb6-a874-dc76ad68a655",
+        "site_location_latitude": 53.3396877599,
+        "site_location_longitude": -6.26561811
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.266821906,
+          53.35453586
+        ],
+        "type": "Point"
+      },
+      "id": 719,
+      "properties": {
+        "GlobalID": "40c213ba-3141-4fe7-b892-c5a0f8021ddf",
+        "OBJECTID": 719,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-09-02",
+        "derelict_site_description": "Dorset Street Upper, 118, Dublin 1",
+        "derelict_site_reference_number": "DS2071",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "118 Dorset Street Upper, Dublin 1, D01 F2H7~|~APARTMENT 2 118 DORSET STREET UPPER DUBLIN 1 D01Y566~|~APARTMENT 1 118 DORSET STREET UPPER DUBLIN 1 D01DX07",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a110132b-6e8f-4dec-b046-0796cc84a79a",
+        "site_location_latitude": 53.35453586,
+        "site_location_longitude": -6.266821906
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2129801975,
+          53.3257291731
+        ],
+        "type": "Point"
+      },
+      "id": 720,
+      "properties": {
+        "GlobalID": "a7b68b54-4034-4ad8-afad-10702eb13bba",
+        "OBJECTID": 720,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2020-08-18",
+        "derelict_site_description": "Park Avenue, 40, Sandymount, Dublin 4",
+        "derelict_site_reference_number": "DS1263",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "40 Park Avenue Dublin 4 D04RP74",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a12b91ce-5e12-48da-8266-9a2dbe1bf227",
+        "site_location_latitude": 53.3257291731,
+        "site_location_longitude": -6.2129801975
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.24031862,
+          53.36287855
+        ],
+        "type": "Point"
+      },
+      "id": 724,
+      "properties": {
+        "GlobalID": "bab06e8d-6488-47e6-b6ee-ec26e3410b07",
+        "OBJECTID": 724,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2026-04-24",
+        "derelict_site_description": "Fairview Strand, 47-49 (Players Lounge), Dublin 3",
+        "derelict_site_reference_number": "DS1017",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "47/49 Fairview Strand Dublin 3 D03E271  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a220fcb9-83a6-4a8b-8ccd-22ce0f5a0bda",
+        "site_location_latitude": 53.36287855,
+        "site_location_longitude": -6.24031862
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2906448,
+          53.3638377
+        ],
+        "type": "Point"
+      },
+      "id": 729,
+      "properties": {
+        "GlobalID": "6fc39da6-e74d-48d2-a7d9-c30265694235",
+        "OBJECTID": 729,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-05-27",
+        "derelict_site_description": "Quarry Road, 122, Cabra, Dublin 7",
+        "derelict_site_reference_number": "DS1694",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "122 Quarry Road, Cabra, Dublin 7, D07 C7R2~|~122 Quarry Road Dublin 7 D07C7R2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a3a70b33-2051-4f4f-9a6e-771422eee0e6",
+        "site_location_latitude": 53.3638377,
+        "site_location_longitude": -6.2906448
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.302862474,
+          53.3409632199
+        ],
+        "type": "Point"
+      },
+      "id": 730,
+      "properties": {
+        "GlobalID": "d85a1733-c1f8-4ccb-b968-ee6cdf034446",
+        "OBJECTID": 730,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2022-08-12",
+        "derelict_site_description": "Shannon Terrace, opp 1-2 & adj. to 5 Auburn Terrace, Old Kilmainham, D.8.",
+        "derelict_site_reference_number": "DS1634A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a3a75eed-c63e-4186-aa75-5ad3a3985b6f",
+        "site_location_latitude": 53.3409632199,
+        "site_location_longitude": -6.302862474
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.277475031,
+          53.3143176199
+        ],
+        "type": "Point"
+      },
+      "id": 731,
+      "properties": {
+        "GlobalID": "77bd5aa9-5f2e-4540-9122-8b962c70460c",
+        "OBJECTID": 731,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2026-04-13",
+        "derelict_site_description": "Coulson Avenue, 15, Rathmines, Dublin 6",
+        "derelict_site_reference_number": "DS2116",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "15 Coulson Avenue Dublin 6 D06FV56  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a3aa2d20-8d82-4d5f-99a1-db60c0cc3fe8",
+        "site_location_latitude": 53.3143176199,
+        "site_location_longitude": -6.277475031
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.231108,
+          53.330459
+        ],
+        "type": "Point"
+      },
+      "id": 733,
+      "properties": {
+        "GlobalID": "e2c861ba-11bf-48b6-a55b-b9d30d492aa2",
+        "OBJECTID": 733,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2026-07-03",
+        "derelict_site_description": "Estate Cottages, 6, Shelbourne Road, Dublin 4",
+        "derelict_site_reference_number": "DS2045",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 Estate Cottages Shelbourne Road Dublin 4 D04F6Y1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a4b71809-9aaa-4918-ac99-1e4dcf36ca50",
+        "site_location_latitude": 53.330459,
+        "site_location_longitude": -6.231108
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.257819729,
+          53.34567051
+        ],
+        "type": "Point"
+      },
+      "id": 743,
+      "properties": {
+        "GlobalID": "799c52c9-06dd-41b8-8be6-244724f5cb51",
+        "OBJECTID": 743,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2024-09-24",
+        "derelict_site_description": "College Street, 6, Dublin 2",
+        "derelict_site_reference_number": "DS1850",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "6 COLLEGE STREET DUBLIN 2 D02HX59",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "a89d482b-cff1-4618-b499-4eea0921ad2b",
+        "site_location_latitude": 53.34567051,
+        "site_location_longitude": -6.257819729
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2432873219,
+          53.35175223
+        ],
+        "type": "Point"
+      },
+      "id": 751,
+      "properties": {
+        "GlobalID": "688e277f-5b5e-4014-a752-83acb651a284",
+        "OBJECTID": 751,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-05-23",
+        "derelict_site_description": "Emerald Street, 15/16, Dublin 1",
+        "derelict_site_reference_number": "DS595",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "15/16 Emerald Street Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "aac7bbd9-f39b-44a0-a011-6988ffab4e9e",
+        "site_location_latitude": 53.35175223,
+        "site_location_longitude": -6.2432873219
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2126397379,
+          53.3941845299
+        ],
+        "type": "Point"
+      },
+      "id": 780,
+      "properties": {
+        "GlobalID": "064dc2ba-98d8-4f92-aa95-8b1a300bf7a2",
+        "OBJECTID": 780,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2024-04-05",
+        "derelict_site_description": "Apollo Way, 33, Coolock, Dublin 5",
+        "derelict_site_reference_number": "DS1572",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "33 Apollo Way D05XR81 Dublin 5",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "b3492106-93ef-4a80-8f68-679220ce1645",
+        "site_location_latitude": 53.3941845299,
+        "site_location_longitude": -6.2126397379
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2945955789,
+          53.3364505699
+        ],
+        "type": "Point"
+      },
+      "id": 783,
+      "properties": {
+        "GlobalID": "f8517530-7cb2-45f7-8c9a-d2dbdae12074",
+        "OBJECTID": 783,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2024-07-15",
+        "derelict_site_description": "St Anthony's Road, 15a, Dublin 8",
+        "derelict_site_reference_number": "DS1859",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "15A Saint Anthony's Road Dublin 8 D08VPW5",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "b3b43d4f-5d75-4019-b9b5-3c9daae4ea2c",
+        "site_location_latitude": 53.3364505699,
+        "site_location_longitude": -6.2945955789
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2645369649,
+          53.35707733
+        ],
+        "type": "Point"
+      },
+      "id": 791,
+      "properties": {
+        "GlobalID": "0eaee654-7dbb-4048-866d-dca63907ba09",
+        "OBJECTID": 791,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-01-14",
+        "derelict_site_description": "Dorset Street Upper, 78, Dublin 1 (Protected)",
+        "derelict_site_reference_number": "DS2172",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "78 Dorset Street Upper, Dublin 1, D01 W659",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "b5d6d3b5-7351-4393-86c0-e061094909aa",
+        "site_location_latitude": 53.35707733,
+        "site_location_longitude": -6.2645369649
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.233894982,
+          53.3549784999
+        ],
+        "type": "Point"
+      },
+      "id": 801,
+      "properties": {
+        "GlobalID": "e8bd339f-8037-4040-9983-25c5ef340537",
+        "OBJECTID": 801,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-12-12",
+        "derelict_site_description": "Shelmalier Road, 45, East Wall, Dublin 3",
+        "derelict_site_reference_number": "DS1596",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "45 Shelmalier Road Dublin 3 D03PW92",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "b8dc5197-f1d1-4e5a-a79f-1c522e18f3ba",
+        "site_location_latitude": 53.3549784999,
+        "site_location_longitude": -6.233894982
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.279186159,
+          53.33260535
+        ],
+        "type": "Point"
+      },
+      "id": 802,
+      "properties": {
+        "GlobalID": "3720bcb7-9d50-4892-8bca-6191de4eadfd",
+        "OBJECTID": 802,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2023-03-20",
+        "derelict_site_description": "Brainboro Terrace, 1 (aka 1A & 1B), Dublin 8",
+        "derelict_site_reference_number": "DS1195",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "1 Brainboro Terrace Dublin 8~|~1A Brainboro Terrace Dublin 8 D08PX9H~|~1B Brainboro Terrace Dublin 8 D08Y5C0",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "b9847a49-300c-4167-8453-a19685ec0ba7",
+        "site_location_latitude": 53.33260535,
+        "site_location_longitude": -6.279186159
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.290629277,
+          53.35779449
+        ],
+        "type": "Point"
+      },
+      "id": 813,
+      "properties": {
+        "GlobalID": "8ea76845-86be-41ef-93d6-530c8e3262e8",
+        "OBJECTID": 813,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-02-11",
+        "derelict_site_description": "Everton Avenue, 12, Cabra East, Dublin 7,",
+        "derelict_site_reference_number": "DS1650",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "12 Everton Avenue Dublin 7 D07RX5V",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "c03335fa-bc62-4f97-939b-461659b1dfb4",
+        "site_location_latitude": 53.35779449,
+        "site_location_longitude": -6.290629277
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.279107817,
+          53.33268051
+        ],
+        "type": "Point"
+      },
+      "id": 820,
+      "properties": {
+        "GlobalID": "58e0b6c7-c0a2-4099-869f-e9a569461db1",
+        "OBJECTID": 820,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2025-07-28",
+        "derelict_site_description": "Brainboro Terrace, 4A & 4B, Dublin 8",
+        "derelict_site_reference_number": "DS492",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "4A Brainboro Terrace Dublin 8 D08PC5E~|~4B Brainboro Terrace Dublin 8 D08PC5E ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "c25a4f1b-bd2b-4442-ac25-122f3cf17992",
+        "site_location_latitude": 53.33268051,
+        "site_location_longitude": -6.279107817
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.281712287,
+          53.34298693
+        ],
+        "type": "Point"
+      },
+      "id": 846,
+      "properties": {
+        "GlobalID": "5d0d70dc-647a-46d8-95f6-c4785d922a60",
+        "OBJECTID": 846,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2018-11-28",
+        "derelict_site_description": "Thomas Court, 1-3, Dublin 8",
+        "derelict_site_reference_number": "DS1121A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "1 Thomas Court Dublin 8~|~2 Thomas Court Dublin 8~|~3 Thomas Court Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ca634a9f-9e91-4a35-bfe2-ff1ae503ab71",
+        "site_location_latitude": 53.34298693,
+        "site_location_longitude": -6.281712287
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.311327011,
+          53.3147695599
+        ],
+        "type": "Point"
+      },
+      "id": 865,
+      "properties": {
+        "GlobalID": "0fc6975b-68f4-4d26-a38a-85b8a2f7ced3",
+        "OBJECTID": 865,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2023-06-06",
+        "derelict_site_description": "Royston, 11, Crumlin / Kimmage, Dublin 12",
+        "derelict_site_reference_number": "DS1615",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "11 Royston Dublin 12 D12NE45",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "d1ebb0dc-6892-4f5c-bfbe-7e1ff7219fb1",
+        "site_location_latitude": 53.3147695599,
+        "site_location_longitude": -6.311327011
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.295890142,
+          53.3425058299
+        ],
+        "type": "Point"
+      },
+      "id": 886,
+      "properties": {
+        "GlobalID": "723ff839-16d6-449e-8846-8cf568cbf980",
+        "OBJECTID": 886,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2018-06-01",
+        "derelict_site_description": "Bow Lane West, 1, Kilmainham, Dublin 8",
+        "derelict_site_reference_number": "DS698",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "1 Bow Lane West Dublin 8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "d824aa85-909a-4948-8079-37cf85efdac0",
+        "site_location_latitude": 53.3425058299,
+        "site_location_longitude": -6.295890142
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.255681201,
+          53.3340677699
+        ],
+        "type": "Point"
+      },
+      "id": 901,
+      "properties": {
+        "GlobalID": "1077fc90-b405-498f-9fa3-21a8a3027256",
+        "OBJECTID": 901,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-02-19",
+        "derelict_site_description": "Hatch Street Lower, 32, Dublin 2",
+        "derelict_site_reference_number": "DS1948",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "32 Hatch Street Lower Dublin 2",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "df1ec5b4-fad2-48ac-be14-94636389ab6a",
+        "site_location_latitude": 53.3340677699,
+        "site_location_longitude": -6.255681201
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2790127913,
+          53.3378312498
+        ],
+        "type": "Point"
+      },
+      "id": 922,
+      "properties": {
+        "GlobalID": "9d7abb82-4f0c-4c7d-b204-7dd1dd8ea111",
+        "OBJECTID": 922,
+        "administrative_area_name": "South Central",
+        "date_added_to_the_derelict_sites_register": "2024-11-27",
+        "derelict_site_description": "Chamber Street & Ardee Street, site at Junction of, Dublin 8",
+        "derelict_site_reference_number": "DS791",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "e3fd732b-9fec-465f-8feb-d0b3cafbdb03",
+        "site_location_latitude": 53.3378312498,
+        "site_location_longitude": -6.2790127913
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.259671313,
+          53.3531473
+        ],
+        "type": "Point"
+      },
+      "id": 929,
+      "properties": {
+        "GlobalID": "9926a7a6-9822-4879-9e6e-89805943e984",
+        "OBJECTID": 929,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-04-16",
+        "derelict_site_description": "Parnell Street 93-94, Dublin 1",
+        "derelict_site_reference_number": "DS1909",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "93-94 Parnell Street, Dublin 1, D01 NT63",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "e5a0d861-1d7c-4b88-809d-f868c5719c3e",
+        "site_location_latitude": 53.3531473,
+        "site_location_longitude": -6.259671313
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.301547101,
+          53.36797162
+        ],
+        "type": "Point"
+      },
+      "id": 937,
+      "properties": {
+        "GlobalID": "024ca91a-e6d0-4e9e-8c49-242b43c7ef19",
+        "OBJECTID": 937,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-08-20",
+        "derelict_site_description": "Broombridge Road, 16, Cabra, Dublin 7",
+        "derelict_site_reference_number": "DS1600",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "16 Broombridge Road Dublin 7 D07C9R0",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "Yes",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "e8768140-5fd0-4e3d-b1cf-0b65e0287e8a",
+        "site_location_latitude": 53.36797162,
+        "site_location_longitude": -6.301547101
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.258085829,
+          53.31897376
+        ],
+        "type": "Point"
+      },
+      "id": 943,
+      "properties": {
+        "GlobalID": "b566c7c4-0a43-4c3c-ae53-cc24acc7520d",
+        "OBJECTID": 943,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2017-10-03",
+        "derelict_site_description": "Killeen Road, 48, Rathmines, Dublin 6",
+        "derelict_site_reference_number": "DS536",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "48 Killeen Road Dublin 6 D06E9F9",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "Yes",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ea0fe484-d688-4c21-a500-f5df7f1f65d1",
+        "site_location_latitude": 53.31897376,
+        "site_location_longitude": -6.258085829
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.258015122,
+          53.3637036199
+        ],
+        "type": "Point"
+      },
+      "id": 944,
+      "properties": {
+        "GlobalID": "e47f9abb-0003-4a18-b475-2773843b2695",
+        "OBJECTID": 944,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-09-30",
+        "derelict_site_description": "Drumcondra Road Lower, 48B-50A, Dublin 9",
+        "derelict_site_reference_number": "DS2010",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "48B-50A Drumcondra Road Lower Dublin 9",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "eac91606-9542-4605-a593-783b3302b590",
+        "site_location_latitude": 53.3637036199,
+        "site_location_longitude": -6.258015122
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.243164994,
+          53.3517954099
+        ],
+        "type": "Point"
+      },
+      "id": 953,
+      "properties": {
+        "GlobalID": "fb178f2c-2471-42c3-b0c9-871c3ea6352d",
+        "OBJECTID": 953,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2023-05-23",
+        "derelict_site_description": "Seville Place, 42/43, Dublin 1",
+        "derelict_site_reference_number": "DS594A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "42/43 Seville Place Dublin 1 D01H291",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ed4bca0e-4952-475e-bbf7-870d0ae91b65",
+        "site_location_latitude": 53.3517954099,
+        "site_location_longitude": -6.243164994
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.252054016,
+          53.32397333
+        ],
+        "type": "Point"
+      },
+      "id": 955,
+      "properties": {
+        "GlobalID": "edd0bee5-7996-472d-adfa-41fd3b27ee60",
+        "OBJECTID": 955,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-08-07",
+        "derelict_site_description": "Ranelagh, 89, Dublin 6",
+        "derelict_site_reference_number": "DS2044",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "89 RANELAGH DUBLIN 6 D06K072  ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ede1cfd2-aff2-46a0-ba99-13d120504a14",
+        "site_location_latitude": 53.32397333,
+        "site_location_longitude": -6.252054016
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2516688278,
+          53.3469149914
+        ],
+        "type": "Point"
+      },
+      "id": 959,
+      "properties": {
+        "GlobalID": "632eab6c-dc84-4ac7-87a4-109ba270a7c8",
+        "OBJECTID": 959,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-02-11",
+        "derelict_site_description": "City Quay 1-4 & 25 Moss Street, Dublin 2",
+        "derelict_site_reference_number": "DS1797",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "25 Moss Street Dublin 2~|~1-4 CITY QUAY DUBLIN 2 D02KT32  ~|~",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "ef66b4ea-c9c8-4819-a745-b27e3a29700f",
+        "site_location_latitude": 53.3469149914,
+        "site_location_longitude": -6.2516688278
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.266933647,
+          53.3544372
+        ],
+        "type": "Point"
+      },
+      "id": 963,
+      "properties": {
+        "GlobalID": "37939184-3c35-41f8-8706-c4ebb82b3364",
+        "OBJECTID": 963,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2025-09-02",
+        "derelict_site_description": "Dorset Street Upper, 120, Dublin 1",
+        "derelict_site_reference_number": "DS2073",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "TYPEWRITER SHOP.IE 120 DORSET STREET UPPER DUBLIN 1 D01RX53 ",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "f12963c3-4f23-4642-bffd-df1a1c8abaca",
+        "site_location_latitude": 53.3544372,
+        "site_location_longitude": -6.266933647
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2081793239,
+          53.37456931
+        ],
+        "type": "Point"
+      },
+      "id": 1003,
+      "properties": {
+        "GlobalID": "1466b102-5b02-4c95-88ac-49e5d4ea0b4d",
+        "OBJECTID": 1003,
+        "administrative_area_name": "North Central",
+        "date_added_to_the_derelict_sites_register": "2025-06-25",
+        "derelict_site_description": "Clanawley Road, 2, Clontarf, Dublin 5",
+        "derelict_site_reference_number": "DS1516",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "2 Clanawley Road Dublin 5 D05E516",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "fef4e4bf-6202-4eeb-9874-b5aacfe200db",
+        "site_location_latitude": 53.37456931,
+        "site_location_longitude": -6.2081793239
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.269446531,
+          53.31333196
+        ],
+        "type": "Point"
+      },
+      "id": 1391,
+      "properties": {
+        "GlobalID": "c55bb52a-7a5f-4f6b-ad32-608b650ef6ff",
+        "OBJECTID": 1391,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-10-20",
+        "derelict_site_description": "Templemore Avenue, site to rear of 63 Highfield Road, Dublin 6",
+        "derelict_site_reference_number": "DS864",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "No Address",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "131fc8bc-70c2-41a0-a4b3-89522ca11254",
+        "site_location_latitude": 53.31333196,
+        "site_location_longitude": -6.269446531
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.201697031,
+          53.31368039
+        ],
+        "type": "Point"
+      },
+      "id": 1393,
+      "properties": {
+        "GlobalID": "16eb281d-6c6d-44ad-afd1-e8f19302c797",
+        "OBJECTID": 1393,
+        "administrative_area_name": "South East",
+        "date_added_to_the_derelict_sites_register": "2025-06-19",
+        "derelict_site_description": "Merrion Road, 294, Former Swiftcall Building, Dublin 4",
+        "derelict_site_reference_number": "DS1369",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "294 Merrion Road Dublin 4 D04E8E8",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "36c1ced9-7ffa-4afd-9128-e1a8b1e948de",
+        "site_location_latitude": 53.31368039,
+        "site_location_longitude": -6.201697031
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -6.2648066188,
+          53.3558761013
+        ],
+        "type": "Point"
+      },
+      "id": 1401,
+      "properties": {
+        "GlobalID": "9ac7af3b-105a-431b-8f95-7e93f5419130",
+        "OBJECTID": 1401,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2024-08-27",
+        "derelict_site_description": "Frederick Street North, 17, Dublin 1",
+        "derelict_site_reference_number": "DS1748A",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "17/18 Frederick Street North Dublin 1 D01XP84~|~17 Frederick Street North Dublin 1",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "16/07/2026",
+        "ref_site_master_uuid": "f9832b9b-ff3a-43a1-a2f7-09c665a7de2d",
+        "site_location_latitude": 53.3558761013,
+        "site_location_longitude": -6.2648066188
+      },
+      "type": "Feature"
+    }
+  ],
+  "type": "FeatureCollection"
+}
