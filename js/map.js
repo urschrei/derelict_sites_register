@@ -85,6 +85,45 @@ function syncOverlayLayers() {
   }
 }
 
+// MapLibre paint transitions do not apply to data-driven (per-feature
+// expression) properties such as our extrusion heights, so rises and
+// collapses are driven manually: a requestAnimationFrame loop re-sets the
+// height expression with an eased scale factor each frame.
+const heightAnimations = {};
+
+function activeCase3dLayer() {
+  return casesShape === "squares" ? "cases-squares-3d" : "cases-hexes-3d";
+}
+
+function caseProperty(layerId) {
+  return layerId.includes("hexes") ? "estimate" : "num_active";
+}
+
+function setHeightScale(layerId, scale) {
+  if (!map?.getLayer(layerId)) return;
+  map.setPaintProperty(layerId, "fill-extrusion-height", [
+    "*",
+    ["get", caseProperty(layerId)],
+    METRES_PER_CASE * scale,
+  ]);
+}
+
+function animateHeight(layerId, from, to, duration, onDone) {
+  cancelAnimationFrame(heightAnimations[layerId]);
+  const start = performance.now();
+  const easeOutCubic = (t) => 1 - (1 - t) ** 3;
+  const step = (now) => {
+    const t = Math.min((now - start) / duration, 1);
+    setHeightScale(layerId, from + (to - from) * easeOutCubic(t));
+    if (t < 1) {
+      heightAnimations[layerId] = requestAnimationFrame(step);
+    } else if (onDone) {
+      onDone();
+    }
+  };
+  heightAnimations[layerId] = requestAnimationFrame(step);
+}
+
 // In caseload mode the register points fade back into small neutral
 // reference dots: still present for official-vs-caseload comparison, but
 // no longer carrying the time-on-register encoding.
@@ -97,10 +136,14 @@ function syncSitePaint() {
     map.setPaintProperty("sites", "circle-opacity", 1);
     map.setPaintProperty("sites", "circle-stroke-opacity", 1);
   } else {
+    // Circles render as screen-facing billboards at ground positions, so
+    // under a pitched camera they read as floating blobs among the prisms.
+    // Hide them entirely in the extruded view.
+    const opacity = extrude3d ? 0 : 0.6;
     map.setPaintProperty("sites", "circle-color", t.seriesDim);
     map.setPaintProperty("sites", "circle-radius", 3.5);
-    map.setPaintProperty("sites", "circle-opacity", 0.6);
-    map.setPaintProperty("sites", "circle-stroke-opacity", 0.6);
+    map.setPaintProperty("sites", "circle-opacity", opacity);
+    map.setPaintProperty("sites", "circle-stroke-opacity", opacity);
   }
 }
 
@@ -437,6 +480,7 @@ export function setMapMode(mode) {
   if (radio) radio.checked = true;
   if (popup) popup.remove();
   if (register && extrude3d) {
+    animateHeight(activeCase3dLayer(), 1, 0, 450);
     extrude3d = false;
     document.getElementById("toggle-extrude").checked = false;
     map?.easeTo({ pitch: 0, bearing: 0, duration: 900 });
@@ -488,15 +532,17 @@ function buildCasesLegend() {
     legend.append(row);
   });
 
-  const siteRow = document.createElement("span");
-  siteRow.className = "legend-row";
-  const dot = document.createElement("span");
-  dot.className = "legend-swatch";
-  dot.style.background = tokens().seriesDim;
-  const siteLabel = document.createElement("span");
-  siteLabel.textContent = "site on the register";
-  siteRow.append(dot, siteLabel);
-  legend.append(siteRow);
+  if (!extrude3d) {
+    const siteRow = document.createElement("span");
+    siteRow.className = "legend-row";
+    const dot = document.createElement("span");
+    dot.className = "legend-swatch";
+    dot.style.background = tokens().seriesDim;
+    const siteLabel = document.createElement("span");
+    siteLabel.textContent = "site on the register";
+    siteRow.append(dot, siteLabel);
+    legend.append(siteRow);
+  }
 }
 
 function buildLegend() {
@@ -575,15 +621,36 @@ export function initMap() {
   }
   for (const radio of document.querySelectorAll('input[name="cases-shape"]')) {
     radio.addEventListener("change", (e) => {
+      const previous3d = activeCase3dLayer();
       casesShape = e.target.value;
       if (popup) popup.remove();
-      syncOverlayLayers();
+      if (extrude3d) {
+        // Collapse the outgoing shape, then raise the incoming one.
+        const next3d = activeCase3dLayer();
+        animateHeight(previous3d, 1, 0, 350, () => {
+          setHeightScale(next3d, 0);
+          syncOverlayLayers();
+          animateHeight(next3d, 0, 1, 350);
+        });
+      } else {
+        syncOverlayLayers();
+      }
       buildCasesLegend();
     });
   }
   document.getElementById("toggle-extrude").addEventListener("change", (e) => {
     extrude3d = e.target.checked;
-    syncOverlayLayers();
+    const layer = activeCase3dLayer();
+    if (extrude3d) {
+      setHeightScale(layer, 0);
+      syncOverlayLayers();
+      animateHeight(layer, 0, 1, 800);
+    } else {
+      animateHeight(layer, 1, 0, 450);
+      syncOverlayLayers();
+    }
+    syncSitePaint();
+    buildCasesLegend();
     map.easeTo(
       extrude3d
         ? { pitch: 55, bearing: -15, duration: 900 }

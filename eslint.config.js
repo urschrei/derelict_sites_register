@@ -13,6 +13,8 @@ export default [
         setTimeout: "readonly",
         clearTimeout: "readonly",
         requestAnimationFrame: "readonly",
+        cancelAnimationFrame: "readonly",
+        performance: "readonly",
         d3: "readonly",
         maplibregl: "readonly",
         turf: "readonly",
