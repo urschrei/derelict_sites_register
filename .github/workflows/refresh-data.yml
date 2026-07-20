@@ -1,0 +1,31 @@
+name: Refresh register data
+
+on:
+  schedule:
+    # 00:01 and 12:01 UTC daily
+    - cron: "1 0,12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Fetch latest register data
+        run: python3 scripts/fetch_data.py
+
+      - name: Commit and push if data changed
+        run: |
+          if git diff --quiet -- data/; then
+            echo "No changes to register data"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git commit -m "Update register data ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push
