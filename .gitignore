@@ -1,2 +1,4 @@
 .DS_Store
 node_modules/
+docs/dcc_feature_services.md
+scripts/catalogue_services.py
