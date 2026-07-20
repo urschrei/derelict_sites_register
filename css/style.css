@@ -281,6 +281,47 @@ section {
   text-align: left;
 }
 
+.map-mode {
+  display: flex;
+  gap: 3px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px;
+}
+
+.map-mode label {
+  flex: 1;
+  text-align: center;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.map-mode label:has(input:checked) {
+  background: var(--series-1);
+  color: #ffffff;
+}
+
+.map-mode label:has(input:focus-visible) {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.map-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.map-panel[hidden] {
+  display: none;
+}
+
 .map-subcontrol {
   background: var(--surface-1);
   border: 1px solid var(--border);

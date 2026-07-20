@@ -15,11 +15,84 @@ let currentCaseHexes = null;
 let hexVisible = false;
 let voronoiVisible = false;
 let emphasiseProtected = false;
-let casesVisible = false;
+let mapMode = "register";
 let casesShape = "squares";
 let popup;
 
 const EMPTY = { type: "FeatureCollection", features: [] };
+const FADE_MS = 400;
+
+// Overlay layers cross-fade via paint transitions; visibility is flipped
+// only after a fade to zero completes. `desiredOpacity` guards against a
+// stale timeout hiding a layer that has been faded back in meanwhile.
+const OPACITY_PROP = {
+  hexes: "fill-opacity",
+  voronoi: "line-opacity",
+  "cases-squares": "fill-opacity",
+  "cases-hexes": "fill-opacity",
+};
+const desiredOpacity = {
+  hexes: 0,
+  voronoi: 0,
+  "cases-squares": 0,
+  "cases-hexes": 0,
+};
+
+function fadeLayerTo(id, opacity) {
+  desiredOpacity[id] = opacity;
+  if (!map?.getLayer(id)) return;
+  const prop = OPACITY_PROP[id];
+  if (opacity > 0) {
+    map.setLayoutProperty(id, "visibility", "visible");
+    requestAnimationFrame(() => {
+      if (desiredOpacity[id] > 0) map.setPaintProperty(id, prop, opacity);
+    });
+  } else {
+    map.setPaintProperty(id, prop, 0);
+    setTimeout(() => {
+      if (desiredOpacity[id] === 0 && map.getLayer(id)) {
+        map.setLayoutProperty(id, "visibility", "none");
+      }
+    }, FADE_MS + 100);
+  }
+}
+
+// The layer opacities implied by the current mode and per-mode options.
+function targetOpacities() {
+  const register = mapMode === "register";
+  return {
+    hexes: register && hexVisible ? 0.55 : 0,
+    voronoi: register && voronoiVisible ? 0.7 : 0,
+    "cases-squares": !register && casesShape === "squares" ? 0.55 : 0,
+    "cases-hexes": !register && casesShape === "hexes" ? 0.55 : 0,
+  };
+}
+
+function syncOverlayLayers() {
+  const targets = targetOpacities();
+  for (const [id, opacity] of Object.entries(targets)) {
+    fadeLayerTo(id, opacity);
+  }
+}
+
+// In caseload mode the register points fade back into small neutral
+// reference dots: still present for official-vs-caseload comparison, but
+// no longer carrying the time-on-register encoding.
+function syncSitePaint() {
+  if (!map?.getLayer("sites")) return;
+  const t = tokens();
+  if (mapMode === "register") {
+    map.setPaintProperty("sites", "circle-color", siteColourExpression());
+    map.setPaintProperty("sites", "circle-radius", siteRadiusExpression());
+    map.setPaintProperty("sites", "circle-opacity", 1);
+    map.setPaintProperty("sites", "circle-stroke-opacity", 1);
+  } else {
+    map.setPaintProperty("sites", "circle-color", t.seriesDim);
+    map.setPaintProperty("sites", "circle-radius", 3.5);
+    map.setPaintProperty("sites", "circle-opacity", 0.6);
+    map.setPaintProperty("sites", "circle-stroke-opacity", 0.6);
+  }
+}
 
 function basemapStyle() {
   const t = tokens();
@@ -145,10 +218,11 @@ function addDataLayers() {
     id: "hexes",
     type: "fill",
     source: "hexes",
-    layout: { visibility: hexVisible ? "visible" : "none" },
+    layout: { visibility: "none" },
     paint: {
       "fill-color": hexColourExpression(maxCount),
-      "fill-opacity": 0.55,
+      "fill-opacity": 0,
+      "fill-opacity-transition": { duration: FADE_MS },
       "fill-outline-color": t.surface,
     },
   });
@@ -159,13 +233,11 @@ function addDataLayers() {
     type: "fill",
     source: "cases-squares",
     filter: [">", ["get", "num_active"], 0],
-    layout: {
-      visibility:
-        casesVisible && casesShape === "squares" ? "visible" : "none",
-    },
+    layout: { visibility: "none" },
     paint: {
       "fill-color": caseColourExpression("num_active", currentCases.features),
-      "fill-opacity": 0.55,
+      "fill-opacity": 0,
+      "fill-opacity-transition": { duration: FADE_MS },
       "fill-outline-color": t.surface,
     },
   });
@@ -178,15 +250,14 @@ function addDataLayers() {
     id: "cases-hexes",
     type: "fill",
     source: "cases-hexes",
-    layout: {
-      visibility: casesVisible && casesShape === "hexes" ? "visible" : "none",
-    },
+    layout: { visibility: "none" },
     paint: {
       "fill-color": caseColourExpression(
         "estimate",
         currentCaseHexes?.features ?? []
       ),
-      "fill-opacity": 0.55,
+      "fill-opacity": 0,
+      "fill-opacity-transition": { duration: FADE_MS },
       "fill-outline-color": t.surface,
     },
   });
@@ -196,11 +267,12 @@ function addDataLayers() {
     id: "voronoi",
     type: "line",
     source: "voronoi",
-    layout: { visibility: voronoiVisible ? "visible" : "none" },
+    layout: { visibility: "none" },
     paint: {
       "line-color": t.textMuted,
       "line-width": 1,
-      "line-opacity": 0.7,
+      "line-opacity": 0,
+      "line-opacity-transition": { duration: FADE_MS },
     },
   });
 
@@ -214,8 +286,14 @@ function addDataLayers() {
       "circle-color": siteColourExpression(),
       "circle-stroke-color": t.surface,
       "circle-stroke-width": 1.5,
+      "circle-color-transition": { duration: FADE_MS },
+      "circle-radius-transition": { duration: FADE_MS },
+      "circle-opacity-transition": { duration: FADE_MS },
+      "circle-stroke-opacity-transition": { duration: FADE_MS },
     },
   });
+  syncSitePaint();
+  syncOverlayLayers();
 }
 
 function popupContent(props) {
@@ -275,22 +353,25 @@ function openPopup(feature) {
     .addTo(map);
 }
 
-function syncCaseLayers() {
-  if (!map) return;
-  if (map.getLayer("cases-squares")) {
-    map.setLayoutProperty(
-      "cases-squares",
-      "visibility",
-      casesVisible && casesShape === "squares" ? "visible" : "none"
-    );
-  }
-  if (map.getLayer("cases-hexes")) {
-    map.setLayoutProperty(
-      "cases-hexes",
-      "visibility",
-      casesVisible && casesShape === "hexes" ? "visible" : "none"
-    );
-  }
+// Switch between the register view (points and point-derived overlays) and
+// the caseload view (choropleth with faded reference points). Exported so
+// other interactions, such as the locate button, can force the register
+// view.
+export function setMapMode(mode) {
+  if (mode === mapMode) return;
+  mapMode = mode;
+  const register = mode === "register";
+  document.getElementById("panel-register").hidden = !register;
+  document.getElementById("panel-caseload").hidden = register;
+  document.getElementById("cases-hint").hidden = register;
+  const radio = document.querySelector(
+    `input[name="map-mode"][value="${mode}"]`
+  );
+  if (radio) radio.checked = true;
+  if (!register && popup) popup.remove();
+  syncSitePaint();
+  syncOverlayLayers();
+  buildCasesLegend();
 }
 
 function buildCasesLegend() {
@@ -334,6 +415,16 @@ function buildCasesLegend() {
     row.append(swatch, label);
     legend.append(row);
   });
+
+  const siteRow = document.createElement("span");
+  siteRow.className = "legend-row";
+  const dot = document.createElement("span");
+  dot.className = "legend-swatch";
+  dot.style.background = tokens().seriesDim;
+  const siteLabel = document.createElement("span");
+  siteLabel.textContent = "site on the register";
+  siteRow.append(dot, siteLabel);
+  legend.append(siteRow);
 }
 
 function buildLegend() {
@@ -369,10 +460,10 @@ export function initMap() {
   map.on("load", addDataLayers);
 
   map.on("click", "sites", (e) => {
-    if (e.features?.length) openPopup(e.features[0]);
+    if (mapMode === "register" && e.features?.length) openPopup(e.features[0]);
   });
   map.on("mouseenter", "sites", () => {
-    map.getCanvas().style.cursor = "pointer";
+    if (mapMode === "register") map.getCanvas().style.cursor = "pointer";
   });
   map.on("mouseleave", "sites", () => {
     map.getCanvas().style.cursor = "";
@@ -380,36 +471,23 @@ export function initMap() {
 
   document.getElementById("toggle-hex").addEventListener("change", (e) => {
     hexVisible = e.target.checked;
-    if (map.getLayer("hexes")) {
-      map.setLayoutProperty(
-        "hexes",
-        "visibility",
-        hexVisible ? "visible" : "none"
-      );
-    }
+    syncOverlayLayers();
   });
 
   document.getElementById("toggle-voronoi").addEventListener("change", (e) => {
     voronoiVisible = e.target.checked;
-    if (map.getLayer("voronoi")) {
-      map.setLayoutProperty(
-        "voronoi",
-        "visibility",
-        voronoiVisible ? "visible" : "none"
-      );
-    }
+    syncOverlayLayers();
   });
 
-  document.getElementById("toggle-cases").addEventListener("change", (e) => {
-    casesVisible = e.target.checked;
-    document.getElementById("cases-mode").hidden = !casesVisible;
-    document.getElementById("cases-legend").hidden = !casesVisible;
-    syncCaseLayers();
-  });
+  for (const radio of document.querySelectorAll('input[name="map-mode"]')) {
+    radio.addEventListener("change", (e) => {
+      if (e.target.checked) setMapMode(e.target.value);
+    });
+  }
   for (const radio of document.querySelectorAll('input[name="cases-shape"]')) {
     radio.addEventListener("change", (e) => {
       casesShape = e.target.value;
-      syncCaseLayers();
+      syncOverlayLayers();
       buildCasesLegend();
     });
   }
@@ -418,10 +496,7 @@ export function initMap() {
     .getElementById("toggle-protected")
     .addEventListener("change", (e) => {
       emphasiseProtected = e.target.checked;
-      if (map.getLayer("sites")) {
-        map.setPaintProperty("sites", "circle-color", siteColourExpression());
-        map.setPaintProperty("sites", "circle-radius", siteRadiusExpression());
-      }
+      syncSitePaint();
     });
 
   buildLegend();
@@ -488,9 +563,11 @@ export function refreshMapStyle() {
 
 let userMarker;
 
-// Show the user's position and the nearest site together.
+// Show the user's position and the nearest site together. The result is a
+// register site, so this always returns to the register view.
 export function showNearestSite(userLngLat, feature) {
   if (!map) return;
+  setMapMode("register");
   if (userMarker) userMarker.remove();
   userMarker = new maplibregl.Marker({ color: tokens().series1 })
     .setLngLat(userLngLat)
@@ -513,6 +590,7 @@ export function fitToSites(padding = 70) {
 
 export function focusSite(feature) {
   if (!map) return;
+  setMapMode("register");
   map.flyTo({
     center: feature.geometry.coordinates,
     zoom: Math.max(map.getZoom(), 15),

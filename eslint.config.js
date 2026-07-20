@@ -12,6 +12,7 @@ export default [
         fetch: "readonly",
         setTimeout: "readonly",
         clearTimeout: "readonly",
+        requestAnimationFrame: "readonly",
         d3: "readonly",
         maplibregl: "readonly",
         turf: "readonly",
