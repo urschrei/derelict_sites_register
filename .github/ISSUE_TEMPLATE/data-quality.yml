@@ -1,0 +1,39 @@
+name: Data quality problem
+description: Report a problem with the register data shown on the site
+labels: [data-quality]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The data on this site is retrieved twice daily from Dublin City
+        Council's public feature service. If the problem originates in the
+        council's own register, we cannot fix it here, but reporting it is
+        still useful: it documents the discrepancy.
+  - type: input
+    id: site-reference
+    attributes:
+      label: Site reference
+      description: The reference number of the affected site, if applicable (e.g. DS576)
+      placeholder: DS576
+    validations:
+      required: false
+  - type: dropdown
+    id: problem-type
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - Site is shown in the wrong location
+        - Site details are wrong or out of date
+        - Site is missing from the register
+        - Site appears to be resolved but is still listed
+        - Duplicate entry
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the problem. If you have local knowledge of the site, include what you know and roughly when you observed it.
+    validations:
+      required: true

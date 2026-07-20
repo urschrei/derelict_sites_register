@@ -1,0 +1,25 @@
+name: Technical problem
+description: Report a problem with the site itself (map, table, charts, downloads)
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      description: For example "Firefox 140 on Windows 11" or "Safari on iPhone"
+    validations:
+      required: false
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?
+      description: Screenshots, browser console errors, or other context.
+    validations:
+      required: false
