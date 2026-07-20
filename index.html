@@ -106,6 +106,15 @@
             <input type="checkbox" id="toggle-protected">
             <span>Highlight protected structures</span>
           </label>
+          <label class="filter-check map-toggle">
+            <input type="checkbox" id="toggle-cases">
+            <span>DCC active caseload</span>
+          </label>
+          <div class="map-subcontrol" id="cases-mode" hidden>
+            <label><input type="radio" name="cases-shape" value="squares" checked> <span>Source grid</span></label>
+            <label><input type="radio" name="cases-shape" value="hexes"> <span>Hexagons (estimated)</span></label>
+          </div>
+          <div class="map-legend cases-legend" id="cases-legend" hidden></div>
           <button type="button" class="button map-locate" id="locate-button">Where's the closest derelict site?</button>
         </div>
         <div class="embed-title">
@@ -115,6 +124,7 @@
       </div>
       <p class="map-hint" id="locate-status" role="status"></p>
       <p class="map-hint">Click a point for site details. The density grid aggregates sites into hexagons with 600&nbsp;m sides; the Voronoi catchments show the area closest to each site.</p>
+      <p class="map-hint" id="cases-hint"></p>
     </section>
 
     <section class="charts" aria-label="Charts">

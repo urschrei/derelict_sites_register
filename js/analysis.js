@@ -1,6 +1,7 @@
 // Spatial and attribute analysis. Turf.js is loaded globally as `turf`.
 
 import { yearBinIndex } from "./tokens.js";
+import { buildPolygonIndex } from "./spatial.js";
 
 // The Spire, O'Connell Street: a conventional city-centre reference point.
 export const CITY_CENTRE = [-6.260262, 53.349805];
@@ -134,6 +135,46 @@ export function voronoiCatchments(features) {
     return cell;
   });
   return turf.featureCollection(cells);
+}
+
+// Re-grid the council's square active-cases grid to hexagons by areal
+// weighting: each source cell's count is treated as uniformly distributed
+// over its area, and every hexagon receives the count of each overlapping
+// cell in proportion to the overlap. The result is an estimate: it smooths
+// counts across cell boundaries and cannot recover sub-cell detail. An
+// RBush index over the source cells keeps the intersection tests to the
+// handful of candidates per hexagon.
+export function regridCaseloadToHexes(cells, sideKm = 0.35) {
+  const active = cells.filter((c) => c.properties.num_active > 0);
+  if (!active.length) return turf.featureCollection([]);
+  const bbox = turf.bbox(turf.featureCollection(active));
+  const padded = [
+    bbox[0] - 0.005,
+    bbox[1] - 0.005,
+    bbox[2] + 0.005,
+    bbox[3] + 0.005,
+  ];
+  const hexes = turf.hexGrid(padded, sideKm, { units: "kilometers" });
+  const index = buildPolygonIndex(active);
+  const out = [];
+  for (const hex of hexes.features) {
+    const [minX, minY, maxX, maxY] = turf.bbox(hex);
+    let estimate = 0;
+    for (const cell of index.search({ minX, minY, maxX, maxY })) {
+      const overlap = turf.intersect(
+        turf.featureCollection([hex, cell.feature])
+      );
+      if (overlap) {
+        estimate +=
+          (turf.area(overlap) / cell.area) * cell.feature.properties.num_active;
+      }
+    }
+    if (estimate > 0.05) {
+      hex.properties.estimate = estimate;
+      out.push(hex);
+    }
+  }
+  return turf.featureCollection(out);
 }
 
 export function median(values) {

@@ -22,6 +22,19 @@ export function spatialIndex() {
   return tree;
 }
 
+// Bounding-box index over arbitrary polygon features, for fast candidate
+// lookup in overlay computations. Entries carry the feature and its area.
+export function buildPolygonIndex(features) {
+  const polyTree = new RBush();
+  polyTree.load(
+    features.map((feature) => {
+      const [minX, minY, maxX, maxY] = turf.bbox(feature);
+      return { minX, minY, maxX, maxY, feature, area: turf.area(feature) };
+    })
+  );
+  return polyTree;
+}
+
 // k nearest sites to a lon/lat position. rbush-knn ranks by planar degree
 // distance, which misorders candidates slightly at Dublin's latitude, so we
 // over-fetch and re-rank the candidates by true great-circle distance.

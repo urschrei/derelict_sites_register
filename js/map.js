@@ -10,10 +10,16 @@ let map;
 let currentSites = { type: "FeatureCollection", features: [] };
 let currentHexes = { type: "FeatureCollection", features: [] };
 let currentVoronoi = { type: "FeatureCollection", features: [] };
+let currentCases = { type: "FeatureCollection", features: [] };
+let currentCaseHexes = null;
 let hexVisible = false;
 let voronoiVisible = false;
 let emphasiseProtected = false;
+let casesVisible = false;
+let casesShape = "squares";
 let popup;
+
+const EMPTY = { type: "FeatureCollection", features: [] };
 
 function basemapStyle() {
   const t = tokens();
@@ -86,6 +92,17 @@ function hexColourExpression(maxCount) {
   ];
 }
 
+function caseColourExpression(property, features) {
+  const t = tokens();
+  const max = Math.max(...features.map((f) => f.properties[property]), 2);
+  const expression = ["interpolate", ["linear"], ["get", property]];
+  t.caseRamp.forEach((colour, i) => {
+    const value = i === 0 ? 0.05 : (max * i) / (t.caseRamp.length - 1);
+    expression.push(value, colour);
+  });
+  return expression;
+}
+
 function addDataLayers() {
   const t = tokens();
   const maxCount = Math.max(
@@ -101,6 +118,44 @@ function addDataLayers() {
     layout: { visibility: hexVisible ? "visible" : "none" },
     paint: {
       "fill-color": hexColourExpression(maxCount),
+      "fill-opacity": 0.55,
+      "fill-outline-color": t.surface,
+    },
+  });
+
+  map.addSource("cases-squares", { type: "geojson", data: currentCases });
+  map.addLayer({
+    id: "cases-squares",
+    type: "fill",
+    source: "cases-squares",
+    filter: [">", ["get", "num_active"], 0],
+    layout: {
+      visibility:
+        casesVisible && casesShape === "squares" ? "visible" : "none",
+    },
+    paint: {
+      "fill-color": caseColourExpression("num_active", currentCases.features),
+      "fill-opacity": 0.55,
+      "fill-outline-color": t.surface,
+    },
+  });
+
+  map.addSource("cases-hexes", {
+    type: "geojson",
+    data: currentCaseHexes ?? EMPTY,
+  });
+  map.addLayer({
+    id: "cases-hexes",
+    type: "fill",
+    source: "cases-hexes",
+    layout: {
+      visibility: casesVisible && casesShape === "hexes" ? "visible" : "none",
+    },
+    paint: {
+      "fill-color": caseColourExpression(
+        "estimate",
+        currentCaseHexes?.features ?? []
+      ),
       "fill-opacity": 0.55,
       "fill-outline-color": t.surface,
     },
@@ -190,6 +245,48 @@ function openPopup(feature) {
     .addTo(map);
 }
 
+function syncCaseLayers() {
+  if (!map) return;
+  if (map.getLayer("cases-squares")) {
+    map.setLayoutProperty(
+      "cases-squares",
+      "visibility",
+      casesVisible && casesShape === "squares" ? "visible" : "none"
+    );
+  }
+  if (map.getLayer("cases-hexes")) {
+    map.setLayoutProperty(
+      "cases-hexes",
+      "visibility",
+      casesVisible && casesShape === "hexes" ? "visible" : "none"
+    );
+  }
+}
+
+function buildCasesLegend() {
+  const t = tokens();
+  const legend = document.getElementById("cases-legend");
+  legend.replaceChildren();
+  const title = document.createElement("span");
+  title.className = "legend-title";
+  title.textContent = "Active cases per cell";
+  const strip = document.createElement("span");
+  strip.className = "legend-gradient";
+  strip.style.background = `linear-gradient(to right, ${t.caseRamp.join(", ")})`;
+  const range = document.createElement("span");
+  range.className = "legend-range";
+  const hexMode = casesShape === "hexes" && currentCaseHexes;
+  const max = hexMode
+    ? Math.max(...currentCaseHexes.features.map((f) => f.properties.estimate), 0)
+    : Math.max(...currentCases.features.map((f) => f.properties.num_active), 0);
+  const low = document.createElement("span");
+  low.textContent = hexMode ? "~0" : "1";
+  const high = document.createElement("span");
+  high.textContent = hexMode ? `~${Math.round(max)}` : String(max);
+  range.append(low, high);
+  legend.append(title, strip, range);
+}
+
 function buildLegend() {
   const t = tokens();
   const legend = document.getElementById("map-legend");
@@ -254,6 +351,20 @@ export function initMap() {
     }
   });
 
+  document.getElementById("toggle-cases").addEventListener("change", (e) => {
+    casesVisible = e.target.checked;
+    document.getElementById("cases-mode").hidden = !casesVisible;
+    document.getElementById("cases-legend").hidden = !casesVisible;
+    syncCaseLayers();
+  });
+  for (const radio of document.querySelectorAll('input[name="cases-shape"]')) {
+    radio.addEventListener("change", (e) => {
+      casesShape = e.target.value;
+      syncCaseLayers();
+      buildCasesLegend();
+    });
+  }
+
   document
     .getElementById("toggle-protected")
     .addEventListener("change", (e) => {
@@ -265,7 +376,35 @@ export function initMap() {
     });
 
   buildLegend();
+  buildCasesLegend();
   return map;
+}
+
+// The caseload grid is static (not affected by the filter row), so it is
+// set once rather than through updateMapData.
+export function setCaseloadData(grid) {
+  currentCases = grid;
+  if (map?.getSource("cases-squares")) {
+    map.getSource("cases-squares").setData(currentCases);
+    map.setPaintProperty(
+      "cases-squares",
+      "fill-color",
+      caseColourExpression("num_active", currentCases.features)
+    );
+  }
+  buildCasesLegend();
+}
+
+export function setCaseloadHexes(hexes) {
+  currentCaseHexes = hexes;
+  if (map?.getSource("cases-hexes")) {
+    map.getSource("cases-hexes").setData(currentCaseHexes);
+    map.setPaintProperty(
+      "cases-hexes",
+      "fill-color",
+      caseColourExpression("estimate", currentCaseHexes.features)
+    );
+  }
 }
 
 export function updateMapData(sites, hexes, voronoi) {
@@ -295,6 +434,7 @@ export function refreshMapStyle() {
     if (!map.getSource("sites")) addDataLayers();
   });
   buildLegend();
+  buildCasesLegend();
 }
 
 let userMarker;

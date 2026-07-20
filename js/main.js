@@ -9,6 +9,7 @@ import {
   countByArea,
   countByYearAdded,
   countByDistance,
+  regridCaseloadToHexes,
 } from "./analysis.js";
 import {
   renderBarChartH,
@@ -23,6 +24,8 @@ import {
   focusSite,
   showNearestSite,
   fitToSites,
+  setCaseloadData,
+  setCaseloadHexes,
 } from "./map.js";
 import { renderTable } from "./table.js";
 import { buildIndex, nearestSites } from "./spatial.js";
@@ -237,6 +240,30 @@ function renderHeaderMeta() {
     " · data refreshed twice daily";
 }
 
+function loadCaseload() {
+  return fetch("data/active_cases_grid.geojson")
+    .then((response) => (response.ok ? response.json() : null))
+    .then((grid) => {
+      if (!grid) return;
+      setCaseloadData(grid);
+      const total = grid.features.reduce(
+        (sum, f) => sum + f.properties.num_active,
+        0
+      );
+      document.getElementById("cases-hint").textContent =
+        `The DCC caseload overlay shows all ${total} active dereliction ` +
+        "cases, aggregated by the council to a grid before publication " +
+        "(only sites formally on the register appear as points). The " +
+        "hexagon view re-grids the counts by area weighting, so its " +
+        "values are estimates.";
+      // The hexagon re-grid is moderately expensive; compute it off the
+      // critical path once the page has settled.
+      setTimeout(() => {
+        setCaseloadHexes(regridCaseloadToHexes(grid.features));
+      }, 1500);
+    });
+}
+
 async function init() {
   const response = await fetch("data/derelict_sites_register.geojson");
   if (!response.ok) {
@@ -267,6 +294,7 @@ async function init() {
   wireLocateButton();
   initMap();
   render();
+  loadCaseload();
 
   if (embed) {
     document.getElementById("embed-count").textContent =

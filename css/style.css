@@ -272,6 +272,41 @@ section {
   text-align: left;
 }
 
+.map-subcontrol {
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.map-subcontrol label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.map-subcontrol input {
+  accent-color: var(--series-1);
+}
+
+.cases-legend .legend-gradient {
+  height: 10px;
+  border-radius: 5px;
+  margin: 0.15rem 0;
+}
+
+.cases-legend .legend-range {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
 .map-hint {
   font-size: 0.85rem;
   color: var(--text-muted);

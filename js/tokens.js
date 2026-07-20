@@ -14,6 +14,7 @@ const LIGHT = {
   seriesDim: "#d5d4cd",
   ramp: ["#86b6ef", "#3987e5", "#1c5cab", "#0d366b"],
   hexRamp: ["#cde2fb", "#3987e5", "#0d366b"],
+  caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
   basemap: "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
 };
 
@@ -29,6 +30,9 @@ const DARK = {
   seriesDim: "#3a3a38",
   ramp: ["#9ec5f4", "#5598e7", "#2a78d6", "#184f95"],
   hexRamp: ["#184f95", "#5598e7", "#cde2fb"],
+  // Viridis is perceptually uniform and works on both surfaces, so the
+  // caseload ramp is mode-invariant.
+  caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
   basemap: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png",
 };
 
