@@ -16,14 +16,28 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%232a78d6'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Resolve the theme before first paint to avoid a flash: an explicit
+    // stored choice wins, otherwise follow the operating system.
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var dark = stored
+        ? stored === "dark"
+        : matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.dataset.theme = dark ? "dark" : "light";
+    })();
+  </script>
 </head>
 <body>
   <header class="site-header">
-    <h1>Dublin Derelict Sites Register</h1>
+    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch between light and dark theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <h1>Dublin Derelict and Vacant Sites Register</h1>
     <p class="lede">
       This page republishes Dublin City Council's register of derelict sites
-      in open formats and keeps it fresh: the data is
-      retrieved from the council's public feature service twice a day.
+      and vacant sites in open formats.
     </p>
     <p class="meta-line">
       <span id="site-count-line">Loading register data&hellip;</span>
@@ -33,7 +47,7 @@
       <a class="button" href="data/derelict_sites_register.csv" download><span class="dl-name">Derelict Sites</span><span class="dl-fmt">CSV</span></a>
       <a class="button" href="data/active_cases_grid.geojson" download><span class="dl-name">Under Review (aggregated)</span><span class="dl-fmt">GeoJSON</span></a>
       <a class="button" href="data/vacant_sites_register.geojson" download><span class="dl-name">Vacant Sites</span><span class="dl-fmt">GeoJSON</span></a>
-      <a class="button" href="data/vacant_sites_planning_links.csv" download><span class="dl-name">Planning links</span><span class="dl-fmt">CSV</span></a>
+      <a class="button" href="data/vacant_sites_planning_links.csv" download><span class="dl-name">Vacant Sites Planning docs</span><span class="dl-fmt">CSV</span></a>
     </p>
   </header>
 

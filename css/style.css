@@ -20,28 +20,28 @@
   --outcome-refused: #c0392b;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-    --page: #0d0d0d;
-    --surface-1: #1a1a19;
-    --text-primary: #ffffff;
-    --text-secondary: #c3c2b7;
-    --text-muted: #898781;
-    --gridline: #2c2c2a;
-    --baseline: #383835;
-    --border: rgba(255, 255, 255, 0.1);
-    --series-1: #3987e5;
-    --series-dim: #3a3a38;
-    --ramp-1: #9ec5f4;
-    --ramp-2: #5598e7;
-    --ramp-3: #2a78d6;
-    --ramp-4: #184f95;
-    --focus: #3987e5;
-    --vacant-accent: #f6a866;
-    --outcome-granted: #4ec38a;
-    --outcome-refused: #f07a6a;
-  }
+/* The visitor's resolved theme is stamped on <html> as data-theme by an inline
+   script (default: OS preference), so a manual toggle can override the OS. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #0d0d0d;
+  --surface-1: #1a1a19;
+  --text-primary: #ffffff;
+  --text-secondary: #c3c2b7;
+  --text-muted: #898781;
+  --gridline: #2c2c2a;
+  --baseline: #383835;
+  --border: rgba(255, 255, 255, 0.1);
+  --series-1: #3987e5;
+  --series-dim: #3a3a38;
+  --ramp-1: #9ec5f4;
+  --ramp-2: #5598e7;
+  --ramp-3: #2a78d6;
+  --ramp-4: #184f95;
+  --focus: #3987e5;
+  --vacant-accent: #f6a866;
+  --outcome-granted: #4ec38a;
+  --outcome-refused: #f07a6a;
 }
 
 * {
@@ -67,12 +67,52 @@ main,
 
 .site-header {
   padding-top: 2.5rem;
+  position: relative;
 }
 
 .site-header h1 {
   font-size: 1.9rem;
   line-height: 1.2;
   margin: 0 0 0.75rem;
+  padding-right: 3rem;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-1);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--series-1);
+  color: var(--text-primary);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Show the icon for the theme you would switch TO. */
+:root[data-theme="dark"] .theme-toggle .icon-moon,
+:root:not([data-theme="dark"]) .theme-toggle .icon-sun {
+  display: none;
 }
 
 .lede {
@@ -116,7 +156,7 @@ main,
   border: 1px solid var(--border);
   background: var(--surface-1);
   color: var(--text-primary);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;

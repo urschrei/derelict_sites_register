@@ -1,4 +1,4 @@
-import { onSchemeChange } from "./tokens.js";
+import { onSchemeChange, toggleTheme } from "./tokens.js";
 import {
   deriveFeatures,
   clarkEvans,
@@ -317,6 +317,9 @@ async function init() {
   wireFilters();
   wireLocateButton();
   wireViewSwitch();
+  document
+    .getElementById("theme-toggle")
+    ?.addEventListener("click", toggleTheme);
   initMap();
   render();
   loadCaseload();

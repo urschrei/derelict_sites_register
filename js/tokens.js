@@ -43,9 +43,12 @@ const DARK = {
 };
 
 const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+const schemeHandlers = [];
 
+// The active theme is whatever the inline head script (or the toggle) stamped
+// on <html>; tokens() and the map/chart palettes follow it.
 export function isDark() {
-  return darkQuery.matches;
+  return document.documentElement.dataset.theme === "dark";
 }
 
 export function tokens() {
@@ -53,8 +56,26 @@ export function tokens() {
 }
 
 export function onSchemeChange(handler) {
-  darkQuery.addEventListener("change", handler);
+  schemeHandlers.push(handler);
 }
+
+function notifySchemeChange() {
+  for (const handler of schemeHandlers) handler();
+}
+
+export function toggleTheme() {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.dataset.theme = next;
+  window.localStorage.setItem("theme", next);
+  notifySchemeChange();
+}
+
+// Follow the operating system until the visitor makes an explicit choice.
+darkQuery.addEventListener("change", (event) => {
+  if (window.localStorage.getItem("theme")) return;
+  document.documentElement.dataset.theme = event.matches ? "dark" : "light";
+  notifySchemeChange();
+});
 
 // Bin edges (in whole years on the register) for the ordinal ramp.
 export const YEAR_BINS = [
