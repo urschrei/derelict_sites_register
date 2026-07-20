@@ -526,9 +526,10 @@ export function onVacantSelect(handler) {
   vacantSelectHandler = handler;
 }
 
-// Zoom to a site and outline it as the current selection. Called both from a
-// map click (via the handler) and from the site list.
-export function focusVacantSite(registerNumber) {
+// Outline a site as the current selection, optionally zooming to it. Called
+// from a map click and from the site list; the initial auto-selection passes
+// zoom:false so the map keeps its city-wide overview.
+export function focusVacantSite(registerNumber, { zoom = true } = {}) {
   if (!map) return;
   const feature = currentVacant.features.find(
     (f) => f.properties.register_number === registerNumber
@@ -541,7 +542,13 @@ export function focusVacantSite(registerNumber) {
       registerNumber,
     ]);
   }
-  map.fitBounds(turf.bbox(feature), { padding: 90, maxZoom: 16, duration: 700 });
+  if (zoom) {
+    map.fitBounds(turf.bbox(feature), {
+      padding: 90,
+      maxZoom: 16,
+      duration: 700,
+    });
+  }
 }
 
 // Switch between the register view (points and point-derived overlays) and

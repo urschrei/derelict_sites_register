@@ -33,6 +33,10 @@ export function loadVacant() {
       onVacantSelect(selectSite);
       renderKpis();
       buildList();
+      // Start with the first site shown so the panel is never an empty box.
+      if (features.length) {
+        selectSite(features[0].properties.register_number, { zoom: false });
+      }
     });
 }
 
@@ -89,7 +93,7 @@ function buildList() {
   }
 }
 
-export function selectSite(registerNumber) {
+export function selectSite(registerNumber, { zoom = true } = {}) {
   const feature = features.find(
     (f) => f.properties.register_number === registerNumber
   );
@@ -98,9 +102,9 @@ export function selectSite(registerNumber) {
     const on = item.dataset.reg === registerNumber;
     item.classList.toggle("is-selected", on);
     item.setAttribute("aria-selected", on ? "true" : "false");
-    if (on) item.scrollIntoView({ block: "nearest" });
+    if (on && zoom) item.scrollIntoView({ block: "nearest" });
   }
-  focusVacantSite(registerNumber);
+  focusVacantSite(registerNumber, { zoom });
   renderDetail(feature);
 }
 

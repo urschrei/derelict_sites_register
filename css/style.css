@@ -94,6 +94,21 @@ main,
   margin: 0 0 1.5rem;
 }
 
+.downloads .button {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+}
+
+/* The descriptive name leads; the file format is a quiet, smaller tag. */
+.dl-fmt {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
 .button {
   display: inline-block;
   padding: 0.45rem 0.9rem;
@@ -796,16 +811,11 @@ body.view-vacant .derelict-only {
   align-items: start;
 }
 
-.vacant-list-title {
-  font-size: 0.9rem;
-  margin: 0 0 0.5rem;
-}
-
 .vacant-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  max-height: 520px;
+  height: 560px;
   overflow-y: auto;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -854,7 +864,8 @@ body.view-vacant .derelict-only {
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 1rem 1.2rem;
-  min-height: 200px;
+  height: 560px;
+  overflow-y: auto;
 }
 
 .vacant-detail-empty {
@@ -982,6 +993,10 @@ body.view-vacant .derelict-only {
   }
 
   .vacant-list {
-    max-height: 240px;
+    height: 240px;
+  }
+
+  .vacant-detail {
+    height: auto;
   }
 }
