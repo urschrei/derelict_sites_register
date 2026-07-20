@@ -1,315 +1,271 @@
-register_number,plan_ref,registration_date,status,applicant,proposal
-VS-0003,3672/13,20140407,Appeal Decided,Crocusglen Ltd.,Construction of 8 no. 3 & 4 bed houses
-VS-0003,3964/14,20150924,Appeal Decided,NOVAS Initiatives,Construction of 13 apartments and a commercial/ret
-VS-0003,0419/19,20190911,Decision Notice Issued,Irish Prison Services,EXPP: this submission to Dublin City Council is to
-VS-0003,4466/19,20191115,Decision Notice Issued,Legendside Ltd.,Permission for residential development on a site m
-VS-0005,0250/03,20030124,Appeal Decided,BBL Developments Limited,"construct  70 housing units in four storeys, etc"
-VS-0005,2843/04,20040514,Decision Appealed,BBL Developments,15 sq.m. E.S.B. sub station and switch panel to se
-VS-0005,4752/05,20050914,Decision Notice Issued,BBL Developments Ltd,construct 2 No. 2 bed penthouse apartments and sem
-VS-0005,5003/05,20051003,Decision Notice Issued,BBL Developments Ltd,construct 2 no. 2 bed penthouse apartments and sem
-VS-0005,6705/07,20080818,Appeal Decided,Henry Farrell & Brendan Lawless,Construct a mixed use development with 58 no. apar
-VS-0005,WEB2243/25,20250603,Appeal Decided                          ,Halexmain Enterprises Ltd,"We, Halexmain Enterprises Ltd, intend to apply for planning permission for the d"
-VS-0011,6372/05,20051222,Decision Notice Issued,Cableside Development Ltd,PROTECTED provision of 230 no. residential units i
-VS-0011,2363/06,20060814,Appeal Decided,Cableside Developments,PROTECTED STRUCTURE - provision of 227 no. residen
-VS-0011,3210/19,20190607,,Dublin City Council,LAW: PROTECTED STRUCTURE: Planning and Development
-VS-0011,4276/24,20240912,,Housing & Community Services,LAW: PROTECTED STRUCTURE: Alteration and extension
-VS-0019,3233/06,20061009,Appeal Decided,P. Elliot & Co. Ltd.,Protected Structures-Alterations and refurbishment
-VS-0019,1712/08,20080229,Appeal Decided,P. Elliott & Co. Ltd.,PROTECTED STRUCTURE-Alterations & refurbishment to
-VS-0019,4733/08,20090129,Appeal Decided,P. Elliott & Co Ltd.,"PROTECTED STRUCTURE-Alterations, partial demolitio"
-VS-0019,3191/13,20131128,Decision Notice Issued,KSH Europe Holdings,Provision of 100 student accommodation units and a
-VS-0019,2683/15,20150428,Decision Notice Issued,Targeted Investment Opportunities PLC,Erection of permanent building signage at the Bina
-VS-0019,2676/17,20170511,Decision Notice Issued,River Dublin 1 S.a.r.l.,Planning permission on a 0.48 ha (1.18 acre) site
-VS-0019,3191/17,20170907,Decision Notice Issued,River Dublin 1 S.a.r.l.,Replacement of existing building signage at the Bi
-VS-0028,3564/98,19981216,Decision Notices Issued,"Ms. B. Deane,",Residential development comprising 5 no. two bed a
-VS-0028,3855/09,20100428,Appeal Decided,Canal Harbour Development Company Ltd,PROTECTED STRUCTURE - 6 buildings ranging in heigh
-VS-0028,3082/18,20180523,Decision Notice Issued,Atlas GP Limited,PROTECTED STRUCTURE: Atlas GP Limited intend to ap
-VS-0028,3209/19,20191001,Decision Notice Issued,Atlas GP Ltd,PROTECTED STRUCTURE: Atlas GP Limited intend to ap
-VS-0028,2514/20,20200316,Decision Notice Issued,Atlas GP Ltd,PROTECTED STRUCTURE  -  Permission to amend a perm
-VS-0028,2765/20,20200528,Appeal Decided,Atlas GP Limited,PROTECTED STRUCTURE: Planning permission for amend
-VS-0028,3405/23,20230616,Decision Notice Issued,Atlas Avenue GP3 Ltd.,PROTECTED STRUCTURE: Planning Permission to amend
-VS-0028,WEB5374/25,20260227,Decision Notice Issued                  ,Atlas Avenue GP3 Ltd.,PROTECTED STRUCTURE: RETENTION & PERMISSION: The application site includes Prote
-VS-0043,0547/01,20010403,Appeal Decided,Linfort Limited,Demolition of existing dwelling and reconstruction
-VS-0043,2998/05,20050524,Decision Notices Issued,W. & D. Hooton,refurbishment of existing dilapidated dwelling to
-VS-0043,3428/05,20050620,Decision Notices Issued,W & D Hooton.,refurbishment  of existing dilapidated dwelling to
-VS-0043,4816/05,20050916,Decision Appealed,W. and D. Hooton,Refurbishment of existing dilapidated dwelling to
-VS-0043,4170/17,20171101,Decision Notice Issued,The Board of St. James's Hospital,The Development will consist of the demolition & r
-VS-0043,3843/19,20191122,Decision Notice Issued,"Board of Management, Canal Way Educate T",The development will consist of:  1) the demolitio
-VS-0048,0797/97,19970627,Decision Notices Issued,"Pacelli & Marina Lynch,",Erect two fully serviced dwelling houses with boun
-VS-0048,2593/98,19990118,Appeal Decided,"Cross Guns Bakery Ltd,",Demolition of existing silos and workshops and con
-VS-0048,0900/00,20000330,Appeal Decided,"Mr Paul Flanigan,",Change of use from a store and dwelling to a three
-VS-0048,1193/02,20020429,Appeal Decided,Chris Campbell,erection of a two storey three bedroomed dwelling
-VS-0048,4033/06,20060714,Appeal Decided,Stateford Limited,Permission for development of a mixed use scheme
-VS-0048,1975/07,20070306,Decision Notices Issued,Christopher Campbell,proposed extension at the rear will consist of a s
-VS-0048,3104/07,20070511,Decision Notice Issued,Christopher Campbell,2nd Storey extension over existing kitchen.
-VS-0048,1745/07,20070712,Decision Notice Issued,Stateford Limited,Development of a mixed use scheme on a site of 0.7
-VS-0048,6818/07,20080813,Appeal Decided,Stateford Limited,Demolition of existing buildings on site & constru
-VS-0048,2223/12,20120227,Decision Notices Issued,Pacelli Lynch,"Construction of 2no. 2 bedroom, 2-storey non-ident"
-VS-0048,3209/13,20130906,Decision Notice Issued,Bindford Developments Ltd,Construction of residential development with some
-VS-0048,2300/14,20140228,Decision Notice Issued,Binford Developments Ltd,Demolition of existing buildings on site & other w
-VS-0048,2402/14,20140321,Appeal Decided,Bondford Developments Ltd,Demolition of existing buildings on site & other w
-VS-0048,PAC0437/17,20170911,,David Reilly,2 no. semi detached houses
-VS-0048,4233/17,20171110,Decision Notice Issued,Pacelli Lynch,2 No. fully serviced two storey dwellings ( 2-bed)
-VS-0048,4533/17,20180528,Decision Notice Issued,Pacelli Lynch,Constr.of 2 no. fully serviced two-storey dwelling
-VS-0048,4248/18,20181024,Decision Notice Issued,Pascelli Lynch,The development will consist of the construction o
-VS-0048,4350/18,20181108,Decision Notice Issued,Pacelli Lynch,construction of 2no. fully serviced two storey dwe
-VS-0048,4752/18,20190725,Appeal Decided,Pacelli Lynch,Construction of 2 no. fully serviced two storey dw
-VS-0048,3513/21,20210916,,"Dublin City Council, Environment and Tra",LAW: Planning and Development Act 2000 (as amended
-VS-0048,LRD6025/23-S3,20230602,Appeal Decided,Bindford Limited,Planning permission for a Large-Scale Residential
-VS-0055,2969/98,19981021,Decision Notices Issued,"Kitale Ltd. (Ashley Motors),",To form no. 2 revised vehicular entrances and car
-VS-0055,PAC0486/15,20150406,,Tracy Armstrong,Conversion of a Protected Strucure to apartments &
-VS-0055,PAC0488/15,20150820,,Tracy Armstrong,Conversion of a Protected Strucure to apartments &
-VS-0055,3721/15,20150929,Decision Notices Issued,Independent Trustee Company Ltd,"PROTECTED STRUCTURE:Construct 7 new houses,extensi"
-VS-0055,4313/15,20160816,Appeal Decided,Independent Trustee Company Ltd,PROTECTED STRUCTURE: Permission for 12 no. dwellin
-VS-0055,3625/18,20180801,Appeal Decided,Kitale Ltd,Removal of existing single storey glazed lean-to e
-VS-0055,4515/19,20191122,Appeal Decided                          ,Lilacstone Limited,PROTECTED STRUCTURE: The development will principally consist of: the conversion
-VS-0055,2828/20,20201113,Decision Notice Issued,Michael Thomas Dawson,PROTECTED STRUCTURE: The development will consist
-VS-0055,4098/23,20230707,Decision Notice Issued,Cormac Nevin and Sarah Grace,"The development will consist of 
-(a) the demoliti"
-VS-0055,4966/23,20231214,Decision Notice Issued,Gary and Emma Fitzgerald,For conversion of existing attic space comprising
-VS-0055,WEB2336/24,20241021,Decision Notice Issued,Sarah Jolley and Seamus keller,PLANNING PERMISSION to extend and alter a property
-VS-0055,WEB1401/25,20250228,Decision Notice Issued                  ,Ed Eustace Fiona McDermott,Planning permission to demolish the existing ground floor extension to front and
-VS-0080,1609/97,19970626,Decision Notice Issued,"Alan Keogh,",Change of use at ground floor and basement to lice
-VS-0080,0092/97,19971028,Decision Notice Issued,"Mr. A. Keogh,",Additional floor containing 2 no. apartments to pr
-VS-0080,0205/98,19980129,Decision Notice Issued,Alan Keogh.,Roof garden.
-VS-0080,0491/99,19990407,Decision Notice Issued                  ,"Karl Construction Ltd.,",Residential development of 57 apartments i.e. 15 no. 1
-VS-0080,3309/98,19990712,Appeal Decided,"Alan Keogh,","Extension to licenced premises, with storage at ba"
-VS-0080,2495/99,19990901,Decision Appealed,"Karl Construction Ltd.,","Residential development of 44 apartments, comprisi"
-VS-0080,2608/07,20070411,Decision Notices Issued,Brian Pluymen,"Construction of new first floor extension (4sqm),"
-VS-0080,3144/19,20190529,Decision Notice Issued,Dauken Ltd.,Planning permission for a social housing & ESB sub
-VS-0080,4795/19,20191220,Decision Notice Issued,Dauken Ltd,Planning permission for a residential & ESB sub-st
-VS-0080,3548/20,20210225,Decision Notice Issued,Dauken Ltd,Planning permission for development on a site of 1
-VS-0080,WEB2969/25,20250826,Decision Notice Issued                  ,Focus Housing Association CLG,Permission is sought by Focus Housing Association CLG for development at Nos. 2
-VS-0080,WEB5031/25,20250903,Decision Notice Issued                  ,Focus Housing Association CLG,Permission is sought by Focus Housing Association CLG for development at Nos. 2
-VS-0080,WEB5136/25,20250912,Appeal Decided                          ,Focus Housing Association CLG,Permission is sought by Focus Housing Association CLG for development at Nos. 2
-VS-0101,2304/04,20040408,,Housing Social & Community Services,22 units in 2 blocks
-VS-0101,5544/04,20041125,Decision Notices Issued,M & J Wallace Ltd,Construction of 5/6 floors over basement including
-VS-0101,5705/04,20041206,Appeal Decided,M + J Wallace Ltd,constructionof 5/6 floors over basement including
-VS-0101,2454/06,20060412,Decision Notice Issued,M + J Wallace,Permission for amendments to approved scheme 5705/
-VS-0101,3132/06,20060525,Decision Notices Issued,M + J Wallace Ltd,Permission sought for commercial / residential dev
-VS-0101,3149/06,20060525,Decision Notices Issued,M&U Wallace Ltd,Additional 3 no2 bed apartments
-VS-0101,3633/06,20060623,Decision Notice Issued,M & J Wallace LTD,"commercial/residential development, 28 apartments"
-VS-0101,3642/06,20060623,Decision Notice Issued,M & J Wallace Ltd,additional 3 No. 2 bed apartments to approved (ref
-VS-0101,3594/07,20070611,Decision Notices Issued,Mr. James Anderson,To increase the size of existing three storey exte
-VS-0101,4227/07,20070712,Appeal Decided,James Anderson,Increase the size of existing 3 storey extension o
-VS-0101,3380/11,20111005,Decision Notices Issued,Catherine Collins,RETENTION & PERMISSION - Partial demolition & cons
-VS-0101,3553/11,20120710,Decision Notice Issued,Catherine Collins,"RETENTION - five storey over basement, 17m high, m"
-VS-0101,3457/13,20131025,Decision Notice Issued,M & J Wallace (in receivership),New elevational treatment of southern gable
-VS-0117,0991/99,19990401,Appeal Decided,"Readymix PLC.,",Replacement of the existing entrance porch at rear
-VS-0117,1549/05,20050215,Decision Notice Issued,Readymix (ROI) Limited,130 no apartments units in an arrangement of 6 and
-VS-0117,2324/05,20050411,Decision Notice Issued,Readymix (ROI) Ltd.,demolition of a concrete batching plant and 2 no.
-VS-0117,4426/05,20050822,Decision Notice Issued,Readymix (ROI) Ltd.,demolition of concrete plant & 2 office blocks & c
-VS-0117,3511/22,20220314,,"Dublin City Council, Housing and Communi",LAW: Planning and Development Act 2000 (as amended
-VS-0118,0471/00,20000510,Appeal Decided,"Haughton & Son Tyres Ltd.,","4 no. three bedroom townhouses, and site to rear."
-VS-0118,1895/00,20010316,Decision Notice Issued,T. & S. Cribben,Demolition of derelict building and subsequent ere
-VS-0118,1896/00,20010316,Decision Notice Issued,John O'Rourke,"Demolition of existing building, and its replaceme"
-VS-0118,4944/05,20050927,Decision Notices Issued,John O'Rourke,Change of use from commercial to residential
-VS-0118,5469/05,20051103,Decision Notice Issued,John O'Rourke,Change of use from commercial to residential in re
-VS-0118,1590/06,20060215,Decision Notices Issued,Frank Newman & Jim Redmond,Permission is sought for a 4 storey apartment deve
-VS-0118,2904/06,20060511,Decision Notices Issued,Thomas Cribben,change of use from office to apartment
-VS-0118,3755/06,20060630,Decision Notices Issued,Thomas Cribben,Change of use from office to apartment
-VS-0118,5569/06,20061016,Decision Notices Issued,Frank Newman & Jim Redmond,Permission for a 2 and 3 storey apartment developm
-VS-0118,5356/07,20070920,Decision Notice Issued,Frank Newman and Jim Redmond,Demolition of shed structure & construction of 6 n
-VS-0118,3550/14,20141016,Decision Notices Issued,Cuisle Properties Ltd,Construction of 5 3-bed terraced townhouses & 1 3-
-VS-0118,3721/14,20141119,Decision Notices Issued,Cuisle Properties Ltd,Construction of two and a half storey Apartment/To
-VS-0118,3855/14,20141212,Appeal Decided,Cuisle Properties Ltd,Construction of two and a half storey Apartment/To
-VS-0118,2328/16,20160614,Appeal Decided,Mr. Ned (Edward) Fallon,RETENTION: Permission is sought for a first floor
-VS-0118,4100/16,20161110,Decision Notice Issued,Cuisle Properties Ltd.,"Residential student accommodation development,"
-VS-0118,2478/19,20190312,Decision Notice Issued,Cuisle Properties Ltd.,The proposed development consists of the demolitio
-VS-0118,4741/19,20200717,Appeal Decided,Cuisle Properties Ltd,Planning permission for the demolition of a single
-VS-0124,0060/15,,Decision Notice Issued,Relience Investments Ltd.,EXPP: PROTECTED STRUCTURE: Erection of CCTV camera
-VS-0124,2569/06,,Decision Notices Issued,Aldborough Developments Ltd,"40 Bedroom Day hospital , conservation and restora"
-VS-0124,2350/99,19991013,Appeal decided,St Pancras Housing Association,"Alterations and renovations to provide 1 shop, 3 e"
-VS-0124,2703/00,20000817,Appeal Decided,St. Pancras Housing Association,Revision to previously approved scheme (Ref. 2350/
-VS-0124,4201/00,20001222,Decision Notices Issued,Irish Music Rights Organisation,"General refurbishment, alteration, extensions to h"
-VS-0124,4220/00,20001222,Decision Notice Issued,St Pancras Housing Association,Revisions to previous permission (ref. 2703/00) to
-VS-0124,4569/02,20021223,Decision Notice Issued,Cluid Housing Association,Change of use of 64.0 sq. m. apartment to offices
-VS-0124,2119/06,20060321,Decision Notices Issued,Aldborough Developments LTD,"PROTECTED STRUCTURE - 40 Bedroom ""Day Hospital Med"
-VS-0124,5427/06,20070129,Decision Notice Issued,Aldborough Developments Ltd.,PROTECTED STRUCTURE-Redevelopment at this site
-VS-0124,3189/15,20150709,Decision Notices Issued,Clúid Housing Association,Change of use from office to residential
-VS-0124,3326/15,20150728,Decision Notice Issued,Clúid Housing Association,Change of use on ground floor from office to resid
-VS-0124,3457/17,20170719,Appeal Decided,Reliance Investments Ltd.,PROTECTED STRUCTURE: Planning permission for conse
-VS-0131,3288/02,20021031,Appeal Decided,Eircom Property Section,Erection of a 113 sq. m. single storey telephone e
-VS-0131,5070/07,20070831,Decision Notices Issued,David Hughes & Carmel McCormack,Demolish existing return and replace with a 6 stor
-VS-0131,5314/07,20070917,Appeal Decided,David Hughes and Carmel McCormick,6 storey bay windowed building over a single level
-VS-0131,4177/16,20171023,Appeal Decided,Rails Investment Ltd (In Trust),1.Demolition of existing building 2.Constr. of 4-7
-VS-0131,2553/20,20210415,Appeal Decided,Rails Investment Ltd (In Trust),Permission for development at the Former Post Offi
-VS-0400,2380/00,20000719,Appeal Decided,H.A.I.L,The proposed development comprises 30 dwellings. 5
-VS-0400,3753/07,20070619,Decision Notice Issued,Ballymun Regeneration Ltd,The development consists of the construction of 39
-VS-0400,6060/07,20071109,,Ballymun Area Office,To erect CCTV cameras throughout the areas of Coul
-VS-0400,3437/09,20090708,Decision Notices Issued,Ballymun Regeneration Ltd.,Demolish existing buildings by mechanical means or
-VS-0400,2085/10,20100121,Decision Notices Issued,Ballymun Regeneration Ltd,Demolition of no's 1-93 Coultry Road
-VS-0400,WEBLRD6078/25-S3,20251117,Appeal Decided                          ,Tuath Housing Association CLG,463 No. residential units as apartments and duplexes in 10 no. buildings
-VS-0402,2602/01,20010828,Decision Notices Issued,Department of Education and Science,A new wall with railings and including a new servi
-VS-0402,0290/02,20020211,Decision Notice Issued,Chessbridge Limited,Single storey building of 68 sqm apporx to house t
-VS-0402,4233/02,20030129,Decision Appealed,Chessbridge Ltd. (Bennett Ballymun Dev.),"planning permission for Ballymun Civic Centre, etc"
-VS-0402,2110/03,20030509,Decision Appealed,C Ling,Change of use from shop to take away hot food prem
-VS-0402,4427/03,20030912,Decision Notice Issued,Ian Delaney,Proposed demolition of existing garage and constru
-VS-0402,2980/04,20040524,Decision Notice Issued,Noel McCarthy,demolition of existing garage and construction of
-VS-0402,3210/04,20040609,Decision Notices Issued,Department of Education and Science,"provision of new entrance and social areas, altera"
-VS-0402,3527/04,20040630,Decision Appealed,Department of Education and Science,"provision of new entrance and social areas, altera"
-VS-0402,2459/05,20050419,Decision Notice Issued,Department of Education & Science,Provision of six new 8m-high flood lighting poles
-VS-0402,4680/05,20050908,Decision Notice Issued,Ballymun Regeneration Limited,one eight storey over basement flat block containi
-VS-0402,5076/05,20060113,Decision Notice Issued,Ballymun Regeneration Limited,"Demolition, by mechanical means or the controlled"
-VS-0402,1563/06,20060512,Decision Notice Issued,Noel McCarthy,Demolition of existing garage and construction of
-VS-0402,2505/07,20070404,Decision Notice Issued,Trinity Dome Ltd,Permission sought for provision of single storey s
-VS-0402,6060/07,20071109,,Ballymun Area Office,To erect CCTV cameras throughout the areas of Coul
-VS-0402,3635/08,20080714,Decision Notices Issued,Ballymun Regeneration Ltd.,Residential development comprising 36no. residenti
-VS-0402,2086/10,20100121,Decision Notice Issued,Ballymun Regeneration Ltd.,Demolition be mechanical means or controlled use o
-VS-0402,2201/11,20110215,Decision Notice Issued,Ballymun Regeneration Ltd,Demolition by mechanical means or the controlled u
-VS-0402,2627/15,20150422,Decision Notice Issued,Brian Feely,OUTLINE PERMISSION: One bedroom single storey deta
-VS-0402,3926/22,20220510,,"Dublin City Council, Housing and Communi",LAW: Planning and Development Act 2000 (as amended
-VS-0402,WEB2807/24,20241220,Decision Notice Issued,An Saol Foundation CLG,"Planning permission on lands at Shangan Road, Ball"
-VS-0402,WEB1073/25,20251205,Decision Notice Issued                  ,An Saol Foundation CLG,Construction of a 2-storey Neurocare and Rehabilitation Centre.
-VS-0403,4681/05,20050908,Decision Notice Issued,Ballymun Regeneration Limited,one eight storey over basement flat block containi
-VS-0403,5071/05,20060113,Decision Appealed,Ballymun Regeneration Limited,"Demolition, by mechanical means or the controlled"
-VS-0403,3753/07,20070619,Decision Notice Issued,Ballymun Regeneration Ltd,The development consists of the construction of 39
-VS-0403,6060/07,20071109,,Ballymun Area Office,To erect CCTV cameras throughout the areas of Coul
-VS-0403,3437/09,20090708,Decision Notices Issued,Ballymun Regeneration Ltd.,Demolish existing buildings by mechanical means or
-VS-0403,2591/10,20100409,Decision Notices Issued,Ballymun Regeneration Ltd.,"Demolish mechanically, terrace of 4no. houses & re"
-VS-0403,WEBLRD6078/25-S3,20251117,Appeal Decided                          ,Tuath Housing Association CLG,463 No. residential units as apartments and duplexes in 10 no. buildings
-VS-0407,1837/05,20050308,Appeal Decided,Ballymun Regeneration Ltd.,"Development of 135 dwellings, etc..."
-VS-0407,1213/08,20080124,Decision Notices Issued,Ballymun Regeneration Ltd,Demolish 1-48 Silloge Avenue using controlled expl
-VS-0407,5376/08,20081217,,Ballymun Civic Centre,"works to the road network in Ballymun, Dublin 11"
-VS-0407,3533/11,20111107,Decision Notices Issued,Ballymun Regeneration Ltd.,Demolish by mechanical means & controlled explosiv
-VS-0407,4509/17,20171214,,Environment & Transportation Department,LAW: Planning and Development Act 2000 (as amended
-VS-0429,4582/02,,,Ashgrange Holdings & G & J Stafford,Demolition of existing licensed premises & replace
-VS-0429,4279/00,20011026,Decision Appealed,Ashrange Holdings and G & F Stafford,Demolition of existing licensed premises and repla
-VS-0429,5909/03,20040601,Appeal Decided,Ashgrange Holdings & J & G Stafford,Demolition of existing/Construction of mixed devel
-VS-0429,6053/06,20061113,Decision Notice Issued,"Michael Doran, M Doran, K Featherston",Replace former public house with a residential dev
-VS-0429,6360/06,20070605,Appeal Decided,"M Doran, M Doran & K Featherston",Replace former Public House with a residential dev
-VS-0429,PAC0512/16,20160914,,John Downey,Petrol Filling Station
-VS-0429,2458/17,20170609,Appeal Decided,LDC Developments Ltd,Construction of 69 apartments in two five storey b
-VS-0429,WEB2288/25,20251007,Appeal Decided                          ,Zirbac DLK Limited,"(i) removal of existing carpark, associated areas of hard-standing surface and"
-VS-0449,1631/97,19970630,Decision Appealed,"Douglas Newman Good,",Retain the change of use from a shop to auctioneer
-VS-0449,1832/00,20000612,Decision Notice Issued,"Rabbitte Catering Ltd.,",Retain single storey store in enclosed yard.
-VS-0449,3858/01,20011221,Decision Notice Issued,Douglas Newman Good,Demolition of existing two storey building and con
-VS-0449,2980/02,20020909,Decision Appealed,Keith Lowe,Replacement of the existing shop front with a new
-VS-0449,6211/06,20070621,Appeal Decided,Paul Newman & Keith Lowe,Retention works and development of completion work
-VS-0449,3573/17,20170803,Decision Notice Issued,Danestone Limited,Demolition of existing single storey building and
-VS-0449,3218/24,20240216,Decision Notice Issued,Keith Lowe and Paul Newman,Permission for the demolition of the existing sing
-VS-0449,3261/24,20240926,Decision Notice Issued,Keith Lowe and Paul Newman,For the demolition of the existing single storey b
-VS-0453,0730/02,,Decision Notices Issued,Padraig McCormack & Derek Page,"construction of a 3,4 and 5 storey apartment compl"
-VS-0453,4915/03,20031008,Decision Notices Issued,P. McCormach and D. Page,3 storey development over basement comprising of 3
-VS-0453,3942/04,20040727,Decision Appealed,Padraig McCormack & Derek Page,3 storey development over basement car park compri
-VS-0453,3703/06,20061013,Managers Order,Anthony Kelly,single storey detached shed/playroom to rear
-VS-0453,PAC0485/15,20150604,,Paul Corrigan,Resdiential development
-VS-0453,PAC0364/16,20160601,,Donal Duffy,mixed use residential and commercial development o
-VS-0453,3420/16,20170302,Decision Notice Issued,Sequana Assets Ltd,Development of 19 no. residential units & 1 retail
-VS-0453,WEBLRD6094/26-S3,20260424,Decision Appealed                       ,R&D Developments Ltd(inReceivership)Gran,"R & D Developments Limited (in Receivership), Grant Thornton intends to apply f"
-VS-0455,4227/00,20001219,Decision Notice Issued,Robert Fitzgerald,Nine number 2 storey mews dwellings (total area 67
-VS-0455,4462/02,20021219,Decision Notices Issued,Calaroga Limited,permission is sought for the refurbishment and upg
-VS-0455,3169/05,20050603,Decision Notices Issued,Robert Fitzgerald,construction of a two storey building consisting o
-VS-0455,3487/05,20050623,Appeal Decided,Robert Fitzgerald,demolition of a garage (89.8sqm) and the construct
-VS-0455,2358/07,20070327,Decision Notices Issued,Kellyville Ltd,RETENTION  enlarged balconies and new pedestrian e
-VS-0455,5275/07,20070914,Decision Notices Issued,Kellyville Limited,PRO STRUCT: To retain changes to already granted d
-VS-0455,6455/07,20071207,Decision Notices Issued,Kellyville Ltd,PROTECTED STRUCTURE - RETENTION - internal alterat
-VS-0455,6675/07,20071220,Decision Notices Issued,Kellyville Limited,PRO STRUCT: Retention of changes to already grante
-VS-0455,2337/09,20090217,Decision Notices Issued,Mark Stewart,New two storey extension with 1 bedroom over garag
-VS-0455,4582/19,20201109,Decision Notice Issued,Fairfield Road Property Ltd,Planning for development at 0.2789 hectare site lo
-VS-0455,5046/22,20230511,Appeal Decided,Fairfield Road Property Ltd.,Planning for development at a 0.2789 hectare site
-VS-0455,WEB2467/26,20260612,Decision Notice Issued                  ,Marlborough Property Adventures Ltd,The proposed development will consist of modifications to the permitted apartme
-VS-0455,WEB2510/26,20260617,Registered Application                  ,Marlborough Property Ventures Ltd,The proposed development will consist of modifications to the permitted apartme
-VS-0461,2553/98,19980907,Decision Notice Issued,"Batchelors Limited,",Demolition of older disused buildings and for the
-VS-0461,WEB1204/20,20200417,Decision Notice Issued,Valeo Foods Ireland Ltd,The works will consist of the construction of a 99
-VS-0461,WEB1242/20,20200505,Decision Notice Issued,Valeo Foods Ireland Ltd,The works will consist of the construction of a 99
-VS-0461,4295/23,20231110,Decision Notice Issued,Transport Infrastructure Ireland (TII),Permission for the installation of solar photovolt
-VS-0461,3367/25,20250901,,Dublin City Council,LAW:construction of 144 no. apartments and associated development at site 1.16Ha
-VS-0501,1817/97,19970716,Decision Notices Issued,"Mr. B Murphy,",Off-street car parking to front garden.
-VS-0501,2589/03,20030605,Decision Notices Issued,Esmond Partnership,construction of mixed commercial/residential devel
-VS-0501,1195/04,20040518,Appeal Decided,Esmond Partnership,Mixed commercial/residential development of office
-VS-0501,4067/05,20050802,Decision Notice Issued,Fairview Building Company,changes to approved development (reg. ref: 1195/04
-VS-0501,5466/05,20060406,Decision Notice Issued,Fairview Building Company,changes to approved development (reg. ref: 1195/04
-VS-0501,3195/06,20060913,Decision Notice Issued,Fairview Building Company Limited,changes to approved development (Reg. Ref .Nos. 11
-VS-0501,5323/06,20060929,Decision Notice Issued,Fairview Building Company Ltd,erection of advertising signage
-VS-0501,2651/07,20070413,Decision Notices Issued,Fairview Building Company Ltd.,Changes to previously approved development (Reg.Re
-VS-0501,2836/07,20070425,Decision Notice Issued,Fairview Building Company Ltd,Permission for alterations and extensions to appro
-VS-0501,2955/07,20070502,Decision Notice Issued,Fairview Building Company Ltd,Changes to previously approved development 1195/04
-VS-0501,3291/07,20070926,Decision Notice Issued,Fairview Building Company Ltd,Permission forming part of approved application 11
-VS-0501,5102/07,20071127,Decision Notice Issued,Fairview Builing Company,in-fill house and subdivision of existing semi-det
-VS-0501,4679/18,20181219,Decision Notice Issued,Banner A Cuig Limited,Demolition of an adjoining pair of derelict and va
-VS-0501,LRD6015/22-S3,20221021,Appeal Decided,Banner A Cuig Limited,PROTECTED STRUCTURE: Planning permission for devel
-VS-0542,2958/97,19971124,Decision Notice Issued,Patrick Reynolds.,Extension to the ground floor apartment.
-VS-0542,2222/98,19980730,Decision Notice Issued,"W.I. Ltd.,",Alterations to previously approved development (Pl
-VS-0542,0163/00,20000127,Appeal Decided,"WI Ltd.,",The erection of 2 no. ESB sub-stations as part of
-VS-0542,3918/03,20030815,Decision Notice Issued,Coffey Healthcare,insertion of 4 no. windows and steet door to the e
-VS-0542,2709/04,20040506,Decision Notice Issued,Saga Developments Ltd,The developments will consist of the removal of th
-VS-0542,WEBLRD6066/25-S3,20250521,Decision Notice Issued                  ,Jamestown Village Limited,"We, Jamestown Village Limited, intend to apply for planning permission for devel"
-VS-0559,2475/03,20030530,Decision Appealed,McCabe Builders (Dublin) Limited,112 bedroom hotel together with ancillary accommod
-VS-0559,2888/04,20040518,Decision Appealed,McCabe Builders,revisions to development  permitted (4830/03 & 247
-VS-0559,4886/05,20050922,Registered Application,McCabe Builders Ltd,Retention and completion of revisions/modification
-VS-0559,5012/06,20060911,Decision Notice Issued,Clearwire Ireland Ltd,"installation of 3 no. antenna, 2 no. transmission"
-VS-0559,3065/14,20140716,Decision Notice Issued,Ardmore Lodge Nursing Home Ltd.,Change of use of existing hotel to nursing home
-VS-0559,3110/15,20160208,Decision Notice Issued,Ardmore Lodge Nursing Home Ltd,Construction of an extension to the northern/side
-VS-0559,3021/16,20160601,Decision Notice Issued,Ardmore Lodge Nursing Home Ltd,Alterations to previously approved reg. ref. 3065/
-VS-0559,2693/19,20190822,Decision Notice Issued,CareChoice Finglas Ltd.,The proposed development will consist of the const
-VS-0559,4431/19,20200526,Decision Notice Issued,CareChoice Finglas Ltd.,RETENTION:  The development consists of works to t
-VS-0559,2122/21,20210129,Decision Notice Issued,Carechoice (Finglas) Ltd.,RETENTION: Permission of an external signage erect
-VS-0724,5968/06,20061108,,Parks Department (Dublin City Council),Construction of single storey building comprising
-VS-0724,PAC0308/16,20160614,,Brendan Johnston,Development for 9 - 2 storey houses
-VS-0724,3801/16,20160927,Decision Notice Issued,Thomas Corcoran,Demolition of existing garage & open sheds & front
-VS-0724,3873/17,20170918,Decision Notice Issued,Thomas Corcoran,"Demolition of existing single storey garage/sheds,"
-VS-0724,4122/17,20171024,Decision Notice Issued,Thomas Corcoran,"Demolition of existing commercial garage,constr.of"
-VS-0724,3054/23,20230117,Decision Notice Issued,Thomas Corcoran,The development is to consist of the demolition of
-VS-0724,4926/23,20231207,Decision Notice Issued,Thomas Corcoran,Residential redevelopment of the former builders s
-VS-0724,5071/23,20231222,Appeal Decided                          ,Tom Corcoran,The development is to consist of the demolition of all existing single storey st
-VS-0724,WEB1226/26,20260204,Decision Notice Issued                  ,Thomas Corcoran,Planning permission is sought by Thomas Corcoran for the demolition of existing
-VS-0748,2705/00,20000817,Appeal decided,"Sr. Una O'Neill,",Erect a new single storey Convent building with as
-VS-0748,0256/01,20010205,Appeal Decided,The Board of Management,"12 Prefab offices, 2 meeting rooms, 2 staff changi"
-VS-0748,1005/01,20010620,Appeal Decided,Board of Management,"Locate a standby generator and attenuation walls,"
-VS-0748,4620/04,20040917,Decision Notices Issued,Mr. P. Fitzgerald,demolition of anexisting lean-to extension to the
-VS-0748,4992/04,20041014,Decision Notice Issued,Mr. P. Fitzgerald,provision of a 3-storey building (2-storey plus pl
-VS-0748,2926/05,20050520,Decision Notice Issued,The Board of Directors,provision of a glazed concourse area linking the e
-VS-0748,6691/06,20061220,Decision Notices Issued,Gerard Tinnelly,Development of a 3 storey apartment building over
-VS-0748,1952/07,20070305,Decision Notice Issued,Mr Patrick Fitzgerald,RETENTION - and completion of the sub division of
-VS-0748,2894/07,20070430,Decision Notice Issued,Gerard Tinnelly,Development of a 3 storey apartment building
-VS-0748,1548/08,20080220,Decision Notices Issued,The Board of Directors of O.L.H.,PROTECTED STRUCTURE-Single storey extension to in-
-VS-0748,1715/08,20080229,Decision Notice Issued,"Board of Directors, Palliative Care Unit",PROTECTED STRUCTURE-Provision of single storey ext
-VS-0748,4660/08,20081008,Decision Notice Issued,The Board of Directors,PROTECTED STRUCTURE - single storey 6 office side
-VS-0748,3974/17,20171003,Appeal Decided,Tinnelly Construction Ltd,Construction of a 3-storey apartment building over
-VS-0800,0813/03,20030227,Decision Appealed,"Mr. F. Verdon, Copy Graphics Ltd.",Alterations to shop front and new sign / lighting
-VS-0800,0206/02,20040511,Decision Notice Issued,Monkstown Inns,Extension to the existing two storey public house.
-VS-0800,4790/05,20050916,Decision Notices Issued,Mr & Mrs Hardy,Ground and 1st floor extension to rear of existing
-VS-0800,5159/05,20051013,Decision Notice Issued,Gannon Homes Ltd,demolition & provision of 27 one bedroom and 93 tw
-VS-0800,2085/06,20060320,Decision Appealed,Mr Rob Hardy and Mrs Kelly Hardy,"Permission for elevation, internal, amd roof profi"
-VS-0800,2461/06,20060720,Decision Notice Issued,P Kelly and G Farrelly Monkstown Inn Ltd,Permission for installation of 2 flag poles and 2
-VS-0800,5694/05,20060907,Appeal Decided,Gannon Homes Ltd.,"demolition of existing offices, factory buildings,"
-VS-0800,3683/09,20090813,Decision Notices Issued,K. & C. Reilly,Additions and alterations to existing double store
-VS-0800,2506/10,20100326,Decision Notice Issued,Tadhg Campion,Change of use from betting office to takeaway and
-VS-0800,3497/12,20121121,Decision Notice Issued,Gerry Kinsella,"Retention of porch, signage & change of use. Permi"
-VS-0800,2504/13,20130422,,Environment and Engineering Department,Permission to carry out flood alleviation works on
-VS-0800,2620/14,20141223,Decision Notice Issued,Gannon Properties,"Demolition of existing offices,factory buildings,"
-VS-0800,3869/14,20150320,Decision Notice Issued,Kevin Reilly,Additions and alterations to existing dwelling
-VS-0800,2308/16,20160617,Appeal Decided,Gannon Properties,Planning permission sought by Gannon Properties fo
-VS-0800,2477/17,20170602,Decision Notice Issued,Gannon Properties,Partial demolition/alterations to existing houses
-VS-0800,2996/17,20170831,Decision Notice Issued,Gannon Properties,Permission sought for a single storey Sub-Station
-VS-0800,3159/17,20170831,Appeal Decided,Gannon Properties,Revisions to previously approved development Reg.
-VS-0800,3324/19,20190621,Decision Notice Issued,Gannon Properties,Planning permission sought for the following revis
-VS-0800,3774/21,20211029,Decision Notice Issued,Harley Issuer Designated Activity Compan,Lands of the former Smurfit Paper Mills Factory an
-VS-0800,3789/22,20220421,Decision Notice Issued,CPFM Limited,Planning permission for the development will consi
-VS-0800,3864/22,20220429,Decision Notice Issued,CPFM Limited,The development will consist of the construction o
-VS-0800,4628/22,20220805,Decision Notice Issued,CPFM Limited,Development will consist of the construction of a
-VS-0800,4852/22,20220914,Decision Notice Issued,CPFM Limited,The development will consist of the construction o
-VS-0800,5044/22,20221014,Decision Notice Issued,Greenfield Ideas Ltd.,RETENTION: for the following: a) Alterations to th
-VS-0800,5046/23,20231221,Appeal Decided                          ,Greenfield Ideas Ltd.,PERMISSION & RETENTION: The development will consist of: 1. Planning Permission:
-VS-0800,WEBLRD6063/25-S3,20250509,Appeal Decided                          ,Harley Issuer Designated Activity Compan,"We, Harley Issuer Designated Activity Company, intend to apply for a seven year"
-VS-0800,WEB5199/25,20260401,Decision Appealed                       ,Greenfield Ideas Ltd,RETENTION PERMISSION: Dublin City Council-Retention permission is sought by Gree
-VS-0864,4162/00,20001222,Decision Notice Issued,Colt Telecom Ireland Limited,The change of use of an existing rear warehouse bu
-VS-0864,3164/08,20080610,Decision Notice Issued,C.B.S Primary School,"A new single storey, ground floor extension to rea"
-VS-0864,3218/17,20170621,Decision Notice Issued,General Motors IT Services Ireland Ltd,Change of use of part of 1st floor from data hall
-VS-0864,3577/20,20201016,Decision Notice Issued,General Motors IT Services Ireland Ltd.,The development will consist of 1.) Change of use
-VS-0976,0101/03,20030324,Decision Notice Issued,"Larkan Catering Ltd.,","1st floor function room, restaurant & lounge exten"
-VS-0976,4567/19,20191128,Appeal Decided,Mulsh Sarl,Planning permission is sought by Mulsh Sarl for de
-VS-0976,3596/22,20230223,Decision Notice Issued,Mulsh Sarl,Planning permission is sought for development at a
-VS-0976,3594/23,20230419,Decision Notice Issued,Mulsh Sarl,The proposed development will consist of the demol
-VS-0976,3378/24,20241009,Decision Notice Issued,Mulsh Sarl,The proposed development will consist of alteratio
-VS-0979,2552/15,20150821,Appeal Decided,Fingleton White,PROTECTED STRUCTURE: Pipeline from Dublin Port to
-VS-0979,3484/15,20150825,Decision Notice Issued,Gary Keville Transport Ltd.,Provision of temporary single storey office buildi
-VS-0979,PAC0116/16,20160307,,Gerard Crowley ESB,PAC: temporary relocation from Fitzwilliam St. for
-VS-0979,3052/16,20160603,Decision Notice Issued,ESB,Temporary surface car park for a period of max 5 y
-VS-0979,2443/18,20180307,,Dublin City Council,LAW: Two storey extension to the existing Tunnel C
-VS-0979,2766/21,20210514,Decision Notice Issued,Electricity Supply Board (ESB),The development will consist of the continued use
-VS-1077,1054/98,19980417,Decision Notice Issued,Zoe Developments Limited.,Alteration to previously approved development
-VS-1077,1190/04,20040122,Decision Notices Issued,Christchurch Developments (Dublin) Ltd.,PROTECTED STRUCTURE Construction of mixed use deve
-VS-1077,1606/04,20040527,Appeal Decided,Christchurch Developments (Dublin) Ltd.,Demolition & construction of mixed use development
-VS-1077,1238/07,20070119,Appeal Decided,Lord Iveagh Hotels and Markets Ltd,PROTECTED STRUCTURE - Mixed use development Hotel
-VS-1077,4811/19,20191223,Decision Notice Issued,Iveagh Markets Hotels Limited, PROTECTED STRUCTURE: Iveagh Markets Hotels Limite
+register_number,plan_ref,registration_date,app_type,outcome,decision,decision_date,applicant,proposal,overlap_pct,council_confirmed,planning_portal_url
+VS-0003,4466/19,2019-11-15,Permission,Refused,REFUSE PERMISSION,2020-01-17,Legendside Ltd.,Permission for residential development on a site m,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4466%2F19
+VS-0003,0419/19,2019-09-11,Section 5,Granted,Grant  Exemption Certific,2019-10-08,Irish Prison Services,EXPP: this submission to Dublin City Council is to,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0419%2F19
+VS-0003,3964/14,2015-09-24,Permission,Granted,GRANT PERMISSION,2015-10-21,NOVAS Initiatives,Construction of 13 apartments and a commercial/ret,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3964%2F14
+VS-0003,3672/13,2014-04-07,Permission,Granted,GRANT PERMISSION,2014-05-02,Crocusglen Ltd.,Construction of 8 no. 3 & 4 bed houses,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3672%2F13
+VS-0005,WEB2243/25,2025-06-03,Permission                              ,Refused,REFUSE PERMISSION        ,2025-07-25,Halexmain Enterprises Ltd,"We, Halexmain Enterprises Ltd, intend to apply for planning permission for the d",99.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2243%2F25
+VS-0005,6705/07,2008-08-18,Permission,Granted,GRANT PERMISSION,2008-09-09,Henry Farrell & Brendan Lawless,Construct a mixed use development with 58 no. apar,99.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6705%2F07
+VS-0005,5003/05,2005-10-03,Permission,Granted,GRANT PERMISSION,2005-11-25,BBL Developments Ltd,construct 2 no. 2 bed penthouse apartments and sem,0.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5003%2F05
+VS-0005,4752/05,2005-09-14,Permission,Granted,APPLICATION DECLARED INVA,2005-09-27,BBL Developments Ltd,construct 2 No. 2 bed penthouse apartments and sem,0.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4752%2F05
+VS-0005,2843/04,2004-05-14,Permission,Granted,GRANT PERMISSION,2004-07-07,BBL Developments,15 sq.m. E.S.B. sub station and switch panel to se,0.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2843%2F04
+VS-0005,0250/03,2003-01-24,Permission,Granted,GRANT PERMISSION,2003-05-16,BBL Developments Limited,"construct  70 housing units in four storeys, etc",0.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0250%2F03
+VS-0011,4276/24,2024-09-12,LAW,Other,City Council - Approved,2025-01-06,Housing & Community Services,LAW: PROTECTED STRUCTURE: Alteration and extension,76.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4276%2F24
+VS-0011,3210/19,2019-06-07,LAW,Other,City Council - Approved,2019-10-07,Dublin City Council,LAW: PROTECTED STRUCTURE: Planning and Development,99.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3210%2F19
+VS-0011,2363/06,2006-08-14,Permission,Granted,GRANT PERMISSION,2006-09-06,Cableside Developments,PROTECTED STRUCTURE - provision of 227 no. residen,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2363%2F06
+VS-0011,6372/05,2005-12-22,Permission,Granted,APPLICATION DECLARED INVA,2006-02-01,Cableside Development Ltd,PROTECTED provision of 230 no. residential units i,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6372%2F05
+VS-0019,3191/17,2017-09-07,Permission,Granted,GRANT PERMISSION,2017-10-04,River Dublin 1 S.a.r.l.,Replacement of existing building signage at the Bi,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3191%2F17
+VS-0019,2676/17,2017-05-11,Permission,Other,APPLICATION WITHDRAWN,2017-04-24,River Dublin 1 S.a.r.l.,Planning permission on a 0.48 ha (1.18 acre) site,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2676%2F17
+VS-0019,2683/15,2015-04-28,Permission,Granted,GRANT PERMISSION,2015-06-22,Targeted Investment Opportunities PLC,Erection of permanent building signage at the Bina,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2683%2F15
+VS-0019,3191/13,2013-11-28,Permission,Granted,GRANT PERMISSION,2013-12-16,KSH Europe Holdings,Provision of 100 student accommodation units and a,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3191%2F13
+VS-0019,4733/08,2009-01-29,Permission,Granted,GRANT PERMISSION,2009-03-25,P. Elliott & Co Ltd.,"PROTECTED STRUCTURE-Alterations, partial demolitio",99.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4733%2F08
+VS-0019,1712/08,2008-02-29,Permission,Granted,GRANT PERMISSION,2008-04-23,P. Elliott & Co. Ltd.,PROTECTED STRUCTURE-Alterations & refurbishment to,99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1712%2F08
+VS-0019,3233/06,2006-10-09,Permission,Granted,GRANT PERMISSION,2006-12-01,P. Elliot & Co. Ltd.,Protected Structures-Alterations and refurbishment,99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3233%2F06
+VS-0028,WEB5374/25,2026-02-27,Permission                              ,Granted,GRANT PERMISSION AND RETE,2026-03-25,Atlas Avenue GP3 Ltd.,PROTECTED STRUCTURE: RETENTION & PERMISSION: The application site includes Prote,0.5,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB5374%2F25
+VS-0028,3405/23,2023-06-16,Permission,Granted,GRANT PERMISSION,2023-07-13,Atlas Avenue GP3 Ltd.,PROTECTED STRUCTURE: Planning Permission to amend,0.0,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3405%2F23
+VS-0028,2765/20,2020-05-28,Permission,Granted,GRANT PERMISSION,2020-07-22,Atlas GP Limited,PROTECTED STRUCTURE: Planning permission for amend,0.0,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2765%2F20
+VS-0028,2514/20,2020-03-16,Permission,Granted,GRANT PERMISSION,2020-07-03,Atlas GP Ltd,PROTECTED STRUCTURE  -  Permission to amend a perm,0.0,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2514%2F20
+VS-0028,3209/19,2019-10-01,Permission,Granted,GRANT PERMISSION,2019-11-25,Atlas GP Ltd,PROTECTED STRUCTURE: Atlas GP Limited intend to ap,0.0,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3209%2F19
+VS-0028,3082/18,2018-05-23,Permission,Granted,APPLICATION DECLARED INVA,2018-07-06,Atlas GP Limited,PROTECTED STRUCTURE: Atlas GP Limited intend to ap,0.0,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3082%2F18
+VS-0028,3855/09,2010-04-28,Permission,Granted,GRANT PERMISSION,2010-05-25,Canal Harbour Development Company Ltd,PROTECTED STRUCTURE - 6 buildings ranging in heigh,0.3,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3855%2F09
+VS-0028,3564/98,1998-12-16,Outline Permission,Refused,REFUSE OUTLINE PERMISSION,1999-03-05,"Ms. B. Deane,",Residential development comprising 5 no. two bed a,0.1,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3564%2F98
+VS-0043,4170/17,2017-11-01,Permission,Other,WITHDRAWN ARTICLE 33 (NO,2019-01-03,The Board of St. James's Hospital,The Development will consist of the demolition & r,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4170%2F17
+VS-0043,4816/05,2005-09-16,Permission,Granted,GRANT PERMISSION,2005-11-10,W. and D. Hooton,Refurbishment of existing dilapidated dwelling to,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4816%2F05
+VS-0043,3428/05,2005-06-20,Permission,Granted,APPLICATION DECLARED INVA,2005-08-02,W & D Hooton.,refurbishment  of existing dilapidated dwelling to,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3428%2F05
+VS-0043,2998/05,2005-05-24,Permission,Granted,APPLICATION DECLARED INVA,2005-06-07,W. & D. Hooton,refurbishment of existing dilapidated dwelling to,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2998%2F05
+VS-0043,0547/01,2001-04-03,Permission,Granted,GRANT PERMISSION,2001-05-30,Linfort Limited,Demolition of existing dwelling and reconstruction,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0547%2F01
+VS-0048,LRD6025/23-S3,2023-06-02,Large Residential Development-3,Granted,GRANT PERMISSION,2023-07-27,Bindford Limited,Planning permission for a Large-Scale Residential,99.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=LRD6025%2F23-S3
+VS-0048,3513/21,2021-09-16,LAW,Undecided,,,"Dublin City Council, Environment and Tra",LAW: Planning and Development Act 2000 (as amended,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3513%2F21
+VS-0048,4752/18,2019-07-25,Permission,Granted,GRANT PERMISSION,2019-08-21,Pacelli Lynch,Construction of 2 no. fully serviced two storey dw,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4752%2F18
+VS-0048,4350/18,2018-11-08,Permission,Granted,APPLICATION DECLARED INVA,2018-12-05,Pacelli Lynch,construction of 2no. fully serviced two storey dwe,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4350%2F18
+VS-0048,4248/18,2018-10-24,Permission,Granted,APPLICATION DECLARED INVA,2018-11-01,Pascelli Lynch,The development will consist of the construction o,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4248%2F18
+VS-0048,4533/17,2018-05-28,Permission,Refused,REFUSE PERMISSION,2018-06-22,Pacelli Lynch,Constr.of 2 no. fully serviced two-storey dwelling,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4533%2F17
+VS-0048,4233/17,2017-11-10,Permission,Granted,APPLICATION DECLARED INVA,2017-11-28,Pacelli Lynch,2 No. fully serviced two storey dwellings ( 2-bed),0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4233%2F17
+VS-0048,2402/14,2014-03-21,Permission,Granted,GRANT PERMISSION,2014-05-15,Bondford Developments Ltd,Demolition of existing buildings on site & other w,97.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2402%2F14
+VS-0048,2300/14,2014-02-28,Permission,Granted,APPLICATION DECLARED INVA,2014-03-13,Binford Developments Ltd,Demolition of existing buildings on site & other w,97.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2300%2F14
+VS-0048,3209/13,2013-09-06,Permission,Granted,APPLICATION DECLARED INVA,2013-10-23,Bindford Developments Ltd,Construction of residential development with some,99.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3209%2F13
+VS-0048,2223/12,2012-02-27,Permission,Granted,APPLICATION DECLARED INVA,2012-03-08,Pacelli Lynch,"Construction of 2no. 2 bedroom, 2-storey non-ident",0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2223%2F12
+VS-0048,6818/07,2008-08-13,Permission,Granted,GRANT PERMISSION,2008-09-09,Stateford Limited,Demolition of existing buildings on site & constru,97.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6818%2F07
+VS-0048,1745/07,2007-07-12,Permission,Refused,REFUSE PERMISSION,2007-08-08,Stateford Limited,Development of a mixed use scheme on a site of 0.7,97.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1745%2F07
+VS-0048,3104/07,2007-05-11,Permission,Granted,GRANT PERMISSION,2007-07-05,Christopher Campbell,2nd Storey extension over existing kitchen.,2.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3104%2F07
+VS-0048,1975/07,2007-03-06,Permission,Granted,SPLIT DECISION(PERMISSION,2007-04-25,Christopher Campbell,proposed extension at the rear will consist of a s,2.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1975%2F07
+VS-0048,4033/06,2006-07-14,Permission,Refused,REFUSE PERMISSION,2006-09-07,Stateford Limited,Permission for development of a mixed use scheme,97.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4033%2F06
+VS-0048,1193/02,2002-04-29,Permission,Granted,GRANT PERMISSION,2002-06-13,Chris Campbell,erection of a two storey three bedroomed dwelling,2.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1193%2F02
+VS-0048,0900/00,2000-03-30,Permission,Refused,REFUSE PERMISSION,2000-05-16,"Mr Paul Flanigan,",Change of use from a store and dwelling to a three,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0900%2F00
+VS-0048,2593/98,1999-01-18,Permission,Granted,GRANT PERMISSION,1999-03-12,"Cross Guns Bakery Ltd,",Demolition of existing silos and workshops and con,98.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2593%2F98
+VS-0048,0797/97,1997-06-27,Permission,Refused,REFUSE PERMISSION,1997-08-25,"Pacelli & Marina Lynch,",Erect two fully serviced dwelling houses with boun,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0797%2F97
+VS-0055,WEB1401/25,2025-02-28,Permission                              ,Granted,GRANT PERMISSION         ,2025-04-24,Ed Eustace Fiona McDermott,Planning permission to demolish the existing ground floor extension to front and,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB1401%2F25
+VS-0055,WEB2336/24,2024-10-21,Permission,Granted,GRANT PERMISSION,2024-12-13,Sarah Jolley and Seamus keller,PLANNING PERMISSION to extend and alter a property,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2336%2F24
+VS-0055,4966/23,2023-12-14,Permission,Granted,GRANT PERMISSION,2024-02-12,Gary and Emma Fitzgerald,For conversion of existing attic space comprising,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4966%2F23
+VS-0055,4098/23,2023-07-07,Permission,Granted,GRANT PERMISSION,2023-08-31,Cormac Nevin and Sarah Grace,"The development will consist of 
+(a) the demoliti",0.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4098%2F23
+VS-0055,2828/20,2020-11-13,Permission,Granted,GRANT PERMISSION,2020-12-09,Michael Thomas Dawson,PROTECTED STRUCTURE: The development will consist,0.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2828%2F20
+VS-0055,4515/19,2019-11-22,Permission                              ,Refused,REFUSE PERMISSION        ,2020-01-24,Lilacstone Limited,PROTECTED STRUCTURE: The development will principally consist of: the conversion,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4515%2F19
+VS-0055,3625/18,2018-08-01,Permission,Granted,GRANT PERMISSION,2018-09-25,Kitale Ltd,Removal of existing single storey glazed lean-to e,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3625%2F18
+VS-0055,4313/15,2016-08-16,Permission,Granted,GRANT PERMISSION,2016-09-12,Independent Trustee Company Ltd,PROTECTED STRUCTURE: Permission for 12 no. dwellin,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4313%2F15
+VS-0055,3721/15,2015-09-29,Permission,Granted,APPLICATION DECLARED INVA,2015-10-09,Independent Trustee Company Ltd,"PROTECTED STRUCTURE:Construct 7 new houses,extensi",99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3721%2F15
+VS-0055,2969/98,1998-10-21,Permission,Other,ADDITIONAL INFORMATION,1998-12-16,"Kitale Ltd. (Ashley Motors),",To form no. 2 revised vehicular entrances and car,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2969%2F98
+VS-0080,WEB5136/25,2025-09-12,Permission                              ,Granted,GRANT PERMISSION         ,2025-11-06,Focus Housing Association CLG,Permission is sought by Focus Housing Association CLG for development at Nos. 2,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB5136%2F25
+VS-0080,WEB5031/25,2025-09-03,Permission                              ,Granted,APPLICATION DECLARED INVA,2025-09-04,Focus Housing Association CLG,Permission is sought by Focus Housing Association CLG for development at Nos. 2,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB5031%2F25
+VS-0080,WEB2969/25,2025-08-26,Permission                              ,Granted,APPLICATION DECLARED INVA,2025-09-02,Focus Housing Association CLG,Permission is sought by Focus Housing Association CLG for development at Nos. 2,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2969%2F25
+VS-0080,3548/20,2021-02-25,Permission,Granted,GRANT PERMISSION,2021-03-24,Dauken Ltd,Planning permission for development on a site of 1,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3548%2F20
+VS-0080,4795/19,2019-12-20,Permission,Refused,REFUSE PERMISSION,2020-02-21,Dauken Ltd,Planning permission for a residential & ESB sub-st,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4795%2F19
+VS-0080,3144/19,2019-05-29,Permission,Granted,APPLICATION DECLARED INVA,2019-06-12,Dauken Ltd.,Planning permission for a social housing & ESB sub,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3144%2F19
+VS-0080,2495/99,1999-09-01,Permission,Refused,REFUSE PERMISSION,1999-11-22,"Karl Construction Ltd.,","Residential development of 44 apartments, comprisi",99.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2495%2F99
+VS-0080,3309/98,1999-07-12,Permission,Granted,GRANT PERMISSION,1999-09-08,"Alan Keogh,","Extension to licenced premises, with storage at ba",1.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3309%2F98
+VS-0080,0491/99,1999-04-07,Permission                              ,Other,ADDITIONAL INFORMATION   ,1999-06-02,"Karl Construction Ltd.,",Residential development of 57 apartments i.e. 15 no. 1,99.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0491%2F99
+VS-0080,0205/98,1998-01-29,Permission,Granted,GRANT PERMISSION,1998-03-26,Alan Keogh.,Roof garden.,99.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0205%2F98
+VS-0080,0092/97,1997-10-28,Permission,Granted,GRANT PERMISSION,1997-12-04,"Mr. A. Keogh,",Additional floor containing 2 no. apartments to pr,1.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0092%2F97
+VS-0080,1609/97,1997-06-26,Permission,Granted,GRANT PERMISSION,1997-08-13,"Alan Keogh,",Change of use at ground floor and basement to lice,4.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1609%2F97
+VS-0101,3553/11,2012-07-10,Permission,Granted,SPLIT DECISION(PERMISSION,2012-08-02,Catherine Collins,"RETENTION - five storey over basement, 17m high, m",0.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3553%2F11
+VS-0101,3380/11,2011-10-05,Permission,Granted,APPLICATION DECLARED INVA,2011-10-11,Catherine Collins,RETENTION & PERMISSION - Partial demolition & cons,0.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3380%2F11
+VS-0101,4227/07,2007-07-12,Permission,Refused,REFUSE PERMISSION,2007-09-03,James Anderson,Increase the size of existing 3 storey extension o,2.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4227%2F07
+VS-0101,3594/07,2007-06-11,Permission,Granted,APPLICATION DECLARED INVA,2007-06-19,Mr. James Anderson,To increase the size of existing three storey exte,2.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3594%2F07
+VS-0101,3642/06,2006-06-23,Permission,Granted,GRANT PERMISSION,2006-08-16,M & J Wallace Ltd,additional 3 No. 2 bed apartments to approved (ref,7.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3642%2F06
+VS-0101,3633/06,2006-06-23,Permission,Granted,GRANT PERMISSION,2006-08-11,M & J Wallace LTD,"commercial/residential development, 28 apartments",99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3633%2F06
+VS-0101,3149/06,2006-05-25,Permission,Granted,APPLICATION DECLARED INVA,2006-06-16,M&U Wallace Ltd,Additional 3 no2 bed apartments,7.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3149%2F06
+VS-0101,3132/06,2006-05-25,Permission,Granted,APPLICATION DECLARED INVA,2006-06-16,M + J Wallace Ltd,Permission sought for commercial / residential dev,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3132%2F06
+VS-0101,2454/06,2006-04-12,Permission,Granted,APPLICATION DECLARED INVA,2006-05-02,M + J Wallace,Permission for amendments to approved scheme 5705/,7.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2454%2F06
+VS-0101,5705/04,2004-12-06,Permission,Granted,GRANT PERMISSION,2005-02-08,M + J Wallace Ltd,constructionof 5/6 floors over basement including,7.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5705%2F04
+VS-0101,5544/04,2004-11-25,Permission,Granted,APPLICATION DECLARED INVA,2004-12-06,M & J Wallace Ltd,Construction of 5/6 floors over basement including,7.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5544%2F04
+VS-0101,2304/04,2004-04-08,LAW,Other,APPLICATION WITHDRAWN,2004-04-29,Housing Social & Community Services,22 units in 2 blocks,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2304%2F04
+VS-0117,3511/22,2022-03-14,LAW,Other,City Council - Approved,2022-07-04,"Dublin City Council, Housing and Communi",LAW: Planning and Development Act 2000 (as amended,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3511%2F22
+VS-0117,4426/05,2005-08-22,Permission,Refused,REFUSE PERMISSION,2005-10-13,Readymix (ROI) Ltd.,demolition of concrete plant & 2 office blocks & c,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4426%2F05
+VS-0117,2324/05,2005-04-11,Permission,Granted,APPLICATION DECLARED INVA,2005-05-03,Readymix (ROI) Ltd.,demolition of a concrete batching plant and 2 no.,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2324%2F05
+VS-0117,1549/05,2005-02-15,Permission,Granted,APPLICATION DECLARED INVA,2005-03-08,Readymix (ROI) Limited,130 no apartments units in an arrangement of 6 and,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1549%2F05
+VS-0117,0991/99,1999-04-01,Permission,Granted,GRANT PERMISSION,1999-05-27,"Readymix PLC.,",Replacement of the existing entrance porch at rear,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0991%2F99
+VS-0118,4741/19,2020-07-17,Permission,Granted,GRANT PERMISSION,2020-08-13,Cuisle Properties Ltd,Planning permission for the demolition of a single,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4741%2F19
+VS-0118,2478/19,2019-03-12,Permission,Refused,REFUSE PERMISSION,2019-05-02,Cuisle Properties Ltd.,The proposed development consists of the demolitio,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2478%2F19
+VS-0118,4100/16,2016-11-10,Permission,Refused,REFUSE PERMISSION,2017-01-13,Cuisle Properties Ltd.,"Residential student accommodation development,",99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4100%2F16
+VS-0118,2328/16,2016-06-14,Permission,Granted,GRANT PERMISSION AND RETE,2016-07-07,Mr. Ned (Edward) Fallon,RETENTION: Permission is sought for a first floor,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2328%2F16
+VS-0118,3855/14,2014-12-12,Permission,Refused,REFUSE PERMISSION,2015-02-11,Cuisle Properties Ltd,Construction of two and a half storey Apartment/To,99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3855%2F14
+VS-0118,3721/14,2014-11-19,Permission,Granted,APPLICATION DECLARED INVA,2014-12-01,Cuisle Properties Ltd,Construction of two and a half storey Apartment/To,99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3721%2F14
+VS-0118,3550/14,2014-10-16,Permission,Granted,APPLICATION DECLARED INVA,2014-11-06,Cuisle Properties Ltd,Construction of 5 3-bed terraced townhouses & 1 3-,99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3550%2F14
+VS-0118,5356/07,2007-09-20,Permission,Granted,GRANT PERMISSION,2007-10-31,Frank Newman and Jim Redmond,Demolition of shed structure & construction of 6 n,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5356%2F07
+VS-0118,5569/06,2006-10-16,Permission,Granted,APPLICATION DECLARED INVA,2006-11-02,Frank Newman & Jim Redmond,Permission for a 2 and 3 storey apartment developm,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5569%2F06
+VS-0118,3755/06,2006-06-30,Permission,Granted,APPLICATION DECLARED INVA,2006-07-25,Thomas Cribben,Change of use from office to apartment,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3755%2F06
+VS-0118,2904/06,2006-05-11,Permission,Granted,APPLICATION DECLARED INVA,2006-05-30,Thomas Cribben,change of use from office to apartment,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2904%2F06
+VS-0118,1590/06,2006-02-15,Permission,Refused,REFUSE PERMISSION,2006-04-10,Frank Newman & Jim Redmond,Permission is sought for a 4 storey apartment deve,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1590%2F06
+VS-0118,5469/05,2005-11-03,Permission,Granted,GRANT PERMISSION,2005-12-20,John O'Rourke,Change of use from commercial to residential in re,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5469%2F05
+VS-0118,4944/05,2005-09-27,Permission,Granted,APPLICATION DECLARED INVA,2005-10-20,John O'Rourke,Change of use from commercial to residential,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4944%2F05
+VS-0118,1896/00,2001-03-16,Permission,Granted,GRANT PERMISSION,2001-05-14,John O'Rourke,"Demolition of existing building, and its replaceme",0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1896%2F00
+VS-0118,1895/00,2001-03-16,Permission,Granted,GRANT PERMISSION,2001-05-14,T. & S. Cribben,Demolition of derelict building and subsequent ere,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1895%2F00
+VS-0118,0471/00,2000-05-10,Permission,Granted,GRANT PERMISSION,2000-06-29,"Haughton & Son Tyres Ltd.,","4 no. three bedroom townhouses, and site to rear.",99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0471%2F00
+VS-0124,3457/17,2017-07-19,Permission,Granted,GRANT PERMISSION,2017-09-12,Reliance Investments Ltd.,PROTECTED STRUCTURE: Planning permission for conse,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3457%2F17
+VS-0124,3326/15,2015-07-28,Permission,Granted,GRANT PERMISSION,2015-09-14,Clúid Housing Association,Change of use on ground floor from office to resid,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3326%2F15
+VS-0124,3189/15,2015-07-09,Permission,Granted,APPLICATION DECLARED INVA,2015-07-14,Clúid Housing Association,Change of use from office to residential,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3189%2F15
+VS-0124,5427/06,2007-01-29,Permission,Granted,GRANT PERMISSION,2007-02-23,Aldborough Developments Ltd.,PROTECTED STRUCTURE-Redevelopment at this site,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5427%2F06
+VS-0124,2119/06,2006-03-21,Permission,Granted,APPLICATION DECLARED INVA,2006-04-05,Aldborough Developments LTD,"PROTECTED STRUCTURE - 40 Bedroom ""Day Hospital Med",100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2119%2F06
+VS-0124,4569/02,2002-12-23,Permission,Granted,GRANT PERMISSION,2003-02-20,Cluid Housing Association,Change of use of 64.0 sq. m. apartment to offices,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4569%2F02
+VS-0124,4220/00,2000-12-22,Permission,Other,APPLICATION WITHDRAWN,2001-03-14,St Pancras Housing Association,Revisions to previous permission (ref. 2703/00) to,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4220%2F00
+VS-0124,4201/00,2000-12-22,Permission,Granted,GRANT PERMISSION,2001-03-06,Irish Music Rights Organisation,"General refurbishment, alteration, extensions to h",100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4201%2F00
+VS-0124,2703/00,2000-08-17,Permission,Granted,GRANT PERMISSION,2000-10-03,St. Pancras Housing Association,Revision to previously approved scheme (Ref. 2350/,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2703%2F00
+VS-0124,2350/99,1999-10-13,Permission,Granted,GRANT PERMISSION,1999-12-01,St Pancras Housing Association,"Alterations and renovations to provide 1 shop, 3 e",0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2350%2F99
+VS-0124,2569/06,,Permission,Other,APPLICATION WITHDRAWN,2006-06-13,Aldborough Developments Ltd,"40 Bedroom Day hospital , conservation and restora",100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2569%2F06
+VS-0124,0060/15,,Section 5,Other,APPLICATION WITHDRAWN,2015-03-26,Relience Investments Ltd.,EXPP: PROTECTED STRUCTURE: Erection of CCTV camera,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0060%2F15
+VS-0131,2553/20,2021-04-15,Permission,Refused,REFUSE PERMISSION,2021-05-12,Rails Investment Ltd (In Trust),Permission for development at the Former Post Offi,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2553%2F20
+VS-0131,4177/16,2017-10-23,Permission,Refused,REFUSE PERMISSION,2017-11-17,Rails Investment Ltd (In Trust),1.Demolition of existing building 2.Constr. of 4-7,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4177%2F16
+VS-0131,5314/07,2007-09-17,Permission,Refused,REFUSE PERMISSION,2007-10-24,David Hughes and Carmel McCormick,6 storey bay windowed building over a single level,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5314%2F07
+VS-0131,5070/07,2007-08-31,Permission,Granted,APPLICATION DECLARED INVA,2007-09-12,David Hughes & Carmel McCormack,Demolish existing return and replace with a 6 stor,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5070%2F07
+VS-0131,3288/02,2002-10-31,Permission,Granted,GRANT PERMISSION,2002-12-19,Eircom Property Section,Erection of a 113 sq. m. single storey telephone e,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3288%2F02
+VS-0400,WEBLRD6078/25-S3,2025-11-17,Large Residential Development-3         ,Granted,GRANT PERMISSION         ,2025-12-12,Tuath Housing Association CLG,463 No. residential units as apartments and duplexes in 10 no. buildings,92.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEBLRD6078%2F25-S3
+VS-0400,2085/10,2010-01-21,Permission,Granted,GRANT PERMISSION,2010-03-15,Ballymun Regeneration Ltd,Demolition of no's 1-93 Coultry Road,98.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2085%2F10
+VS-0400,3437/09,2009-07-08,Permission,Granted,GRANT PERMISSION,2009-08-27,Ballymun Regeneration Ltd.,Demolish existing buildings by mechanical means or,37.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3437%2F09
+VS-0400,6060/07,2007-11-09,LAW,Other,OBSERVATIONS,2008-01-28,Ballymun Area Office,To erect CCTV cameras throughout the areas of Coul,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6060%2F07
+VS-0400,3753/07,2007-06-19,Permission,Granted,GRANT PERMISSION,2007-08-10,Ballymun Regeneration Ltd,The development consists of the construction of 39,9.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3753%2F07
+VS-0400,2380/00,2000-07-19,Permission,Granted,GRANT PERMISSION,2000-09-15,H.A.I.L,The proposed development comprises 30 dwellings. 5,1.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2380%2F00
+VS-0402,WEB1073/25,2025-12-05,Permission                              ,Granted,GRANT PERMISSION         ,2026-01-09,An Saol Foundation CLG,Construction of a 2-storey Neurocare and Rehabilitation Centre.,98.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB1073%2F25
+VS-0402,WEB2807/24,2024-12-20,Permission,Granted,APPLICATION DECLARED INVA,2025-01-07,An Saol Foundation CLG,"Planning permission on lands at Shangan Road, Ball",98.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2807%2F24
+VS-0402,3926/22,2022-05-10,LAW,Other,City Council - Approved,2022-09-05,"Dublin City Council, Housing and Communi",LAW: Planning and Development Act 2000 (as amended,60.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3926%2F22
+VS-0402,2201/11,2011-02-15,Permission,Granted,GRANT PERMISSION,2011-04-07,Ballymun Regeneration Ltd,Demolition by mechanical means or the controlled u,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2201%2F11
+VS-0402,6060/07,2007-11-09,LAW,Other,OBSERVATIONS,2008-01-28,Ballymun Area Office,To erect CCTV cameras throughout the areas of Coul,98.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6060%2F07
+VS-0402,5076/05,2006-01-13,Permission,Granted,GRANT PERMISSION,2006-02-09,Ballymun Regeneration Limited,"Demolition, by mechanical means or the controlled",98.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5076%2F05
+VS-0402,4680/05,2005-09-08,Permission,Granted,APPLICATION DECLARED INVA,2005-09-21,Ballymun Regeneration Limited,one eight storey over basement flat block containi,98.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4680%2F05
+VS-0403,WEBLRD6078/25-S3,2025-11-17,Large Residential Development-3         ,Granted,GRANT PERMISSION         ,2025-12-12,Tuath Housing Association CLG,463 No. residential units as apartments and duplexes in 10 no. buildings,97.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEBLRD6078%2F25-S3
+VS-0403,2591/10,2010-04-09,Permission,Granted,GRANT PERMISSION,2010-05-31,Ballymun Regeneration Ltd.,"Demolish mechanically, terrace of 4no. houses & re",0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2591%2F10
+VS-0403,3437/09,2009-07-08,Permission,Granted,GRANT PERMISSION,2009-08-27,Ballymun Regeneration Ltd.,Demolish existing buildings by mechanical means or,21.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3437%2F09
+VS-0403,6060/07,2007-11-09,LAW,Other,OBSERVATIONS,2008-01-28,Ballymun Area Office,To erect CCTV cameras throughout the areas of Coul,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6060%2F07
+VS-0403,3753/07,2007-06-19,Permission,Granted,GRANT PERMISSION,2007-08-10,Ballymun Regeneration Ltd,The development consists of the construction of 39,42.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3753%2F07
+VS-0403,5071/05,2006-01-13,Permission,Granted,GRANT PERMISSION,2006-02-09,Ballymun Regeneration Limited,"Demolition, by mechanical means or the controlled",5.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5071%2F05
+VS-0403,4681/05,2005-09-08,Permission,Granted,APPLICATION DECLARED INVA,2005-09-21,Ballymun Regeneration Limited,one eight storey over basement flat block containi,5.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4681%2F05
+VS-0407,4509/17,2017-12-14,LAW,Other,City Council - Approved,2018-04-10,Environment & Transportation Department,LAW: Planning and Development Act 2000 (as amended,4.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4509%2F17
+VS-0407,3533/11,2011-11-07,Permission,Granted,GRANT PERMISSION,2012-01-03,Ballymun Regeneration Ltd.,Demolish by mechanical means & controlled explosiv,97.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3533%2F11
+VS-0407,1213/08,2008-01-24,Permission,Granted,APPLICATION DECLARED INVA,2008-01-30,Ballymun Regeneration Ltd,Demolish 1-48 Silloge Avenue using controlled expl,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1213%2F08
+VS-0407,1837/05,2005-03-08,Permission,Granted,GRANT PERMISSION,2005-04-27,Ballymun Regeneration Ltd.,"Development of 135 dwellings, etc...",17.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1837%2F05
+VS-0429,WEB2288/25,2025-10-07,Permission                              ,Granted,GRANT PERMISSION         ,2025-11-03,Zirbac DLK Limited,"(i) removal of existing carpark, associated areas of hard-standing surface and",88.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2288%2F25
+VS-0429,2458/17,2017-06-09,Permission,Refused,REFUSE PERMISSION,2017-07-06,LDC Developments Ltd,Construction of 69 apartments in two five storey b,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2458%2F17
+VS-0429,6360/06,2007-06-05,Permission,Granted,GRANT PERMISSION,2007-07-02,"M Doran, M Doran & K Featherston",Replace former Public House with a residential dev,98.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6360%2F06
+VS-0429,6053/06,2006-11-13,Permission,Granted,APPLICATION DECLARED INVA,2006-11-27,"Michael Doran, M Doran, K Featherston",Replace former public house with a residential dev,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6053%2F06
+VS-0429,5909/03,2004-06-01,Permission,Granted,GRANT PERMISSION,2004-06-29,Ashgrange Holdings & J & G Stafford,Demolition of existing/Construction of mixed devel,88.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5909%2F03
+VS-0429,4279/00,2001-10-26,Permission,Granted,GRANT PERMISSION,2001-12-14,Ashrange Holdings and G & F Stafford,Demolition of existing licensed premises and repla,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4279%2F00
+VS-0429,4582/02,,Permission,Other,APPLICATION WITHDRAWN,2003-02-07,Ashgrange Holdings & G & J Stafford,Demolition of existing licensed premises & replace,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4582%2F02
+VS-0449,3261/24,2024-09-26,Permission,Granted,GRANT PERMISSION,2024-10-23,Keith Lowe and Paul Newman,For the demolition of the existing single storey b,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3261%2F24
+VS-0449,3218/24,2024-02-16,Permission,Granted,APPLICATION DECLARED INVA,2024-02-20,Keith Lowe and Paul Newman,Permission for the demolition of the existing sing,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3218%2F24
+VS-0449,3573/17,2017-08-03,Permission,Granted,GRANT PERMISSION,2017-09-27,Danestone Limited,Demolition of existing single storey building and,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3573%2F17
+VS-0449,6211/06,2007-06-21,Permission,Granted,GRANT PERMISSION,2007-07-17,Paul Newman & Keith Lowe,Retention works and development of completion work,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6211%2F06
+VS-0449,2980/02,2002-09-09,Permission,Granted,GRANT PERMISSION,2002-10-31,Keith Lowe,Replacement of the existing shop front with a new,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2980%2F02
+VS-0449,3858/01,2001-12-21,Permission,Refused,REFUSE PERMISSION,2002-02-15,Douglas Newman Good,Demolition of existing two storey building and con,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3858%2F01
+VS-0449,1832/00,2000-06-12,Permission,Refused,REFUSE PERMISSION,2000-08-09,"Rabbitte Catering Ltd.,",Retain single storey store in enclosed yard.,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1832%2F00
+VS-0449,1631/97,1997-06-30,Permission,Refused,REFUSE PERMISSION,1997-08-28,"Douglas Newman Good,",Retain the change of use from a shop to auctioneer,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1631%2F97
+VS-0453,WEBLRD6094/26-S3,2026-04-24,Large Residential Development-3         ,Granted,GRANT PERMISSION         ,2026-05-21,R&D Developments Ltd(inReceivership)Gran,"R & D Developments Limited (in Receivership), Grant Thornton intends to apply f",99.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEBLRD6094%2F26-S3
+VS-0453,3420/16,2017-03-02,Permission,Granted,GRANT PERMISSION,2017-03-29,Sequana Assets Ltd,Development of 19 no. residential units & 1 retail,94.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3420%2F16
+VS-0453,3703/06,2006-10-13,Permission,Refused,REFUSE PERMISSION,2006-11-09,Anthony Kelly,single storey detached shed/playroom to rear,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3703%2F06
+VS-0453,3942/04,2004-07-27,Permission,Granted,GRANT PERMISSION,2004-09-16,Padraig McCormack & Derek Page,3 storey development over basement car park compri,99.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3942%2F04
+VS-0453,4915/03,2003-10-08,Permission,Other,APPLICATION WITHDRAWN,2004-05-28,P. McCormach and D. Page,3 storey development over basement comprising of 3,99.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4915%2F03
+VS-0453,0730/02,,Permission,Other,APPLICATION WITHDRAWN,2002-07-04,Padraig McCormack & Derek Page,"construction of a 3,4 and 5 storey apartment compl",97.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0730%2F02
+VS-0455,WEB2510/26,2026-06-17,Permission                              ,Undecided,,,Marlborough Property Ventures Ltd,The proposed development will consist of modifications to the permitted apartme,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2510%2F26
+VS-0455,WEB2467/26,2026-06-12,Permission                              ,Granted,APPLICATION DECLARED INVA,2026-06-16,Marlborough Property Adventures Ltd,The proposed development will consist of modifications to the permitted apartme,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2467%2F26
+VS-0455,5046/22,2023-05-11,Permission,Granted,GRANT PERMISSION,2023-06-07,Fairfield Road Property Ltd.,Planning for development at a 0.2789 hectare site,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5046%2F22
+VS-0455,4582/19,2020-11-09,Permission,Refused,REFUSE PERMISSION,2020-12-04,Fairfield Road Property Ltd,Planning for development at 0.2789 hectare site lo,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4582%2F19
+VS-0455,6675/07,2007-12-20,Permission,Granted,GRANT PERMISSION,2008-02-15,Kellyville Limited,PRO STRUCT: Retention of changes to already grante,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6675%2F07
+VS-0455,6455/07,2007-12-07,Permission,Granted,APPLICATION DECLARED INVA,2007-12-13,Kellyville Ltd,PROTECTED STRUCTURE - RETENTION - internal alterat,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6455%2F07
+VS-0455,5275/07,2007-09-14,Permission,Refused,REFUSE PERMISSION,2007-10-22,Kellyville Limited,PRO STRUCT: To retain changes to already granted d,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5275%2F07
+VS-0455,2358/07,2007-03-27,Permission,Granted,APPLICATION DECLARED INVA,2007-04-04,Kellyville Ltd,RETENTION  enlarged balconies and new pedestrian e,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2358%2F07
+VS-0455,3487/05,2005-06-23,Permission,Refused,REFUSE PERMISSION,2005-08-11,Robert Fitzgerald,demolition of a garage (89.8sqm) and the construct,2.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3487%2F05
+VS-0455,3169/05,2005-06-03,Permission,Granted,APPLICATION DECLARED INVA,2005-06-15,Robert Fitzgerald,construction of a two storey building consisting o,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3169%2F05
+VS-0455,4462/02,2002-12-19,Permission,Granted,GRANT PERMISSION,2003-02-13,Calaroga Limited,permission is sought for the refurbishment and upg,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4462%2F02
+VS-0455,4227/00,2000-12-19,Permission,Granted,GRANT PERMISSION,2001-02-13,Robert Fitzgerald,Nine number 2 storey mews dwellings (total area 67,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4227%2F00
+VS-0461,3367/25,2025-09-01,LAW                                     ,Other,City Council - Approved  ,2025-12-01,Dublin City Council,LAW:construction of 144 no. apartments and associated development at site 1.16Ha,96.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3367%2F25
+VS-0461,4295/23,2023-11-10,Permission,Granted,GRANT PERMISSION,2023-12-06,Transport Infrastructure Ireland (TII),Permission for the installation of solar photovolt,3.3,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4295%2F23
+VS-0461,WEB1242/20,2020-05-05,Permission,Granted,GRANT PERMISSION,2020-07-17,Valeo Foods Ireland Ltd,The works will consist of the construction of a 99,48.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB1242%2F20
+VS-0461,WEB1204/20,2020-04-17,Permission,Granted,APPLICATION DECLARED INVA,2020-04-29,Valeo Foods Ireland Ltd,The works will consist of the construction of a 99,48.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB1204%2F20
+VS-0461,2553/98,1998-09-07,Permission,Granted,GRANT PERMISSION,1998-12-02,"Batchelors Limited,",Demolition of older disused buildings and for the,98.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2553%2F98
+VS-0501,LRD6015/22-S3,2022-10-21,Large Residential Development-3,Granted,GRANT PERMISSION,2022-12-13,Banner A Cuig Limited,PROTECTED STRUCTURE: Planning permission for devel,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=LRD6015%2F22-S3
+VS-0501,4679/18,2018-12-19,Permission,Refused,REFUSE PERMISSION,2019-02-21,Banner A Cuig Limited,Demolition of an adjoining pair of derelict and va,97.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4679%2F18
+VS-0501,5102/07,2007-11-27,Permission,Granted,GRANT PERMISSION,2007-12-10,Fairview Builing Company,in-fill house and subdivision of existing semi-det,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5102%2F07
+VS-0501,3291/07,2007-09-26,Permission,Granted,GRANT PERMISSION,2007-10-19,Fairview Building Company Ltd,Permission forming part of approved application 11,96.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3291%2F07
+VS-0501,2836/07,2007-04-25,Permission,Granted,APPLICATION DECLARED INVA,2007-05-08,Fairview Building Company Ltd,Permission for alterations and extensions to appro,96.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2836%2F07
+VS-0501,5323/06,2006-09-29,Permission,Refused,REFUSE PERMISSION,2006-11-23,Fairview Building Company Ltd,erection of advertising signage,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5323%2F06
+VS-0501,3195/06,2006-09-13,Permission,Granted,GRANT PERMISSION,2006-10-11,Fairview Building Company Limited,changes to approved development (Reg. Ref .Nos. 11,98.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3195%2F06
+VS-0501,1817/97,1997-07-16,Permission,Granted,GRANT PERMISSION,1997-09-12,"Mr. B Murphy,",Off-street car parking to front garden.,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1817%2F97
+VS-0542,WEBLRD6066/25-S3,2025-05-21,Large Residential Development-3         ,Granted,GRANT PERMISSION         ,2025-07-15,Jamestown Village Limited,"We, Jamestown Village Limited, intend to apply for planning permission for devel",95.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEBLRD6066%2F25-S3
+VS-0542,2709/04,2004-05-06,Permission,Granted,GRANT PERMISSION,2004-06-25,Saga Developments Ltd,The developments will consist of the removal of th,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2709%2F04
+VS-0542,3918/03,2003-08-15,Permission,Granted,GRANT PERMISSION,2003-09-29,Coffey Healthcare,insertion of 4 no. windows and steet door to the e,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3918%2F03
+VS-0542,0163/00,2000-01-27,Permission,Granted,GRANT PERMISSION,2000-03-21,"WI Ltd.,",The erection of 2 no. ESB sub-stations as part of,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0163%2F00
+VS-0542,2222/98,1998-07-30,Permission,Granted,GRANT PERMISSION,1998-09-25,"W.I. Ltd.,",Alterations to previously approved development (Pl,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2222%2F98
+VS-0542,2958/97,1997-11-24,Permission,Granted,GRANT PERMISSION,1998-01-15,Patrick Reynolds.,Extension to the ground floor apartment.,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2958%2F97
+VS-0559,2122/21,2021-01-29,Retention Permission,Granted,GRANT RETENTION PERMISSIO,2021-03-25,Carechoice (Finglas) Ltd.,RETENTION: Permission of an external signage erect,99.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2122%2F21
+VS-0559,4431/19,2020-05-26,Retention Permission,Granted,GRANT RETENTION PERMISSIO,2020-06-22,CareChoice Finglas Ltd.,RETENTION:  The development consists of works to t,99.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4431%2F19
+VS-0559,2693/19,2019-08-22,Permission,Granted,GRANT PERMISSION,2019-09-18,CareChoice Finglas Ltd.,The proposed development will consist of the const,34.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2693%2F19
+VS-0559,3021/16,2016-06-01,Permission,Granted,GRANT PERMISSION,2016-07-26,Ardmore Lodge Nursing Home Ltd,Alterations to previously approved reg. ref. 3065/,99.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3021%2F16
+VS-0559,3110/15,2016-02-08,Permission,Granted,GRANT PERMISSION,2016-03-04,Ardmore Lodge Nursing Home Ltd,Construction of an extension to the northern/side,99.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3110%2F15
+VS-0559,3065/14,2014-07-16,Permission,Granted,GRANT PERMISSION,2014-09-09,Ardmore Lodge Nursing Home Ltd.,Change of use of existing hotel to nursing home,99.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3065%2F14
+VS-0559,5012/06,2006-09-11,Permission,Granted,GRANT PERMISSION,2006-10-27,Clearwire Ireland Ltd,"installation of 3 no. antenna, 2 no. transmission",5.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5012%2F06
+VS-0559,4886/05,2005-09-22,Permission,Granted,GRANT PERMISSION,2005-11-16,McCabe Builders Ltd,Retention and completion of revisions/modification,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4886%2F05
+VS-0559,2888/04,2004-05-18,Permission,Granted,GRANT PERMISSION,2004-07-12,McCabe Builders,revisions to development  permitted (4830/03 & 247,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2888%2F04
+VS-0559,2475/03,2003-05-30,Permission,Granted,GRANT PERMISSION,2003-07-22,McCabe Builders (Dublin) Limited,112 bedroom hotel together with ancillary accommod,5.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2475%2F03
+VS-0724,WEB1226/26,2026-02-04,Permission                              ,Granted,APPLICATION DECLARED INVA,2026-02-06,Thomas Corcoran,Planning permission is sought by Thomas Corcoran for the demolition of existing,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB1226%2F26
+VS-0724,5071/23,2023-12-22,Permission                              ,Refused,REFUSE PERMISSION        ,2024-02-23,Tom Corcoran,The development is to consist of the demolition of all existing single storey st,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5071%2F23
+VS-0724,4926/23,2023-12-07,Permission,Granted,APPLICATION DECLARED INVA,2023-12-18,Thomas Corcoran,Residential redevelopment of the former builders s,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4926%2F23
+VS-0724,3054/23,2023-01-17,Permission,Refused,REFUSE PERMISSION,2023-03-13,Thomas Corcoran,The development is to consist of the demolition of,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3054%2F23
+VS-0724,4122/17,2017-10-24,Permission,Granted,GRANT PERMISSION,2017-12-15,Thomas Corcoran,"Demolition of existing commercial garage,constr.of",99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4122%2F17
+VS-0724,3873/17,2017-09-18,Permission,Granted,APPLICATION DECLARED INVA,2017-10-12,Thomas Corcoran,"Demolition of existing single storey garage/sheds,",99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3873%2F17
+VS-0724,3801/16,2016-09-27,Permission,Refused,REFUSE PERMISSION,2016-11-21,Thomas Corcoran,Demolition of existing garage & open sheds & front,99.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3801%2F16
+VS-0724,5968/06,2006-11-08,LAW,Other,OBSERVATIONS,2007-01-11,Parks Department (Dublin City Council),Construction of single storey building comprising,2.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5968%2F06
+VS-0748,3974/17,2017-10-03,Permission,Granted,GRANT PERMISSION,2017-11-27,Tinnelly Construction Ltd,Construction of a 3-storey apartment building over,98.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3974%2F17
+VS-0748,4660/08,2008-10-08,Permission,Granted,GRANT PERMISSION,2008-11-26,The Board of Directors,PROTECTED STRUCTURE - single storey 6 office side,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4660%2F08
+VS-0748,1715/08,2008-02-29,Permission,Granted,GRANT PERMISSION,2008-04-18,"Board of Directors, Palliative Care Unit",PROTECTED STRUCTURE-Provision of single storey ext,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1715%2F08
+VS-0748,1548/08,2008-02-20,Permission,Granted,APPLICATION DECLARED INVA,2008-02-26,The Board of Directors of O.L.H.,PROTECTED STRUCTURE-Single storey extension to in-,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1548%2F08
+VS-0748,2894/07,2007-04-30,Permission,Granted,GRANT PERMISSION,2007-06-22,Gerard Tinnelly,Development of a 3 storey apartment building,95.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2894%2F07
+VS-0748,1952/07,2007-03-05,Permission,Granted,GRANT PERMISSION,2007-04-27,Mr Patrick Fitzgerald,RETENTION - and completion of the sub division of,5.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1952%2F07
+VS-0748,6691/06,2006-12-20,Permission,Refused,REFUSE PERMISSION,2007-02-20,Gerard Tinnelly,Development of a 3 storey apartment building over,95.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=6691%2F06
+VS-0748,2926/05,2005-05-20,Permission,Granted,APPLICATION DECLARED INVA,2005-06-02,The Board of Directors,provision of a glazed concourse area linking the e,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2926%2F05
+VS-0748,4992/04,2004-10-14,Permission,Granted,GRANT PERMISSION,2004-12-08,Mr. P. Fitzgerald,provision of a 3-storey building (2-storey plus pl,95.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4992%2F04
+VS-0748,4620/04,2004-09-17,Permission,Granted,APPLICATION DECLARED INVA,2004-10-01,Mr. P. Fitzgerald,demolition of anexisting lean-to extension to the,95.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4620%2F04
+VS-0748,1005/01,2001-06-20,Permission,Granted,GRANT PERMISSION,2001-08-10,Board of Management,"Locate a standby generator and attenuation walls,",0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1005%2F01
+VS-0748,0256/01,2001-02-05,Permission,Granted,GRANT PERMISSION,2001-03-28,The Board of Management,"12 Prefab offices, 2 meeting rooms, 2 staff changi",0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0256%2F01
+VS-0748,2705/00,2000-08-17,Permission,Granted,GRANT PERMISSION,2000-10-12,"Sr. Una O'Neill,",Erect a new single storey Convent building with as,0.1,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2705%2F00
+VS-0800,WEBLRD6063/25-S3,2025-05-09,Large Residential Development-3         ,Granted,GRANT PERMISSION         ,2025-07-03,Harley Issuer Designated Activity Compan,"We, Harley Issuer Designated Activity Company, intend to apply for a seven year",97.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEBLRD6063%2F25-S3
+VS-0800,4852/22,2022-09-14,Permission,Granted,GRANT PERMISSION,2022-11-08,CPFM Limited,The development will consist of the construction o,1.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4852%2F22
+VS-0800,4628/22,2022-08-05,Permission,Granted,APPLICATION DECLARED INVA,2022-08-15,CPFM Limited,Development will consist of the construction of a,1.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4628%2F22
+VS-0800,3864/22,2022-04-29,Permission,Granted,APPLICATION DECLARED INVA,2022-06-14,CPFM Limited,The development will consist of the construction o,0.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3864%2F22
+VS-0800,3789/22,2022-04-21,Permission,Granted,APPLICATION DECLARED INVA,2022-04-27,CPFM Limited,Planning permission for the development will consi,0.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3789%2F22
+VS-0800,3774/21,2021-10-29,Permission,Other,APPLICATION WITHDRAWN,2022-09-23,Harley Issuer Designated Activity Compan,Lands of the former Smurfit Paper Mills Factory an,93.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3774%2F21
+VS-0800,3324/19,2019-06-21,Permission,Other,APPLICATION WITHDRAWN,2019-08-12,Gannon Properties,Planning permission sought for the following revis,99.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3324%2F19
+VS-0800,3159/17,2017-08-31,Permission,Granted,GRANT PERMISSION,2017-09-27,Gannon Properties,Revisions to previously approved development Reg.,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3159%2F17
+VS-0800,2996/17,2017-08-31,Permission,Granted,GRANT PERMISSION,2017-09-27,Gannon Properties,Permission sought for a single storey Sub-Station,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2996%2F17
+VS-0800,2308/16,2016-06-17,Permission,Granted,GRANT PERMISSION,2016-07-14,Gannon Properties,Planning permission sought by Gannon Properties fo,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2308%2F16
+VS-0800,2620/14,2014-12-23,Permission,Granted,GRANT PERMISSION,2015-01-28,Gannon Properties,"Demolition of existing offices,factory buildings,",99.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2620%2F14
+VS-0800,3497/12,2012-11-21,Retention Permission,Granted,GRANT RETENTION PERMISSIO,2013-01-11,Gerry Kinsella,"Retention of porch, signage & change of use. Permi",0.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3497%2F12
+VS-0800,2506/10,2010-03-26,Permission,Granted,GRANT PERMISSION,2010-05-19,Tadhg Campion,Change of use from betting office to takeaway and,0.4,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2506%2F10
+VS-0800,5694/05,2006-09-07,Permission,Granted,GRANT PERMISSION,2006-10-04,Gannon Homes Ltd.,"demolition of existing offices, factory buildings,",92.5,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5694%2F05
+VS-0800,5159/05,2005-10-13,Permission,Granted,APPLICATION DECLARED INVA,2005-10-21,Gannon Homes Ltd,demolition & provision of 27 one bedroom and 93 tw,91.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=5159%2F05
+VS-0864,3577/20,2020-10-16,Permission,Granted,GRANT PERMISSION,2020-12-07,General Motors IT Services Ireland Ltd.,The development will consist of 1.) Change of use,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3577%2F20
+VS-0864,3218/17,2017-06-21,Permission,Granted,GRANT PERMISSION,2017-08-15,General Motors IT Services Ireland Ltd,Change of use of part of 1st floor from data hall,0.2,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3218%2F17
+VS-0864,3164/08,2008-06-10,Permission,Granted,GRANT PERMISSION,2008-07-28,C.B.S Primary School,"A new single storey, ground floor extension to rea",0.9,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3164%2F08
+VS-0864,4162/00,2000-12-22,Permission,Granted,GRANT PERMISSION,2001-02-19,Colt Telecom Ireland Limited,The change of use of an existing rear warehouse bu,99.8,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4162%2F00
+VS-0976,3378/24,2024-10-09,Permission,Granted,GRANT PERMISSION,2024-11-05,Mulsh Sarl,The proposed development will consist of alteratio,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3378%2F24
+VS-0976,3594/23,2023-04-19,Permission,Granted,GRANT PERMISSION,2023-06-12,Mulsh Sarl,The proposed development will consist of the demol,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3594%2F23
+VS-0976,3596/22,2023-02-23,Permission,Refused,REFUSE PERMISSION,2023-03-21,Mulsh Sarl,Planning permission is sought for development at a,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3596%2F22
+VS-0976,4567/19,2019-11-28,Permission,Refused,REFUSE PERMISSION,2020-01-31,Mulsh Sarl,Planning permission is sought by Mulsh Sarl for de,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4567%2F19
+VS-0976,0101/03,2003-03-24,Permission,Granted,GRANT PERMISSION,2003-04-16,"Larkan Catering Ltd.,","1st floor function room, restaurant & lounge exten",100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=0101%2F03
+VS-0979,2766/21,2021-05-14,Permission,Granted,GRANT PERMISSION,2021-07-08,Electricity Supply Board (ESB),The development will consist of the continued use,0.1,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2766%2F21
+VS-0979,2443/18,2018-03-07,LAW,Other,City Council - Approved,2018-06-11,Dublin City Council,LAW: Two storey extension to the existing Tunnel C,0.1,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2443%2F18
+VS-0979,3052/16,2016-06-03,Permission,Granted,GRANT PERMISSION,2016-07-28,ESB,Temporary surface car park for a period of max 5 y,0.1,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3052%2F16
+VS-0979,PAC0116/16,2016-03-07,Pre-Application Consultation,Undecided,,,Gerard Crowley ESB,PAC: temporary relocation from Fitzwilliam St. for,0.1,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=PAC0116%2F16
+VS-0979,3484/15,2015-08-25,Permission,Granted,APPLICATION DECLARED INVA,2015-09-23,Gary Keville Transport Ltd.,Provision of temporary single storey office buildi,0.1,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=3484%2F15
+VS-0979,2552/15,2015-08-21,Permission,Granted,GRANT PERMISSION,2015-10-15,Fingleton White,PROTECTED STRUCTURE: Pipeline from Dublin Port to,0.0,False,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=2552%2F15
+VS-1077,4811/19,2019-12-23,Permission,Granted,APPLICATION DECLARED INVA,2020-01-17,Iveagh Markets Hotels Limited, PROTECTED STRUCTURE: Iveagh Markets Hotels Limite,100.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=4811%2F19
+VS-1077,1238/07,2007-01-19,Permission,Granted,GRANT PERMISSION,2007-03-15,Lord Iveagh Hotels and Markets Ltd,PROTECTED STRUCTURE - Mixed use development Hotel,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1238%2F07
+VS-1077,1606/04,2004-05-27,Permission,Granted,GRANT PERMISSION,2004-06-23,Christchurch Developments (Dublin) Ltd.,Demolition & construction of mixed use development,73.6,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1606%2F04
+VS-1077,1190/04,2004-01-22,Permission,Granted,APPLICATION DECLARED INVA,2004-02-11,Christchurch Developments (Dublin) Ltd.,PROTECTED STRUCTURE Construction of mixed use deve,99.7,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1190%2F04
+VS-1077,1054/98,1998-04-17,Permission,Refused,REFUSE PERMISSION,1998-06-11,Zoe Developments Limited.,Alteration to previously approved development,0.0,True,https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=1054%2F98
