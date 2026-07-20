@@ -267,10 +267,23 @@ section {
   box-shadow: 0 0 0 2px var(--surface-1);
 }
 
+.map-locate {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
 .map-hint {
   font-size: 0.85rem;
   color: var(--text-muted);
   margin: 0.5rem 0 0;
+}
+
+.map-hint:empty {
+  display: none;
+}
+
+#locate-status {
+  color: var(--text-primary);
 }
 
 .maplibregl-popup-content {

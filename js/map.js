@@ -2,7 +2,7 @@
 // Turf-derived hex density overlay. MapLibre is loaded globally as
 // `maplibregl`.
 
-import { tokens, isDark, YEAR_BINS } from "./tokens.js";
+import { tokens, YEAR_BINS } from "./tokens.js";
 
 const DUBLIN_CENTRE = [-6.2718, 53.3455];
 
@@ -234,6 +234,21 @@ export function refreshMapStyle() {
     if (!map.getSource("sites")) addDataLayers();
   });
   buildLegend();
+}
+
+let userMarker;
+
+// Show the user's position and the nearest site together.
+export function showNearestSite(userLngLat, feature) {
+  if (!map) return;
+  if (userMarker) userMarker.remove();
+  userMarker = new maplibregl.Marker({ color: tokens().series1 })
+    .setLngLat(userLngLat)
+    .addTo(map);
+  const bounds = new maplibregl.LngLatBounds(userLngLat, userLngLat);
+  bounds.extend(feature.geometry.coordinates);
+  map.fitBounds(bounds, { padding: 90, maxZoom: 16, duration: 900 });
+  openPopup(feature);
 }
 
 export function focusSite(feature) {

@@ -15,8 +15,15 @@ import {
   renderDataTable,
   hideTooltip,
 } from "./charts.js";
-import { initMap, updateMapData, refreshMapStyle, focusSite } from "./map.js";
+import {
+  initMap,
+  updateMapData,
+  refreshMapStyle,
+  focusSite,
+  showNearestSite,
+} from "./map.js";
 import { renderTable } from "./table.js";
+import { buildIndex, nearestSites } from "./spatial.js";
 
 const state = { area: "", protected: false, council: false, search: "" };
 
@@ -177,6 +184,44 @@ function wireFilters() {
   });
 }
 
+function formatDistance(km) {
+  return km < 1 ? `${Math.round(km * 1000)} m` : `${km.toFixed(1)} km`;
+}
+
+function wireLocateButton() {
+  const button = document.getElementById("locate-button");
+  const status = document.getElementById("locate-status");
+  button.addEventListener("click", () => {
+    if (!("geolocation" in navigator)) {
+      status.textContent = "This browser does not support geolocation.";
+      return;
+    }
+    status.textContent = "Locating…";
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { longitude, latitude } = position.coords;
+        const [nearest] = nearestSites(longitude, latitude, 1);
+        if (!nearest) {
+          status.textContent = "No sites available.";
+          return;
+        }
+        const p = nearest.feature.properties;
+        status.textContent =
+          `Closest site: ${p.derelict_site_reference_number}, ` +
+          `${p.full_address} — ${formatDistance(nearest.distanceKm)} away.`;
+        showNearestSite([longitude, latitude], nearest.feature);
+      },
+      (error) => {
+        status.textContent =
+          error.code === error.PERMISSION_DENIED
+            ? "Location permission was declined."
+            : "Could not determine your location.";
+      },
+      { timeout: 10000, maximumAge: 60000 }
+    );
+  });
+}
+
 function renderHeaderMeta() {
   const updates = allFeatures
     .map((f) => f.properties.most_recent_update_date)
@@ -211,8 +256,10 @@ async function init() {
     Math.max(...allFeatures.map((f) => f.properties.distance_from_centre_km))
   );
 
+  buildIndex(allFeatures);
   renderHeaderMeta();
   wireFilters();
+  wireLocateButton();
   initMap();
   render();
 

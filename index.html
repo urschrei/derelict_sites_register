@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dublin Derelict Sites Register</title>
   <meta name="description" content="An open map, table, and analysis of Dublin City Council's Derelict Sites Register, refreshed twice daily.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6' fill='%232a78d6'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.0/dist/maplibre-gl.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -89,8 +90,10 @@
             <input type="checkbox" id="toggle-hex">
             <span>Density grid</span>
           </label>
+          <button type="button" class="button map-locate" id="locate-button">Where's the closest derelict site?</button>
         </div>
       </div>
+      <p class="map-hint" id="locate-status" role="status"></p>
       <p class="map-hint">Click a point for site details. The density grid aggregates sites into 600&nbsp;m hexagons.</p>
     </section>
 
