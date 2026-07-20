@@ -39,7 +39,18 @@
   </header>
 
   <main>
-    <section class="filters" aria-label="Filters">
+    <div class="view-switch" role="radiogroup" aria-label="Register to view">
+      <label>
+        <input class="visually-hidden" type="radio" name="view" value="derelict" checked>
+        <span>Derelict Sites Register</span>
+      </label>
+      <label>
+        <input class="visually-hidden" type="radio" name="view" value="vacant">
+        <span>Vacant Sites Register</span>
+      </label>
+    </div>
+
+    <section class="filters derelict-only" aria-label="Filters">
       <label class="filter-field">
         <span>Administrative area</span>
         <select id="filter-area">
@@ -62,7 +73,7 @@
       <button type="button" class="button button-ghost" id="filter-reset">Reset</button>
     </section>
 
-    <section class="kpis" aria-label="Key figures">
+    <section class="kpis derelict-only" aria-label="Key figures">
       <div class="stat-tile">
         <span class="stat-label">Sites shown</span>
         <span class="stat-value" id="kpi-count">&ndash;</span>
@@ -90,11 +101,45 @@
       </div>
     </section>
 
+    <section class="kpis vacant-only" aria-label="Vacant sites key figures">
+      <div class="stat-tile">
+        <span class="stat-label">Sites on the register</span>
+        <span class="stat-value" id="vkpi-count">&ndash;</span>
+        <span class="stat-note" id="vkpi-count-note"></span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Total site area</span>
+        <span class="stat-value" id="vkpi-area">&ndash;</span>
+        <span class="stat-note">combined boundary extent</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Total market valuation</span>
+        <span class="stat-value" id="vkpi-valuation">&ndash;</span>
+        <span class="stat-note" id="vkpi-valuation-note"></span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Council-owned</span>
+        <span class="stat-value" id="vkpi-council">&ndash;</span>
+        <span class="stat-note">owned by Dublin City Council</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Planning applications</span>
+        <span class="stat-value" id="vkpi-apps">&ndash;</span>
+        <span class="stat-note">recorded across all sites</span>
+      </div>
+    </section>
+
+    <p class="vacant-only vacant-intro">
+      Dublin City Council's register of vacant sites, a separate statutory
+      register from the derelict sites. Pick a site from the list or the map to
+      see its ownership, valuation, and planning history.
+    </p>
+
     <section class="map-section" aria-label="Map of derelict sites">
       <div class="map-card">
         <div id="map" aria-label="Interactive map of derelict sites in Dublin"></div>
         <div class="map-chrome">
-          <div class="map-mode" role="radiogroup" aria-label="Map view">
+          <div class="map-mode derelict-only" role="radiogroup" aria-label="Map view">
             <label>
               <input class="visually-hidden" type="radio" name="map-mode" value="register" checked>
               <span>Register</span>
@@ -102,10 +147,6 @@
             <label>
               <input class="visually-hidden" type="radio" name="map-mode" value="caseload">
               <span>Caseload</span>
-            </label>
-            <label>
-              <input class="visually-hidden" type="radio" name="map-mode" value="vacant">
-              <span>Vacant</span>
             </label>
           </div>
           <div class="map-panel" id="panel-register">
@@ -141,20 +182,32 @@
               <span class="legend-title">Vacant Sites Register</span>
             </div>
           </div>
-          <button type="button" class="button map-locate" id="locate-button">Where's the closest derelict site?</button>
+          <button type="button" class="button map-locate derelict-only" id="locate-button">Where's the closest derelict site?</button>
         </div>
         <div class="embed-title">
           <span class="embed-title-main">Dublin Derelict Sites Register</span>
           <span class="embed-title-sub" id="embed-count"></span>
         </div>
       </div>
-      <p class="map-hint" id="locate-status" role="status"></p>
-      <p class="map-hint">Click a point for site details. The density grid aggregates sites into hexagons with 600&nbsp;m sides; the Voronoi catchments show the area closest to each site.</p>
+      <p class="map-hint derelict-only" id="locate-status" role="status"></p>
+      <p class="map-hint derelict-only">Click a point for site details. The density grid aggregates sites into hexagons with 600&nbsp;m sides; the Voronoi catchments show the area closest to each site.</p>
       <p class="map-hint" id="cases-hint" hidden></p>
-      <p class="map-hint" id="vacant-hint" hidden>Dublin City Council's Vacant Sites Register, a separate statutory register from the derelict sites. Click a site for its ownership and valuation, and the planning applications recorded within its boundary; each reference links to the documents on the council's planning portal.</p>
+      <p class="map-hint vacant-only" id="vacant-maphint">Click a site boundary to open its details below.</p>
     </section>
 
-    <section class="charts" aria-label="Charts">
+    <section class="vacant-only vacant-detail-section" aria-label="Vacant site details">
+      <div class="vacant-layout">
+        <div class="vacant-list-wrap">
+          <h2 class="vacant-list-title">Vacant sites</h2>
+          <ul class="vacant-list" id="vacant-list" role="listbox" aria-label="Vacant sites"></ul>
+        </div>
+        <div class="vacant-detail" id="vacant-detail" aria-live="polite">
+          <p class="vacant-detail-empty">Select a site to see its details and planning history.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="charts derelict-only" aria-label="Charts">
       <div class="chart-card">
         <h2>Sites by administrative area</h2>
         <div class="chart" id="chart-area"></div>
@@ -173,7 +226,7 @@
       </div>
     </section>
 
-    <section class="table-section" aria-label="Register table">
+    <section class="table-section derelict-only" aria-label="Register table">
       <h2>The register</h2>
       <div class="table-wrap">
         <table id="register-table">

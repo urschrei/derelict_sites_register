@@ -25,16 +25,6 @@ const EMPTY = { type: "FeatureCollection", features: [] };
 const FADE_MS = 400;
 const METRES_PER_CASE = 120;
 
-// Each linked planning reference deep-links to its documents on DCC's public
-// planning portal. The reference is appended as Folder1_Ref (URL-encoded).
-const PLANNING_URL =
-  "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=";
-const EURO = new Intl.NumberFormat("en-IE", {
-  style: "currency",
-  currency: "EUR",
-  maximumFractionDigits: 0,
-});
-
 // Overlay layers cross-fade via paint transitions; visibility is flipped
 // only after a fade to zero completes. `desiredOpacity` guards against a
 // stale timeout hiding a layer that has been faded back in meanwhile.
@@ -47,6 +37,7 @@ const OPACITY_PROP = {
   "cases-hexes-3d": "fill-extrusion-opacity",
   "vacant-fill": "fill-opacity",
   "vacant-line": "line-opacity",
+  "vacant-selected": "line-opacity",
 };
 const desiredOpacity = {
   hexes: 0,
@@ -57,6 +48,7 @@ const desiredOpacity = {
   "cases-hexes-3d": 0,
   "vacant-fill": 0,
   "vacant-line": 0,
+  "vacant-selected": 0,
 };
 
 function fadeLayerTo(id, opacity) {
@@ -94,6 +86,7 @@ function targetOpacities() {
     "cases-hexes-3d": hexes && extrude3d ? 0.8 : 0,
     "vacant-fill": vacant ? 0.45 : 0,
     "vacant-line": vacant ? 0.9 : 0,
+    "vacant-selected": vacant ? 1 : 0,
   };
 }
 
@@ -412,6 +405,19 @@ function addDataLayers() {
       "line-opacity-transition": { duration: FADE_MS },
     },
   });
+  map.addLayer({
+    id: "vacant-selected",
+    type: "line",
+    source: "vacant",
+    layout: { visibility: "none" },
+    filter: ["==", ["get", "register_number"], "__none__"],
+    paint: {
+      "line-color": t.series1,
+      "line-width": 3.5,
+      "line-opacity": 0,
+      "line-opacity-transition": { duration: FADE_MS },
+    },
+  });
 
   map.addSource("sites", { type: "geojson", data: currentSites });
   map.addLayer({
@@ -512,75 +518,30 @@ function openPopup(feature) {
     .addTo(map);
 }
 
-function vacantPopupContent(props) {
-  const wrap = document.createElement("div");
+// The vacant view drives a detail panel rather than a popup: a click reports
+// the site's register number to whoever registered a handler.
+let vacantSelectHandler = null;
 
-  const ref = document.createElement("div");
-  ref.className = "popup-ref";
-  ref.textContent = props.register_number ?? "";
-  wrap.append(ref);
-
-  const address = document.createElement("div");
-  address.className = "popup-address";
-  address.textContent = props.address ?? "";
-  wrap.append(address);
-
-  const status = [];
-  if (props.register_status) status.push(props.register_status);
-  if (props.date_registered) status.push(`registered ${props.date_registered}`);
-  if (status.length) {
-    const line = document.createElement("div");
-    line.className = "popup-line";
-    line.textContent = status.join(" · ");
-    wrap.append(line);
-  }
-
-  if (props.ownership) {
-    const line = document.createElement("div");
-    line.className = "popup-line";
-    line.textContent = `Owner: ${props.ownership}`;
-    wrap.append(line);
-  }
-
-  if (props.valuation > 0) {
-    const line = document.createElement("div");
-    line.className = "popup-line";
-    line.textContent = `Market valuation: ${EURO.format(props.valuation)}`;
-    wrap.append(line);
-  }
-
-  const refs = (props.linked_planning_refs ?? "")
-    .split(";")
-    .map((r) => r.trim())
-    .filter(Boolean);
-  if (refs.length) {
-    const title = document.createElement("div");
-    title.className = "popup-links-title";
-    title.textContent = `Planning applications on this site (${refs.length})`;
-    wrap.append(title);
-
-    const list = document.createElement("div");
-    list.className = "popup-links";
-    for (const reference of refs) {
-      const link = document.createElement("a");
-      link.href = PLANNING_URL + encodeURIComponent(reference);
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      link.textContent = reference;
-      list.append(link);
-    }
-    wrap.append(list);
-  }
-
-  return wrap;
+export function onVacantSelect(handler) {
+  vacantSelectHandler = handler;
 }
 
-function openVacantPopup(lngLat, props) {
-  if (popup) popup.remove();
-  popup = new maplibregl.Popup({ closeButton: true, maxWidth: "320px" })
-    .setLngLat(lngLat)
-    .setDOMContent(vacantPopupContent(props))
-    .addTo(map);
+// Zoom to a site and outline it as the current selection. Called both from a
+// map click (via the handler) and from the site list.
+export function focusVacantSite(registerNumber) {
+  if (!map) return;
+  const feature = currentVacant.features.find(
+    (f) => f.properties.register_number === registerNumber
+  );
+  if (!feature) return;
+  if (map.getLayer("vacant-selected")) {
+    map.setFilter("vacant-selected", [
+      "==",
+      ["get", "register_number"],
+      registerNumber,
+    ]);
+  }
+  map.fitBounds(turf.bbox(feature), { padding: 90, maxZoom: 16, duration: 700 });
 }
 
 // Switch between the register view (points and point-derived overlays) and
@@ -597,7 +558,6 @@ export function setMapMode(mode) {
   document.getElementById("panel-caseload").hidden = !caseload;
   document.getElementById("panel-vacant").hidden = !vacant;
   document.getElementById("cases-hint").hidden = !caseload;
-  document.getElementById("vacant-hint").hidden = !vacant;
   const radio = document.querySelector(
     `input[name="map-mode"][value="${mode}"]`
   );
@@ -753,7 +713,7 @@ export function initMap() {
 
   map.on("click", "vacant-fill", (e) => {
     if (mapMode === "vacant" && e.features?.length) {
-      openVacantPopup(e.lngLat, e.features[0].properties);
+      vacantSelectHandler?.(e.features[0].properties.register_number);
     }
   });
   map.on("mouseenter", "vacant-fill", () => {

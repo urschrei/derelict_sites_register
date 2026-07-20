@@ -26,10 +26,11 @@ import {
   fitToSites,
   setCaseloadData,
   setCaseloadHexes,
-  setVacantData,
+  setMapMode,
 } from "./map.js";
 import { renderTable } from "./table.js";
 import { buildIndex, nearestSites } from "./spatial.js";
+import { loadVacant } from "./vacant.js";
 
 const state = { area: "", protected: false, council: false, search: "" };
 
@@ -265,12 +266,26 @@ function loadCaseload() {
     });
 }
 
-function loadVacant() {
-  return fetch("data/vacant_sites_register.geojson")
-    .then((response) => (response.ok ? response.json() : null))
-    .then((collection) => {
-      if (collection) setVacantData(collection);
+// Top-level switch between the two registers. Derelict keeps its register /
+// caseload map modes and its filters, charts, and table; vacant swaps in its
+// own figures, site list, and detail panel. The map element is shared.
+function setView(view) {
+  const vacant = view === "vacant";
+  document.body.classList.toggle("view-vacant", vacant);
+  if (vacant) {
+    setMapMode("vacant");
+  } else {
+    const checked = document.querySelector('input[name="map-mode"]:checked');
+    setMapMode(checked ? checked.value : "register");
+  }
+}
+
+function wireViewSwitch() {
+  for (const radio of document.querySelectorAll('input[name="view"]')) {
+    radio.addEventListener("change", (e) => {
+      if (e.target.checked) setView(e.target.value);
     });
+  }
 }
 
 async function init() {
@@ -301,6 +316,7 @@ async function init() {
   renderHeaderMeta();
   wireFilters();
   wireLocateButton();
+  wireViewSwitch();
   initMap();
   render();
   loadCaseload();
