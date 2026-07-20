@@ -92,13 +92,43 @@ function hexColourExpression(maxCount) {
   ];
 }
 
-function caseColourExpression(property, features) {
+// Classed choropleth styling for the caseload overlays. The values are
+// heavily right-skewed, so classes come from ckmeans natural breaks
+// (d3.scaleCluster) rather than equal intervals, which would waste most of
+// the ramp on the near-empty cells.
+function caseClassification(property, features) {
   const t = tokens();
-  const max = Math.max(...features.map((f) => f.properties[property]), 2);
-  const expression = ["interpolate", ["linear"], ["get", property]];
-  t.caseRamp.forEach((colour, i) => {
-    const value = i === 0 ? 0.05 : (max * i) / (t.caseRamp.length - 1);
-    expression.push(value, colour);
+  const values = features
+    .map((f) => f.properties[property])
+    .filter((v) => v > 0);
+  if (!values.length) return null;
+  const unique = [...new Set(values)];
+  const n = Math.min(t.caseRamp.length, unique.length);
+  const colours =
+    n === t.caseRamp.length
+      ? t.caseRamp
+      : Array.from(
+          { length: n },
+          (_, i) =>
+            t.caseRamp[Math.round((i * (t.caseRamp.length - 1)) / Math.max(n - 1, 1))]
+        );
+  const scale = d3.scaleCluster().domain(values).range(colours);
+  return {
+    colours,
+    breaks: scale.clusters(),
+    min: Math.min(...values),
+    max: Math.max(...values),
+  };
+}
+
+function caseColourExpression(property, features) {
+  const classification = caseClassification(property, features);
+  if (!classification) return tokens().caseRamp[0];
+  const { colours, breaks } = classification;
+  if (colours.length === 1) return colours[0];
+  const expression = ["step", ["get", property], colours[0]];
+  breaks.forEach((value, i) => {
+    expression.push(value, colours[i + 1]);
   });
   return expression;
 }
@@ -264,27 +294,46 @@ function syncCaseLayers() {
 }
 
 function buildCasesLegend() {
-  const t = tokens();
   const legend = document.getElementById("cases-legend");
   legend.replaceChildren();
+  const hexMode = casesShape === "hexes" && currentCaseHexes;
   const title = document.createElement("span");
   title.className = "legend-title";
-  title.textContent = "Active cases per cell";
-  const strip = document.createElement("span");
-  strip.className = "legend-gradient";
-  strip.style.background = `linear-gradient(to right, ${t.caseRamp.join(", ")})`;
-  const range = document.createElement("span");
-  range.className = "legend-range";
-  const hexMode = casesShape === "hexes" && currentCaseHexes;
-  const max = hexMode
-    ? Math.max(...currentCaseHexes.features.map((f) => f.properties.estimate), 0)
-    : Math.max(...currentCases.features.map((f) => f.properties.num_active), 0);
-  const low = document.createElement("span");
-  low.textContent = hexMode ? "~0" : "1";
-  const high = document.createElement("span");
-  high.textContent = hexMode ? `~${Math.round(max)}` : String(max);
-  range.append(low, high);
-  legend.append(title, strip, range);
+  title.textContent = hexMode
+    ? "Active cases per cell (est.)"
+    : "Active cases per cell";
+  legend.append(title);
+  const classification = hexMode
+    ? caseClassification("estimate", currentCaseHexes.features)
+    : caseClassification("num_active", currentCases.features);
+  if (!classification) return;
+  const { colours, breaks, min, max } = classification;
+
+  const fmt = (v) => String(Math.round(v));
+  colours.forEach((colour, i) => {
+    const lower = i === 0 ? min : breaks[i - 1];
+    const upper = i < colours.length - 1 ? breaks[i] : null;
+    const row = document.createElement("span");
+    row.className = "legend-row";
+    const swatch = document.createElement("span");
+    swatch.className = "legend-swatch legend-swatch-square";
+    swatch.style.background = colour;
+    const label = document.createElement("span");
+    if (upper === null) {
+      label.textContent =
+        fmt(lower) === fmt(max) ? fmt(max) : `${fmt(lower)}–${fmt(max)}`;
+    } else if (hexMode) {
+      label.textContent = `${fmt(lower)}–${fmt(upper)}`;
+    } else {
+      const top = Math.round(upper) - 1;
+      label.textContent =
+        Math.round(lower) === top
+          ? String(top)
+          : `${Math.round(lower)}–${top}`;
+    }
+    row.append(swatch, label);
+    legend.append(row);
+  });
 }
 
 function buildLegend() {

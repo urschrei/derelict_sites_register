@@ -220,10 +220,19 @@ section {
   position: absolute;
   top: 0.75rem;
   left: 0.75rem;
+  bottom: 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   z-index: 2;
+  max-width: 240px;
+  overflow-y: auto;
+  pointer-events: none;
+}
+
+.map-chrome > * {
+  pointer-events: auto;
+  flex: none;
 }
 
 .map-legend,
@@ -294,17 +303,8 @@ section {
   accent-color: var(--series-1);
 }
 
-.cases-legend .legend-gradient {
-  height: 10px;
-  border-radius: 5px;
-  margin: 0.15rem 0;
-}
-
-.cases-legend .legend-range {
-  display: flex;
-  justify-content: space-between;
-  color: var(--text-muted);
-  font-size: 0.72rem;
+.legend-swatch-square {
+  border-radius: 3px;
 }
 
 .map-hint {
