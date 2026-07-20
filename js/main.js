@@ -26,6 +26,7 @@ import {
   fitToSites,
   setCaseloadData,
   setCaseloadHexes,
+  setVacantData,
 } from "./map.js";
 import { renderTable } from "./table.js";
 import { buildIndex, nearestSites } from "./spatial.js";
@@ -264,6 +265,14 @@ function loadCaseload() {
     });
 }
 
+function loadVacant() {
+  return fetch("data/vacant_sites_register.geojson")
+    .then((response) => (response.ok ? response.json() : null))
+    .then((collection) => {
+      if (collection) setVacantData(collection);
+    });
+}
+
 async function init() {
   const response = await fetch("data/derelict_sites_register.geojson");
   if (!response.ok) {
@@ -295,6 +304,7 @@ async function init() {
   initMap();
   render();
   loadCaseload();
+  loadVacant();
 
   if (embed) {
     document.getElementById("embed-count").textContent =

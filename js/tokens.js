@@ -15,6 +15,10 @@ const LIGHT = {
   ramp: ["#86b6ef", "#3987e5", "#1c5cab", "#0d366b"],
   hexRamp: ["#cde2fb", "#3987e5", "#0d366b"],
   caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
+  // The vacant sites are a separate register, so they read in a warm accent
+  // that sits apart from the blue time-on-register ramp.
+  vacantFill: "#e07b2f",
+  vacantLine: "#b5540f",
   basemap: "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
 };
 
@@ -33,6 +37,8 @@ const DARK = {
   // Viridis is perceptually uniform and works on both surfaces, so the
   // caseload ramp is mode-invariant.
   caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
+  vacantFill: "#e8823c",
+  vacantLine: "#f6a866",
   basemap: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png",
 };
 

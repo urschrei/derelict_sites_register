@@ -12,6 +12,7 @@ let currentHexes = { type: "FeatureCollection", features: [] };
 let currentVoronoi = { type: "FeatureCollection", features: [] };
 let currentCases = { type: "FeatureCollection", features: [] };
 let currentCaseHexes = null;
+let currentVacant = { type: "FeatureCollection", features: [] };
 let hexVisible = false;
 let voronoiVisible = false;
 let emphasiseProtected = false;
@@ -24,6 +25,16 @@ const EMPTY = { type: "FeatureCollection", features: [] };
 const FADE_MS = 400;
 const METRES_PER_CASE = 120;
 
+// Each linked planning reference deep-links to its documents on DCC's public
+// planning portal. The reference is appended as Folder1_Ref (URL-encoded).
+const PLANNING_URL =
+  "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=";
+const EURO = new Intl.NumberFormat("en-IE", {
+  style: "currency",
+  currency: "EUR",
+  maximumFractionDigits: 0,
+});
+
 // Overlay layers cross-fade via paint transitions; visibility is flipped
 // only after a fade to zero completes. `desiredOpacity` guards against a
 // stale timeout hiding a layer that has been faded back in meanwhile.
@@ -34,6 +45,8 @@ const OPACITY_PROP = {
   "cases-hexes": "fill-opacity",
   "cases-squares-3d": "fill-extrusion-opacity",
   "cases-hexes-3d": "fill-extrusion-opacity",
+  "vacant-fill": "fill-opacity",
+  "vacant-line": "line-opacity",
 };
 const desiredOpacity = {
   hexes: 0,
@@ -42,6 +55,8 @@ const desiredOpacity = {
   "cases-hexes": 0,
   "cases-squares-3d": 0,
   "cases-hexes-3d": 0,
+  "vacant-fill": 0,
+  "vacant-line": 0,
 };
 
 function fadeLayerTo(id, opacity) {
@@ -66,8 +81,10 @@ function fadeLayerTo(id, opacity) {
 // The layer opacities implied by the current mode and per-mode options.
 function targetOpacities() {
   const register = mapMode === "register";
-  const squares = !register && casesShape === "squares";
-  const hexes = !register && casesShape === "hexes";
+  const caseload = mapMode === "caseload";
+  const vacant = mapMode === "vacant";
+  const squares = caseload && casesShape === "squares";
+  const hexes = caseload && casesShape === "hexes";
   return {
     hexes: register && hexVisible ? 0.55 : 0,
     voronoi: register && voronoiVisible ? 0.7 : 0,
@@ -75,6 +92,8 @@ function targetOpacities() {
     "cases-hexes": hexes && !extrude3d ? 0.55 : 0,
     "cases-squares-3d": squares && extrude3d ? 0.8 : 0,
     "cases-hexes-3d": hexes && extrude3d ? 0.8 : 0,
+    "vacant-fill": vacant ? 0.45 : 0,
+    "vacant-line": vacant ? 0.9 : 0,
   };
 }
 
@@ -135,6 +154,11 @@ function syncSitePaint() {
     map.setPaintProperty("sites", "circle-radius", siteRadiusExpression());
     map.setPaintProperty("sites", "circle-opacity", 1);
     map.setPaintProperty("sites", "circle-stroke-opacity", 1);
+  } else if (mapMode === "vacant") {
+    // The vacant sites are a different register; hide the derelict points
+    // entirely so the two are not read as one dataset.
+    map.setPaintProperty("sites", "circle-opacity", 0);
+    map.setPaintProperty("sites", "circle-stroke-opacity", 0);
   } else {
     // Circles render as screen-facing billboards at ground positions, so
     // under a pitched camera they read as floating blobs among the prisms.
@@ -364,6 +388,31 @@ function addDataLayers() {
     },
   });
 
+  map.addSource("vacant", { type: "geojson", data: currentVacant });
+  map.addLayer({
+    id: "vacant-fill",
+    type: "fill",
+    source: "vacant",
+    layout: { visibility: "none" },
+    paint: {
+      "fill-color": t.vacantFill,
+      "fill-opacity": 0,
+      "fill-opacity-transition": { duration: FADE_MS },
+    },
+  });
+  map.addLayer({
+    id: "vacant-line",
+    type: "line",
+    source: "vacant",
+    layout: { visibility: "none" },
+    paint: {
+      "line-color": t.vacantLine,
+      "line-width": 2,
+      "line-opacity": 0,
+      "line-opacity-transition": { duration: FADE_MS },
+    },
+  });
+
   map.addSource("sites", { type: "geojson", data: currentSites });
   map.addLayer({
     id: "sites",
@@ -463,6 +512,77 @@ function openPopup(feature) {
     .addTo(map);
 }
 
+function vacantPopupContent(props) {
+  const wrap = document.createElement("div");
+
+  const ref = document.createElement("div");
+  ref.className = "popup-ref";
+  ref.textContent = props.register_number ?? "";
+  wrap.append(ref);
+
+  const address = document.createElement("div");
+  address.className = "popup-address";
+  address.textContent = props.address ?? "";
+  wrap.append(address);
+
+  const status = [];
+  if (props.register_status) status.push(props.register_status);
+  if (props.date_registered) status.push(`registered ${props.date_registered}`);
+  if (status.length) {
+    const line = document.createElement("div");
+    line.className = "popup-line";
+    line.textContent = status.join(" · ");
+    wrap.append(line);
+  }
+
+  if (props.ownership) {
+    const line = document.createElement("div");
+    line.className = "popup-line";
+    line.textContent = `Owner: ${props.ownership}`;
+    wrap.append(line);
+  }
+
+  if (props.valuation > 0) {
+    const line = document.createElement("div");
+    line.className = "popup-line";
+    line.textContent = `Market valuation: ${EURO.format(props.valuation)}`;
+    wrap.append(line);
+  }
+
+  const refs = (props.linked_planning_refs ?? "")
+    .split(";")
+    .map((r) => r.trim())
+    .filter(Boolean);
+  if (refs.length) {
+    const title = document.createElement("div");
+    title.className = "popup-links-title";
+    title.textContent = `Planning applications on this site (${refs.length})`;
+    wrap.append(title);
+
+    const list = document.createElement("div");
+    list.className = "popup-links";
+    for (const reference of refs) {
+      const link = document.createElement("a");
+      link.href = PLANNING_URL + encodeURIComponent(reference);
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = reference;
+      list.append(link);
+    }
+    wrap.append(list);
+  }
+
+  return wrap;
+}
+
+function openVacantPopup(lngLat, props) {
+  if (popup) popup.remove();
+  popup = new maplibregl.Popup({ closeButton: true, maxWidth: "320px" })
+    .setLngLat(lngLat)
+    .setDOMContent(vacantPopupContent(props))
+    .addTo(map);
+}
+
 // Switch between the register view (points and point-derived overlays) and
 // the caseload view (choropleth with faded reference points). Exported so
 // other interactions, such as the locate button, can force the register
@@ -471,15 +591,21 @@ export function setMapMode(mode) {
   if (mode === mapMode) return;
   mapMode = mode;
   const register = mode === "register";
+  const caseload = mode === "caseload";
+  const vacant = mode === "vacant";
   document.getElementById("panel-register").hidden = !register;
-  document.getElementById("panel-caseload").hidden = register;
-  document.getElementById("cases-hint").hidden = register;
+  document.getElementById("panel-caseload").hidden = !caseload;
+  document.getElementById("panel-vacant").hidden = !vacant;
+  document.getElementById("cases-hint").hidden = !caseload;
+  document.getElementById("vacant-hint").hidden = !vacant;
   const radio = document.querySelector(
     `input[name="map-mode"][value="${mode}"]`
   );
   if (radio) radio.checked = true;
   if (popup) popup.remove();
-  if (register && extrude3d) {
+  // Leaving the caseload's extruded view collapses the prisms and levels the
+  // camera before the other views take over.
+  if (!caseload && extrude3d) {
     animateHeight(activeCase3dLayer(), 1, 0, 450);
     extrude3d = false;
     document.getElementById("toggle-extrude").checked = false;
@@ -566,6 +692,27 @@ function buildLegend() {
   });
 }
 
+function buildVacantLegend() {
+  const legend = document.getElementById("vacant-legend");
+  if (!legend) return;
+  const t = tokens();
+  legend.replaceChildren();
+  const title = document.createElement("span");
+  title.className = "legend-title";
+  title.textContent = "Vacant Sites Register";
+  legend.append(title);
+  const row = document.createElement("span");
+  row.className = "legend-row";
+  const swatch = document.createElement("span");
+  swatch.className = "legend-swatch legend-swatch-square";
+  swatch.style.background = t.vacantFill;
+  swatch.style.boxShadow = `0 0 0 1.5px ${t.vacantLine}`;
+  const label = document.createElement("span");
+  label.textContent = `${currentVacant.features.length} vacant sites`;
+  row.append(swatch, label);
+  legend.append(row);
+}
+
 export function initMap() {
   map = new maplibregl.Map({
     container: "map",
@@ -601,6 +748,18 @@ export function initMap() {
     if (mapMode === "register") map.getCanvas().style.cursor = "pointer";
   });
   map.on("mouseleave", "sites", () => {
+    map.getCanvas().style.cursor = "";
+  });
+
+  map.on("click", "vacant-fill", (e) => {
+    if (mapMode === "vacant" && e.features?.length) {
+      openVacantPopup(e.lngLat, e.features[0].properties);
+    }
+  });
+  map.on("mouseenter", "vacant-fill", () => {
+    if (mapMode === "vacant") map.getCanvas().style.cursor = "pointer";
+  });
+  map.on("mouseleave", "vacant-fill", () => {
     map.getCanvas().style.cursor = "";
   });
 
@@ -667,6 +826,7 @@ export function initMap() {
 
   buildLegend();
   buildCasesLegend();
+  buildVacantLegend();
   return map;
 }
 
@@ -681,6 +841,14 @@ export function setCaseloadData(grid) {
     map.setPaintProperty("cases-squares-3d", "fill-extrusion-color", colour);
   }
   buildCasesLegend();
+}
+
+// The vacant sites register is static (independent of the register filters),
+// so it is set once like the caseload grid.
+export function setVacantData(collection) {
+  currentVacant = collection;
+  map?.getSource("vacant")?.setData(currentVacant);
+  buildVacantLegend();
 }
 
 export function setCaseloadHexes(hexes) {
@@ -721,6 +889,7 @@ export function refreshMapStyle() {
   });
   buildLegend();
   buildCasesLegend();
+  buildVacantLegend();
 }
 
 let userMarker;

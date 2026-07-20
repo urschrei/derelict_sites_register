@@ -370,6 +370,10 @@ section {
   padding: 0.8rem 1rem;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
   max-width: 280px;
+  /* Keep tall popups (sites with many linked applications) from spilling past
+     the map container, which would clip them. */
+  max-height: 300px;
+  overflow-y: auto;
 }
 
 .maplibregl-popup-tip {
@@ -399,6 +403,37 @@ section {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin: 0.4rem 0 0;
+}
+
+.popup-links-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin: 0.5rem 0 0.3rem;
+}
+
+.popup-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  max-height: 104px;
+  overflow-y: auto;
+}
+
+.popup-links a {
+  font-size: 0.78rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  color: var(--series-1);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.popup-links a:hover,
+.popup-links a:focus-visible {
+  border-color: var(--series-1);
+  text-decoration: underline;
 }
 
 /* Charts */
