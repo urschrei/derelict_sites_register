@@ -255,7 +255,7 @@ function loadCaseload() {
         "cases, aggregated by the council to a grid before publication " +
         "(only sites formally on the register appear as points). The " +
         "hexagon view re-grids the counts by area weighting, so its " +
-        "values are estimates.";
+        "values are estimates. Click a cell for its exact count.";
       // The hexagon re-grid is moderately expensive; compute it off the
       // critical path once the page has settled.
       setTimeout(() => {

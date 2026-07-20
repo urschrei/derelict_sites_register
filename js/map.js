@@ -17,10 +17,12 @@ let voronoiVisible = false;
 let emphasiseProtected = false;
 let mapMode = "register";
 let casesShape = "squares";
+let extrude3d = false;
 let popup;
 
 const EMPTY = { type: "FeatureCollection", features: [] };
 const FADE_MS = 400;
+const METRES_PER_CASE = 120;
 
 // Overlay layers cross-fade via paint transitions; visibility is flipped
 // only after a fade to zero completes. `desiredOpacity` guards against a
@@ -30,12 +32,16 @@ const OPACITY_PROP = {
   voronoi: "line-opacity",
   "cases-squares": "fill-opacity",
   "cases-hexes": "fill-opacity",
+  "cases-squares-3d": "fill-extrusion-opacity",
+  "cases-hexes-3d": "fill-extrusion-opacity",
 };
 const desiredOpacity = {
   hexes: 0,
   voronoi: 0,
   "cases-squares": 0,
   "cases-hexes": 0,
+  "cases-squares-3d": 0,
+  "cases-hexes-3d": 0,
 };
 
 function fadeLayerTo(id, opacity) {
@@ -60,11 +66,15 @@ function fadeLayerTo(id, opacity) {
 // The layer opacities implied by the current mode and per-mode options.
 function targetOpacities() {
   const register = mapMode === "register";
+  const squares = !register && casesShape === "squares";
+  const hexes = !register && casesShape === "hexes";
   return {
     hexes: register && hexVisible ? 0.55 : 0,
     voronoi: register && voronoiVisible ? 0.7 : 0,
-    "cases-squares": !register && casesShape === "squares" ? 0.55 : 0,
-    "cases-hexes": !register && casesShape === "hexes" ? 0.55 : 0,
+    "cases-squares": squares && !extrude3d ? 0.55 : 0,
+    "cases-hexes": hexes && !extrude3d ? 0.55 : 0,
+    "cases-squares-3d": squares && extrude3d ? 0.8 : 0,
+    "cases-hexes-3d": hexes && extrude3d ? 0.8 : 0,
   };
 }
 
@@ -262,6 +272,41 @@ function addDataLayers() {
     },
   });
 
+  map.addLayer({
+    id: "cases-squares-3d",
+    type: "fill-extrusion",
+    source: "cases-squares",
+    filter: [">", ["get", "num_active"], 0],
+    layout: { visibility: "none" },
+    paint: {
+      "fill-extrusion-color": caseColourExpression(
+        "num_active",
+        currentCases.features
+      ),
+      "fill-extrusion-height": ["*", ["get", "num_active"], METRES_PER_CASE],
+      "fill-extrusion-height-transition": { duration: FADE_MS },
+      "fill-extrusion-opacity": 0,
+      "fill-extrusion-opacity-transition": { duration: FADE_MS },
+    },
+  });
+
+  map.addLayer({
+    id: "cases-hexes-3d",
+    type: "fill-extrusion",
+    source: "cases-hexes",
+    layout: { visibility: "none" },
+    paint: {
+      "fill-extrusion-color": caseColourExpression(
+        "estimate",
+        currentCaseHexes?.features ?? []
+      ),
+      "fill-extrusion-height": ["*", ["get", "estimate"], METRES_PER_CASE],
+      "fill-extrusion-height-transition": { duration: FADE_MS },
+      "fill-extrusion-opacity": 0,
+      "fill-extrusion-opacity-transition": { duration: FADE_MS },
+    },
+  });
+
   map.addSource("voronoi", { type: "geojson", data: currentVoronoi });
   map.addLayer({
     id: "voronoi",
@@ -345,6 +390,28 @@ function popupContent(props) {
   return wrap;
 }
 
+// The grid carries no attributes beyond the case count, so the cell popup
+// simply reports the exact value behind the class colour.
+function openCellPopup(lngLat, props, isHex) {
+  if (popup) popup.remove();
+  const wrap = document.createElement("div");
+  const value = document.createElement("div");
+  value.className = "popup-address";
+  value.textContent = isHex
+    ? `≈ ${props.estimate.toFixed(1)} active cases`
+    : `${props.num_active} active ${props.num_active === 1 ? "case" : "cases"}`;
+  const note = document.createElement("div");
+  note.className = "popup-line";
+  note.textContent = isHex
+    ? "area-weighted estimate for this hexagon"
+    : "in this grid cell";
+  wrap.append(value, note);
+  popup = new maplibregl.Popup({ closeButton: true, maxWidth: "240px" })
+    .setLngLat(lngLat)
+    .setDOMContent(wrap)
+    .addTo(map);
+}
+
 function openPopup(feature) {
   if (popup) popup.remove();
   popup = new maplibregl.Popup({ closeButton: true, maxWidth: "300px" })
@@ -368,7 +435,12 @@ export function setMapMode(mode) {
     `input[name="map-mode"][value="${mode}"]`
   );
   if (radio) radio.checked = true;
-  if (!register && popup) popup.remove();
+  if (popup) popup.remove();
+  if (register && extrude3d) {
+    extrude3d = false;
+    document.getElementById("toggle-extrude").checked = false;
+    map?.easeTo({ pitch: 0, bearing: 0, duration: 900 });
+  }
   syncSitePaint();
   syncOverlayLayers();
   buildCasesLegend();
@@ -462,6 +534,23 @@ export function initMap() {
   map.on("click", "sites", (e) => {
     if (mapMode === "register" && e.features?.length) openPopup(e.features[0]);
   });
+  for (const layer of [
+    "cases-squares",
+    "cases-hexes",
+    "cases-squares-3d",
+    "cases-hexes-3d",
+  ]) {
+    map.on("click", layer, (e) => {
+      if (!e.features?.length) return;
+      openCellPopup(e.lngLat, e.features[0].properties, layer.includes("hexes"));
+    });
+    map.on("mouseenter", layer, () => {
+      map.getCanvas().style.cursor = "pointer";
+    });
+    map.on("mouseleave", layer, () => {
+      map.getCanvas().style.cursor = "";
+    });
+  }
   map.on("mouseenter", "sites", () => {
     if (mapMode === "register") map.getCanvas().style.cursor = "pointer";
   });
@@ -487,10 +576,20 @@ export function initMap() {
   for (const radio of document.querySelectorAll('input[name="cases-shape"]')) {
     radio.addEventListener("change", (e) => {
       casesShape = e.target.value;
+      if (popup) popup.remove();
       syncOverlayLayers();
       buildCasesLegend();
     });
   }
+  document.getElementById("toggle-extrude").addEventListener("change", (e) => {
+    extrude3d = e.target.checked;
+    syncOverlayLayers();
+    map.easeTo(
+      extrude3d
+        ? { pitch: 55, bearing: -15, duration: 900 }
+        : { pitch: 0, bearing: 0, duration: 900 }
+    );
+  });
 
   document
     .getElementById("toggle-protected")
@@ -510,11 +609,9 @@ export function setCaseloadData(grid) {
   currentCases = grid;
   if (map?.getSource("cases-squares")) {
     map.getSource("cases-squares").setData(currentCases);
-    map.setPaintProperty(
-      "cases-squares",
-      "fill-color",
-      caseColourExpression("num_active", currentCases.features)
-    );
+    const colour = caseColourExpression("num_active", currentCases.features);
+    map.setPaintProperty("cases-squares", "fill-color", colour);
+    map.setPaintProperty("cases-squares-3d", "fill-extrusion-color", colour);
   }
   buildCasesLegend();
 }
@@ -523,11 +620,9 @@ export function setCaseloadHexes(hexes) {
   currentCaseHexes = hexes;
   if (map?.getSource("cases-hexes")) {
     map.getSource("cases-hexes").setData(currentCaseHexes);
-    map.setPaintProperty(
-      "cases-hexes",
-      "fill-color",
-      caseColourExpression("estimate", currentCaseHexes.features)
-    );
+    const colour = caseColourExpression("estimate", currentCaseHexes.features);
+    map.setPaintProperty("cases-hexes", "fill-color", colour);
+    map.setPaintProperty("cases-hexes-3d", "fill-extrusion-color", colour);
   }
 }
 
