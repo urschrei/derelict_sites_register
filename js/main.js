@@ -88,6 +88,8 @@ function renderKpis(filtered) {
     (f) => f.properties.is_owned_by_dublin_city_council === "Yes"
   ).length;
   document.getElementById("kpi-council").textContent = String(councilCount);
+  document.getElementById("kpi-council-note").textContent =
+    `${filtered.length - councilCount} not in council ownership`;
 
   const ce = clarkEvans(filtered);
   document.getElementById("kpi-cluster").textContent = ce
