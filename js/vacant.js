@@ -139,7 +139,9 @@ function fact(label, value) {
   return row;
 }
 
-function planningItem(app) {
+// Exported so the RZLT view can render its own planning applications with
+// the identical status-badge layout.
+export function planningItem(app) {
   const item = document.createElement("li");
   item.className = "vp-item";
 

@@ -14,9 +14,12 @@ The four layers, all joined in Irish Transverse Mercator (EPSG:2157):
    ArcGIS service, layer 1 site polygons, CC-BY 4.0). Applications received
    in the last ten years intersecting a parcel are aggregated to counts, a
    granted count, a live-permission flag, and the latest application's
-   details. Decision strings are messy (truncated variants, padded
-   whitespace); they are normalised by stripping and prefix-matching, and
-   the mapping used is recorded in the run manifest.
+   details. The GeoJSON also carries the full per-application list (newest
+   first) under planning_applications, each with a Granted/Refused/Other
+   outcome for the status badges - the same buckets the vacant sites register
+   uses. Decision strings are messy (truncated variants, padded whitespace);
+   the outcome mapping used is recorded in the run manifest. The flat CSV
+   keeps only the scalar aggregates.
 2. State ownership (PRA State Assets and LDA-sourced State Assets ArcGIS
    services, Land Development Agency). Overlaps count only above a sliver
    threshold: max(100 m2, 5% of parcel area). The public share of each
@@ -48,6 +51,7 @@ import logging
 import random
 import sys
 import time
+import urllib.parse
 from datetime import date, datetime, timezone
 from pathlib import Path
 
@@ -90,6 +94,17 @@ LDA_URL = (
 )
 VALUATION_URL = "https://opendata.tailte.ie/api/Property/GetProperties"
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+
+# DCC applications carry no direct link in the national dataset, but their
+# reference format matches the council's PublicAccess portal (as used by the
+# vacant sites register), so the documents link is built the same way.
+PORTAL_URL = (
+    "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/"
+    "RunThirdPartySearch?FileSystemId=PL&Folder1_Ref="
+)
+# Application descriptions run to thousands of characters; trim for the badge
+# list so the payload and panel stay manageable.
+PROPOSAL_MAX = 320
 
 PAGE_SIZE = 2000
 # Sliver guard for the ownership overlay: an overlap below this is ignored.
@@ -274,8 +289,44 @@ def normalise_decision(raw: str | None) -> str:
     return (raw or "").strip().upper()
 
 
-def is_granted(raw: str | None) -> bool:
-    return normalise_decision(raw).startswith("GRANT")
+def outcome_of(raw: str | None) -> str:
+    """A decision string mapped to a badge outcome.
+
+    The same buckets the vacant sites register uses, so both views share the
+    Granted / Refused badge colours. Refusal is tested first because refused
+    decisions also mention "permission".
+    """
+    lowered = normalise_decision(raw).lower()
+    if not lowered:
+        return "Undecided"
+    if "refuse" in lowered or "invalid" in lowered:
+        return "Refused"
+    if "grant" in lowered or "declare" in lowered or "permission" in lowered:
+        return "Granted"
+    return "Other"
+
+
+def portal_url(app_number: str) -> str:
+    return PORTAL_URL + urllib.parse.quote(app_number, safe="")
+
+
+def application_record(src: dict) -> dict:
+    """A planning feature as the badge list needs it (vacant-register shape)."""
+    proposal = (src.get("DevelopmentDescription") or "").strip()
+    if len(proposal) > PROPOSAL_MAX:
+        proposal = proposal[: PROPOSAL_MAX - 1].rstrip() + "…"
+    app_number = src.get("ApplicationNumber") or ""
+    return {
+        "plan_ref": app_number or None,
+        "outcome": outcome_of(src.get("Decision")),
+        "decision": normalise_decision(src.get("Decision")) or None,
+        "status": src.get("ApplicationStatus") or None,
+        "app_type": src.get("ApplicationType") or None,
+        "registration_date": epoch_ms_to_iso(src.get("ReceivedDate")),
+        "proposal": proposal or None,
+        "expiry_ms": src.get("ExpiryDate") or 0,
+        "planning_portal_url": portal_url(app_number) if app_number else None,
+    }
 
 
 def fetch_planning(offline: bool, stats: dict, cutoff: date):
@@ -285,8 +336,8 @@ def fetch_planning(offline: bool, stats: dict, cutoff: date):
             f"AND ReceivedDate >= DATE '{cutoff.isoformat()}'"
         ),
         "outFields": (
-            "ApplicationNumber,ApplicationStatus,Decision,"
-            "ReceivedDate,DecisionDate,ExpiryDate"
+            "ApplicationNumber,ApplicationStatus,ApplicationType,Decision,"
+            "DevelopmentDescription,ReceivedDate,DecisionDate,ExpiryDate"
         ),
         "outSR": "2157",
         "orderByFields": "OBJECTID",
@@ -317,30 +368,30 @@ def join_planning(parcels, features, repairs, today: date):
     )
     for parcel_id, geom in parcels:
         idx = tree.query(geom, predicate="intersects") if tree else []
-        apps = [props[i] for i in idx]
+        apps = [application_record(props[i]) for i in idx]
         for app in apps:
-            raw = app.get("Decision")
-            decision_map[str(raw)] = "granted" if is_granted(raw) else "other"
-        granted = [a for a in apps if is_granted(a.get("Decision"))]
-        live = any((a.get("ExpiryDate") or 0) > now_ms for a in granted)
-        latest = max(
-            apps,
-            key=lambda a: (
-                a.get("ReceivedDate") or 0,
-                a.get("ApplicationNumber") or "",
-            ),
-            default=None,
+            decision_map[app["decision"] or ""] = app["outcome"]
+        # Newest first; undated applications sink to the bottom.
+        apps.sort(
+            key=lambda a: (a["registration_date"] or "", a["plan_ref"] or ""),
+            reverse=True,
         )
+        granted = [a for a in apps if a["outcome"] == "Granted"]
+        live = any(a["expiry_ms"] > now_ms for a in granted)
+        latest = apps[0] if apps else None
+        # The expiry helper is internal to the live-permission test; drop it
+        # from the published records.
+        for app in apps:
+            app.pop("expiry_ms", None)
         results[parcel_id] = {
             "plan_n_apps_10yr": len(apps),
             "plan_n_granted_10yr": len(granted),
             "plan_live_permission": live,
-            "plan_latest_app_no": latest and latest.get("ApplicationNumber"),
-            "plan_latest_status": latest and latest.get("ApplicationStatus"),
-            "plan_latest_decision": latest
-            and (normalise_decision(latest.get("Decision")) or None),
-            "plan_latest_received": latest
-            and epoch_ms_to_iso(latest.get("ReceivedDate")),
+            "plan_latest_app_no": latest and latest["plan_ref"],
+            "plan_latest_status": latest and latest["status"],
+            "plan_latest_decision": latest and latest["decision"],
+            "plan_latest_received": latest and latest["registration_date"],
+            "planning_applications": apps,
         }
     return results, decision_map
 
@@ -705,10 +756,13 @@ def main() -> int:
     geojson_text = json.dumps(out, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
     atomic_write(OUTPUT_GEOJSON, geojson_text)
 
-    base_fields = [k for k in enriched[0]["properties"] if k not in ENRICHMENT_FIELDS]
+    # The per-application list is a nested field carried only in the GeoJSON;
+    # the flat CSV keeps the scalar columns and drops it via extrasaction.
+    skip = set(ENRICHMENT_FIELDS) | {"planning_applications"}
+    base_fields = [k for k in enriched[0]["properties"] if k not in skip]
     csv_fields = base_fields + ENRICHMENT_FIELDS
     buffer = io.StringIO()
-    writer = csv.DictWriter(buffer, fieldnames=csv_fields)
+    writer = csv.DictWriter(buffer, fieldnames=csv_fields, extrasaction="ignore")
     writer.writeheader()
     for feature in enriched:
         writer.writerow(feature["properties"])

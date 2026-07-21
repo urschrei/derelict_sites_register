@@ -6,7 +6,7 @@
 
 import { setRzltData, focusRzltParcel, onRzltSelect } from "./map.js";
 import { RZLT_ZONES } from "./tokens.js";
-import { selectSite as selectVacantSite } from "./vacant.js";
+import { selectSite as selectVacantSite, planningItem } from "./vacant.js";
 
 const EURO = new Intl.NumberFormat("en-IE", {
   style: "currency",
@@ -18,14 +18,6 @@ let features = [];
 
 function zoneLabel(code) {
   return RZLT_ZONES.find((zone) => zone.code === code)?.label ?? code;
-}
-
-// DCC decision strings arrive upper-case (and sometimes truncated); present
-// them in sentence case for the detail panel.
-function titleCase(text) {
-  return text
-    .toLowerCase()
-    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 // Header-line figures: parcel count and the vintage of the newest additions.
@@ -194,13 +186,6 @@ function renderDetail(feature) {
       facts.append(fact("Ownership", p.own_bodies ?? "State or council"));
     }
     if (p.own_folios) facts.append(fact("Folio", p.own_folios));
-    facts.append(
-      fact(
-        "Planning (10 yr)",
-        `${p.plan_n_apps_10yr ?? 0} applications, ` +
-          `${p.plan_n_granted_10yr ?? 0} granted`
-      )
-    );
     if (p.plan_live_permission) {
       facts.append(fact("Live permission", "Yes"));
     }
@@ -216,14 +201,34 @@ function renderDetail(feature) {
   }
   panel.append(facts);
 
-  if (enriched && p.plan_latest_app_no) {
-    const latest = document.createElement("p");
-    latest.className = "vacant-planning-note";
-    const parts = [`Latest application ${p.plan_latest_app_no}`];
-    if (p.plan_latest_received) parts.push(`received ${p.plan_latest_received}`);
-    if (p.plan_latest_decision) parts.push(titleCase(p.plan_latest_decision));
-    latest.textContent = parts.join(" · ");
-    panel.append(latest);
+  // Planning history: the same status-badge list the vacant register uses,
+  // newest first, linking to the council's planning portal.
+  const apps = enriched ? (p.planning_applications ?? []) : [];
+  if (enriched) {
+    const heading = document.createElement("h3");
+    heading.className = "vacant-planning-title";
+    const granted = p.plan_n_granted_10yr ?? 0;
+    heading.textContent =
+      `Planning history (${apps.length}` +
+      (apps.length ? `, ${granted} granted` : "") +
+      ")";
+    panel.append(heading);
+
+    const note = document.createElement("p");
+    note.className = "vacant-planning-note";
+    note.textContent = apps.length
+      ? "Applications whose mapped footprint overlaps this parcel, over the " +
+        "last ten years. The parcel is not the application boundary, so some " +
+        "may relate to adjacent land."
+      : "No planning applications overlap this parcel in the last ten years.";
+    panel.append(note);
+
+    if (apps.length) {
+      const ol = document.createElement("ol");
+      ol.className = "vp-list";
+      for (const app of apps) ol.append(planningItem(app));
+      panel.append(ol);
+    }
   }
 
   if (p.zone_desc) {

@@ -4,6 +4,7 @@ No network: each test drives one helper with small in-memory fixtures.
 """
 
 import importlib.util
+from datetime import date
 from pathlib import Path
 
 import shapely
@@ -65,13 +66,76 @@ def test_arcgis_pages_stops_on_empty_page(monkeypatch):
     assert got == [[]]
 
 
-def test_is_granted_handles_truncated_and_padded():
-    assert enrich.is_granted("GRANT PERMISSION")
-    assert enrich.is_granted("GRANT RETENTION PERMISSIO")  # truncated
-    assert enrich.is_granted("grant permission   ")  # padded, lowercase
-    assert not enrich.is_granted("REFUSE PERMISSION")
-    assert not enrich.is_granted("APPLICATION WITHDRAWN")
-    assert not enrich.is_granted(None)
+def test_outcome_of_buckets():
+    assert enrich.outcome_of("GRANT PERMISSION") == "Granted"
+    assert enrich.outcome_of("GRANT RETENTION PERMISSIO") == "Granted"  # truncated
+    assert enrich.outcome_of("grant permission   ") == "Granted"  # padded
+    # Refusal is tested before permission, since refused decisions also
+    # mention "permission".
+    assert enrich.outcome_of("REFUSE PERMISSION") == "Refused"
+    assert enrich.outcome_of("APPLICATION DECLARED INVALID") == "Refused"
+    assert enrich.outcome_of("APPLICATION WITHDRAWN") == "Other"
+    assert enrich.outcome_of("") == "Undecided"
+    assert enrich.outcome_of(None) == "Undecided"
+
+
+def test_portal_url_encodes_reference():
+    url = enrich.portal_url("4253/24")
+    assert url.endswith("Folder1_Ref=4253%2F24")
+
+
+def test_application_record_truncates_long_proposal():
+    src = {
+        "ApplicationNumber": "1234/25",
+        "Decision": "GRANT PERMISSION",
+        "ApplicationType": "Permission",
+        "ReceivedDate": 1649116800000,
+        "DevelopmentDescription": "x" * 1000,
+    }
+    rec = enrich.application_record(src)
+    assert rec["outcome"] == "Granted"
+    assert rec["registration_date"] == "2022-04-05"
+    assert len(rec["proposal"]) <= enrich.PROPOSAL_MAX
+    assert rec["proposal"].endswith("…")
+
+
+def test_join_planning_sorts_and_aggregates(monkeypatch):
+    monkeypatch.setattr(enrich, "assert_itm_bbox", lambda *a, **k: None)
+    parcel = _square(0, 0, 100)
+
+    # Three applications all intersecting the parcel: a granted 2023, a
+    # refused 2024, and an undated one.
+    def feature(app_no, decision, received):
+        return {
+            "geometry": shapely.geometry.mapping(_square(10, 10, 50)),
+            "properties": {
+                "ApplicationNumber": app_no,
+                "Decision": decision,
+                "ReceivedDate": received,
+                "ApplicationType": "Permission",
+                "ApplicationStatus": "Decided",
+                "DevelopmentDescription": "desc",
+            },
+        }
+
+    features = [
+        feature("1/23", "GRANT PERMISSION", 1672531200000),  # 2023-01-01
+        feature("2/24", "REFUSE PERMISSION", 1704067200000),  # 2024-01-01
+        feature("3/22", "", None),  # undated, undecided
+    ]
+    results, decision_map = enrich.join_planning(
+        [("P", parcel)], features, [], date(2025, 1, 1)
+    )
+    r = results["P"]
+    assert r["plan_n_apps_10yr"] == 3
+    assert r["plan_n_granted_10yr"] == 1
+    # Newest first; the undated application sinks to the bottom.
+    order = [a["plan_ref"] for a in r["planning_applications"]]
+    assert order == ["2/24", "1/23", "3/22"]
+    assert r["plan_latest_app_no"] == "2/24"
+    # The internal expiry helper is not published.
+    assert all("expiry_ms" not in a for a in r["planning_applications"])
+    assert decision_map["GRANT PERMISSION"] == "Granted"
 
 
 # The ownership and valuation joins assert their geometry falls inside
