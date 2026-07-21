@@ -404,23 +404,34 @@ section {
 
 /* Filters */
 
+/* A quieter enclosure than the old bordered card: a soft borderless surface
+   panel grouping the controls. */
 .filters {
   display: flex;
   align-items: end;
-  gap: 1rem;
+  gap: 1rem 1.25rem;
   flex-wrap: wrap;
   padding: 0.9rem 1rem;
   background: var(--surface-1);
-  border: 1px solid var(--border);
   border-radius: 10px;
 }
 
 .filter-field {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.3rem;
   font-size: 0.8rem;
   color: var(--text-secondary);
+}
+
+/* Mono eyebrow labels, matching the KPI band. */
+.filter-field > span {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
 }
 
 .filter-field select,
@@ -445,44 +456,60 @@ section {
 }
 
 .filter-check input {
-  accent-color: var(--series-1);
+  accent-color: var(--ink);
   width: 1rem;
   height: 1rem;
 }
 
 .filter-status {
   margin: 0 0 0.35rem auto;
-  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
   color: var(--text-muted);
 }
 
 /* Stat tiles */
 
+/* A single ruled band rather than five bordered tiles: one rule above and
+   below, hairline vertical rules between figures. */
 .kpis {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.75rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-block: 1px solid var(--baseline);
 }
 
 .stat-tile {
-  background: var(--surface-1);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.85rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.15rem;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+  border-left: 1px solid var(--gridline);
+}
+
+.stat-tile:first-child {
+  border-left: none;
 }
 
 .stat-label {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  /* Reserve two lines so the values sit on a common baseline whether or not
+     the label wraps. */
+  min-height: 2.5em;
 }
 
 .stat-value {
   font-size: 1.7rem;
   font-weight: 600;
   line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
 }
 
 .stat-note {
@@ -1053,6 +1080,24 @@ body.embed .embed-title {
 
   .filter-status {
     margin-left: 0;
+  }
+
+  /* The KPI band wraps to two columns; hairline rules keep the grid legible. */
+  .kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .stat-tile {
+    border-top: 1px solid var(--gridline);
+  }
+
+  .stat-tile:nth-child(odd) {
+    border-left: none;
+  }
+
+  .stat-tile:nth-child(1),
+  .stat-tile:nth-child(2) {
+    border-top: none;
   }
 }
 
