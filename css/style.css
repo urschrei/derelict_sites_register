@@ -711,6 +711,7 @@ body.embed .filters,
 body.embed .kpis,
 body.embed .charts,
 body.embed .table-section,
+body.embed .changelog,
 body.embed .site-footer,
 body.embed .map-chrome,
 body.embed .map-hint,
@@ -759,6 +760,38 @@ body.embed .embed-title {
 .embed-title-sub {
   font-size: 0.9rem;
   color: var(--text-secondary);
+}
+
+/* Recent register changes */
+
+.changelog {
+  margin: 2.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.changelog h2 {
+  font-size: 1rem;
+  margin: 0 0 0.3rem;
+  color: var(--text-primary);
+}
+
+.changelog-note {
+  margin: 0 0 0.6rem;
+  color: var(--text-muted);
+}
+
+.changelog-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.changelog-list li {
+  margin: 0.2rem 0;
+}
+
+.changelog-list time {
+  font-variant-numeric: tabular-nums;
 }
 
 /* Footer */

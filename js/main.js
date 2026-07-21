@@ -287,6 +287,40 @@ function loadCaseload() {
     });
 }
 
+function describeRegisterChange(change) {
+  if (!change) return "not recorded";
+  const parts = [];
+  if (change.added.length) parts.push(`${change.added.length} added`);
+  if (change.removed.length) parts.push(`${change.removed.length} removed`);
+  const detail = parts.length ? parts.join(", ") : "no change";
+  return `${detail} (${change.total} sites)`;
+}
+
+// The changelog is written by the refresh workflow whenever register
+// membership changes, so every entry represents an actual change.
+function loadChangelog() {
+  return fetch("data/changelog.json")
+    .then((response) => (response.ok ? response.json() : null))
+    .then((entries) => {
+      if (!entries?.length) return;
+      const list = document.getElementById("changelog-list");
+      for (const entry of entries.slice(0, 3)) {
+        const item = document.createElement("li");
+        const [y, m, d] = entry.date.split("T")[0].split("-");
+        const time = document.createElement("time");
+        time.dateTime = entry.date;
+        time.textContent = `${d}/${m}/${y}`;
+        item.append(
+          time,
+          ` — Derelict: ${describeRegisterChange(entry.derelict)}` +
+            ` · Vacant: ${describeRegisterChange(entry.vacant)}`
+        );
+        list.append(item);
+      }
+      document.getElementById("changelog-section").hidden = false;
+    });
+}
+
 // Top-level switch between the two registers. Derelict keeps its register /
 // caseload map modes and its filters, charts, and table; vacant swaps in its
 // own figures, site list, and detail panel. The map element is shared.
@@ -346,6 +380,7 @@ async function init() {
   initMap();
   render();
   loadCaseload();
+  loadChangelog();
   loadVacant().then(() => {
     if (currentView === "vacant") renderHeaderMeta();
   });
