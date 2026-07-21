@@ -31,6 +31,16 @@ merely touch the boundary and the very large "related" clusters the council
 records for regeneration areas. Sites with no strongly-overlapping anchor fall
 back to the spatial signal alone and are flagged (council_confirmed = false).
 
+Enriching ownership and valuation
+---------------------------------
+The MapZone feed's ownership and valuation attributes are stale: most market
+values are missing and several owner names are superseded. The register PDF
+published on dublincity.ie is the source of record for those fields, so the
+feed's values are replaced at build time from data/vacant_sites_enrichment.csv
+(produced from the PDF by extract_vacant_sites_pdf.py). Sites absent from the
+enrichment file - for example any added to the register after the PDF was
+published - keep the feed's values.
+
 Output is deterministic (sites ordered by register number, applications by
 date, sorted keys). The volatile ETL_date column is dropped. Uses only the
 standard library so it can run in CI without dependencies.
@@ -109,11 +119,13 @@ LINK_FIELDS = [
     "planning_portal_url",
 ]
 CSV_FIELDS = list(REGISTER_FIELDS.values()) + ["linked_planning_ref_count"]
+CSV_FIELDS.insert(CSV_FIELDS.index("valuation") + 1, "valuation_date")
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 GEOJSON_PATH = DATA_DIR / "vacant_sites_register.geojson"
 CSV_PATH = DATA_DIR / "vacant_sites_register.csv"
 LINKS_PATH = DATA_DIR / "vacant_sites_planning_links.csv"
+ENRICHMENT_PATH = DATA_DIR / "vacant_sites_enrichment.csv"
 
 
 def get_token() -> str:
@@ -240,12 +252,30 @@ def clean_date(value):
     return iso_date(value)
 
 
-def build_register(register: dict, links: dict[str, list[dict]]) -> dict:
+def load_enrichment() -> dict[str, dict]:
+    """PDF-sourced ownership and valuation rows keyed by register number."""
+    if not ENRICHMENT_PATH.exists():
+        return {}
+    with ENRICHMENT_PATH.open(newline="") as fh:
+        return {row["register_number"]: row for row in csv.DictReader(fh)}
+
+
+def build_register(
+    register: dict, links: dict[str, list[dict]], enrichment: dict[str, dict]
+) -> dict:
     features = []
     for feature in register["features"]:
         src = feature["properties"]
         props = {out: src.get(col) for col, out in REGISTER_FIELDS.items()}
         props["date_registered"] = clean_date(props["date_registered"])
+        extra = enrichment.get(props["register_number"])
+        if extra:
+            for field in ("folio_reference", "ownership", "owner_address"):
+                props[field] = extra[field]
+            props["valuation"] = int(extra["market_value"])
+            props["valuation_date"] = extra["valuation_date"]
+        else:
+            props["valuation_date"] = None
         site_links = links.get(props["register_number"], [])
         props["linked_planning_ref_count"] = len(site_links)
         props["planning_applications"] = site_links
@@ -278,7 +308,7 @@ def main() -> None:
     pairs = run_query(token, PAIRS_QUERY, 3857)
     links = build_links(pairs)
 
-    collection = build_register(register, links)
+    collection = build_register(register, links, load_enrichment())
     write_json(GEOJSON_PATH, collection)
     write_csv(CSV_PATH, CSV_FIELDS, [f["properties"] for f in collection["features"]])
 

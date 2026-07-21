@@ -141,8 +141,8 @@
         "date_registered": "2017-03-31",
         "folio_reference": "DN143078L",
         "linked_planning_ref_count": 4,
-        "owner_address": "94 St. Stephen's Green, Dublin 2.",
-        "ownership": "Minister for Justice and Law Reform",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
+        "ownership": "Dublin City Council",
         "planning_applications": [
           {
             "app_type": "Permission",
@@ -204,7 +204,8 @@
         "priority_code": 1,
         "register_number": "VS-0003",
         "register_status": "Vacant - Suitable",
-        "valuation": 900000.0
+        "valuation": 1100000,
+        "valuation_date": "2020-04-10"
       },
       "type": "Feature"
     },
@@ -404,7 +405,8 @@
         "priority_code": 1,
         "register_number": "VS-0005",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 1100000,
+        "valuation_date": "2022-08-29"
       },
       "type": "Feature"
     },
@@ -489,7 +491,7 @@
         "date_registered": "2017-11-28",
         "folio_reference": "151686L; 198023F",
         "linked_planning_ref_count": 4,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -552,7 +554,8 @@
         "priority_code": 11,
         "register_number": "VS-0011",
         "register_status": "Vacant - Suitable - DCC",
-        "valuation": 6000000.0
+        "valuation": 10500000,
+        "valuation_date": "2021-04-01"
       },
       "type": "Feature"
     },
@@ -730,7 +733,8 @@
         "priority_code": 1,
         "register_number": "VS-0019",
         "register_status": "Vacant - Suitable",
-        "valuation": 2250000.0
+        "valuation": 4500000,
+        "valuation_date": "2020-12-01"
       },
       "type": "Feature"
     },
@@ -1199,7 +1203,7 @@
         "date_registered": "2018-05-17",
         "folio_reference": "180880F; 190675F",
         "linked_planning_ref_count": 8,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -1318,7 +1322,8 @@
         "priority_code": 11,
         "register_number": "VS-0028",
         "register_status": "Vacant - Suitable - DCC",
-        "valuation": 0.0
+        "valuation": 6000000,
+        "valuation_date": "2021-07-01"
       },
       "type": "Feature"
     },
@@ -1704,7 +1709,8 @@
         "priority_code": 1,
         "register_number": "VS-0043",
         "register_status": "Vacant - Suitable",
-        "valuation": 360000.0
+        "valuation": 630000,
+        "valuation_date": "2020-08-27"
       },
       "type": "Feature"
     },
@@ -2376,7 +2382,8 @@
         "priority_code": 1,
         "register_number": "VS-0048",
         "register_status": "Vacant - Suitable",
-        "valuation": 3800000.0
+        "valuation": 7200000,
+        "valuation_date": "2021-04-01"
       },
       "type": "Feature"
     },
@@ -2597,8 +2604,8 @@
         "date_registered": "2017-07-28",
         "folio_reference": "DN98928F",
         "linked_planning_ref_count": 10,
-        "owner_address": "Harmony Court, Harmony Row, Dublin 2",
-        "ownership": "Independent Trustee Company Limited",
+        "owner_address": "Building 1 Swift Square, Northwood Park, Northwood, Dublin 9, D09 A0E4",
+        "ownership": "Lilacstone Limited",
         "planning_applications": [
           {
             "app_type": "Permission                              ",
@@ -2744,7 +2751,8 @@
         "priority_code": 1,
         "register_number": "VS-0055",
         "register_status": "Vacant - Suitable",
-        "valuation": 1000000.0
+        "valuation": 1400000,
+        "valuation_date": "2021-04-01"
       },
       "type": "Feature"
     },
@@ -2877,8 +2885,8 @@
         "date_registered": "2019-08-20",
         "folio_reference": "DN9053",
         "linked_planning_ref_count": 12,
-        "owner_address": "92 Old Ballyrobin Road, Antrim, BT41 4TJ",
-        "ownership": "Dauken Limited",
+        "owner_address": "53-54 Mount Street Upper, Dublin 2",
+        "ownership": "The Housing and Communities Agency",
         "planning_applications": [
           {
             "app_type": "Permission                              ",
@@ -3052,7 +3060,8 @@
         "priority_code": 1,
         "register_number": "VS-0080",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 1900000,
+        "valuation_date": "2022-08-29"
       },
       "type": "Feature"
     },
@@ -3137,7 +3146,7 @@
         "date_registered": "2017-05-10",
         "folio_reference": "94501F",
         "linked_planning_ref_count": 12,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -3312,7 +3321,8 @@
         "priority_code": 1,
         "register_number": "VS-0101",
         "register_status": "Vacant - Suitable",
-        "valuation": 1060000.0
+        "valuation": 1600000,
+        "valuation_date": "2020-06-12"
       },
       "type": "Feature"
     },
@@ -3545,7 +3555,7 @@
         "date_registered": "2017-03-31",
         "folio_reference": "DN126611L",
         "linked_planning_ref_count": 5,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -3622,7 +3632,8 @@
         "priority_code": 11,
         "register_number": "VS-0117",
         "register_status": "Vacant - Suitable - DCC",
-        "valuation": 5500000.0
+        "valuation": 10500000,
+        "valuation_date": "2021-04-01"
       },
       "type": "Feature"
     },
@@ -3763,7 +3774,7 @@
         "date_registered": "2017-03-31",
         "folio_reference": "Unregistered",
         "linked_planning_ref_count": 17,
-        "owner_address": "4 Wyndham Court, Wyndham Avenue, Bray, Co. Wicklow",
+        "owner_address": "No. 12 Commerce House, 14 Washington Street West, Cork City",
         "ownership": "Cuisle Properties Limited",
         "planning_applications": [
           {
@@ -4008,7 +4019,8 @@
         "priority_code": 1,
         "register_number": "VS-0118",
         "register_status": "Vacant - Suitable",
-        "valuation": 1000000.0
+        "valuation": 185000,
+        "valuation_date": "2020-04-10"
       },
       "type": "Feature"
     },
@@ -4321,7 +4333,7 @@
         "date_registered": "2017-07-28",
         "folio_reference": "11734",
         "linked_planning_ref_count": 12,
-        "owner_address": "C/O Patrick Doyle, Commercial House, Millbank Business Park, Lucan, Co. Dublin",
+        "owner_address": "Sovereign House, 4 Christian Road, Douglas, Isle of Man, IM1 2SD",
         "ownership": "Reliance Investments Limited",
         "planning_applications": [
           {
@@ -4496,7 +4508,8 @@
         "priority_code": 1,
         "register_number": "VS-0124",
         "register_status": "Vacant - Suitable",
-        "valuation": 2250000.0
+        "valuation": 3500000,
+        "valuation_date": "2021-04-01"
       },
       "type": "Feature"
     },
@@ -4609,7 +4622,7 @@
         "date_registered": "2017-07-28",
         "folio_reference": "144775L",
         "linked_planning_ref_count": 5,
-        "owner_address": "No. 5 Majestic Court, St. Marys Street, Mellieha, MLH 1337, Malta; C/o Hanley & Lynch Solicitors, no. 24 Clonskeagh Road, Dublin 6",
+        "owner_address": "36, Flat 3, Triq Abbate Savoia, Naxxar, NXr 1141, Malta",
         "ownership": "Rails Investments Limited",
         "planning_applications": [
           {
@@ -4686,7 +4699,8 @@
         "priority_code": 1,
         "register_number": "VS-0131",
         "register_status": "Vacant - Suitable",
-        "valuation": 2800000.0
+        "valuation": 1800000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -4899,7 +4913,7 @@
         "date_registered": "2017-11-28",
         "folio_reference": "869",
         "linked_planning_ref_count": 6,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -4990,7 +5004,8 @@
         "priority_code": 1,
         "register_number": "VS-0400",
         "register_status": "Vacant - Suitable",
-        "valuation": 1070000.0
+        "valuation": 1300000,
+        "valuation_date": "2020-12-01"
       },
       "type": "Feature"
     },
@@ -5483,7 +5498,7 @@
         "date_registered": "2018-05-17",
         "folio_reference": "869",
         "linked_planning_ref_count": 7,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -5588,7 +5603,8 @@
         "priority_code": 11,
         "register_number": "VS-0402",
         "register_status": "Vacant - Suitable - DCC",
-        "valuation": 0.0
+        "valuation": 3300000,
+        "valuation_date": "2021-07-01"
       },
       "type": "Feature"
     },
@@ -5825,7 +5841,7 @@
         "date_registered": "2018-05-17",
         "folio_reference": "869",
         "linked_planning_ref_count": 7,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -5930,7 +5946,8 @@
         "priority_code": 11,
         "register_number": "VS-0403",
         "register_status": "Vacant - Suitable - DCC",
-        "valuation": 0.0
+        "valuation": 750000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -6259,7 +6276,7 @@
         "date_registered": "2018-05-17",
         "folio_reference": "869",
         "linked_planning_ref_count": 4,
-        "owner_address": "Civic Offices, Wood Quay, Dublin 8",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
         "ownership": "Dublin City Council",
         "planning_applications": [
           {
@@ -6322,7 +6339,8 @@
         "priority_code": 11,
         "register_number": "VS-0407",
         "register_status": "Vacant - Suitable - DCC",
-        "valuation": 0.0
+        "valuation": 900000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -6560,7 +6578,8 @@
         "priority_code": 1,
         "register_number": "VS-0429",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 1500000,
+        "valuation_date": "2022-04-05"
       },
       "type": "Feature"
     },
@@ -6661,8 +6680,8 @@
         "date_registered": "2018-05-17",
         "folio_reference": "DN204462F; DN154856L",
         "linked_planning_ref_count": 8,
-        "owner_address": "St. Donagh's, Drumnigh Road, R124, Portmarnock, Co. Dublin",
-        "ownership": "Mr. Paul O'Brien",
+        "owner_address": "30 Leeson Park, Dublin 6",
+        "ownership": "Paul Newman and Keith Lowe, owners in Trust",
         "planning_applications": [
           {
             "app_type": "Permission",
@@ -6780,7 +6799,8 @@
         "priority_code": 1,
         "register_number": "VS-0449",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 650000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -7080,7 +7100,8 @@
         "priority_code": 1,
         "register_number": "VS-0453",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 5300000,
+        "valuation_date": "2022-08-29"
       },
       "type": "Feature"
     },
@@ -7273,8 +7294,8 @@
         "date_registered": "2017-07-28",
         "folio_reference": "Unregistered",
         "linked_planning_ref_count": 12,
-        "owner_address": "Oriel Street, Dublin 1",
-        "ownership": "CIE Group Property Management",
+        "owner_address": "C/O ASM Accountants, Quayside Business Park, Mill Street, Dundalk, Co. Louth",
+        "ownership": "Fairfield Road Property Limited",
         "planning_applications": [
           {
             "app_type": "Permission                              ",
@@ -7448,7 +7469,8 @@
         "priority_code": 1,
         "register_number": "VS-0455",
         "register_status": "Vacant - Suitable",
-        "valuation": 900000.0
+        "valuation": 1150000,
+        "valuation_date": "2021-04-01"
       },
       "type": "Feature"
     },
@@ -7653,8 +7675,8 @@
         "date_registered": "2018-05-17",
         "folio_reference": "Unregistered",
         "linked_planning_ref_count": 5,
-        "owner_address": "Commercial House, Millbank Business Park, Lucan, Co. Dublin",
-        "ownership": "Maiden Property Holdings Unlimited Company",
+        "owner_address": "Civic Offices, Wood Quay, Dublin 8, D08 RF3F",
+        "ownership": "Dublin City Council",
         "planning_applications": [
           {
             "app_type": "LAW                                     ",
@@ -7730,7 +7752,8 @@
         "priority_code": 1,
         "register_number": "VS-0461",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 6000000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -7847,8 +7870,8 @@
         "date_registered": "2018-05-17",
         "folio_reference": "Unregistered",
         "linked_planning_ref_count": 8,
-        "owner_address": "Fairview Building Company (in receivership), 1 Terenure Place, Terenure, Dublin 6W & C/O Duff & Phelps (Ireland) Limited, 24 St. Stephens Green, Dublin D02 EK82",
-        "ownership": "Fairview Building Company (in receivership)",
+        "owner_address": "Sovereign House, No. 4 Christian Road, Douglas, Isle of Man, IM1 2SD",
+        "ownership": "Banner A Cuig Limited",
         "planning_applications": [
           {
             "app_type": "Large Residential Development-3",
@@ -7966,7 +7989,8 @@
         "priority_code": 1,
         "register_number": "VS-0501",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 1500000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -8231,8 +8255,8 @@
         "date_registered": "2019-04-16",
         "folio_reference": "7728; 5427",
         "linked_planning_ref_count": 6,
-        "owner_address": "Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
-        "ownership": "W.I. Limited",
+        "owner_address": "76 Baggot Street Lower, Dublin 2. D02 EK81",
+        "ownership": "Jamestown Village Limited",
         "planning_applications": [
           {
             "app_type": "Large Residential Development-3         ",
@@ -8322,7 +8346,8 @@
         "priority_code": 1,
         "register_number": "VS-0542",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 3420000,
+        "valuation_date": "2022-11-07"
       },
       "type": "Feature"
     },
@@ -8546,7 +8571,8 @@
         "priority_code": 1,
         "register_number": "VS-0559",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 500000,
+        "valuation_date": "2022-11-10"
       },
       "type": "Feature"
     },
@@ -8750,7 +8776,8 @@
         "priority_code": 1,
         "register_number": "VS-0724",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 500000,
+        "valuation_date": "2021-08-03"
       },
       "type": "Feature"
     },
@@ -9028,7 +9055,8 @@
         "priority_code": 1,
         "register_number": "VS-0748",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 600000,
+        "valuation_date": "2019-09-09"
       },
       "type": "Feature"
     },
@@ -9459,7 +9487,7 @@
       "properties": {
         "address": "Lands of the Former Paper Mills, Clonskeagh Road, Clonskeagh, Dublin 6",
         "date_registered": "2022-04-05",
-        "folio_reference": "DN235824F; DN239666F",
+        "folio_reference": "DN223724F; DN79256L",
         "linked_planning_ref_count": 15,
         "owner_address": "MFD Secretaries Limited, 32 Molesworth Street, Dublin 2",
         "ownership": "Harley Issuer DAC",
@@ -9678,7 +9706,8 @@
         "priority_code": 1,
         "register_number": "VS-0800",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 10000000,
+        "valuation_date": "2022-04-05"
       },
       "type": "Feature"
     },
@@ -9830,7 +9859,8 @@
         "priority_code": 1,
         "register_number": "VS-0864",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 1500000,
+        "valuation_date": "2022-04-05"
       },
       "type": "Feature"
     },
@@ -9915,7 +9945,7 @@
         "date_registered": "2019-04-16",
         "folio_reference": "Unregistered",
         "linked_planning_ref_count": 5,
-        "owner_address": "C/O Mr. John Walsh, Avenue Edouard Rod 28, 1007 Luasanne, Switzerland",
+        "owner_address": "C/O Mr. John Walsh, Route de Corsy 17, 1093 La Conversion, Switzerland",
         "ownership": "Mulsh Sarl",
         "planning_applications": [
           {
@@ -9992,7 +10022,8 @@
         "priority_code": 1,
         "register_number": "VS-0976",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 550000,
+        "valuation_date": "2022-11-07"
       },
       "type": "Feature"
     },
@@ -10204,7 +10235,8 @@
         "priority_code": 1,
         "register_number": "VS-0979",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 4000000,
+        "valuation_date": "2019-01-21"
       },
       "type": "Feature"
     },
@@ -10325,7 +10357,7 @@
         "date_registered": "2018-05-17",
         "folio_reference": "DN60067F",
         "linked_planning_ref_count": 5,
-        "owner_address": "6 Anglesea Street, Templebar, Dublin 2, D02 FK84",
+        "owner_address": "6 Anglesea Street, Temple Bar, Dublin 2, D02 FK84",
         "ownership": "Redcaps Development Limited",
         "planning_applications": [
           {
@@ -10402,7 +10434,8 @@
         "priority_code": 1,
         "register_number": "VS-1077",
         "register_status": "Vacant - Suitable",
-        "valuation": 0.0
+        "valuation": 4600000,
+        "valuation_date": "2018-05-21"
       },
       "type": "Feature"
     }
