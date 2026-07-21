@@ -1,67 +1,65 @@
-// Colour tokens for chart and map code, mirroring css/style.css.
-// The ordinal ramp encodes years on the register and was validated for both
-// modes (single hue, monotone lightness, visible step gaps, surface contrast).
+// Colour tokens for chart and map code.
+//
+// Chrome colours (surfaces, text roles, gridlines, the derelict series hue and
+// the two register accents) are defined once in css/style.css and read from the
+// document at theme-change time, so this module holds no duplicate hex values
+// for them. The data-encoding ramps (the ordinal time-on-register ramp, the
+// viridis caseload ramp, the RZLT zoning hues and coverage ramp) stay
+// hard-coded here: they are validated, mode-dependent, and have no CSS
+// consumers. The ordinal ramp was validated for both modes (single hue,
+// monotone lightness, visible step gaps, surface contrast).
 
-const LIGHT = {
-  surface: "#fcfcfb",
-  page: "#f9f9f7",
-  textPrimary: "#0b0b0b",
-  textSecondary: "#52514e",
-  textMuted: "#898781",
-  gridline: "#e1e0d9",
-  baseline: "#c3c2b7",
-  series1: "#2a78d6",
-  seriesDim: "#d5d4cd",
-  ramp: ["#86b6ef", "#3987e5", "#1c5cab", "#0d366b"],
-  hexRamp: ["#cde2fb", "#3987e5", "#0d366b"],
-  caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
-  // The vacant sites are a separate register, so they read in a warm accent
-  // that sits apart from the blue time-on-register ramp.
-  vacantFill: "#e07b2f",
-  vacantLine: "#b5540f",
-  // Categorical hues for the RZLT generalised zoning classes, validated for
-  // adjacent-pair CVD separation and surface contrast in legend order.
-  rzltColours: {
-    M1: "#6b46a8",
-    M2: "#e06377",
-    M3: "#8a6d00",
-    R3: "#1b9e77",
-  },
-  // Sequential ramp (single hue, light to dark) for building coverage, and a
-  // two-class scheme for public vs private ownership.
-  rzltCoverageRamp: ["#f2e6d8", "#e0a878", "#c06a2c", "#7a3d10"],
-  rzltPublic: "#0073a8",
-  rzltPrivate: "#d29338",
-  basemap: "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
+// Chrome colours, keyed by the CSS custom property that defines each one.
+const CHROME_VARS = {
+  surface: "--surface-1",
+  page: "--page",
+  textPrimary: "--text-primary",
+  textSecondary: "--text-secondary",
+  textMuted: "--text-muted",
+  gridline: "--gridline",
+  baseline: "--baseline",
+  series1: "--series-1",
+  seriesDim: "--series-dim",
+  vacantLine: "--vacant-accent",
+  rzltAccent: "--rzlt-accent",
 };
 
-const DARK = {
-  surface: "#1a1a19",
-  page: "#0d0d0d",
-  textPrimary: "#ffffff",
-  textSecondary: "#c3c2b7",
-  textMuted: "#898781",
-  gridline: "#2c2c2a",
-  baseline: "#383835",
-  series1: "#3987e5",
-  seriesDim: "#3a3a38",
-  ramp: ["#9ec5f4", "#5598e7", "#2a78d6", "#184f95"],
-  hexRamp: ["#184f95", "#5598e7", "#cde2fb"],
-  // Viridis is perceptually uniform and works on both surfaces, so the
-  // caseload ramp is mode-invariant.
-  caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
-  vacantFill: "#e8823c",
-  vacantLine: "#f6a866",
-  rzltColours: {
-    M1: "#9d7ad8",
-    M2: "#d9647f",
-    M3: "#9c8427",
-    R3: "#2fa88f",
+// Data-encoding colours, per theme. Mode-dependent and validated; no CSS
+// equivalents, so they remain literal here.
+const DATA = {
+  light: {
+    ramp: ["#86b6ef", "#3987e5", "#1c5cab", "#0d366b"],
+    hexRamp: ["#cde2fb", "#3987e5", "#0d366b"],
+    caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
+    // The vacant sites read in a warm accent that sits apart from the blue
+    // time-on-register ramp; the fill is a lighter tint of the --vacant-accent
+    // line, which is read from CSS.
+    vacantFill: "#e07b2f",
+    // Categorical hues for the RZLT generalised zoning classes, validated for
+    // adjacent-pair CVD separation and surface contrast in legend order. R3
+    // (strategic regeneration) is the RZLT register accent and is read from
+    // --rzlt-accent so the hue has a single source of truth.
+    rzltZoning: { M1: "#6b46a8", M2: "#e06377", M3: "#8a6d00" },
+    // Sequential ramp (single hue, light to dark) for building coverage, and a
+    // two-class scheme for public vs private ownership.
+    rzltCoverageRamp: ["#f2e6d8", "#e0a878", "#c06a2c", "#7a3d10"],
+    rzltPublic: "#0073a8",
+    rzltPrivate: "#d29338",
+    basemap: "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
   },
-  rzltCoverageRamp: ["#3a3020", "#7a5a2e", "#c08a44", "#f0c67e"],
-  rzltPublic: "#3ba0c6",
-  rzltPrivate: "#b57f38",
-  basemap: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png",
+  dark: {
+    ramp: ["#9ec5f4", "#5598e7", "#2a78d6", "#184f95"],
+    hexRamp: ["#184f95", "#5598e7", "#cde2fb"],
+    // Viridis is perceptually uniform and works on both surfaces, so the
+    // caseload ramp is mode-invariant.
+    caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
+    vacantFill: "#e8823c",
+    rzltZoning: { M1: "#9d7ad8", M2: "#d9647f", M3: "#9c8427" },
+    rzltCoverageRamp: ["#3a3020", "#7a5a2e", "#c08a44", "#f0c67e"],
+    rzltPublic: "#3ba0c6",
+    rzltPrivate: "#b57f38",
+    basemap: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png",
+  },
 };
 
 const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -73,8 +71,59 @@ export function isDark() {
   return document.documentElement.dataset.theme === "dark";
 }
 
+// Read the chrome colours from the resolved custom properties. Unregistered
+// custom properties are returned as their authored value (hex here), so the
+// palette map and chart code receive the same strings they did when these were
+// literals.
+function readChromeColours() {
+  const styles = window.getComputedStyle(document.documentElement);
+  const chrome = {};
+  for (const [key, prop] of Object.entries(CHROME_VARS)) {
+    chrome[key] = styles.getPropertyValue(prop).trim();
+  }
+  return chrome;
+}
+
+// Assemble the full token set: chrome colours from CSS merged with the
+// hard-coded data ramps for the active theme.
+function buildTokens() {
+  const chrome = readChromeColours();
+  const data = isDark() ? DATA.dark : DATA.light;
+  return {
+    surface: chrome.surface,
+    page: chrome.page,
+    textPrimary: chrome.textPrimary,
+    textSecondary: chrome.textSecondary,
+    textMuted: chrome.textMuted,
+    gridline: chrome.gridline,
+    baseline: chrome.baseline,
+    series1: chrome.series1,
+    seriesDim: chrome.seriesDim,
+    ramp: data.ramp,
+    hexRamp: data.hexRamp,
+    caseRamp: data.caseRamp,
+    vacantFill: data.vacantFill,
+    vacantLine: chrome.vacantLine,
+    rzltColours: {
+      M1: data.rzltZoning.M1,
+      M2: data.rzltZoning.M2,
+      M3: data.rzltZoning.M3,
+      R3: chrome.rzltAccent,
+    },
+    rzltCoverageRamp: data.rzltCoverageRamp,
+    rzltPublic: data.rzltPublic,
+    rzltPrivate: data.rzltPrivate,
+    basemap: data.basemap,
+  };
+}
+
+// Cached per theme and rebuilt whenever the theme changes, so getComputedStyle
+// runs once per change rather than on every token lookup.
+let cache = null;
+
 export function tokens() {
-  return isDark() ? DARK : LIGHT;
+  if (!cache) cache = buildTokens();
+  return cache;
 }
 
 export function onSchemeChange(handler) {
@@ -82,6 +131,9 @@ export function onSchemeChange(handler) {
 }
 
 function notifySchemeChange() {
+  // The theme has changed; drop the cache so the next tokens() call re-reads
+  // the chrome colours for the new theme before handlers render.
+  cache = null;
   for (const handler of schemeHandlers) handler();
 }
 
