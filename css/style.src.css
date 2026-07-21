@@ -1005,6 +1005,7 @@ section {
 }
 
 body.embed .site-header,
+body.embed .view-switch,
 body.embed .filters,
 body.embed .kpis,
 body.embed .charts,
@@ -1089,6 +1090,7 @@ body.embed .embed-title {
 }
 
 .changelog-list time {
+  font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
 }
 
@@ -1096,12 +1098,24 @@ body.embed .embed-title {
   color: var(--text-secondary);
 }
 
-/* Footer */
+/* Footer: two columns of small print under a top rule. */
 
 .site-footer {
+  margin-top: 2.5rem;
   padding: 1.5rem 1.25rem 2.5rem;
+  border-top: 1px solid var(--gridline);
   color: var(--text-muted);
   font-size: 0.82rem;
+}
+
+.footer-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 .site-footer a {
@@ -1142,6 +1156,10 @@ body.embed .embed-title {
   .stat-tile:nth-child(1),
   .stat-tile:nth-child(2) {
     border-top: none;
+  }
+
+  .footer-cols {
+    grid-template-columns: 1fr;
   }
 }
 
