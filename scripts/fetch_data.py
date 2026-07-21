@@ -71,6 +71,17 @@ GEOJSON_PATH = DATA_DIR / "derelict_sites_register.geojson"
 CSV_PATH = DATA_DIR / "derelict_sites_register.csv"
 GRID_PATH = DATA_DIR / "active_cases_grid.geojson"
 
+# Top-level GeoJSON metadata (a foreign member on the FeatureCollection, not
+# repeated per feature). Underlying data is Dublin City Council's; this credits
+# the compilation and points back to the project.
+REPOSITORY = "https://github.com/urschrei/derelict_sites_register"
+METADATA = {
+    "attribution": "Compiled by Stephan Hügel",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "repository": REPOSITORY,
+}
+
 
 def fetch_geojson(base_url: str, params: dict) -> dict:
     url = f"{base_url}?{urllib.parse.urlencode(params)}"
@@ -103,10 +114,12 @@ def write_register(collection: dict) -> int:
 def main() -> None:
     DATA_DIR.mkdir(exist_ok=True)
     register = fetch_geojson(REGISTER_URL, REGISTER_PARAMS)
+    register["metadata"] = METADATA
     count = write_register(register)
     print(f"Wrote {count} features to {GEOJSON_PATH.name} and {CSV_PATH.name}")
 
     grid = fetch_geojson(GRID_URL, GRID_PARAMS)
+    grid["metadata"] = METADATA
     write_json(GRID_PATH, grid)
     total = sum(f["properties"]["num_active"] for f in grid["features"])
     print(

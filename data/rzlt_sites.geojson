@@ -25759,5 +25759,12 @@
       "type": "Feature"
     }
   ],
+  "metadata": {
+    "attribution": "Compiled by Stephan Hügel",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "methodology": "https://github.com/urschrei/derelict_sites_register/blob/main/docs/rzlt_enrichment.md",
+    "repository": "https://github.com/urschrei/derelict_sites_register"
+  },
   "type": "FeatureCollection"
 }

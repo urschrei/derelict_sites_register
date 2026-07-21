@@ -34,11 +34,11 @@
     "planning": "ok",
     "valuation": "ok"
   },
-  "output_sha256": "87e6358491097356f20d5ef3918453b0fb43ec80e8c49b95554731813bc556db",
+  "output_sha256": "f2b3535b5d293d9234e5ed980bd4c5f16017c1cb7784111329e5dda1c3feae3e",
   "parcels_in": 148,
   "parcels_out": 148,
   "planning_received_cutoff": "2016-01-01",
-  "run": "2026-07-21T11:35:16Z",
+  "run": "2026-07-21T12:49:20Z",
   "sources": {
     "buildings": {
       "fetched": 241568,

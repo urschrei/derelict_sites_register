@@ -141,6 +141,20 @@ ATTRIBUTION = {
     "(https://www.openstreetmap.org/copyright)",
 }
 
+REPOSITORY = "https://github.com/urschrei/derelict_sites_register"
+# Top-level GeoJSON metadata (a foreign member on the FeatureCollection, not
+# repeated per feature). CC-BY covers the compilation; the source datasets keep
+# their own licences, listed under `sources` - note the OSM building footprints
+# are ODbL, so the derived bld_* columns carry that share-alike obligation.
+METADATA = {
+    "attribution": "Compiled by Stephan Hügel",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "repository": REPOSITORY,
+    "methodology": f"{REPOSITORY}/blob/main/docs/rzlt_enrichment.md",
+    "sources": ATTRIBUTION,
+}
+
 TO_ITM = Transformer.from_crs(4326, 2157, always_xy=True)
 
 # Ireland's plausible ITM envelope; every layer must land inside it.
@@ -752,7 +766,7 @@ def main() -> int:
         )
     enriched.sort(key=lambda f: f["properties"]["parcel_id"])
 
-    out = {"type": "FeatureCollection", "features": enriched}
+    out = {"type": "FeatureCollection", "metadata": METADATA, "features": enriched}
     geojson_text = json.dumps(out, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
     atomic_write(OUTPUT_GEOJSON, geojson_text)
 

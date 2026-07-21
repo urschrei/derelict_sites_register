@@ -58,6 +58,17 @@ GEOJSON_PATH = DATA_DIR / "rzlt_sites.geojson"
 CSV_PATH = DATA_DIR / "rzlt_sites.csv"
 LINKS_PATH = DATA_DIR / "rzlt_vacant_links.csv"
 
+# Top-level GeoJSON metadata (a foreign member on the FeatureCollection, not
+# repeated per feature). RZLT parcels also link to the enrichment methodology.
+REPOSITORY = "https://github.com/urschrei/derelict_sites_register"
+METADATA = {
+    "attribution": "Compiled by Stephan Hügel",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "repository": REPOSITORY,
+    "methodology": f"{REPOSITORY}/blob/main/docs/rzlt_enrichment.md",
+}
+
 
 def fetch_parcels() -> list[dict]:
     features = []
@@ -118,7 +129,7 @@ def build_collection(raw: list[dict], links: dict[str, list[str]]) -> dict:
             {"type": "Feature", "properties": props, "geometry": feature["geometry"]}
         )
     features.sort(key=lambda f: f["properties"]["parcel_id"])
-    return {"type": "FeatureCollection", "features": features}
+    return {"type": "FeatureCollection", "metadata": METADATA, "features": features}
 
 
 def main() -> None:

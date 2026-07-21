@@ -127,6 +127,16 @@ CSV_PATH = DATA_DIR / "vacant_sites_register.csv"
 LINKS_PATH = DATA_DIR / "vacant_sites_planning_links.csv"
 ENRICHMENT_PATH = DATA_DIR / "vacant_sites_enrichment.csv"
 
+# Top-level GeoJSON metadata (a foreign member on the FeatureCollection, not
+# repeated per feature).
+REPOSITORY = "https://github.com/urschrei/derelict_sites_register"
+METADATA = {
+    "attribution": "Compiled by Stephan Hügel",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "repository": REPOSITORY,
+}
+
 
 def get_token() -> str:
     body = urllib.parse.urlencode(
@@ -283,7 +293,7 @@ def build_register(
             {"type": "Feature", "properties": props, "geometry": feature["geometry"]}
         )
     features.sort(key=lambda f: f["properties"]["register_number"])
-    return {"type": "FeatureCollection", "features": features}
+    return {"type": "FeatureCollection", "metadata": METADATA, "features": features}
 
 
 def write_json(path: Path, collection: dict) -> None:

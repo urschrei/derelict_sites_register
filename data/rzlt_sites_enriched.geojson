@@ -31820,5 +31820,18 @@
       "type": "Feature"
     }
   ],
+  "metadata": {
+    "attribution": "Compiled by Stephan Hügel",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "methodology": "https://github.com/urschrei/derelict_sites_register/blob/main/docs/rzlt_enrichment.md",
+    "repository": "https://github.com/urschrei/derelict_sites_register",
+    "sources": {
+      "buildings": "Building footprints (c) OpenStreetMap contributors, ODbL (https://www.openstreetmap.org/copyright)",
+      "ownership": "PRA State Assets and State Assets Sourced by LDA, Land Development Agency open data",
+      "planning": "Irish Planning Applications, Department of Housing, Local Government and Heritage (CC-BY 4.0)",
+      "valuation": "Valuation Open Data, Tailte Eireann"
+    }
+  },
   "type": "FeatureCollection"
 }
