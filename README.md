@@ -106,6 +106,11 @@ a separate weekly workflow rather than the twice-daily refresh. Run it
 locally with `uv run python scripts/enrich_rzlt.py`; tests are in
 `tests/test_enrich_rzlt.py` (`uv run pytest`).
 
+[`docs/rzlt_enrichment.md`](docs/rzlt_enrichment.md) explains the enrichment
+workflow in full: what each layer contributes, how the parcels are linked to
+it (all spatial, since the RZLT parcel id is shared by no other source), and
+every source URL and licence.
+
 The council does not publish a site-to-application list, so each link is
 reconstructed from two independent signals that must agree: the application
 footprint overlaps the site boundary, *and* the application appears in the
