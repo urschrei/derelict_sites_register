@@ -85,7 +85,10 @@ parcel id, no address or folio), and writes:
   fields: planning-application aggregates over the last ten years
   (`plan_*`), state/council ownership flags and folios (`own_*`), commercial
   valuation counts and net annual value (`val_*`), and OSM building-coverage
-  ratios (`bld_*`)
+  ratios (`bld_*`). The GeoJSON additionally carries the full per-application
+  list (`planning_applications`, newest first, each with a Granted / Refused
+  outcome), which the site renders as status badges; the flat CSV keeps only
+  the scalar aggregates
 - `data/rzlt_run_manifest.json` - per-run provenance: source URLs and record
   counts, the decision-string normalisation map, layers skipped or
   unavailable, geometry repairs, and the output hash
