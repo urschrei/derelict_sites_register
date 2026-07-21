@@ -36,10 +36,13 @@ export function loadVacant() {
     .then((response) => (response.ok ? response.json() : null))
     .then((collection) => {
       if (!collection) return;
+      // Newest registrations first; sites without a date sink to the bottom.
       features = collection.features
         .slice()
         .sort((a, b) =>
-          (a.properties.address ?? "").localeCompare(b.properties.address ?? "")
+          (b.properties.date_registered ?? "").localeCompare(
+            a.properties.date_registered ?? ""
+          )
         );
       setVacantData(collection);
       onVacantSelect(selectSite);
