@@ -310,9 +310,18 @@ function loadChangelog() {
         const time = document.createElement("time");
         time.dateTime = entry.date;
         time.textContent = `${d}/${m}/${y}`;
+        // Entries gain a commit hash once the refresh workflow has stamped
+        // them; link the date to the data commit when it is available.
+        let dateNode = time;
+        if (entry.commit) {
+          const link = document.createElement("a");
+          link.href = `https://github.com/urschrei/derelict_sites_register/commit/${entry.commit}`;
+          link.append(time);
+          dateNode = link;
+        }
         item.append(
-          time,
-          ` — Derelict: ${describeRegisterChange(entry.derelict)}` +
+          dateNode,
+          ` · Derelict: ${describeRegisterChange(entry.derelict)}` +
             ` · Vacant: ${describeRegisterChange(entry.vacant)}`
         );
         list.append(item);

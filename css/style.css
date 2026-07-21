@@ -794,6 +794,10 @@ body.embed .embed-title {
   font-variant-numeric: tabular-nums;
 }
 
+.changelog-list a {
+  color: var(--text-secondary);
+}
+
 /* Footer */
 
 .site-footer {

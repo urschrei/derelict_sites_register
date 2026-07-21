@@ -51,6 +51,21 @@ def head_version(path: str) -> str | None:
     return result.stdout if result.returncode == 0 else None
 
 
+def stamp(sha: str) -> None:
+    """Record the just-created data commit hash on the newest changelog entry.
+
+    The entry is written before the commit exists, so the hash has to be
+    added afterwards; the workflow commits the stamped file separately.
+    """
+    if not CHANGELOG_PATH.exists():
+        return
+    entries = json.loads(CHANGELOG_PATH.read_text())
+    if not entries or "commit" in entries[0]:
+        return
+    entries[0]["commit"] = sha
+    CHANGELOG_PATH.write_text(json.dumps(entries, indent=2, sort_keys=True) + "\n")
+
+
 def main() -> None:
     entry: dict = {"date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")}
     summary = []
@@ -88,7 +103,10 @@ def main() -> None:
 
 if __name__ == "__main__":
     try:
-        main()
+        if len(sys.argv) == 3 and sys.argv[1] == "--stamp":
+            stamp(sys.argv[2])
+        else:
+            main()
     except Exception as exc:
         print(f"Changelog update failed: {exc}", file=sys.stderr)
         sys.exit(1)
