@@ -142,6 +142,22 @@ main,
   gap: 0.4rem;
 }
 
+/* Subtle register colour-coding: an inset accent bar down the left edge
+   groups the downloads by register (derelict / RZLT / vacant). Using an inset
+   shadow rather than a border keeps the accent through the hover state, which
+   only recolours the border. */
+.dl-derelict {
+  box-shadow: inset 3px 0 0 var(--series-1);
+}
+
+.dl-rzlt {
+  box-shadow: inset 3px 0 0 var(--rzlt-accent);
+}
+
+.dl-vacant {
+  box-shadow: inset 3px 0 0 var(--vacant-accent);
+}
+
 /* The descriptive name leads; the file format is a quiet, smaller tag. */
 .dl-fmt {
   font-size: 0.68rem;
