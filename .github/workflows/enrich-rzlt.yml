@@ -1,0 +1,57 @@
+name: Enrich RZLT parcels
+
+# The enrichment joins four third-party datasets (planning applications,
+# state ownership, valuations, OSM footprints) and needs shapely/pyproj, so
+# it runs weekly and separately from the stdlib-only twice-daily refresh.
+on:
+  schedule:
+    # 03:17 UTC every Monday.
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8
+        with:
+          enable-cache: true
+
+      - name: Set up Python and dependencies
+        run: uv sync
+
+      # The enrichment reads data/rzlt_sites.geojson; refresh it first so the
+      # parcel set and geometry match the current register.
+      - name: Refresh RZLT parcels
+        run: uv run python scripts/fetch_rzlt.py
+
+      # Persist the raw-response cache between runs so a transient upstream
+      # outage does not block the run and re-runs stay cheap.
+      - name: Restore enrichment cache
+        uses: actions/cache@v6
+        with:
+          path: cache
+          key: rzlt-enrich-cache-${{ github.run_id }}
+          restore-keys: |
+            rzlt-enrich-cache-
+
+      - name: Enrich RZLT parcels
+        run: uv run python scripts/enrich_rzlt.py
+
+      - name: Commit and push if enrichment changed
+        run: |
+          if git diff --quiet -- data/rzlt_sites_enriched.geojson data/rzlt_sites_enriched.csv; then
+            echo "No changes to enriched RZLT data"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/rzlt_sites_enriched.geojson data/rzlt_sites_enriched.csv data/rzlt_run_manifest.json data/rzlt_sites.geojson data/rzlt_sites.csv
+          git commit -m "Enrich RZLT parcels ($(date -u +%Y-%m-%dT%H:%MZ))"
+          git push

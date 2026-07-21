@@ -8,10 +8,24 @@ import { setRzltData, focusRzltParcel, onRzltSelect } from "./map.js";
 import { RZLT_ZONES } from "./tokens.js";
 import { selectSite as selectVacantSite } from "./vacant.js";
 
+const EURO = new Intl.NumberFormat("en-IE", {
+  style: "currency",
+  currency: "EUR",
+  maximumFractionDigits: 0,
+});
+
 let features = [];
 
 function zoneLabel(code) {
   return RZLT_ZONES.find((zone) => zone.code === code)?.label ?? code;
+}
+
+// DCC decision strings arrive upper-case (and sometimes truncated); present
+// them in sentence case for the detail panel.
+function titleCase(text) {
+  return text
+    .toLowerCase()
+    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
 // Header-line figures: parcel count and the vintage of the newest additions.
@@ -26,7 +40,12 @@ export function rzltMeta() {
 }
 
 export function loadRzlt() {
-  return fetch("data/rzlt_sites.geojson")
+  // Prefer the enriched parcels (planning, ownership, valuation, buildings);
+  // fall back to the plain register if the weekly enrichment has not run.
+  return fetch("data/rzlt_sites_enriched.geojson")
+    .then((response) =>
+      response.ok ? response : fetch("data/rzlt_sites.geojson")
+    )
     .then((response) => (response.ok ? response.json() : null))
     .then((collection) => {
       if (!collection) return;
@@ -61,14 +80,29 @@ function renderKpis() {
   const hectares = props.reduce((sum, p) => sum + (p.site_area_ha ?? 0), 0);
   set("rkpi-area", `${hectares.toFixed(1)} ha`);
 
-  const cutoff = "2024-01-01";
-  const added = props.filter(
-    (p) => p.date_added && p.date_added >= cutoff
-  ).length;
-  set("rkpi-new", String(added));
-
   const former = props.filter((p) => p.former_vacant_sites).length;
   set("rkpi-former", String(former));
+
+  // The remaining two tiles depend on enrichment fields; when the plain
+  // register is loaded they fall back to the additions count.
+  const hasEnrichment = props.some((p) => p.bld_coverage !== undefined);
+  const publicTile = document.getElementById("rkpi-public");
+  if (hasEnrichment) {
+    const publicOwned = props.filter((p) => p.own_is_public).length;
+    set("rkpi-public", String(publicOwned));
+    document.getElementById("rkpi-public-note").textContent =
+      "in state or council ownership";
+    const undeveloped = props.filter(
+      (p) => (p.bld_coverage ?? 1) < 0.1
+    ).length;
+    set("rkpi-new", String(undeveloped));
+    document.getElementById("rkpi-new-note").textContent =
+      "under 10% building coverage";
+  } else {
+    const added = props.filter((p) => p.date_added >= "2024-01-01").length;
+    set("rkpi-new", String(added));
+    if (publicTile) publicTile.textContent = "–";
+  }
 }
 
 function buildList() {
@@ -149,7 +183,48 @@ function renderDetail(feature) {
     facts.append(fact("Site area", `${p.site_area_ha.toFixed(2)} ha`));
   }
   if (p.date_added) facts.append(fact("On the RZLT map since", p.date_added));
+
+  // Enrichment facts, present only when the enriched dataset is loaded.
+  const enriched = p.bld_coverage !== undefined;
+  if (enriched) {
+    facts.append(
+      fact("Building coverage", `${Math.round((p.bld_coverage ?? 0) * 100)}%`)
+    );
+    if (p.own_is_public) {
+      facts.append(fact("Ownership", p.own_bodies ?? "State or council"));
+    }
+    if (p.own_folios) facts.append(fact("Folio", p.own_folios));
+    facts.append(
+      fact(
+        "Planning (10 yr)",
+        `${p.plan_n_apps_10yr ?? 0} applications, ` +
+          `${p.plan_n_granted_10yr ?? 0} granted`
+      )
+    );
+    if (p.plan_live_permission) {
+      facts.append(fact("Live permission", "Yes"));
+    }
+    if (p.val_n_props) {
+      const nav =
+        p.val_total_nav != null
+          ? ` (${EURO.format(p.val_total_nav)} total NAV)`
+          : "";
+      facts.append(
+        fact("Rateable properties", `${p.val_n_props}${nav}`)
+      );
+    }
+  }
   panel.append(facts);
+
+  if (enriched && p.plan_latest_app_no) {
+    const latest = document.createElement("p");
+    latest.className = "vacant-planning-note";
+    const parts = [`Latest application ${p.plan_latest_app_no}`];
+    if (p.plan_latest_received) parts.push(`received ${p.plan_latest_received}`);
+    if (p.plan_latest_decision) parts.push(titleCase(p.plan_latest_decision));
+    latest.textContent = parts.join(" · ");
+    panel.append(latest);
+  }
 
   if (p.zone_desc) {
     const desc = document.createElement("p");
@@ -187,8 +262,11 @@ function renderDetail(feature) {
 
   const note = document.createElement("p");
   note.className = "vacant-planning-note";
-  note.textContent =
-    "RZLT parcels are published without addresses, ownership, or valuations; " +
-    "the mapped boundary and zoning are the authoritative record.";
+  note.textContent = enriched
+    ? "The RZLT map itself carries only the boundary and zoning; planning, " +
+      "ownership, valuation, and building-coverage figures are joined from " +
+      "separate open datasets and may not align exactly with the parcel."
+    : "RZLT parcels are published without addresses, ownership, or " +
+      "valuations; the mapped boundary and zoning are the authoritative record.";
   panel.append(note);
 }

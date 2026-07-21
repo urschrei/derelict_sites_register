@@ -20,6 +20,7 @@ let emphasiseProtected = false;
 let mapMode = "register";
 let casesShape = "squares";
 let extrude3d = false;
+let rzltColourBy = "zoning";
 let popup;
 
 const EMPTY = { type: "FeatureCollection", features: [] };
@@ -209,15 +210,54 @@ function rampExpression() {
   ];
 }
 
-// RZLT parcels are coloured by generalised zoning class.
+// RZLT parcels are coloured by the selected attribute: zoning class,
+// building coverage (sequential), or public/private ownership.
 function rzltColourExpression() {
-  const colours = tokens().rzltColours;
+  const t = tokens();
+  if (rzltColourBy === "coverage") {
+    const ramp = t.rzltCoverageRamp;
+    return [
+      "interpolate",
+      ["linear"],
+      ["coalesce", ["get", "bld_coverage"], 0],
+      0,
+      ramp[0],
+      0.33,
+      ramp[1],
+      0.66,
+      ramp[2],
+      1,
+      ramp[3],
+    ];
+  }
+  if (rzltColourBy === "ownership") {
+    return ["case", ["get", "own_is_public"], t.rzltPublic, t.rzltPrivate];
+  }
   const expression = ["match", ["get", "zone_gzt"]];
   for (const zone of RZLT_ZONES) {
-    expression.push(zone.code, colours[zone.code]);
+    expression.push(zone.code, t.rzltColours[zone.code]);
   }
-  expression.push(colours[RZLT_ZONES[0].code]);
+  expression.push(t.rzltColours[RZLT_ZONES[0].code]);
   return expression;
+}
+
+// Whether the loaded parcels carry the enrichment attributes the coverage
+// and ownership colour modes need.
+function rzltHasEnrichment() {
+  return currentRzlt.features.some(
+    (f) => f.properties.bld_coverage !== undefined
+  );
+}
+
+export function setRzltColourBy(mode) {
+  rzltColourBy = mode;
+  if (!map) return;
+  for (const layer of ["rzlt-fill", "rzlt-line"]) {
+    if (map.getLayer(layer)) {
+      map.setPaintProperty(layer, `${layer.split("-")[1]}-color`, rzltColourExpression());
+    }
+  }
+  buildRzltLegend();
 }
 
 const PROTECTED = [
@@ -766,13 +806,51 @@ function buildVacantLegend() {
   legend.append(row);
 }
 
+function legendSwatch(colour) {
+  const swatch = document.createElement("span");
+  swatch.className = "legend-swatch legend-swatch-square";
+  swatch.style.background = colour;
+  return swatch;
+}
+
+function legendRow(colour, text) {
+  const row = document.createElement("span");
+  row.className = "legend-row";
+  const label = document.createElement("span");
+  label.textContent = text;
+  row.append(legendSwatch(colour), label);
+  return row;
+}
+
 function buildRzltLegend() {
   const legend = document.getElementById("rzlt-legend");
   if (!legend) return;
-  const colours = tokens().rzltColours;
+  const t = tokens();
   legend.replaceChildren();
   const title = document.createElement("span");
   title.className = "legend-title";
+
+  if (rzltColourBy === "coverage") {
+    title.textContent = "Building coverage";
+    legend.append(title);
+    const ramp = t.rzltCoverageRamp;
+    const labels = ["0%", "~33%", "~66%", "100%"];
+    ramp.forEach((colour, i) => legend.append(legendRow(colour, labels[i])));
+    return;
+  }
+
+  if (rzltColourBy === "ownership") {
+    title.textContent = "Ownership";
+    legend.append(title);
+    const publicCount = currentRzlt.features.filter(
+      (f) => f.properties.own_is_public
+    ).length;
+    const privateCount = currentRzlt.features.length - publicCount;
+    legend.append(legendRow(t.rzltPublic, `State or council (${publicCount})`));
+    legend.append(legendRow(t.rzltPrivate, `Private (${privateCount})`));
+    return;
+  }
+
   title.textContent = "Zoning of vacant/idle parcels";
   legend.append(title);
   const counts = {};
@@ -782,15 +860,9 @@ function buildRzltLegend() {
   }
   for (const zone of RZLT_ZONES) {
     if (!counts[zone.code]) continue;
-    const row = document.createElement("span");
-    row.className = "legend-row";
-    const swatch = document.createElement("span");
-    swatch.className = "legend-swatch legend-swatch-square";
-    swatch.style.background = colours[zone.code];
-    const label = document.createElement("span");
-    label.textContent = `${zone.label} (${counts[zone.code]})`;
-    row.append(swatch, label);
-    legend.append(row);
+    legend.append(
+      legendRow(t.rzltColours[zone.code], `${zone.label} (${counts[zone.code]})`)
+    );
   }
 }
 
@@ -855,6 +927,12 @@ export function initMap() {
   map.on("mouseleave", "rzlt-fill", () => {
     map.getCanvas().style.cursor = "";
   });
+
+  for (const radio of document.querySelectorAll('input[name="rzlt-colour"]')) {
+    radio.addEventListener("change", (e) => {
+      if (e.target.checked) setRzltColourBy(e.target.value);
+    });
+  }
 
   document.getElementById("toggle-hex").addEventListener("change", (e) => {
     hexVisible = e.target.checked;
@@ -949,6 +1027,10 @@ export function setVacantData(collection) {
 export function setRzltData(collection) {
   currentRzlt = collection;
   map?.getSource("rzlt")?.setData(currentRzlt);
+  // The coverage and ownership colour modes need enrichment attributes; hide
+  // their controls when only the plain register is available.
+  const control = document.getElementById("rzlt-colour-mode");
+  if (control) control.hidden = !rzltHasEnrichment();
   buildRzltLegend();
 }
 

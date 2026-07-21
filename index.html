@@ -171,9 +171,14 @@
         <span class="stat-note">combined parcel extent</span>
       </div>
       <div class="stat-tile">
-        <span class="stat-label">Added for the 2026 map</span>
+        <span class="stat-label">Largely undeveloped</span>
         <span class="stat-value" id="rkpi-new">&ndash;</span>
-        <span class="stat-note">new determinations since the first map</span>
+        <span class="stat-note" id="rkpi-new-note">under 10% building coverage</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Publicly owned</span>
+        <span class="stat-value" id="rkpi-public">&ndash;</span>
+        <span class="stat-note" id="rkpi-public-note">in state or council ownership</span>
       </div>
       <div class="stat-tile">
         <span class="stat-label">Former vacant sites</span>
@@ -240,6 +245,11 @@
             </div>
           </div>
           <div class="map-panel" id="panel-rzlt" hidden>
+            <div class="map-subcontrol" id="rzlt-colour-mode" role="radiogroup" aria-label="Colour parcels by">
+              <label><input type="radio" name="rzlt-colour" value="zoning" checked> <span>Zoning</span></label>
+              <label><input type="radio" name="rzlt-colour" value="coverage"> <span>Building coverage</span></label>
+              <label><input type="radio" name="rzlt-colour" value="ownership"> <span>Ownership</span></label>
+            </div>
             <div class="map-legend" id="rzlt-legend" aria-hidden="false">
               <span class="legend-title">Zoning of vacant/idle parcels</span>
             </div>
