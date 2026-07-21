@@ -239,10 +239,21 @@ main,
   position: relative;
 }
 
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 0 0 0.6rem;
+  padding-right: 3rem;
+}
+
 .site-header h1 {
   font-size: 1.9rem;
   line-height: 1.2;
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.6rem;
   padding-right: 3rem;
 }
 
@@ -287,51 +298,82 @@ main,
 .lede {
   max-width: 46rem;
   color: var(--text-secondary);
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.9rem;
 }
 
+/* Promoted from a muted meta line to the masthead's data headline: a full
+   sentence carrying the register figures, set larger with mono tabular
+   numerals. The font-family (mono) is applied in the base typography block. */
 .meta-line {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin: 0 0 1rem;
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  line-height: 1.4;
+  font-variant-numeric: tabular-nums;
+  margin: 0 0 1.4rem;
 }
 
+/* One row per register. An inset accent bar in the register's hue groups the
+   row; the name leads once and each format is a small mono link. */
 .downloads {
   display: flex;
-  gap: 0.6rem;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0 0 1.75rem;
+}
+
+.dl-row {
+  display: flex;
   flex-wrap: wrap;
-  margin: 0 0 1.5rem;
-}
-
-.downloads .button {
-  display: inline-flex;
   align-items: baseline;
-  gap: 0.4rem;
+  gap: 0.15rem 0.65rem;
+  padding: 0.3rem 0 0.3rem 0.75rem;
+  box-shadow: inset 3px 0 0 var(--dl-hue);
 }
 
-/* Subtle register colour-coding: an inset accent bar down the left edge
-   groups the downloads by register (derelict / RZLT / vacant). Using an inset
-   shadow rather than a border keeps the accent through the hover state, which
-   only recolours the border. */
 .dl-derelict {
-  box-shadow: inset 3px 0 0 var(--series-1);
+  --dl-hue: var(--series-1);
 }
 
 .dl-rzlt {
-  box-shadow: inset 3px 0 0 var(--rzlt-accent);
+  --dl-hue: var(--rzlt-accent);
 }
 
 .dl-vacant {
-  box-shadow: inset 3px 0 0 var(--vacant-accent);
+  --dl-hue: var(--vacant-accent);
 }
 
-/* The descriptive name leads; the file format is a quiet, smaller tag. */
-.dl-fmt {
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  opacity: 0.55;
+.dl-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.dl-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+}
+
+.dl-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dl-links a + a::before {
+  content: "·";
+  color: var(--text-muted);
+  margin: 0 0.45rem;
+}
+
+.dl-links a:hover,
+.dl-links a:focus-visible {
+  color: var(--dl-hue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .button {
@@ -1016,29 +1058,46 @@ body.embed .embed-title {
 
 /* Register view switch */
 
+/* Flat tabs sharing one baseline rule. Each tab carries its register's hue on
+   its 3px underline; the selected tab is inked with the active register hue
+   (--ink) and its label goes to full-strength ink. */
 .view-switch {
   display: flex;
-  gap: 4px;
-  background: var(--surface-1);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 4px;
+  flex-wrap: wrap;
+  gap: 0 0.25rem;
+  border-bottom: 1px solid var(--baseline);
   margin: 0 0 1.5rem;
 }
 
 .view-switch label {
-  flex: 1;
-  text-align: center;
-  padding: 0.5rem 0.8rem;
-  border-radius: 7px;
+  padding: 0.5rem 0.85rem;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -1px;
+}
+
+.view-switch label:has(input[value="derelict"]) {
+  --tab-hue: var(--series-1);
+}
+
+.view-switch label:has(input[value="rzlt"]) {
+  --tab-hue: var(--rzlt-accent);
+}
+
+.view-switch label:has(input[value="vacant"]) {
+  --tab-hue: var(--vacant-accent);
+}
+
+.view-switch label:hover {
+  color: var(--text-primary);
+  border-bottom-color: color-mix(in srgb, var(--tab-hue) 45%, transparent);
 }
 
 .view-switch label:has(input:checked) {
-  background: var(--series-1);
-  color: #ffffff;
+  color: var(--text-primary);
+  border-bottom-color: var(--ink);
 }
 
 .view-switch label:has(input:focus-visible) {
