@@ -996,6 +996,15 @@ body.view-rzlt .derelict-only {
   font-size: 0.9rem;
 }
 
+/* Jargon terms with a title-attribute definition: a dotted underline hints
+   that hovering (or focusing) reveals the explanation. */
+.has-def {
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--text-muted);
+  cursor: help;
+}
+
 .vacant-planning-title {
   font-size: 1rem;
   margin: 0.5rem 0 0.3rem;

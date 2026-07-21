@@ -152,6 +152,30 @@ function fact(label, value) {
   return row;
 }
 
+// A jargon term with a hover/focus definition. <abbr> for true abbreviations
+// (NAV); a defined-term <span> for plain terms (Rateable properties). Both
+// carry the title tooltip and the dotted-underline styling.
+function term(text, definition, { abbreviation = false } = {}) {
+  const el = document.createElement(abbreviation ? "abbr" : "span");
+  el.className = "has-def";
+  el.title = definition;
+  el.textContent = text;
+  return el;
+}
+
+// Like fact(), but the label and value may be DOM nodes so definitions can be
+// embedded inline.
+function factNodes(label, value) {
+  const row = document.createElement("div");
+  row.className = "vacant-fact";
+  const dt = document.createElement("dt");
+  dt.append(label);
+  const dd = document.createElement("dd");
+  dd.append(value);
+  row.append(dt, dd);
+  return row;
+}
+
 function renderDetail(feature) {
   const p = feature.properties;
   const panel = document.getElementById("rzlt-detail");
@@ -190,13 +214,27 @@ function renderDetail(feature) {
       facts.append(fact("Live permission", "Yes"));
     }
     if (p.val_n_props) {
-      const nav =
-        p.val_total_nav != null
-          ? ` (${EURO.format(p.val_total_nav)} total NAV)`
-          : "";
-      facts.append(
-        fact("Rateable properties", `${p.val_n_props}${nav}`)
+      const label = term(
+        "Rateable properties",
+        "Commercial properties on Tailte Éireann's valuation list, liable " +
+          "for commercial rates. Residential property is not rated and does " +
+          "not appear here."
       );
+      const value = document.createElement("span");
+      value.append(String(p.val_n_props));
+      if (p.val_total_nav != null) {
+        value.append(` (${EURO.format(p.val_total_nav)} total `);
+        value.append(
+          term(
+            "NAV",
+            "Net annual value: the estimated open-market yearly rent of a " +
+              "property, which commercial rates are charged on.",
+            { abbreviation: true }
+          )
+        );
+        value.append(")");
+      }
+      facts.append(factNodes(label, value));
     }
   }
   panel.append(facts);
