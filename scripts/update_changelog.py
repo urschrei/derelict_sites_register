@@ -25,10 +25,12 @@ MAX_ENTRIES = 24
 REGISTERS = [
     (
         "derelict",
+        "Derelict",
         "data/derelict_sites_register.geojson",
         "derelict_site_reference_number",
     ),
-    ("vacant", "data/vacant_sites_register.geojson", "register_number"),
+    ("vacant", "Vacant", "data/vacant_sites_register.geojson", "register_number"),
+    ("rzlt", "RZLT", "data/rzlt_sites.geojson", "parcel_id"),
 ]
 
 
@@ -70,11 +72,11 @@ def main() -> None:
     entry: dict = {"date": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")}
     summary = []
     changed = False
-    for name, path, key in REGISTERS:
+    for name, label, path, key in REGISTERS:
         new_refs = reference_numbers((ROOT / path).read_text(), key)
         old_text = head_version(path)
         if old_text is None:
-            summary.append(f"{name.capitalize()}: no baseline at HEAD, skipped")
+            summary.append(f"{label}: no baseline at HEAD, skipped")
             continue
         old_refs = reference_numbers(old_text, key)
         added = sorted(new_refs - old_refs)
@@ -83,11 +85,10 @@ def main() -> None:
         if added or removed:
             changed = True
             summary.append(
-                f"{name.capitalize()}: +{len(added)} -{len(removed)} "
-                f"({len(new_refs)} sites)"
+                f"{label}: +{len(added)} -{len(removed)} ({len(new_refs)} sites)"
             )
         else:
-            summary.append(f"{name.capitalize()}: no change ({len(new_refs)} sites)")
+            summary.append(f"{label}: no change ({len(new_refs)} sites)")
 
     if changed:
         entries = (

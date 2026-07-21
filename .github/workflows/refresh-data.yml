@@ -21,6 +21,9 @@ jobs:
       - name: Fetch latest vacant sites data
         run: python3 scripts/fetch_vacant_sites.py
 
+      - name: Fetch latest RZLT data
+        run: python3 scripts/fetch_rzlt.py
+
       - name: Commit and push if data changed
         run: |
           if git diff --quiet -- data/; then
