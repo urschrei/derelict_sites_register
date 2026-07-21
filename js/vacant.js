@@ -193,7 +193,8 @@ function renderDetail(feature) {
   if (p.ownership) facts.append(fact("Owner", p.ownership));
   if (p.owner_address) facts.append(fact("Owner address", p.owner_address));
   if (p.valuation > 0) {
-    facts.append(fact("Market valuation", EURO.format(p.valuation)));
+    const valued = p.valuation_date ? ` (valued ${p.valuation_date})` : "";
+    facts.append(fact("Market valuation", EURO.format(p.valuation) + valued));
   }
   if (p.folio_reference) facts.append(fact("Folio", p.folio_reference));
   if (p.date_registered) facts.append(fact("Registered", p.date_registered));
