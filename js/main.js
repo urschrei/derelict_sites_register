@@ -30,9 +30,10 @@ import {
 } from "./map.js";
 import { renderTable } from "./table.js";
 import { buildIndex, nearestSites } from "./spatial.js";
-import { loadVacant } from "./vacant.js";
+import { loadVacant, vacantMeta } from "./vacant.js";
 
 const state = { area: "", protected: false, council: false, search: "" };
+let currentView = "derelict";
 
 let allFeatures = [];
 let areas = [];
@@ -231,17 +232,35 @@ function wireLocateButton() {
   });
 }
 
-function renderHeaderMeta() {
-  const updates = allFeatures
+function derelictHeaderLine() {
+  // Update dates are DD/MM/YYYY strings; compare them in YYYYMMDD order.
+  const key = (d) => d.split("/").reverse().join("");
+  const latest = allFeatures
     .map((f) => f.properties.most_recent_update_date)
     .filter(Boolean)
-    .sort();
-  const latest = updates.at(-1);
-  const line = document.getElementById("site-count-line");
-  line.textContent =
+    .sort((a, b) => key(a).localeCompare(key(b)))
+    .at(-1);
+  return (
     `${allFeatures.length} sites on the register` +
     (latest ? ` · register last amended ${latest}` : "") +
-    " · data refreshed twice daily";
+    " · data refreshed twice daily"
+  );
+}
+
+function vacantHeaderLine() {
+  const meta = vacantMeta();
+  if (!meta) return "Loading register data…";
+  const [y, m, d] = (meta.latest ?? "").split("-");
+  return (
+    `${meta.count} sites on the register` +
+    (meta.latest ? ` · most recent registration ${d}/${m}/${y}` : "") +
+    " · data refreshed twice daily"
+  );
+}
+
+function renderHeaderMeta() {
+  document.getElementById("site-count-line").textContent =
+    currentView === "vacant" ? vacantHeaderLine() : derelictHeaderLine();
 }
 
 function loadCaseload() {
@@ -273,7 +292,9 @@ function loadCaseload() {
 // own figures, site list, and detail panel. The map element is shared.
 function setView(view) {
   const vacant = view === "vacant";
+  currentView = view;
   document.body.classList.toggle("view-vacant", vacant);
+  renderHeaderMeta();
   if (vacant) {
     setMapMode("vacant");
   } else {
@@ -325,7 +346,9 @@ async function init() {
   initMap();
   render();
   loadCaseload();
-  loadVacant();
+  loadVacant().then(() => {
+    if (currentView === "vacant") renderHeaderMeta();
+  });
 
   if (embed) {
     document.getElementById("embed-count").textContent =

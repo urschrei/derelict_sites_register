@@ -19,6 +19,18 @@ function isCouncilOwned(p) {
   );
 }
 
+// Header-line figures for the vacant register: site count and the most
+// recent registration date (the register has no per-site amendment date).
+export function vacantMeta() {
+  if (!features.length) return null;
+  const latest = features
+    .map((f) => f.properties.date_registered)
+    .filter(Boolean)
+    .sort()
+    .at(-1);
+  return { count: features.length, latest };
+}
+
 export function loadVacant() {
   return fetch("data/vacant_sites_register.geojson")
     .then((response) => (response.ok ? response.json() : null))
