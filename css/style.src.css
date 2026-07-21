@@ -5,6 +5,111 @@
    media query. */
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
+/* Self-hosted, latin-subset webfonts (Fontsource). Serving them from the same
+   origin avoids the third-party font requests a CDN would introduce. */
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/barlow-semi-condensed-latin-500-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow Semi Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/barlow-semi-condensed-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/public-sans-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/public-sans-latin-600-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../assets/fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");
+}
+
+/* Theme tokens. Neutrals and register hues mirror the light-theme custom
+   properties in the carried-over :root below; the dark-theme values live in
+   :root[data-theme="dark"] and reach chart and map chrome through the semantic
+   --* roles, not these tokens. The three font stacks are new. */
+@theme {
+  --color-page: #f9f9f7;
+  --color-surface: #fcfcfb;
+  --color-text-primary: #0b0b0b;
+  --color-text-secondary: #52514e;
+  --color-text-muted: #898781;
+  --color-gridline: #e1e0d9;
+  --color-baseline: #c3c2b7;
+  --color-border: rgba(11, 11, 11, 0.1);
+  --color-series-1: #2a78d6;
+  --color-focus: #2a78d6;
+  --color-vacant-accent: #b5540f;
+  --color-rzlt-accent: #1b9e77;
+  --color-outcome-granted: #1a7f4b;
+  --color-outcome-refused: #c0392b;
+
+  --font-display: "Barlow Semi Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Public Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+/* Register re-inking (section 3.1): --ink carries the active register's hue.
+   Registering it as an animated custom property lets the hue cross-fade when
+   the register changes. --ink consumers (tabs, rules, KPI figures, selection
+   bars, locate button) are wired up in later phases. */
+@property --ink {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2a78d6;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    transition: --ink 150ms ease;
+  }
+}
+
+@layer base {
+  :root {
+    --ink: var(--series-1);
+  }
+
+  body.view-vacant {
+    --ink: var(--vacant-accent);
+  }
+
+  body.view-rzlt {
+    --ink: var(--rzlt-accent);
+  }
+}
+
 /* Preflight compatibility shim.
    Tailwind's Preflight (bundled in the import above) normalises several browser
    defaults that the hand-written CSS carried over below still relies on.
@@ -1177,3 +1282,54 @@ body.view-rzlt .derelict-only {
     height: auto;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   Base typography (phase 2). Assigns the three self-hosted faces to their
+   roles and applies the display type scale to the masthead H1 (section 3.2).
+   Layout is unchanged here; later phases restyle individual sections. Weights
+   are pinned to the loaded faces (Public Sans 400/600, Barlow 500/600, IBM
+   Plex Mono 400/500) so no weight is synthesised.
+   --------------------------------------------------------------------------- */
+body {
+  font-family: var(--font-body);
+  line-height: 1.55;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.site-header h1 {
+  font-size: clamp(2.1rem, 4.5vw, 3rem);
+  line-height: 1.05;
+}
+
+.stat-value {
+  font-family: var(--font-display);
+}
+
+.embed-title-main {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.meta-line {
+  font-family: var(--font-mono);
+}
+
+/* Reference numbers set as mono, at the medium weight the chip treatment in a
+   later phase will build on. */
+.vacant-list-ref,
+.vacant-detail-ref,
+.popup-ref,
+#register-table .cell-ref {
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
