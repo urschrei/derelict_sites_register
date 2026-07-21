@@ -716,21 +716,30 @@ section {
 }
 
 .popup-ref {
-  font-weight: 700;
-  font-size: 0.8rem;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  letter-spacing: 0.02em;
+  padding: 0.08rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--text-muted) 8%, transparent);
 }
 
 .popup-address {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
   font-weight: 600;
-  margin: 0.15rem 0 0.4rem;
+  margin: 0.35rem 0 0.4rem;
 }
 
 .popup-line {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
-  margin: 0.1rem 0;
+  margin: 0.08rem 0;
 }
 
 .popup-desc {
@@ -755,18 +764,19 @@ section {
 }
 
 .popup-links a {
-  font-size: 0.78rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
   padding: 0.1rem 0.4rem;
   border: 1px solid var(--border);
   border-radius: 5px;
-  color: var(--series-1);
+  color: var(--ink);
   text-decoration: none;
   white-space: nowrap;
 }
 
 .popup-links a:hover,
 .popup-links a:focus-visible {
-  border-color: var(--series-1);
+  border-color: var(--ink);
   text-decoration: underline;
 }
 
@@ -1182,12 +1192,6 @@ body.view-rzlt .derelict-only {
   display: none;
 }
 
-/* The RZLT view reuses the vacant list/detail components with its own
-   accent. */
-.rzlt-only .vacant-list-item.is-selected {
-  box-shadow: inset 3px 0 0 var(--rzlt-accent);
-}
-
 .vacant-intro {
   color: var(--text-secondary);
   max-width: 70ch;
@@ -1234,9 +1238,11 @@ body.view-rzlt .derelict-only {
   background: var(--page);
 }
 
+/* The selection bar re-inks with the active register (--ink), covering both
+   the vacant and RZLT lists which share this component. */
 .vacant-list-item.is-selected {
   background: var(--page);
-  box-shadow: inset 3px 0 0 var(--vacant-accent);
+  box-shadow: inset 3px 0 0 var(--ink);
 }
 
 .vacant-list-item:focus-visible {
@@ -1244,11 +1250,19 @@ body.view-rzlt .derelict-only {
   outline-offset: -2px;
 }
 
+/* Reference numbers render as small stamped mono chips. */
 .vacant-list-ref {
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  align-self: start;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text-muted);
+  padding: 0.05rem 0.3rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--text-muted) 8%, transparent);
 }
 
 .vacant-list-addr {
@@ -1270,15 +1284,22 @@ body.view-rzlt .derelict-only {
 }
 
 .vacant-detail-ref {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--text-muted);
+  padding: 0.08rem 0.35rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--text-muted) 8%, transparent);
 }
 
 .vacant-detail-addr {
   font-size: 1.15rem;
-  margin: 0.15rem 0 0.8rem;
+  margin: 0.35rem 0 0.8rem;
 }
 
 .vacant-facts {
@@ -1293,8 +1314,12 @@ body.view-rzlt .derelict-only {
 }
 
 .vacant-fact dt {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  padding-top: 0.1rem;
 }
 
 .vacant-fact dd {
@@ -1446,11 +1471,8 @@ h6 {
   font-family: var(--font-mono);
 }
 
-/* Reference numbers set as mono, at the medium weight the chip treatment in a
-   later phase will build on. */
-.vacant-list-ref,
-.vacant-detail-ref,
-.popup-ref,
+/* Table reference cells set in mono; the list, detail, and popup refs get the
+   fuller stamped-chip treatment in their own rules. */
 #register-table .cell-ref {
   font-family: var(--font-mono);
   font-weight: 500;
