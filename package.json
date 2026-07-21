@@ -1,0 +1,13 @@
+{
+  "name": "derelict-sites-register",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Build tooling for the Dublin Derelict and Vacant Sites Register site styles.",
+  "scripts": {
+    "build:css": "tailwindcss -i css/style.src.css -o css/style.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
+    "tailwindcss": "^4.1.0"
+  }
+}
