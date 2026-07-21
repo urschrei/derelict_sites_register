@@ -2,7 +2,7 @@ parcel_id,zone_gzt,zone_orig,zone_desc,site_area_ha,date_added,former_vacant_sit
 DCC000061434,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",1.921,2022-01-01,
 DCC000064087,M3,Z3 - Neighbourhood Centres,To provide for and improve neighbourhood facilities.,0.126,2022-01-01,
 DCC000064088,M3,Z3 - Neighbourhood Centres,To provide for and improve neighbourhood facilities.,0.393,2022-01-01,
-DCC000064090,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.089,2022-01-01,
+DCC000064090,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.089,2022-01-01,VS-0976
 DCC000064091,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.053,2022-01-01,
 DCC000064092,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.131,2022-01-01,
 DCC000064093,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,3.197,2022-01-01,
@@ -12,10 +12,10 @@ DCC000064096,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improv
 DCC000064097,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.155,2022-01-01,
 DCC000064098,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.332,2022-01-01,
 DCC000064099,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.299,2022-01-01,
-DCC000064100,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.123,2022-01-01,
+DCC000064100,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.123,2022-01-01,VS-0003
 DCC000064101,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.161,2022-01-01,
 DCC000064102,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.073,2022-01-01,
-DCC000064103,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.641,2022-01-01,
+DCC000064103,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.641,2022-01-01,VS-0117
 DCC000064104,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.26,2022-01-01,
 DCC000064105,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.214,2022-01-01,
 DCC000064106,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.07,2022-01-01,
@@ -24,16 +24,16 @@ DCC000064108,M2,Z5 - City Centre,"To consolidate and facilitate the development 
 DCC000064109,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.1,2022-01-01,
 DCC000064110,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.217,2022-01-01,
 DCC000064111,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.698,2022-01-01,
-DCC000064112,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.302,2022-01-01,
+DCC000064112,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.302,2022-01-01,VS-0019
 DCC000064114,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.077,2022-01-01,
 DCC000064115,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.066,2022-01-01,
-DCC000064116,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.481,2022-01-01,
-DCC000064117,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.479,2022-01-01,
-DCC000064118,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.105,2022-01-01,
+DCC000064116,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.481,2022-01-01,VS-0028
+DCC000064117,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.479,2022-01-01,VS-0124
+DCC000064118,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.105,2022-01-01,VS-0131
 DCC000064119,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.227,2022-01-01,
 DCC000064120,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.081,2022-01-01,
 DCC000064121,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.055,2022-01-01,
-DCC000064122,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.149,2022-01-01,
+DCC000064122,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.149,2022-01-01,VS-0043
 DCC000064123,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.319,2022-01-01,
 DCC000064127,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.861,2022-01-01,
 DCC000064128,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.868,2022-01-01,
@@ -50,14 +50,14 @@ DCC000064139,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To s
 DCC000064140,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",5.745,2022-01-01,
 DCC000064141,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",1.303,2022-01-01,
 DCC000064142,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",10.699,2022-01-01,
-DCC000064143,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.767,2022-01-01,
+DCC000064143,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.767,2022-01-01,VS-0011
 DCC000064144,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.689,2022-01-01,
 DCC000064145,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",4.712,2022-01-01,
 DCC000064146,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.134,2022-01-01,
 DCC000064147,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",1.143,2022-01-01,
-DCC000064149,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.465,2022-01-01,
+DCC000064149,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",0.465,2022-01-01,VS-0864
 DCC000064150,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",3.591,2022-01-01,
-DCC000064151,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",1.57,2022-01-01,
+DCC000064151,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",1.57,2022-01-01,VS-0542
 DCC000064152,R3,Z14 - Strategic Development and Regeneration Areas (SDRAs),"To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",1.46,2022-01-01,
 DCC000064153,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,1.079,2022-01-01,
 DCC000064155,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.447,2022-01-01,
@@ -91,7 +91,7 @@ DCC000064184,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To co
 DCC000064185,M1,Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses,To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.,0.185,2022-01-01,
 DCC000064186,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.056,2022-01-01,
 DCC000064187,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.033,2022-01-01,
-DCC000064189,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.209,2022-01-01,
+DCC000064189,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.209,2022-01-01,VS-1077
 DCC000064190,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.408,2022-01-01,
 DCC000064191,M2,Z5 - City Centre,"To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",0.114,2022-01-01,
 DCC000064192,M3,Z4 - Key Urban Villages/Urban Villages,To provide for and improve mixed-services facilities.,0.051,2022-01-01,
