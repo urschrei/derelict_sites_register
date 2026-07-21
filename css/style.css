@@ -16,6 +16,7 @@
   --ramp-4: #0d366b;
   --focus: #2a78d6;
   --vacant-accent: #b5540f;
+  --rzlt-accent: #1b9e77;
   --outcome-granted: #1a7f4b;
   --outcome-refused: #c0392b;
 }
@@ -40,6 +41,7 @@
   --ramp-4: #184f95;
   --focus: #3987e5;
   --vacant-accent: #f6a866;
+  --rzlt-accent: #2fa88f;
   --outcome-granted: #4ec38a;
   --outcome-refused: #f07a6a;
 }
@@ -865,8 +867,19 @@ body:not(.view-vacant) .vacant-only {
   display: none;
 }
 
-body.view-vacant .derelict-only {
+body:not(.view-rzlt) .rzlt-only {
   display: none;
+}
+
+body.view-vacant .derelict-only,
+body.view-rzlt .derelict-only {
+  display: none;
+}
+
+/* The RZLT view reuses the vacant list/detail components with its own
+   accent. */
+.rzlt-only .vacant-list-item.is-selected {
+  box-shadow: inset 3px 0 0 var(--rzlt-accent);
 }
 
 .vacant-intro {

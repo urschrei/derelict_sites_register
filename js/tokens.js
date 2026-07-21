@@ -19,6 +19,14 @@ const LIGHT = {
   // that sits apart from the blue time-on-register ramp.
   vacantFill: "#e07b2f",
   vacantLine: "#b5540f",
+  // Categorical hues for the RZLT generalised zoning classes, validated for
+  // adjacent-pair CVD separation and surface contrast in legend order.
+  rzltColours: {
+    M1: "#6b46a8",
+    M2: "#e06377",
+    M3: "#8a6d00",
+    R3: "#1b9e77",
+  },
   basemap: "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
 };
 
@@ -39,6 +47,12 @@ const DARK = {
   caseRamp: ["#440154", "#3b528b", "#21918c", "#5ec962", "#fde725"],
   vacantFill: "#e8823c",
   vacantLine: "#f6a866",
+  rzltColours: {
+    M1: "#9d7ad8",
+    M2: "#d9647f",
+    M3: "#9c8427",
+    R3: "#2fa88f",
+  },
   basemap: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png",
 };
 
@@ -76,6 +90,16 @@ darkQuery.addEventListener("change", (event) => {
   document.documentElement.dataset.theme = event.matches ? "dark" : "light";
   notifySchemeChange();
 });
+
+// The RZLT generalised zoning classes present in Dublin City's vacant/idle
+// parcels, in fixed legend order. Labels paraphrase the national RZLT
+// zoning typology.
+export const RZLT_ZONES = [
+  { code: "M1", label: "Mixed use, general" },
+  { code: "M2", label: "City centre, central area" },
+  { code: "M3", label: "Neighbourhood or urban village centre" },
+  { code: "R3", label: "Strategic regeneration area" },
+];
 
 // Bin edges (in whole years on the register) for the ordinal ramp.
 export const YEAR_BINS = [

@@ -48,6 +48,8 @@
       <a class="button" href="data/active_cases_grid.geojson" download><span class="dl-name">Under Review (aggregated)</span><span class="dl-fmt">GeoJSON</span></a>
       <a class="button" href="data/vacant_sites_register.geojson" download><span class="dl-name">Vacant Sites</span><span class="dl-fmt">GeoJSON</span></a>
       <a class="button" href="data/vacant_sites_planning_links.csv" download><span class="dl-name">Vacant Sites Planning docs</span><span class="dl-fmt">CSV</span></a>
+      <a class="button" href="data/rzlt_sites.geojson" download><span class="dl-name">Vacant / Idle (RZLT)</span><span class="dl-fmt">GeoJSON</span></a>
+      <a class="button" href="data/rzlt_sites.csv" download><span class="dl-name">Vacant / Idle (RZLT)</span><span class="dl-fmt">CSV</span></a>
     </p>
   </header>
 
@@ -60,6 +62,10 @@
       <label>
         <input class="visually-hidden" type="radio" name="view" value="vacant">
         <span>Vacant Sites Register</span>
+      </label>
+      <label>
+        <input class="visually-hidden" type="radio" name="view" value="rzlt">
+        <span>Vacant / Idle (RZLT)</span>
       </label>
     </div>
 
@@ -148,6 +154,39 @@
       see its ownership, valuation, and planning history.
     </p>
 
+    <section class="kpis rzlt-only" aria-label="RZLT key figures">
+      <div class="stat-tile">
+        <span class="stat-label">Vacant/idle parcels</span>
+        <span class="stat-value" id="rkpi-count">&ndash;</span>
+        <span class="stat-note">on the RZLT final map for Dublin City</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Total area</span>
+        <span class="stat-value" id="rkpi-area">&ndash;</span>
+        <span class="stat-note">combined parcel extent</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Added for the 2026 map</span>
+        <span class="stat-value" id="rkpi-new">&ndash;</span>
+        <span class="stat-note">new determinations since the first map</span>
+      </div>
+      <div class="stat-tile">
+        <span class="stat-label">Former vacant sites</span>
+        <span class="stat-value" id="rkpi-former">&ndash;</span>
+        <span class="stat-note">parcels continuing register entries</span>
+      </div>
+    </section>
+
+    <p class="rzlt-only vacant-intro">
+      Land in Dublin City that the council has determined to be vacant or idle
+      under the Residential Zoned Land Tax, the successor to the vacant sites
+      levy. These are the RZLT final-map parcels in mixed-use and regeneration
+      zonings, where a vacancy determination is a condition of inclusion;
+      blanket residential zonings, which carry no such determination, are not
+      shown. Pick a parcel from the list or the map to see its zoning and
+      history.
+    </p>
+
     <section class="map-section" aria-label="Map of derelict sites">
       <div class="map-card">
         <div id="map" aria-label="Interactive map of derelict sites in Dublin"></div>
@@ -195,6 +234,11 @@
               <span class="legend-title">Vacant Sites Register</span>
             </div>
           </div>
+          <div class="map-panel" id="panel-rzlt" hidden>
+            <div class="map-legend" id="rzlt-legend" aria-hidden="false">
+              <span class="legend-title">Zoning of vacant/idle parcels</span>
+            </div>
+          </div>
           <button type="button" class="button map-locate derelict-only" id="locate-button">Where's the closest derelict site?</button>
         </div>
         <div class="embed-title">
@@ -206,6 +250,7 @@
       <p class="map-hint derelict-only">Click a point for site details. The density grid aggregates sites into hexagons with 600&nbsp;m sides; the Voronoi catchments show the area closest to each site.</p>
       <p class="map-hint" id="cases-hint" hidden></p>
       <p class="map-hint vacant-only" id="vacant-maphint">Click a site boundary to open its details below.</p>
+      <p class="map-hint rzlt-only" id="rzlt-maphint">Click a parcel boundary to open its details below. Parcel colours show the generalised zoning class.</p>
     </section>
 
     <section class="vacant-only vacant-detail-section" aria-label="Vacant site details">
@@ -215,6 +260,17 @@
         </div>
         <div class="vacant-detail" id="vacant-detail" aria-live="polite">
           <p class="vacant-detail-empty">Select a site to see its details and planning history.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="rzlt-only vacant-detail-section" aria-label="RZLT parcel details">
+      <div class="vacant-layout">
+        <div class="vacant-list-wrap">
+          <ul class="vacant-list" id="rzlt-list" role="listbox" aria-label="RZLT vacant or idle parcels"></ul>
+        </div>
+        <div class="vacant-detail" id="rzlt-detail" aria-live="polite">
+          <p class="vacant-detail-empty">Select a parcel to see its zoning details.</p>
         </div>
       </div>
     </section>

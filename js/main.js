@@ -31,6 +31,7 @@ import {
 import { renderTable } from "./table.js";
 import { buildIndex, nearestSites } from "./spatial.js";
 import { loadVacant, vacantMeta } from "./vacant.js";
+import { loadRzlt, rzltMeta } from "./rzlt.js";
 
 const state = { area: "", protected: false, council: false, search: "" };
 let currentView = "derelict";
@@ -258,9 +259,25 @@ function vacantHeaderLine() {
   );
 }
 
+function rzltHeaderLine() {
+  const meta = rzltMeta();
+  if (!meta) return "Loading register data…";
+  return (
+    `${meta.count} vacant or idle parcels on the RZLT map` +
+    (meta.latest ? ` · newest additions ${meta.latest.slice(0, 4)}` : "") +
+    " · data refreshed twice daily"
+  );
+}
+
+const HEADER_LINES = {
+  derelict: derelictHeaderLine,
+  vacant: vacantHeaderLine,
+  rzlt: rzltHeaderLine,
+};
+
 function renderHeaderMeta() {
   document.getElementById("site-count-line").textContent =
-    currentView === "vacant" ? vacantHeaderLine() : derelictHeaderLine();
+    HEADER_LINES[currentView]();
 }
 
 function loadCaseload() {
@@ -319,10 +336,15 @@ function loadChangelog() {
           link.append(time);
           dateNode = link;
         }
+        // Older entries predate RZLT tracking; only mention it once present.
+        const rzltPart = entry.rzlt
+          ? ` · RZLT: ${describeRegisterChange(entry.rzlt)}`
+          : "";
         item.append(
           dateNode,
           ` · Derelict: ${describeRegisterChange(entry.derelict)}` +
-            ` · Vacant: ${describeRegisterChange(entry.vacant)}`
+            ` · Vacant: ${describeRegisterChange(entry.vacant)}` +
+            rzltPart
         );
         list.append(item);
       }
@@ -330,19 +352,20 @@ function loadChangelog() {
     });
 }
 
-// Top-level switch between the two registers. Derelict keeps its register /
-// caseload map modes and its filters, charts, and table; vacant swaps in its
-// own figures, site list, and detail panel. The map element is shared.
+// Top-level switch between the three registers. Derelict keeps its register /
+// caseload map modes and its filters, charts, and table; vacant and RZLT
+// swap in their own figures, site lists, and detail panels. The map element
+// is shared.
 function setView(view) {
-  const vacant = view === "vacant";
   currentView = view;
-  document.body.classList.toggle("view-vacant", vacant);
+  document.body.classList.toggle("view-vacant", view === "vacant");
+  document.body.classList.toggle("view-rzlt", view === "rzlt");
   renderHeaderMeta();
-  if (vacant) {
-    setMapMode("vacant");
-  } else {
+  if (view === "derelict") {
     const checked = document.querySelector('input[name="map-mode"]:checked');
     setMapMode(checked ? checked.value : "register");
+  } else {
+    setMapMode(view);
   }
 }
 
@@ -392,6 +415,9 @@ async function init() {
   loadChangelog();
   loadVacant().then(() => {
     if (currentView === "vacant") renderHeaderMeta();
+  });
+  loadRzlt().then(() => {
+    if (currentView === "rzlt") renderHeaderMeta();
   });
 
   if (embed) {

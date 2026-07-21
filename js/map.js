@@ -2,7 +2,7 @@
 // Turf-derived hex density overlay. MapLibre is loaded globally as
 // `maplibregl`.
 
-import { tokens, YEAR_BINS } from "./tokens.js";
+import { tokens, YEAR_BINS, RZLT_ZONES } from "./tokens.js";
 
 const DUBLIN_CENTRE = [-6.2718, 53.3455];
 
@@ -13,6 +13,7 @@ let currentVoronoi = { type: "FeatureCollection", features: [] };
 let currentCases = { type: "FeatureCollection", features: [] };
 let currentCaseHexes = null;
 let currentVacant = { type: "FeatureCollection", features: [] };
+let currentRzlt = { type: "FeatureCollection", features: [] };
 let hexVisible = false;
 let voronoiVisible = false;
 let emphasiseProtected = false;
@@ -38,6 +39,9 @@ const OPACITY_PROP = {
   "vacant-fill": "fill-opacity",
   "vacant-line": "line-opacity",
   "vacant-selected": "line-opacity",
+  "rzlt-fill": "fill-opacity",
+  "rzlt-line": "line-opacity",
+  "rzlt-selected": "line-opacity",
 };
 const desiredOpacity = {
   hexes: 0,
@@ -49,6 +53,9 @@ const desiredOpacity = {
   "vacant-fill": 0,
   "vacant-line": 0,
   "vacant-selected": 0,
+  "rzlt-fill": 0,
+  "rzlt-line": 0,
+  "rzlt-selected": 0,
 };
 
 function fadeLayerTo(id, opacity) {
@@ -75,6 +82,7 @@ function targetOpacities() {
   const register = mapMode === "register";
   const caseload = mapMode === "caseload";
   const vacant = mapMode === "vacant";
+  const rzlt = mapMode === "rzlt";
   const squares = caseload && casesShape === "squares";
   const hexes = caseload && casesShape === "hexes";
   return {
@@ -87,6 +95,9 @@ function targetOpacities() {
     "vacant-fill": vacant ? 0.45 : 0,
     "vacant-line": vacant ? 0.9 : 0,
     "vacant-selected": vacant ? 1 : 0,
+    "rzlt-fill": rzlt ? 0.45 : 0,
+    "rzlt-line": rzlt ? 0.9 : 0,
+    "rzlt-selected": rzlt ? 1 : 0,
   };
 }
 
@@ -147,9 +158,9 @@ function syncSitePaint() {
     map.setPaintProperty("sites", "circle-radius", siteRadiusExpression());
     map.setPaintProperty("sites", "circle-opacity", 1);
     map.setPaintProperty("sites", "circle-stroke-opacity", 1);
-  } else if (mapMode === "vacant") {
-    // The vacant sites are a different register; hide the derelict points
-    // entirely so the two are not read as one dataset.
+  } else if (mapMode === "vacant" || mapMode === "rzlt") {
+    // The vacant sites and RZLT parcels are different registers; hide the
+    // derelict points entirely so they are not read as one dataset.
     map.setPaintProperty("sites", "circle-opacity", 0);
     map.setPaintProperty("sites", "circle-stroke-opacity", 0);
   } else {
@@ -196,6 +207,17 @@ function rampExpression() {
     t.ramp[3],
     t.ramp[1],
   ];
+}
+
+// RZLT parcels are coloured by generalised zoning class.
+function rzltColourExpression() {
+  const colours = tokens().rzltColours;
+  const expression = ["match", ["get", "zone_gzt"]];
+  for (const zone of RZLT_ZONES) {
+    expression.push(zone.code, colours[zone.code]);
+  }
+  expression.push(colours[RZLT_ZONES[0].code]);
+  return expression;
 }
 
 const PROTECTED = [
@@ -419,6 +441,44 @@ function addDataLayers() {
     },
   });
 
+  map.addSource("rzlt", { type: "geojson", data: currentRzlt });
+  map.addLayer({
+    id: "rzlt-fill",
+    type: "fill",
+    source: "rzlt",
+    layout: { visibility: "none" },
+    paint: {
+      "fill-color": rzltColourExpression(),
+      "fill-opacity": 0,
+      "fill-opacity-transition": { duration: FADE_MS },
+    },
+  });
+  map.addLayer({
+    id: "rzlt-line",
+    type: "line",
+    source: "rzlt",
+    layout: { visibility: "none" },
+    paint: {
+      "line-color": rzltColourExpression(),
+      "line-width": 1.5,
+      "line-opacity": 0,
+      "line-opacity-transition": { duration: FADE_MS },
+    },
+  });
+  map.addLayer({
+    id: "rzlt-selected",
+    type: "line",
+    source: "rzlt",
+    layout: { visibility: "none" },
+    filter: ["==", ["get", "parcel_id"], "__none__"],
+    paint: {
+      "line-color": t.series1,
+      "line-width": 3.5,
+      "line-opacity": 0,
+      "line-opacity-transition": { duration: FADE_MS },
+    },
+  });
+
   map.addSource("sites", { type: "geojson", data: currentSites });
   map.addLayer({
     id: "sites",
@@ -518,12 +578,17 @@ function openPopup(feature) {
     .addTo(map);
 }
 
-// The vacant view drives a detail panel rather than a popup: a click reports
-// the site's register number to whoever registered a handler.
+// The vacant and RZLT views drive a detail panel rather than a popup: a
+// click reports the feature's identifier to whoever registered a handler.
 let vacantSelectHandler = null;
+let rzltSelectHandler = null;
 
 export function onVacantSelect(handler) {
   vacantSelectHandler = handler;
+}
+
+export function onRzltSelect(handler) {
+  rzltSelectHandler = handler;
 }
 
 // Outline a site as the current selection, optionally zooming to it. Called
@@ -551,6 +616,25 @@ export function focusVacantSite(registerNumber, { zoom = true } = {}) {
   }
 }
 
+// Outline an RZLT parcel as the current selection, optionally zooming to it.
+export function focusRzltParcel(parcelId, { zoom = true } = {}) {
+  if (!map) return;
+  const feature = currentRzlt.features.find(
+    (f) => f.properties.parcel_id === parcelId
+  );
+  if (!feature) return;
+  if (map.getLayer("rzlt-selected")) {
+    map.setFilter("rzlt-selected", ["==", ["get", "parcel_id"], parcelId]);
+  }
+  if (zoom) {
+    map.fitBounds(turf.bbox(feature), {
+      padding: 90,
+      maxZoom: 16,
+      duration: 700,
+    });
+  }
+}
+
 // Switch between the register view (points and point-derived overlays) and
 // the caseload view (choropleth with faded reference points). Exported so
 // other interactions, such as the locate button, can force the register
@@ -561,9 +645,11 @@ export function setMapMode(mode) {
   const register = mode === "register";
   const caseload = mode === "caseload";
   const vacant = mode === "vacant";
+  const rzlt = mode === "rzlt";
   document.getElementById("panel-register").hidden = !register;
   document.getElementById("panel-caseload").hidden = !caseload;
   document.getElementById("panel-vacant").hidden = !vacant;
+  document.getElementById("panel-rzlt").hidden = !rzlt;
   document.getElementById("cases-hint").hidden = !caseload;
   const radio = document.querySelector(
     `input[name="map-mode"][value="${mode}"]`
@@ -680,6 +766,34 @@ function buildVacantLegend() {
   legend.append(row);
 }
 
+function buildRzltLegend() {
+  const legend = document.getElementById("rzlt-legend");
+  if (!legend) return;
+  const colours = tokens().rzltColours;
+  legend.replaceChildren();
+  const title = document.createElement("span");
+  title.className = "legend-title";
+  title.textContent = "Zoning of vacant/idle parcels";
+  legend.append(title);
+  const counts = {};
+  for (const feature of currentRzlt.features) {
+    const code = feature.properties.zone_gzt;
+    counts[code] = (counts[code] ?? 0) + 1;
+  }
+  for (const zone of RZLT_ZONES) {
+    if (!counts[zone.code]) continue;
+    const row = document.createElement("span");
+    row.className = "legend-row";
+    const swatch = document.createElement("span");
+    swatch.className = "legend-swatch legend-swatch-square";
+    swatch.style.background = colours[zone.code];
+    const label = document.createElement("span");
+    label.textContent = `${zone.label} (${counts[zone.code]})`;
+    row.append(swatch, label);
+    legend.append(row);
+  }
+}
+
 export function initMap() {
   map = new maplibregl.Map({
     container: "map",
@@ -727,6 +841,18 @@ export function initMap() {
     if (mapMode === "vacant") map.getCanvas().style.cursor = "pointer";
   });
   map.on("mouseleave", "vacant-fill", () => {
+    map.getCanvas().style.cursor = "";
+  });
+
+  map.on("click", "rzlt-fill", (e) => {
+    if (mapMode === "rzlt" && e.features?.length) {
+      rzltSelectHandler?.(e.features[0].properties.parcel_id);
+    }
+  });
+  map.on("mouseenter", "rzlt-fill", () => {
+    if (mapMode === "rzlt") map.getCanvas().style.cursor = "pointer";
+  });
+  map.on("mouseleave", "rzlt-fill", () => {
     map.getCanvas().style.cursor = "";
   });
 
@@ -794,6 +920,7 @@ export function initMap() {
   buildLegend();
   buildCasesLegend();
   buildVacantLegend();
+  buildRzltLegend();
   return map;
 }
 
@@ -816,6 +943,13 @@ export function setVacantData(collection) {
   currentVacant = collection;
   map?.getSource("vacant")?.setData(currentVacant);
   buildVacantLegend();
+}
+
+// So are the RZLT parcels.
+export function setRzltData(collection) {
+  currentRzlt = collection;
+  map?.getSource("rzlt")?.setData(currentRzlt);
+  buildRzltLegend();
 }
 
 export function setCaseloadHexes(hexes) {
@@ -857,6 +991,7 @@ export function refreshMapStyle() {
   buildLegend();
   buildCasesLegend();
   buildVacantLegend();
+  buildRzltLegend();
 }
 
 let userMarker;
