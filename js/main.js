@@ -253,9 +253,9 @@ function vacantHeaderLine() {
   if (!meta) return "Loading register data…";
   const [y, m, d] = (meta.latest ?? "").split("-");
   return (
-    `${meta.count} sites on the register` +
-    (meta.latest ? ` · most recent registration ${d}/${m}/${y}` : "") +
-    " · data refreshed twice daily"
+    `${meta.count} sites on the historical register` +
+    (meta.latest ? ` · last registration ${d}/${m}/${y}` : "") +
+    " · superseded by the RZLT · removals still tracked"
   );
 }
 

@@ -752,7 +752,7 @@ function buildVacantLegend() {
   legend.replaceChildren();
   const title = document.createElement("span");
   title.className = "legend-title";
-  title.textContent = "Vacant Sites Register";
+  title.textContent = "Vacant Sites Register (historical)";
   legend.append(title);
   const row = document.createElement("span");
   row.className = "legend-row";

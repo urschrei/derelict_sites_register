@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dublin Derelict and Vacant Sites Register</title>
-  <meta name="description" content="An open map, table, and analysis of Dublin City Council's Derelict Sites and Vacant Sites registers, refreshed twice daily.">
+  <meta name="description" content="An open map, table, and analysis of Dublin City Council's Derelict Sites Register, the historical Vacant Sites Register, and current RZLT vacant/idle land, refreshed twice daily.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Dublin Derelict and Vacant Sites Register">
-  <meta property="og:description" content="An open map, table, and analysis of Dublin City Council's Derelict Sites and Vacant Sites registers, refreshed twice daily.">
+  <meta property="og:description" content="An open map, table, and analysis of Dublin City Council's Derelict Sites Register, the historical Vacant Sites Register, and current RZLT vacant/idle land, refreshed twice daily.">
   <meta property="og:url" content="https://urschrei.github.io/derelict_sites_register/">
   <meta property="og:image" content="https://urschrei.github.io/derelict_sites_register/assets/social-preview.png">
   <meta property="og:image:width" content="1280">
@@ -36,8 +36,9 @@
     </button>
     <h1>Dublin Derelict and Vacant Sites Register</h1>
     <p class="lede">
-      This page republishes Dublin City Council's register of derelict sites
-      and vacant sites in open formats.
+      This page republishes Dublin City Council's register of derelict sites,
+      its historical register of vacant sites, and the city's current
+      vacant/idle land under the Residential Zoned Land Tax, in open formats.
     </p>
     <p class="meta-line">
       <span id="site-count-line">Loading register data&hellip;</span>
@@ -61,7 +62,7 @@
       </label>
       <label>
         <input class="visually-hidden" type="radio" name="view" value="vacant">
-        <span>Vacant Sites Register</span>
+        <span>Vacant Sites (historical)</span>
       </label>
       <label>
         <input class="visually-hidden" type="radio" name="view" value="rzlt">
@@ -124,7 +125,7 @@
       <div class="stat-tile">
         <span class="stat-label">Sites on the register</span>
         <span class="stat-value" id="vkpi-count">&ndash;</span>
-        <span class="stat-note">statutory vacant sites</span>
+        <span class="stat-note">historical register, closed to additions</span>
       </div>
       <div class="stat-tile">
         <span class="stat-label">Total site area</span>
@@ -150,8 +151,12 @@
 
     <p class="vacant-only vacant-intro">
       Dublin City Council's register of vacant sites, a separate statutory
-      register from the derelict sites. Pick a site from the list or the map to
-      see its ownership, valuation, and planning history.
+      register from the derelict sites. The vacant sites levy was replaced by
+      the Residential Zoned Land Tax and the register has received no new
+      entries since April 2022, though removals are still tracked; the
+      Vacant&nbsp;/&nbsp;Idle (RZLT) view shows its living successor. Pick a
+      site from the list or the map to see its ownership, valuation, and
+      planning history.
     </p>
 
     <section class="kpis rzlt-only" aria-label="RZLT key figures">
@@ -231,7 +236,7 @@
           </div>
           <div class="map-panel" id="panel-vacant" hidden>
             <div class="map-legend" id="vacant-legend" aria-hidden="false">
-              <span class="legend-title">Vacant Sites Register</span>
+              <span class="legend-title">Vacant Sites Register (historical)</span>
             </div>
           </div>
           <div class="map-panel" id="panel-rzlt" hidden>
@@ -316,8 +321,10 @@
     <p>
       Data: Dublin City Council &mdash; Derelict Sites Register (public ArcGIS
       feature service) and Vacant Sites Register (MapZone planning viewer,
-      with ownership and valuations from the register PDF on dublincity.ie),
-      retrieved twice daily. Basemap &copy;
+      with ownership and valuations from the register PDF on dublincity.ie);
+      vacant/idle parcels from the Residential Zoned Land Tax final map
+      &copy; Department of Housing, Local Government and Heritage, &copy;
+      Tailte &Eacute;ireann. All retrieved twice daily. Basemap &copy;
       <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
       contributors, &copy; <a href="https://carto.com/attributions">CARTO</a>.
       Built with <a href="https://maplibre.org/">MapLibre GL JS</a>,
