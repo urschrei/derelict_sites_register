@@ -2557,7 +2557,7 @@
       "id": 73,
       "properties": {
         "OID": 73,
-        "num_active": 1
+        "num_active": 2
       },
       "type": "Feature"
     },
@@ -2592,7 +2592,7 @@
       "id": 74,
       "properties": {
         "OID": 74,
-        "num_active": 2
+        "num_active": 1
       },
       "type": "Feature"
     },
@@ -2627,7 +2627,7 @@
       "id": 75,
       "properties": {
         "OID": 75,
-        "num_active": 4
+        "num_active": 3
       },
       "type": "Feature"
     },
@@ -4587,7 +4587,7 @@
       "id": 131,
       "properties": {
         "OID": 131,
-        "num_active": 0
+        "num_active": 1
       },
       "type": "Feature"
     },
@@ -4622,7 +4622,7 @@
       "id": 132,
       "properties": {
         "OID": 132,
-        "num_active": 4
+        "num_active": 5
       },
       "type": "Feature"
     },
@@ -8087,7 +8087,7 @@
       "id": 231,
       "properties": {
         "OID": 231,
-        "num_active": 14
+        "num_active": 13
       },
       "type": "Feature"
     },
@@ -8857,7 +8857,7 @@
       "id": 253,
       "properties": {
         "OID": 253,
-        "num_active": 0
+        "num_active": 1
       },
       "type": "Feature"
     },
@@ -11377,7 +11377,7 @@
       "id": 325,
       "properties": {
         "OID": 325,
-        "num_active": 31
+        "num_active": 32
       },
       "type": "Feature"
     },
@@ -12427,7 +12427,7 @@
       "id": 355,
       "properties": {
         "OID": 355,
-        "num_active": 17
+        "num_active": 18
       },
       "type": "Feature"
     },
@@ -13617,7 +13617,7 @@
       "id": 389,
       "properties": {
         "OID": 389,
-        "num_active": 6
+        "num_active": 7
       },
       "type": "Feature"
     },
@@ -19182,7 +19182,7 @@
       "id": 548,
       "properties": {
         "OID": 548,
-        "num_active": 0
+        "num_active": 1
       },
       "type": "Feature"
     },
@@ -20197,7 +20197,7 @@
       "id": 577,
       "properties": {
         "OID": 577,
-        "num_active": 0
+        "num_active": 1
       },
       "type": "Feature"
     },
@@ -21352,7 +21352,7 @@
       "id": 610,
       "properties": {
         "OID": 610,
-        "num_active": 2
+        "num_active": 1
       },
       "type": "Feature"
     },
@@ -21527,7 +21527,7 @@
       "id": 615,
       "properties": {
         "OID": 615,
-        "num_active": 5
+        "num_active": 6
       },
       "type": "Feature"
     },
