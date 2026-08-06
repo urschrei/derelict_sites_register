@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "date": "2026-08-06T14:30Z",
+    "derelict": {
+      "added": [
+        "DS1847"
+      ],
+      "removed": [],
+      "total": 136
+    },
+    "rzlt": {
+      "added": [],
+      "removed": [],
+      "total": 148
+    },
+    "vacant": {
+      "added": [],
+      "removed": [],
+      "total": 33
+    }
+  }
+]
