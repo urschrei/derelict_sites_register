@@ -7947,7 +7947,7 @@
       "id": 227,
       "properties": {
         "OID": 227,
-        "num_active": 5
+        "num_active": 4
       },
       "type": "Feature"
     },
@@ -7982,7 +7982,7 @@
       "id": 228,
       "properties": {
         "OID": 228,
-        "num_active": 21
+        "num_active": 19
       },
       "type": "Feature"
     },
@@ -8192,7 +8192,7 @@
       "id": 234,
       "properties": {
         "OID": 234,
-        "num_active": 5
+        "num_active": 4
       },
       "type": "Feature"
     },
@@ -9137,7 +9137,7 @@
       "id": 261,
       "properties": {
         "OID": 261,
-        "num_active": 21
+        "num_active": 19
       },
       "type": "Feature"
     },
@@ -9242,7 +9242,7 @@
       "id": 264,
       "properties": {
         "OID": 264,
-        "num_active": 12
+        "num_active": 11
       },
       "type": "Feature"
     },
@@ -10257,7 +10257,7 @@
       "id": 293,
       "properties": {
         "OID": 293,
-        "num_active": 48
+        "num_active": 47
       },
       "type": "Feature"
     },
@@ -10327,7 +10327,7 @@
       "id": 295,
       "properties": {
         "OID": 295,
-        "num_active": 6
+        "num_active": 5
       },
       "type": "Feature"
     },
@@ -20267,7 +20267,7 @@
       "id": 579,
       "properties": {
         "OID": 579,
-        "num_active": 2
+        "num_active": 1
       },
       "type": "Feature"
     },

@@ -1,5 +1,25 @@
 [
   {
+    "date": "2026-08-27T09:24Z",
+    "derelict": {
+      "added": [
+        "DS2283"
+      ],
+      "removed": [],
+      "total": 142
+    },
+    "rzlt": {
+      "added": [],
+      "removed": [],
+      "total": 148
+    },
+    "vacant": {
+      "added": [],
+      "removed": [],
+      "total": 33
+    }
+  },
+  {
     "commit": "54e10f4b02b1151d561a8813de6bc33f7678e231",
     "date": "2026-08-24T13:05Z",
     "derelict": {
