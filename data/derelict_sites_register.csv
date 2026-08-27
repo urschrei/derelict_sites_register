@@ -36,6 +36,7 @@ DS1380,39A Main Street Dublin 20 D20H971,South Central,On Derelict Sites Registe
 DS1040B,"77 Parnell Street, Dublin 1, D01 P8Y7",Central,On Derelict Sites Register,Yes,Yes,Yes,No,2022-01-14,27/08/2026,"Parnell Street, 77, Dublin 1",53.3526428199,-6.260798441
 DS1040C,"78 Parnell Street, Dublin 1, D01 A074 ",Central,On Derelict Sites Register,Yes,Yes,Yes,No,2022-01-14,27/08/2026,"Parnell Street, 78, Dublin 1",53.3526663099,-6.2607145519
 DS1748B,17/18 Frederick Street North Dublin 1 D01XP84~|~18 Frederick Street North Dublin 1,Central,On Derelict Sites Register,Yes,Yes,No,No,2024-08-27,27/08/2026,"Frederick Street North, 18, Dublin 1",53.3559241653,-6.2648540535
+DS1880,"60 Mountjoy Street, Dublin 7, D07 TD80",Central,On Derelict Sites Register,Yes,Yes,No,No,2026-08-27,27/08/2026,"Mountjoy Street, 60, Dublin 7",53.3555768,-6.2684811
 DS2072,"119 Dorset Street Upper, Dublin 1, D01 E7K4",Central,On Derelict Sites Register,Yes,Yes,No,No,2025-09-02,27/08/2026,"Dorset Street Upper, 119, Dublin 1",53.3545110399,-6.26686222
 DS2006,7-9 Bath Street Dublin 4 D04E294,South East,On Derelict Sites Register,Yes,Yes,No,No,2025-09-17,27/08/2026,"Bath Street, 7-9, Dublin 4",53.33897471,-6.222475214
 DS2178,"5 Ormond Quay Lower, Dublin 1, D01 F4A0",Central,On Derelict Sites Register,Yes,Yes,Yes,No,2026-06-29,27/08/2026,"Ormond Quay Lower, 5, Dublin 1 (Protected) (TF)",53.3462698299,-6.2671765099
@@ -83,6 +84,7 @@ DS851,Wharton Hall Harolds Cross Dublin 6W D6WW838,South East,On Derelict Sites 
 DS1280B,53 Clanbrassil Street Lower Dublin 8,South East,On Derelict Sites Register,Yes,Yes,No,No,2024-06-11,27/08/2026,"Clanbrassil Street Lower, 53, Dublin 8",53.3324638815,-6.2749442542
 DS1844,5 Saint Patrick's Road Dublin 5 D09N2R0,Central,On Derelict Sites Register,Yes,Yes,No,No,2024-08-20,27/08/2026,"Saint Patrick's Road, 5, Dublin 9",53.36276978,-6.261057792
 DS1218,4 Spencer Place Dublin 3 D03X651,Central,On Derelict Sites Register,Yes,Yes,No,No,2023-06-27,27/08/2026,"Spencer Place, 4, North Strand, Dublin 3",53.35787423,-6.239423188
+DS2117,,Central,On Derelict Sites Register,Yes,Yes,No,No,2026-08-27,27/08/2026,"Saint Philomena's Road, 2, Glasnevin, Dublin 11",53.36753638,-6.274148756
 DS1562,91 Raheny Road Dublin 5 D05F9W2,North Central,On Derelict Sites Register,Yes,Yes,No,No,2025-10-13,27/08/2026,"Raheny Road, 91, Raheny, Dublin 5",53.3845918899,-6.1756283449
 DS2062,607 Clonard Road Dublin 12 D12F2D0,South East,On Derelict Sites Register,Yes,Yes,No,No,2025-01-22,27/08/2026,"Clonard Road, 607, Kimmage, Dublin 12",53.3184614399,-6.300362061
 DS1526,398 Clonard Road Dublin 12 D12H5P2~|~398A Clonard Road Dublin 12 D12K663,South East,On Derelict Sites Register,Yes,Yes,No,No,2023-03-06,27/08/2026,"Clonard Road, 398/398A, Kimmage, Dublin 12",53.3176902399,-6.299987587
@@ -110,7 +112,6 @@ DS1263,40 Park Avenue Dublin 4 D04RP74,South East,On Derelict Sites Register,Yes
 DS1017,47/49 Fairview Strand Dublin 3 D03E271  ,North Central,On Derelict Sites Register,Yes,Yes,No,No,2026-04-24,27/08/2026,"Fairview Strand, 47-49 (Players Lounge), Dublin 3",53.36287855,-6.24031862
 DS1694,"122 Quarry Road, Cabra, Dublin 7, D07 C7R2~|~122 Quarry Road Dublin 7 D07C7R2",Central,On Derelict Sites Register,Yes,Yes,No,No,2026-05-27,27/08/2026,"Quarry Road, 122, Cabra, Dublin 7",53.3638377,-6.2906448
 DS1634A,No Address,South Central,On Derelict Sites Register,Yes,Yes,No,No,2022-08-12,27/08/2026,"Shannon Terrace, opp 1-2 & adj. to 5 Auburn Terrace, Old Kilmainham, D.8.",53.3409632199,-6.302862474
-DS2116,15 Coulson Avenue Dublin 6 D06FV56  ,South East,On Derelict Sites Register,Yes,Yes,No,No,2026-04-13,27/08/2026,"Coulson Avenue, 15, Rathmines, Dublin 6",53.3143176199,-6.277475031
 DS2045,6 Estate Cottages Shelbourne Road Dublin 4 D04F6Y1,South East,On Derelict Sites Register,Yes,Yes,No,No,2026-07-03,27/08/2026,"Estate Cottages, 6, Shelbourne Road, Dublin 4",53.330459,-6.231108
 DS1850,6 COLLEGE STREET DUBLIN 2 D02HX59,South East,On Derelict Sites Register,Yes,Yes,Yes,No,2024-09-24,27/08/2026,"College Street, 6, Dublin 2",53.34567051,-6.257819729
 DS595,15/16 Emerald Street Dublin 1,Central,On Derelict Sites Register,Yes,Yes,No,No,2023-05-23,27/08/2026,"Emerald Street, 15/16, Dublin 1",53.35175223,-6.2432873219

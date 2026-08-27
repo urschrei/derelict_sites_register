@@ -1156,6 +1156,37 @@
     {
       "geometry": {
         "coordinates": [
+          -6.2684811,
+          53.3555768
+        ],
+        "type": "Point"
+      },
+      "id": 171,
+      "properties": {
+        "GlobalID": "f511e761-d8e6-4db6-9d9c-711238ba8c99",
+        "OBJECTID": 171,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-08-27",
+        "derelict_site_description": "Mountjoy Street, 60, Dublin 7",
+        "derelict_site_reference_number": "DS1880",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": "60 Mountjoy Street, Dublin 7, D07 TD80",
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "27/08/2026",
+        "ref_site_master_uuid": "848f8bdb-0cc7-445c-b252-e09ffc483a2b",
+        "site_location_latitude": 53.3555768,
+        "site_location_longitude": -6.2684811
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           -6.26686222,
           53.3545110399
         ],
@@ -2613,6 +2644,37 @@
     {
       "geometry": {
         "coordinates": [
+          -6.274148756,
+          53.36753638
+        ],
+        "type": "Point"
+      },
+      "id": 557,
+      "properties": {
+        "GlobalID": "9f3206a5-71a1-4e80-9a5b-39c72c7babde",
+        "OBJECTID": 557,
+        "administrative_area_name": "Central",
+        "date_added_to_the_derelict_sites_register": "2026-08-27",
+        "derelict_site_description": "Saint Philomena's Road, 2, Glasnevin, Dublin 11",
+        "derelict_site_reference_number": "DS2117",
+        "derelict_site_status": "On Derelict Sites Register",
+        "full_address": null,
+        "is_active_derelict_site_case": "Yes",
+        "is_active_derelict_site_case_COUNT": 1,
+        "is_on_current_derelict_sites_register": "Yes",
+        "is_on_current_derelict_sites_register_COUNT": 1,
+        "is_on_current_record_of_protected_structures": "No",
+        "is_owned_by_dublin_city_council": "No",
+        "most_recent_update_date": "27/08/2026",
+        "ref_site_master_uuid": "725fb2a0-faad-4d65-be69-12951c316dd6",
+        "site_location_latitude": 53.36753638,
+        "site_location_longitude": -6.274148756
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           -6.1756283449,
           53.3845918899
         ],
@@ -3444,37 +3506,6 @@
         "ref_site_master_uuid": "a3a75eed-c63e-4186-aa75-5ad3a3985b6f",
         "site_location_latitude": 53.3409632199,
         "site_location_longitude": -6.302862474
-      },
-      "type": "Feature"
-    },
-    {
-      "geometry": {
-        "coordinates": [
-          -6.277475031,
-          53.3143176199
-        ],
-        "type": "Point"
-      },
-      "id": 731,
-      "properties": {
-        "GlobalID": "77bd5aa9-5f2e-4540-9122-8b962c70460c",
-        "OBJECTID": 731,
-        "administrative_area_name": "South East",
-        "date_added_to_the_derelict_sites_register": "2026-04-13",
-        "derelict_site_description": "Coulson Avenue, 15, Rathmines, Dublin 6",
-        "derelict_site_reference_number": "DS2116",
-        "derelict_site_status": "On Derelict Sites Register",
-        "full_address": "15 Coulson Avenue Dublin 6 D06FV56  ",
-        "is_active_derelict_site_case": "Yes",
-        "is_active_derelict_site_case_COUNT": 1,
-        "is_on_current_derelict_sites_register": "Yes",
-        "is_on_current_derelict_sites_register_COUNT": 1,
-        "is_on_current_record_of_protected_structures": "No",
-        "is_owned_by_dublin_city_council": "No",
-        "most_recent_update_date": "27/08/2026",
-        "ref_site_master_uuid": "a3aa2d20-8d82-4d5f-99a1-db60c0cc3fe8",
-        "site_location_latitude": 53.3143176199,
-        "site_location_longitude": -6.277475031
       },
       "type": "Feature"
     },
