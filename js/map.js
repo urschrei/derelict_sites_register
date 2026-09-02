@@ -281,11 +281,13 @@ function siteColourExpression() {
     : rampExpression();
 }
 
+// A "zoom" expression is only valid at the top level of a property, so the
+// protected-structure bump goes inside each interpolation stop rather than
+// around the curve.
 function siteRadiusExpression() {
-  const base = ["interpolate", ["linear"], ["zoom"], 10, 4, 14, 7];
-  return emphasiseProtected
-    ? ["+", base, ["case", PROTECTED, 1.5, 0]]
-    : base;
+  const stop = (radius) =>
+    emphasiseProtected ? ["+", radius, ["case", PROTECTED, 1.5, 0]] : radius;
+  return ["interpolate", ["linear"], ["zoom"], 10, stop(4), 14, stop(7)];
 }
 
 function hexColourExpression(maxCount) {
