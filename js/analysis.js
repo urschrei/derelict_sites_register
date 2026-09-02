@@ -100,43 +100,6 @@ export function hexDensity(features) {
   return turf.featureCollection(cells);
 }
 
-// Voronoi catchments: the region closest to each site.
-//
-// Unlike hexGrid, turf.voronoi passes raw coordinates to d3-voronoi's
-// planar algorithm with no latitude handling, so equidistance in degree
-// space would misplace boundaries at this latitude. Build the diagram in a
-// locally corrected frame (longitudes scaled by cos of the mid-latitude,
-// making planar distance proportional to ground distance), then scale the
-// polygons back.
-export function voronoiCatchments(features) {
-  if (features.length < 3) return turf.featureCollection([]);
-  const bbox = turf.bbox(
-    turf.featureCollection(features.map((f) => turf.point(f.geometry.coordinates)))
-  );
-  const k = Math.cos((((bbox[1] + bbox[3]) / 2) * Math.PI) / 180);
-  const projected = turf.featureCollection(
-    features.map((f) => {
-      const [lon, lat] = f.geometry.coordinates;
-      return turf.point([lon * k, lat]);
-    })
-  );
-  const pBbox = turf.bbox(projected);
-  const padded = [
-    pBbox[0] - 0.02,
-    pBbox[1] - 0.02,
-    pBbox[2] + 0.02,
-    pBbox[3] + 0.02,
-  ];
-  const diagram = turf.voronoi(projected, { bbox: padded });
-  const cells = diagram.features.filter(Boolean).map((cell) => {
-    cell.geometry.coordinates = cell.geometry.coordinates.map((ring) =>
-      ring.map(([x, y]) => [x / k, y])
-    );
-    return cell;
-  });
-  return turf.featureCollection(cells);
-}
-
 // Re-grid the council's square active-cases grid to hexagons by areal
 // weighting: each source cell's count is treated as uniformly distributed
 // over its area, and every hexagon receives the count of each overlapping

@@ -9,13 +9,11 @@ const DUBLIN_CENTRE = [-6.2718, 53.3455];
 let map;
 let currentSites = { type: "FeatureCollection", features: [] };
 let currentHexes = { type: "FeatureCollection", features: [] };
-let currentVoronoi = { type: "FeatureCollection", features: [] };
 let currentCases = { type: "FeatureCollection", features: [] };
 let currentCaseHexes = null;
 let currentVacant = { type: "FeatureCollection", features: [] };
 let currentRzlt = { type: "FeatureCollection", features: [] };
 let hexVisible = false;
-let voronoiVisible = false;
 let emphasiseProtected = false;
 let mapMode = "register";
 let casesShape = "squares";
@@ -32,7 +30,6 @@ const METRES_PER_CASE = 120;
 // stale timeout hiding a layer that has been faded back in meanwhile.
 const OPACITY_PROP = {
   hexes: "fill-opacity",
-  voronoi: "line-opacity",
   "cases-squares": "fill-opacity",
   "cases-hexes": "fill-opacity",
   "cases-squares-3d": "fill-extrusion-opacity",
@@ -46,7 +43,6 @@ const OPACITY_PROP = {
 };
 const desiredOpacity = {
   hexes: 0,
-  voronoi: 0,
   "cases-squares": 0,
   "cases-hexes": 0,
   "cases-squares-3d": 0,
@@ -88,7 +84,6 @@ function targetOpacities() {
   const hexes = caseload && casesShape === "hexes";
   return {
     hexes: register && hexVisible ? 0.55 : 0,
-    voronoi: register && voronoiVisible ? 0.7 : 0,
     "cases-squares": squares && !extrude3d ? 0.55 : 0,
     "cases-hexes": hexes && !extrude3d ? 0.55 : 0,
     "cases-squares-3d": squares && extrude3d ? 0.8 : 0,
@@ -452,23 +447,6 @@ function addDataLayers() {
         "fill-extrusion-height-transition": { duration: FADE_MS },
         "fill-extrusion-opacity": 0,
         "fill-extrusion-opacity-transition": { duration: FADE_MS },
-      },
-    },
-    labelId
-  );
-
-  map.addSource("voronoi", { type: "geojson", data: currentVoronoi });
-  map.addLayer(
-    {
-      id: "voronoi",
-      type: "line",
-      source: "voronoi",
-      layout: { visibility: "none" },
-      paint: {
-        "line-color": t.textMuted,
-        "line-width": 1,
-        "line-opacity": 0,
-        "line-opacity-transition": { duration: FADE_MS },
       },
     },
     labelId
@@ -984,11 +962,6 @@ export function initMap() {
     syncOverlayLayers();
   });
 
-  document.getElementById("toggle-voronoi").addEventListener("change", (e) => {
-    voronoiVisible = e.target.checked;
-    syncOverlayLayers();
-  });
-
   for (const radio of document.querySelectorAll('input[name="map-mode"]')) {
     radio.addEventListener("change", (e) => {
       if (e.target.checked) setMapMode(e.target.value);
@@ -1089,13 +1062,11 @@ export function setCaseloadHexes(hexes) {
   }
 }
 
-export function updateMapData(sites, hexes, voronoi) {
+export function updateMapData(sites, hexes) {
   currentSites = { type: "FeatureCollection", features: sites };
   currentHexes = hexes;
-  currentVoronoi = voronoi;
   if (!map || !map.isStyleLoaded()) return;
   map.getSource("sites")?.setData(currentSites);
-  map.getSource("voronoi")?.setData(currentVoronoi);
   const hexSource = map.getSource("hexes");
   if (hexSource) {
     hexSource.setData(currentHexes);
