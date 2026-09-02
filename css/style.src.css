@@ -243,13 +243,20 @@ main,
   font-size: 1.9rem;
   line-height: 1.2;
   margin: 0 0 0.6rem;
-  padding-right: 3rem;
+  padding-right: 5.75rem;
 }
 
-.theme-toggle {
+/* Masthead controls: the repository link and the theme toggle share a box so
+   they read as one pair in the corner. */
+.header-actions {
   position: absolute;
   top: 2.5rem;
   right: 1.25rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -263,17 +270,17 @@ main,
   cursor: pointer;
 }
 
-.theme-toggle:hover {
+.icon-button:hover {
   border-color: var(--series-1);
   color: var(--text-primary);
 }
 
-.theme-toggle:focus-visible {
+.icon-button:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 1px;
 }
 
-.theme-toggle svg {
+.icon-button svg {
   width: 18px;
   height: 18px;
 }
