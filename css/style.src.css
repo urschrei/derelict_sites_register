@@ -933,6 +933,10 @@ section {
 
 #register-table th button {
   all: unset;
+  /* "all: unset" restores box-sizing to content-box, so a 100% width plus
+     the padding overflowed every header cell; the overflow showed as the
+     last column clipped at the right edge of the scroll container. */
+  box-sizing: border-box;
   display: block;
   width: 100%;
   padding: 0.55rem 0.8rem;
