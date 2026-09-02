@@ -45,7 +45,10 @@ const DATA = {
     rzltCoverageRamp: ["#f2e6d8", "#e0a878", "#c06a2c", "#7a3d10"],
     rzltPublic: "#0073a8",
     rzltPrivate: "#d29338",
-    basemap: "https://basemaps.cartocdn.com/light_all/{z}/{x}/{y}@2x.png",
+    // OpenFreeMap serves the Positron and Dark Matter cartography as
+    // OpenMapTiles vector styles, with no key. The value is a MapLibre
+    // style URL, not a raster tile template.
+    basemap: "https://tiles.openfreemap.org/styles/positron",
   },
   dark: {
     ramp: ["#9ec5f4", "#5598e7", "#2a78d6", "#184f95"],
@@ -58,7 +61,7 @@ const DATA = {
     rzltCoverageRamp: ["#3a3020", "#7a5a2e", "#c08a44", "#f0c67e"],
     rzltPublic: "#3ba0c6",
     rzltPrivate: "#b57f38",
-    basemap: "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png",
+    basemap: "https://tiles.openfreemap.org/styles/dark",
   },
 };
 

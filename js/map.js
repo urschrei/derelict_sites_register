@@ -177,20 +177,31 @@ function syncSitePaint() {
 }
 
 function basemapStyle() {
-  const t = tokens();
-  return {
-    version: 8,
-    sources: {
-      basemap: {
-        type: "raster",
-        tiles: [t.basemap],
-        tileSize: 256,
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      },
-    },
-    layers: [{ id: "basemap", type: "raster", source: "basemap" }],
-  };
+  return tokens().basemap;
+}
+
+// The vector basemap draws its own place labels. The area overlays go under
+// them, so place names stay readable through a hex or parcel fill; the site
+// markers and the selection outlines go over them, because a label halo
+// otherwise bites a crescent out of a circle.
+function firstLabelLayerId() {
+  for (const layer of map.getStyle().layers) {
+    if (layer.type === "symbol") return layer.id;
+  }
+  return undefined;
+}
+
+// Road-reference shields (positron) and one-way arrows (dark) say nothing
+// about dereliction, and each style draws only one of the two. Hiding both
+// keeps the themes consistent and the street names uncluttered.
+const BASEMAP_CLUTTER = /shield|oneway/;
+
+function hideBasemapClutter() {
+  for (const layer of map.getStyle().layers) {
+    if (BASEMAP_CLUTTER.test(layer.id)) {
+      map.setLayoutProperty(layer.id, "visibility", "none");
+    }
+  }
 }
 
 function rampExpression() {
@@ -340,133 +351,159 @@ function caseColourExpression(property, features) {
 
 function addDataLayers() {
   const t = tokens();
+  const labelId = firstLabelLayerId();
+  hideBasemapClutter();
   const maxCount = Math.max(
     ...currentHexes.features.map((f) => f.properties.count),
     1
   );
 
   map.addSource("hexes", { type: "geojson", data: currentHexes });
-  map.addLayer({
-    id: "hexes",
-    type: "fill",
-    source: "hexes",
-    layout: { visibility: "none" },
-    paint: {
-      "fill-color": hexColourExpression(maxCount),
-      "fill-opacity": 0,
-      "fill-opacity-transition": { duration: FADE_MS },
-      "fill-outline-color": t.surface,
+  map.addLayer(
+    {
+      id: "hexes",
+      type: "fill",
+      source: "hexes",
+      layout: { visibility: "none" },
+      paint: {
+        "fill-color": hexColourExpression(maxCount),
+        "fill-opacity": 0,
+        "fill-opacity-transition": { duration: FADE_MS },
+        "fill-outline-color": t.surface,
+      },
     },
-  });
+    labelId
+  );
 
   map.addSource("cases-squares", { type: "geojson", data: currentCases });
-  map.addLayer({
-    id: "cases-squares",
-    type: "fill",
-    source: "cases-squares",
-    filter: [">", ["get", "num_active"], 0],
-    layout: { visibility: "none" },
-    paint: {
-      "fill-color": caseColourExpression("num_active", currentCases.features),
-      "fill-opacity": 0,
-      "fill-opacity-transition": { duration: FADE_MS },
-      "fill-outline-color": t.surface,
+  map.addLayer(
+    {
+      id: "cases-squares",
+      type: "fill",
+      source: "cases-squares",
+      filter: [">", ["get", "num_active"], 0],
+      layout: { visibility: "none" },
+      paint: {
+        "fill-color": caseColourExpression("num_active", currentCases.features),
+        "fill-opacity": 0,
+        "fill-opacity-transition": { duration: FADE_MS },
+        "fill-outline-color": t.surface,
+      },
     },
-  });
+    labelId
+  );
 
   map.addSource("cases-hexes", {
     type: "geojson",
     data: currentCaseHexes ?? EMPTY,
   });
-  map.addLayer({
-    id: "cases-hexes",
-    type: "fill",
-    source: "cases-hexes",
-    layout: { visibility: "none" },
-    paint: {
-      "fill-color": caseColourExpression(
-        "estimate",
-        currentCaseHexes?.features ?? []
-      ),
-      "fill-opacity": 0,
-      "fill-opacity-transition": { duration: FADE_MS },
-      "fill-outline-color": t.surface,
+  map.addLayer(
+    {
+      id: "cases-hexes",
+      type: "fill",
+      source: "cases-hexes",
+      layout: { visibility: "none" },
+      paint: {
+        "fill-color": caseColourExpression(
+          "estimate",
+          currentCaseHexes?.features ?? []
+        ),
+        "fill-opacity": 0,
+        "fill-opacity-transition": { duration: FADE_MS },
+        "fill-outline-color": t.surface,
+      },
     },
-  });
+    labelId
+  );
 
-  map.addLayer({
-    id: "cases-squares-3d",
-    type: "fill-extrusion",
-    source: "cases-squares",
-    filter: [">", ["get", "num_active"], 0],
-    layout: { visibility: "none" },
-    paint: {
-      "fill-extrusion-color": caseColourExpression(
-        "num_active",
-        currentCases.features
-      ),
-      "fill-extrusion-height": ["*", ["get", "num_active"], METRES_PER_CASE],
-      "fill-extrusion-height-transition": { duration: FADE_MS },
-      "fill-extrusion-opacity": 0,
-      "fill-extrusion-opacity-transition": { duration: FADE_MS },
+  map.addLayer(
+    {
+      id: "cases-squares-3d",
+      type: "fill-extrusion",
+      source: "cases-squares",
+      filter: [">", ["get", "num_active"], 0],
+      layout: { visibility: "none" },
+      paint: {
+        "fill-extrusion-color": caseColourExpression(
+          "num_active",
+          currentCases.features
+        ),
+        "fill-extrusion-height": ["*", ["get", "num_active"], METRES_PER_CASE],
+        "fill-extrusion-height-transition": { duration: FADE_MS },
+        "fill-extrusion-opacity": 0,
+        "fill-extrusion-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
+    labelId
+  );
 
-  map.addLayer({
-    id: "cases-hexes-3d",
-    type: "fill-extrusion",
-    source: "cases-hexes",
-    layout: { visibility: "none" },
-    paint: {
-      "fill-extrusion-color": caseColourExpression(
-        "estimate",
-        currentCaseHexes?.features ?? []
-      ),
-      "fill-extrusion-height": ["*", ["get", "estimate"], METRES_PER_CASE],
-      "fill-extrusion-height-transition": { duration: FADE_MS },
-      "fill-extrusion-opacity": 0,
-      "fill-extrusion-opacity-transition": { duration: FADE_MS },
+  map.addLayer(
+    {
+      id: "cases-hexes-3d",
+      type: "fill-extrusion",
+      source: "cases-hexes",
+      layout: { visibility: "none" },
+      paint: {
+        "fill-extrusion-color": caseColourExpression(
+          "estimate",
+          currentCaseHexes?.features ?? []
+        ),
+        "fill-extrusion-height": ["*", ["get", "estimate"], METRES_PER_CASE],
+        "fill-extrusion-height-transition": { duration: FADE_MS },
+        "fill-extrusion-opacity": 0,
+        "fill-extrusion-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
+    labelId
+  );
 
   map.addSource("voronoi", { type: "geojson", data: currentVoronoi });
-  map.addLayer({
-    id: "voronoi",
-    type: "line",
-    source: "voronoi",
-    layout: { visibility: "none" },
-    paint: {
-      "line-color": t.textMuted,
-      "line-width": 1,
-      "line-opacity": 0,
-      "line-opacity-transition": { duration: FADE_MS },
+  map.addLayer(
+    {
+      id: "voronoi",
+      type: "line",
+      source: "voronoi",
+      layout: { visibility: "none" },
+      paint: {
+        "line-color": t.textMuted,
+        "line-width": 1,
+        "line-opacity": 0,
+        "line-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
+    labelId
+  );
 
   map.addSource("vacant", { type: "geojson", data: currentVacant });
-  map.addLayer({
-    id: "vacant-fill",
-    type: "fill",
-    source: "vacant",
-    layout: { visibility: "none" },
-    paint: {
-      "fill-color": t.vacantFill,
-      "fill-opacity": 0,
-      "fill-opacity-transition": { duration: FADE_MS },
+  map.addLayer(
+    {
+      id: "vacant-fill",
+      type: "fill",
+      source: "vacant",
+      layout: { visibility: "none" },
+      paint: {
+        "fill-color": t.vacantFill,
+        "fill-opacity": 0,
+        "fill-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
-  map.addLayer({
-    id: "vacant-line",
-    type: "line",
-    source: "vacant",
-    layout: { visibility: "none" },
-    paint: {
-      "line-color": t.vacantLine,
-      "line-width": 2,
-      "line-opacity": 0,
-      "line-opacity-transition": { duration: FADE_MS },
+    labelId
+  );
+  map.addLayer(
+    {
+      id: "vacant-line",
+      type: "line",
+      source: "vacant",
+      layout: { visibility: "none" },
+      paint: {
+        "line-color": t.vacantLine,
+        "line-width": 2,
+        "line-opacity": 0,
+        "line-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
+    labelId
+  );
   map.addLayer({
     id: "vacant-selected",
     type: "line",
@@ -482,29 +519,35 @@ function addDataLayers() {
   });
 
   map.addSource("rzlt", { type: "geojson", data: currentRzlt });
-  map.addLayer({
-    id: "rzlt-fill",
-    type: "fill",
-    source: "rzlt",
-    layout: { visibility: "none" },
-    paint: {
-      "fill-color": rzltColourExpression(),
-      "fill-opacity": 0,
-      "fill-opacity-transition": { duration: FADE_MS },
+  map.addLayer(
+    {
+      id: "rzlt-fill",
+      type: "fill",
+      source: "rzlt",
+      layout: { visibility: "none" },
+      paint: {
+        "fill-color": rzltColourExpression(),
+        "fill-opacity": 0,
+        "fill-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
-  map.addLayer({
-    id: "rzlt-line",
-    type: "line",
-    source: "rzlt",
-    layout: { visibility: "none" },
-    paint: {
-      "line-color": rzltColourExpression(),
-      "line-width": 1.5,
-      "line-opacity": 0,
-      "line-opacity-transition": { duration: FADE_MS },
+    labelId
+  );
+  map.addLayer(
+    {
+      id: "rzlt-line",
+      type: "line",
+      source: "rzlt",
+      layout: { visibility: "none" },
+      paint: {
+        "line-color": rzltColourExpression(),
+        "line-width": 1.5,
+        "line-opacity": 0,
+        "line-opacity-transition": { duration: FADE_MS },
+      },
     },
-  });
+    labelId
+  );
   map.addLayer({
     id: "rzlt-selected",
     type: "line",
@@ -872,6 +915,8 @@ export function initMap() {
     style: basemapStyle(),
     center: DUBLIN_CENTRE,
     zoom: 11.4,
+    // The basemap TileJSON carries its own attribution, so the control needs
+    // no custom string.
     attributionControl: { compact: false },
   });
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }));
