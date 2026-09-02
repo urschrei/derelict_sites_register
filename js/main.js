@@ -242,8 +242,7 @@ function derelictHeaderLine() {
     .at(-1);
   return (
     `${allFeatures.length} sites on the register` +
-    (latest ? ` · register last amended ${latest}` : "") +
-    " · data refreshed twice daily"
+    (latest ? ` · last amended ${latest}` : "")
   );
 }
 
@@ -263,8 +262,7 @@ function rzltHeaderLine() {
   if (!meta) return "Loading register data…";
   return (
     `${meta.count} vacant or idle parcels on the RZLT map` +
-    (meta.latest ? ` · newest additions ${meta.latest.slice(0, 4)}` : "") +
-    " · data refreshed twice daily"
+    (meta.latest ? ` · newest additions ${meta.latest.slice(0, 4)}` : "")
   );
 }
 
