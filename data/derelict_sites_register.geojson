@@ -4090,7 +4090,7 @@
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
-        "is_owned_by_dublin_city_council": "Yes",
+        "is_owned_by_dublin_city_council": "No",
         "most_recent_update_date": "20/09/2026",
         "ref_site_master_uuid": "e8768140-5fd0-4e3d-b1cf-0b65e0287e8a",
         "site_location_latitude": 53.3679716,
