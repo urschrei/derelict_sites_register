@@ -7072,7 +7072,7 @@
       "id": 202,
       "properties": {
         "OID": 202,
-        "num_active": 3
+        "num_active": 2
       },
       "type": "Feature"
     },
@@ -7422,7 +7422,7 @@
       "id": 212,
       "properties": {
         "OID": 212,
-        "num_active": 2
+        "num_active": 3
       },
       "type": "Feature"
     },
