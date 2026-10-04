@@ -186,8 +186,9 @@ because the two datasets share no common key either.
   and a hash of the output.
 - **Scheduling.** The enrichment runs in its own weekly GitHub Actions
   workflow (`.github/workflows/enrich-rzlt.yml`), separate from the
-  stdlib-only twice-daily register refresh, with the HTTP cache persisted
-  between runs.
+  stdlib-only twice-daily register refresh. The HTTP cache is persisted
+  between runs within the same ISO week, so re-runs are cheap but each
+  week's scheduled run fetches fresh data.
 
 ## Outputs
 

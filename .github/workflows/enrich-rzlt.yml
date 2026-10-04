@@ -31,15 +31,20 @@ jobs:
       - name: Refresh RZLT parcels
         run: uv run python scripts/fetch_rzlt.py
 
-      # Persist the raw-response cache between runs so a transient upstream
-      # outage does not block the run and re-runs stay cheap.
+      # Cached responses never expire, so the cache is scoped to the ISO
+      # week: re-runs within a week stay cheap, and each weekly run fetches
+      # fresh upstream data rather than replaying an old cache.
+      - name: Compute cache week
+        id: week
+        run: echo "week=$(date -u +%G-W%V)" >> "$GITHUB_OUTPUT"
+
       - name: Restore enrichment cache
         uses: actions/cache@v6
         with:
           path: cache
-          key: rzlt-enrich-cache-${{ github.run_id }}
+          key: rzlt-enrich-cache-${{ steps.week.outputs.week }}-${{ github.run_id }}
           restore-keys: |
-            rzlt-enrich-cache-
+            rzlt-enrich-cache-${{ steps.week.outputs.week }}-
 
       - name: Enrich RZLT parcels
         run: uv run python scripts/enrich_rzlt.py
