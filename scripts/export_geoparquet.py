@@ -4,15 +4,22 @@ Each data/<name>.geojson is converted to data/<name>.parquet following the
 GeoParquet 1.1 specification: geometries are stored as WKB in a "geometry"
 column, the properties become typed columns (nested lists such as
 planning_applications become list<struct> columns rather than JSON strings),
-and the "geo" file metadata records the encoding, geometry types and bbox.
-The CRS is left unset, which GeoParquet defines as OGC:CRS84, matching the
-WGS84 longitude/latitude GeoJSON sources. The collection-level "metadata"
-member (attribution and licence) is carried over as file key-value metadata.
+and the "geo" file metadata records the encoding, geometry types, bbox, and
+CRS. The collection-level "metadata" member (attribution and licence) is
+carried over as file key-value metadata.
+
+Unlike GeoJSON, which RFC 7946 restricts to WGS84 longitude/latitude,
+GeoParquet can carry any CRS, so the geometries are projected to Irish
+Transverse Mercator (EPSG:2157), the national grid used by Tailte Eireann and
+the councils, giving analysts metres for areas, distances, and buffers. The
+transform treats WGS84 and IRENET95 (ETRS89) as coincident, as the sources'
+own servers do; it is a closed-form projection needing no grid files, so
+output is reproducible offline.
 
 Features keep their GeoJSON order and columns are sorted, so the output is
-deterministic for a given input and pinned pyarrow version.
+deterministic for a given input and pinned pyarrow and pyproj versions.
 
-Requires pyarrow and shapely (declared in pyproject.toml):
+Requires pyarrow, pyproj, and shapely (declared in pyproject.toml):
 
     uv run python scripts/export_geoparquet.py
 """
@@ -20,12 +27,17 @@ Requires pyarrow and shapely (declared in pyproject.toml):
 import json
 from pathlib import Path
 
+import numpy as np
 import pyarrow as pa
 import pyarrow.parquet as pq
 import shapely
+from pyproj import CRS, Transformer
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
+
+ITM = CRS.from_epsg(2157)
+TO_ITM = Transformer.from_crs(4326, ITM, always_xy=True)
 
 LAYERS = [
     "derelict_sites_register",
@@ -47,8 +59,9 @@ def to_table(collection: dict) -> pa.Table:
             column = column.cast(pa.string())
         columns[key] = column
 
-    geometries = shapely.from_geojson(
-        [json.dumps(feature["geometry"]) for feature in features]
+    geometries = shapely.transform(
+        shapely.from_geojson([json.dumps(feature["geometry"]) for feature in features]),
+        lambda coords: np.column_stack(TO_ITM.transform(coords[:, 0], coords[:, 1])),
     )
     columns["geometry"] = pa.array(shapely.to_wkb(geometries), type=pa.binary())
 
@@ -62,7 +75,8 @@ def to_table(collection: dict) -> pa.Table:
                 "geometry_types": sorted(
                     {feature["geometry"]["type"] for feature in features}
                 ),
-                "bbox": [round(v, 8) for v in shapely.total_bounds(geometries)],
+                "bbox": [round(v, 3) for v in shapely.total_bounds(geometries)],
+                "crs": ITM.to_json_dict(),
             }
         },
     }

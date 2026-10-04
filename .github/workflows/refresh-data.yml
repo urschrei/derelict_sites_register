@@ -24,8 +24,8 @@ jobs:
       - name: Fetch latest RZLT data
         run: python3 scripts/fetch_rzlt.py
 
-      # The fetch scripts are stdlib-only; the GeoParquet export needs pyarrow
-      # and shapely, so it runs under uv.
+      # The fetch scripts are stdlib-only; the GeoParquet export needs pyarrow,
+      # pyproj, and shapely, so it runs under uv.
       - name: Install uv
         uses: astral-sh/setup-uv@v8
         with:
