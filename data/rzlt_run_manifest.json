@@ -32,13 +32,13 @@
     "buildings": "ok",
     "ownership": "ok",
     "planning": "ok",
-    "valuation": "carried_forward"
+    "valuation": "ok"
   },
-  "output_sha256": "a030964e335d8077f4e593c8dee92090d0a2e9ecf549bafbbac44a1f54526336",
+  "output_sha256": "8494233976d809e3ca6cab62bce0d300090ae9933cb092a167ffbbd80ba0fb07",
   "parcels_in": 148,
   "parcels_out": 148,
   "planning_received_cutoff": "2016-01-01",
-  "run": "2026-10-04T07:53:31Z",
+  "run": "2026-10-04T08:12:52Z",
   "sources": {
     "buildings": {
       "fetched": 241916,
@@ -56,8 +56,10 @@
       "url": "https://services.arcgis.com/NzlPQPKn5QF9v2US/arcgis/rest/services/IrishPlanningApplications/FeatureServer/1/query"
     },
     "valuation": {
-      "fetched": 0,
-      "fetched_at": "2026-07-21T12:49:20Z",
+      "dropped_out_of_range": [
+        10029125
+      ],
+      "fetched": 19796,
       "url": "https://opendata.tailte.ie/api/Property/GetProperties"
     }
   }

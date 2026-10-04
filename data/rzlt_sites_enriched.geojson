@@ -589,7 +589,7 @@
         "site_area_ha": 0.126,
         "val_n_props": 1,
         "val_total_nav": 50000.0,
-        "val_uses": "-, PUB",
+        "val_uses": "PUB, -",
         "zone_desc": "To provide for and improve neighbourhood facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z3 - Neighbourhood Centres"
@@ -1183,7 +1183,7 @@
         "site_area_ha": 0.089,
         "val_n_props": 1,
         "val_total_nav": 110000.0,
-        "val_uses": "-, PUB",
+        "val_uses": "PUB, -",
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -1955,7 +1955,7 @@
         "site_area_ha": 3.197,
         "val_n_props": 3,
         "val_total_nav": 202950.0,
-        "val_uses": "-, OPTICIAN; -, PHARMACY; -, SUPERMARKET 2 [500-2500 SQ. M.]",
+        "val_uses": "-, PHARMACY; -, SUPERMARKET 2 [500-2500 SQ. M.]; OPTICIAN, -",
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -3123,7 +3123,7 @@
         "site_area_ha": 0.155,
         "val_n_props": 2,
         "val_total_nav": 48250.0,
-        "val_uses": "-, MOTOR SHOWROOM; YARD, MOTOR SHOWROOM",
+        "val_uses": "-, MOTOR SHOWROOM; MOTOR SHOWROOM, YARD",
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -4628,7 +4628,7 @@
         "site_area_ha": 0.07,
         "val_n_props": 2,
         "val_total_nav": 3770.0,
-        "val_uses": "-, YARD; CAR PARK (OFFICE), -",
+        "val_uses": "-, CAR PARK (OFFICE); -, YARD",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -5259,7 +5259,7 @@
         "site_area_ha": 0.1,
         "val_n_props": 1,
         "val_total_nav": 1120.0,
-        "val_uses": "-, RIGHT OF TRADING",
+        "val_uses": "RIGHT OF TRADING, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -14941,7 +14941,7 @@
         "site_area_ha": 1.57,
         "val_n_props": 32,
         "val_total_nav": 768260.0,
-        "val_uses": "-, WAREHOUSE; -, WORKSHOP; BAKERY, OFFICE; STORE, OFFICE; WAREHOUSE, OFFICE",
+        "val_uses": "-, WAREHOUSE; -, WORKSHOP; OFFICE, BAKERY; STORE, OFFICE; WAREHOUSE, OFFICE",
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -17439,7 +17439,7 @@
         "site_area_ha": 0.053,
         "val_n_props": 1,
         "val_total_nav": 40000.0,
-        "val_uses": "CAR PARK (SURFACE), -",
+        "val_uses": "-, CAR PARK (SURFACE)",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -17582,7 +17582,7 @@
         "site_area_ha": 0.155,
         "val_n_props": 1,
         "val_total_nav": 85000.0,
-        "val_uses": "CAR PARK (SURFACE), -",
+        "val_uses": "-, CAR PARK (SURFACE)",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -19557,7 +19557,7 @@
         "site_area_ha": 0.176,
         "val_n_props": 2,
         "val_total_nav": 32690.0,
-        "val_uses": "-, MOTOR ACCESSORIES; -, WORKSHOP",
+        "val_uses": "-, WORKSHOP; MOTOR ACCESSORIES, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -21279,9 +21279,9 @@
           }
         ],
         "site_area_ha": 2.456,
-        "val_n_props": 6,
-        "val_total_nav": 23640.0,
-        "val_uses": "-, BUTCHER; -, NEWSAGENT; -, PHARMACY; DRY CLEANERS / LAUNDERETTE, -; STORE, -",
+        "val_n_props": 0,
+        "val_total_nav": null,
+        "val_uses": null,
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -24224,7 +24224,7 @@
         "site_area_ha": 0.212,
         "val_n_props": 2,
         "val_total_nav": 61760.0,
-        "val_uses": "-, PUB; ADVERTISING STATION, SHEET 48",
+        "val_uses": "ADVERTISING STATION, SHEET 48; PUB, -",
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -26893,7 +26893,7 @@
         "site_area_ha": 0.05,
         "val_n_props": 3,
         "val_total_nav": 62600.0,
-        "val_uses": "-, GARAGE; -, OFFICE (OWN DOOR); -, SHOP",
+        "val_uses": "-, GARAGE; -, OFFICE (OWN DOOR); SHOP, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -27233,7 +27233,7 @@
         "site_area_ha": 0.029,
         "val_n_props": 2,
         "val_total_nav": 10280.0,
-        "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN); -, SHOP",
+        "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN); SHOP, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28397,7 +28397,7 @@
         "site_area_ha": 0.062,
         "val_n_props": 3,
         "val_total_nav": 45160.0,
-        "val_uses": "-, FURNISHINGS; -, HAIRDRESSING SALON",
+        "val_uses": "FURNISHINGS, -; HAIRDRESSING SALON, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28612,7 +28612,7 @@
         "site_area_ha": 0.153,
         "val_n_props": 1,
         "val_total_nav": 10320.0,
-        "val_uses": "SURGERY, -",
+        "val_uses": "-, SURGERY",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28735,7 +28735,7 @@
         "site_area_ha": 0.119,
         "val_n_props": 5,
         "val_total_nav": 91320.0,
-        "val_uses": "-, SHOP; -, WAREHOUSE CASH &CARRY; STORE, -; STORE, OFFICE",
+        "val_uses": "SHOP, -; STORE, -; STORE, OFFICE; WAREHOUSE CASH &CARRY, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28852,7 +28852,7 @@
         "site_area_ha": 0.031,
         "val_n_props": 1,
         "val_total_nav": 13870.0,
-        "val_uses": "-, CONVENIENCE STORE [<200 SQ. M.]",
+        "val_uses": "CONVENIENCE STORE [<200 SQ. M.], -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -29087,7 +29087,7 @@
         "site_area_ha": 0.009,
         "val_n_props": 4,
         "val_total_nav": 20050.0,
-        "val_uses": "-, OFFICE (OVER THE SHOP); -, SHOP; STORE, OFFICE (OVER THE SHOP)",
+        "val_uses": "-, OFFICE (OVER THE SHOP); SHOP, -; STORE, OFFICE (OVER THE SHOP)",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30223,7 +30223,7 @@
         "site_area_ha": 0.026,
         "val_n_props": 1,
         "val_total_nav": 6470.0,
-        "val_uses": "SURGERY, -",
+        "val_uses": "-, SURGERY",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30605,7 +30605,7 @@
         "site_area_ha": 0.02,
         "val_n_props": 2,
         "val_total_nav": 35920.0,
-        "val_uses": "-, CAFE; STORE",
+        "val_uses": "CAFE, -; STORE",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30689,7 +30689,7 @@
         "site_area_ha": 0.01,
         "val_n_props": 1,
         "val_total_nav": 12340.0,
-        "val_uses": "-, CAFE",
+        "val_uses": "CAFE, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30888,7 +30888,7 @@
         "site_area_ha": 0.028,
         "val_n_props": 1,
         "val_total_nav": 6170.0,
-        "val_uses": "-, SHOP",
+        "val_uses": "SHOP, -",
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30977,7 +30977,7 @@
         "site_area_ha": 0.024,
         "val_n_props": 1,
         "val_total_nav": 40000.0,
-        "val_uses": "-, PUB",
+        "val_uses": "PUB, -",
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31136,7 +31136,7 @@
         "site_area_ha": 0.087,
         "val_n_props": 2,
         "val_total_nav": 142700.0,
-        "val_uses": "-, PUB; RESTAURANT, OFFICE (OVER THE SHOP)",
+        "val_uses": "OFFICE (OVER THE SHOP), RESTAURANT; PUB, -",
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31636,7 +31636,7 @@
         "site_area_ha": 0.045,
         "val_n_props": 2,
         "val_total_nav": 187900.0,
-        "val_uses": "-, PUB; OFFICE (OVER THE SHOP), RESTAURANT",
+        "val_uses": "OFFICE (OVER THE SHOP), RESTAURANT; PUB, -",
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
