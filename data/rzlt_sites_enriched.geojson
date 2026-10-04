@@ -484,8 +484,10 @@
         "planning_applications": [],
         "site_area_ha": 1.921,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -588,8 +590,20 @@
         "planning_applications": [],
         "site_area_ha": 0.126,
         "val_n_props": 1,
+        "val_property_numbers": "665662",
         "val_total_nav": 50000.0,
         "val_uses": "PUB, -",
+        "valuation_properties": [
+          {
+            "address": "2A FAUSSAGH AVENUE, DUBLIN 7",
+            "category": "HOSPITALITY",
+            "nav": 50000,
+            "property_number": 665662,
+            "publication_date": "2013-12-31",
+            "uses": "PUB, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve neighbourhood facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z3 - Neighbourhood Centres"
@@ -1029,8 +1043,10 @@
         ],
         "site_area_ha": 0.393,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve neighbourhood facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z3 - Neighbourhood Centres"
@@ -1182,8 +1198,20 @@
         ],
         "site_area_ha": 0.089,
         "val_n_props": 1,
+        "val_property_numbers": "714401",
         "val_total_nav": 110000.0,
         "val_uses": "PUB, -",
+        "valuation_properties": [
+          {
+            "address": "59 60 62 MAIN STREET FINGLAS, DUBLIN 11",
+            "category": "HOSPITALITY",
+            "nav": 110000,
+            "property_number": 714401,
+            "publication_date": "2013-12-31",
+            "uses": "PUB, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -1353,8 +1381,10 @@
         ],
         "site_area_ha": 0.053,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -1502,8 +1532,10 @@
         ],
         "site_area_ha": 0.131,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -1954,8 +1986,38 @@
         "planning_applications": [],
         "site_area_ha": 3.197,
         "val_n_props": 3,
+        "val_property_numbers": "2177800; 2177801; 2211053",
         "val_total_nav": 202950.0,
         "val_uses": "-, PHARMACY; -, SUPERMARKET 2 [500-2500 SQ. M.]; OPTICIAN, -",
+        "valuation_properties": [
+          {
+            "address": "Supermarket, Unit 1-7 College View Road, Main Street, Dublin 9",
+            "category": "RETAIL (SHOPS)",
+            "nav": 160500,
+            "property_number": 2177800,
+            "publication_date": "2014-08-08",
+            "uses": "-, SUPERMARKET 2 [500-2500 SQ. M.]",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 8 College View Road, Ballymun, Dublin 9",
+            "category": "RETAIL (SHOPS)",
+            "nav": 32100,
+            "property_number": 2177801,
+            "publication_date": "2013-12-31",
+            "uses": "-, PHARMACY",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "UNIT 2 GATEWAY CRESCENT,, BALLYMUN,, DUBLIN 11.",
+            "category": "RETAIL (SHOPS)",
+            "nav": 10350,
+            "property_number": 2211053,
+            "publication_date": "2013-12-31",
+            "uses": "OPTICIAN, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -2532,8 +2594,10 @@
         "planning_applications": [],
         "site_area_ha": 1.412,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -2732,8 +2796,20 @@
         "planning_applications": [],
         "site_area_ha": 0.67,
         "val_n_props": 1,
+        "val_property_numbers": "10032870",
         "val_total_nav": 5450.0,
         "val_uses": "SHEET 20 METROPOLE",
+        "valuation_properties": [
+          {
+            "address": "The Hampton, Santry Cross, Dublin 11",
+            "category": "MISCELLANEOUS",
+            "nav": 5450,
+            "property_number": 10032870,
+            "publication_date": "2025-06-07",
+            "uses": "SHEET 20 METROPOLE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -2861,8 +2937,10 @@
         ],
         "site_area_ha": 0.143,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -3122,8 +3200,29 @@
         ],
         "site_area_ha": 0.155,
         "val_n_props": 2,
+        "val_property_numbers": "2202889; 747081",
         "val_total_nav": 48250.0,
         "val_uses": "-, MOTOR SHOWROOM; MOTOR SHOWROOM, YARD",
+        "valuation_properties": [
+          {
+            "address": "84-88/1 Dorset Street Lower, Dublin 1",
+            "category": "RETAIL (WAREHOUSE)",
+            "nav": 12650,
+            "property_number": 2202889,
+            "publication_date": "2013-12-31",
+            "uses": "-, MOTOR SHOWROOM",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "84-88 Dorset Street Lower, Dublin 1",
+            "category": "RETAIL (WAREHOUSE)",
+            "nav": 35600,
+            "property_number": 747081,
+            "publication_date": "2013-12-31",
+            "uses": "MOTOR SHOWROOM, YARD",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -3334,8 +3433,10 @@
         "planning_applications": [],
         "site_area_ha": 0.332,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -3642,8 +3743,20 @@
         "planning_applications": [],
         "site_area_ha": 0.299,
         "val_n_props": 1,
+        "val_property_numbers": "794569",
         "val_total_nav": 5580.0,
         "val_uses": "-, WORKSHOP",
+        "valuation_properties": [
+          {
+            "address": "42B DOLPHINS BARN STREET, DUBLIN 8",
+            "category": "INDUSTRIAL USES",
+            "nav": 5580,
+            "property_number": 794569,
+            "publication_date": "2013-12-31",
+            "uses": "-, WORKSHOP",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -3821,8 +3934,10 @@
         ],
         "site_area_ha": 0.123,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -3978,8 +4093,10 @@
         ],
         "site_area_ha": 0.161,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -4157,8 +4274,20 @@
         ],
         "site_area_ha": 0.073,
         "val_n_props": 1,
+        "val_property_numbers": "802762",
         "val_total_nav": 10650.0,
         "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN)",
+        "valuation_properties": [
+          {
+            "address": "Level 0,1,2 No. 10 Ardee Steet (part of), Dublin 8",
+            "category": "OFFICE",
+            "nav": 10650,
+            "property_number": 802762,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (GEORGIAN / VICTORIAN)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -4253,8 +4382,10 @@
         "planning_applications": [],
         "site_area_ha": 0.641,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -4414,8 +4545,20 @@
         ],
         "site_area_ha": 0.26,
         "val_n_props": 1,
+        "val_property_numbers": "603684",
         "val_total_nav": 54700.0,
         "val_uses": "-, BANK",
+        "valuation_properties": [
+          {
+            "address": "177A Drimnagh Road, Drimnagh, Dublin 12",
+            "category": "RETAIL (SHOPS)",
+            "nav": 54700,
+            "property_number": 603684,
+            "publication_date": "2013-12-31",
+            "uses": "-, BANK",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -4498,8 +4641,20 @@
         "planning_applications": [],
         "site_area_ha": 0.214,
         "val_n_props": 1,
+        "val_property_numbers": "810783",
         "val_total_nav": 46400.0,
         "val_uses": "-, WAREHOUSE",
+        "valuation_properties": [
+          {
+            "address": "OFFS WORKSHOP STORES YD,, PT 48A MOUNT PLEASANT AVE UP,, DUBLIN 6.",
+            "category": "INDUSTRIAL USES",
+            "nav": 46400,
+            "property_number": 810783,
+            "publication_date": "2013-12-31",
+            "uses": "-, WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -4627,8 +4782,29 @@
         ],
         "site_area_ha": 0.07,
         "val_n_props": 2,
+        "val_property_numbers": "731583; 731584",
         "val_total_nav": 3770.0,
         "val_uses": "-, CAR PARK (OFFICE); -, YARD",
+        "valuation_properties": [
+          {
+            "address": "Car Park, 146 Abbey Street Upper, Dublin 1",
+            "category": "MISCELLANEOUS",
+            "nav": 1820,
+            "property_number": 731583,
+            "publication_date": "2013-12-31",
+            "uses": "-, CAR PARK (OFFICE)",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Yard, 145 Abbey Street Upper, Dublin 1",
+            "category": "INDUSTRIAL USES",
+            "nav": 1950,
+            "property_number": 731584,
+            "publication_date": "2013-12-31",
+            "uses": "-, YARD",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -4828,8 +5004,10 @@
         ],
         "site_area_ha": 0.232,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -5099,8 +5277,10 @@
         ],
         "site_area_ha": 0.194,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -5258,8 +5438,20 @@
         ],
         "site_area_ha": 0.1,
         "val_n_props": 1,
+        "val_property_numbers": "732426",
         "val_total_nav": 1120.0,
         "val_uses": "RIGHT OF TRADING, -",
+        "valuation_properties": [
+          {
+            "address": "RIGHT OF STREET TRADING (E1), MARLBOROUGH STREET, DUBLIN 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 1120,
+            "property_number": 732426,
+            "publication_date": "2013-12-31",
+            "uses": "RIGHT OF TRADING, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -5459,8 +5651,10 @@
         ],
         "site_area_ha": 0.217,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -5870,8 +6064,29 @@
         ],
         "site_area_ha": 0.698,
         "val_n_props": 2,
+        "val_property_numbers": "2176482; 795179",
         "val_total_nav": 151700.0,
         "val_uses": "-, WAREHOUSE; DEMOLISHED / INCAPABLE OF USE",
+        "valuation_properties": [
+          {
+            "address": "17 Thomas Street West, Dublin 8, Dublin",
+            "category": "NON-LIST",
+            "nav": 0,
+            "property_number": 2176482,
+            "publication_date": "2024-11-11",
+            "uses": "DEMOLISHED / INCAPABLE OF USE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "10,13B-16A.18C.THOMAS ST,, INC 1-12 RAINSFORD ST., DUBLIN 8",
+            "category": "INDUSTRIAL USES",
+            "nav": 151700,
+            "property_number": 795179,
+            "publication_date": "2013-12-31",
+            "uses": "-, WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -5962,8 +6177,10 @@
         "planning_applications": [],
         "site_area_ha": 0.302,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -6071,8 +6288,10 @@
         ],
         "site_area_ha": 0.077,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -6172,8 +6391,10 @@
         ],
         "site_area_ha": 0.066,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -6661,8 +6882,10 @@
         ],
         "site_area_ha": 0.481,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -6977,8 +7200,10 @@
         "planning_applications": [],
         "site_area_ha": 0.479,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -7128,8 +7353,10 @@
         ],
         "site_area_ha": 0.105,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -7244,8 +7471,10 @@
         "planning_applications": [],
         "site_area_ha": 0.227,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -7356,8 +7585,10 @@
         "planning_applications": [],
         "site_area_ha": 0.081,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -7475,8 +7706,10 @@
         ],
         "site_area_ha": 0.055,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -7594,8 +7827,10 @@
         ],
         "site_area_ha": 0.149,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -7718,8 +7953,10 @@
         "planning_applications": [],
         "site_area_ha": 0.319,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -8080,8 +8317,10 @@
         "planning_applications": [],
         "site_area_ha": 0.861,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -8408,8 +8647,10 @@
         "planning_applications": [],
         "site_area_ha": 0.868,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -9461,8 +9702,10 @@
         ],
         "site_area_ha": 5.532,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -9809,8 +10052,10 @@
         "planning_applications": [],
         "site_area_ha": 2.527,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -9906,8 +10151,10 @@
         ],
         "site_area_ha": 0.409,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -10297,8 +10544,10 @@
         ],
         "site_area_ha": 3.091,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -10453,8 +10702,10 @@
         "planning_applications": [],
         "site_area_ha": 0.225,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -10541,8 +10792,10 @@
         "planning_applications": [],
         "site_area_ha": 0.252,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -10713,8 +10966,10 @@
         "planning_applications": [],
         "site_area_ha": 0.235,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -10912,8 +11167,10 @@
         ],
         "site_area_ha": 0.792,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -11160,8 +11417,10 @@
         "planning_applications": [],
         "site_area_ha": 1.41,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -11424,8 +11683,10 @@
         "planning_applications": [],
         "site_area_ha": 3.617,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -11994,8 +12255,10 @@
         "planning_applications": [],
         "site_area_ha": 5.745,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -12174,8 +12437,10 @@
         "planning_applications": [],
         "site_area_ha": 1.303,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -12610,8 +12875,10 @@
         "planning_applications": [],
         "site_area_ha": 10.699,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -12782,8 +13049,10 @@
         "planning_applications": [],
         "site_area_ha": 0.767,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -12929,8 +13198,10 @@
         ],
         "site_area_ha": 0.689,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -13434,8 +13705,10 @@
         ],
         "site_area_ha": 4.712,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -13789,8 +14062,10 @@
         ],
         "site_area_ha": 0.134,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -14138,8 +14413,10 @@
         ],
         "site_area_ha": 1.143,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -14269,8 +14546,10 @@
         ],
         "site_area_ha": 0.465,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -14628,8 +14907,10 @@
         ],
         "site_area_ha": 3.591,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -14940,8 +15221,299 @@
         "planning_applications": [],
         "site_area_ha": 1.57,
         "val_n_props": 32,
+        "val_property_numbers": "2174388; 2174389; 2174390; 2174391; 2174392; 2174393; 2174394; 2174395; 2174396; 2174397; 2174399; 2174401; 2174402; 2174404; 2174406; 2174408; 2174413; 2174414; 2174415; 2174416; 2174417; 2174418; 2174419; 2174420; 2174421; 2174423; 2174424; 2174425; 2174426; 2174435; 2174436; 5027182",
         "val_total_nav": 768260.0,
         "val_uses": "-, WAREHOUSE; -, WORKSHOP; OFFICE, BAKERY; STORE, OFFICE; WAREHOUSE, OFFICE",
+        "valuation_properties": [
+          {
+            "address": "Unit 5/1 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 17890,
+            "property_number": 2174388,
+            "publication_date": "2013-12-31",
+            "uses": "-, WORKSHOP",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 5/2 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 17420,
+            "property_number": 2174389,
+            "publication_date": "2013-12-31",
+            "uses": "STORE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 6 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 37700,
+            "property_number": 2174390,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 7 Finglas Business Centre, Jamestown Road, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 25400,
+            "property_number": 2174391,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 8 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 27600,
+            "property_number": 2174392,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 9 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 25400,
+            "property_number": 2174393,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 10, Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 25400,
+            "property_number": 2174394,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 11 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 34900,
+            "property_number": 2174395,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 12 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 28500,
+            "property_number": 2174396,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 13 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 17370,
+            "property_number": 2174397,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 14 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 17370,
+            "property_number": 2174399,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 15 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 24700,
+            "property_number": 2174401,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 16 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 26000,
+            "property_number": 2174402,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 17 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 30200,
+            "property_number": 2174404,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 18 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 17270,
+            "property_number": 2174406,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 19 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 25200,
+            "property_number": 2174408,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 20 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 20400,
+            "property_number": 2174413,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 21 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 30400,
+            "property_number": 2174414,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 22 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 33300,
+            "property_number": 2174415,
+            "publication_date": "2013-12-31",
+            "uses": "OFFICE, BAKERY",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 23 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 22400,
+            "property_number": 2174416,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 24 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 16350,
+            "property_number": 2174417,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 25 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 20700,
+            "property_number": 2174418,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 26 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 27300,
+            "property_number": 2174419,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 27 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 14990,
+            "property_number": 2174420,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 28 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 19600,
+            "property_number": 2174421,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 30 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 16050,
+            "property_number": 2174423,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 31 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 25100,
+            "property_number": 2174424,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 32,33,34 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 60200,
+            "property_number": 2174425,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 35, Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 23600,
+            "property_number": 2174426,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 36 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 11160,
+            "property_number": 2174435,
+            "publication_date": "2023-01-13",
+            "uses": "-, WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 37 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 21800,
+            "property_number": 2174436,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Unit 36 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
+            "category": "INDUSTRIAL USES",
+            "nav": 6590,
+            "property_number": 5027182,
+            "publication_date": "2023-01-13",
+            "uses": "STORE, OFFICE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -15699,8 +16271,10 @@
         ],
         "site_area_ha": 1.46,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -15946,8 +16520,10 @@
         ],
         "site_area_ha": 1.079,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -16257,8 +16833,10 @@
         ],
         "site_area_ha": 0.447,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -16396,8 +16974,10 @@
         ],
         "site_area_ha": 0.061,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -16537,8 +17117,20 @@
         ],
         "site_area_ha": 0.077,
         "val_n_props": 1,
+        "val_property_numbers": "802551",
         "val_total_nav": 18150.0,
         "val_uses": "-, WORKSHOP",
+        "valuation_properties": [
+          {
+            "address": "5-10 VICAR STREET, DUBLIN 8",
+            "category": "INDUSTRIAL USES",
+            "nav": 18150,
+            "property_number": 802551,
+            "publication_date": "2013-12-31",
+            "uses": "-, WORKSHOP",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -16700,8 +17292,47 @@
         ],
         "site_area_ha": 0.155,
         "val_n_props": 4,
+        "val_property_numbers": "856184; 856185; 856186; 856189",
         "val_total_nav": 77460.0,
         "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN); -, POST OFFICE",
+        "valuation_properties": [
+          {
+            "address": "Shop (Pt)(Gr Fl), 12 Ormond Quay Upper, Dublin 7",
+            "category": "RETAIL (SHOPS)",
+            "nav": 10770,
+            "property_number": 856184,
+            "publication_date": "2013-12-31",
+            "uses": "-, POST OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Offices Stores (Pt Gr Rear, Bsmt), 12 Ormond Quay Upper, Dublin 7",
+            "category": "OFFICE",
+            "nav": 34900,
+            "property_number": 856185,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (GEORGIAN / VICTORIAN)",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Offices 1st Flr, 12 Ormond Quay Upper, Dublin 7",
+            "category": "OFFICE",
+            "nav": 6890,
+            "property_number": 856186,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (GEORGIAN / VICTORIAN)",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Offices Caretakers Rms Mo Ho Yd, 13 Ormond Quay Upper, Dublin 7",
+            "category": "OFFICE",
+            "nav": 24900,
+            "property_number": 856189,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (GEORGIAN / VICTORIAN)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -17024,8 +17655,10 @@
         "planning_applications": [],
         "site_area_ha": 0.484,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -17347,8 +17980,10 @@
         ],
         "site_area_ha": 0.322,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -17438,8 +18073,20 @@
         ],
         "site_area_ha": 0.053,
         "val_n_props": 1,
+        "val_property_numbers": "2135265",
         "val_total_nav": 40000.0,
         "val_uses": "-, CAR PARK (SURFACE)",
+        "valuation_properties": [
+          {
+            "address": "Carspaces, 100-101 Amien Street, Dublin 1",
+            "category": "MISCELLANEOUS",
+            "nav": 40000,
+            "property_number": 2135265,
+            "publication_date": "2013-12-31",
+            "uses": "-, CAR PARK (SURFACE)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -17581,8 +18228,20 @@
         ],
         "site_area_ha": 0.155,
         "val_n_props": 1,
+        "val_property_numbers": "836588",
         "val_total_nav": 85000.0,
         "val_uses": "-, CAR PARK (SURFACE)",
+        "valuation_properties": [
+          {
+            "address": "5-6 CITY QUAY, DUBLIN 2",
+            "category": "MISCELLANEOUS",
+            "nav": 85000,
+            "property_number": 836588,
+            "publication_date": "2013-12-31",
+            "uses": "-, CAR PARK (SURFACE)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -17736,8 +18395,10 @@
         ],
         "site_area_ha": 0.007,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -17885,8 +18546,10 @@
         ],
         "site_area_ha": 0.038,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -18004,8 +18667,10 @@
         ],
         "site_area_ha": 0.043,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -18108,8 +18773,10 @@
         "planning_applications": [],
         "site_area_ha": 0.044,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -18227,8 +18894,10 @@
         ],
         "site_area_ha": 0.024,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -18399,8 +19068,10 @@
         "planning_applications": [],
         "site_area_ha": 0.028,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -18556,8 +19227,10 @@
         ],
         "site_area_ha": 0.018,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -18677,8 +19350,10 @@
         ],
         "site_area_ha": 0.031,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -18824,8 +19499,10 @@
         ],
         "site_area_ha": 0.044,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -19139,8 +19816,10 @@
         ],
         "site_area_ha": 1.924,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -19267,8 +19946,10 @@
         "planning_applications": [],
         "site_area_ha": 0.286,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -19556,8 +20237,29 @@
         ],
         "site_area_ha": 0.176,
         "val_n_props": 2,
+        "val_property_numbers": "854075; 854078",
         "val_total_nav": 32690.0,
         "val_uses": "-, WORKSHOP; MOTOR ACCESSORIES, -",
+        "valuation_properties": [
+          {
+            "address": "11 USHER'S ISLAND, DUBLIN 8",
+            "category": "RETAIL (SHOPS)",
+            "nav": 17670,
+            "property_number": 854075,
+            "publication_date": "2014-08-08",
+            "uses": "MOTOR ACCESSORIES, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "REAR 14 USHERS ISLAND, DUBLIN 8",
+            "category": "INDUSTRIAL USES",
+            "nav": 15020,
+            "property_number": 854078,
+            "publication_date": "2015-06-12",
+            "uses": "-, WORKSHOP",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -19681,8 +20383,10 @@
         ],
         "site_area_ha": 0.058,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -19826,8 +20530,10 @@
         ],
         "site_area_ha": 0.18,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -19946,8 +20652,10 @@
         "planning_applications": [],
         "site_area_ha": 0.243,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -20097,8 +20805,10 @@
         ],
         "site_area_ha": 0.067,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -21280,8 +21990,10 @@
         ],
         "site_area_ha": 2.456,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -21447,8 +22159,10 @@
         ],
         "site_area_ha": 1.61,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -21644,8 +22358,20 @@
         ],
         "site_area_ha": 0.346,
         "val_n_props": 1,
+        "val_property_numbers": "732792",
         "val_total_nav": 114600.0,
         "val_uses": "-, WAREHOUSE",
+        "valuation_properties": [
+          {
+            "address": "Parkgate House, 42 Parkgate Street, Dublin 8",
+            "category": "INDUSTRIAL USES",
+            "nav": 114600,
+            "property_number": 732792,
+            "publication_date": "2013-12-31",
+            "uses": "-, WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -21871,8 +22597,10 @@
         ],
         "site_area_ha": 0.293,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -22014,8 +22742,10 @@
         ],
         "site_area_ha": 0.185,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -22094,8 +22824,10 @@
         "planning_applications": [],
         "site_area_ha": 0.056,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -22190,8 +22922,10 @@
         "planning_applications": [],
         "site_area_ha": 0.033,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -22325,8 +23059,10 @@
         ],
         "site_area_ha": 0.209,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -22542,8 +23278,10 @@
         ],
         "site_area_ha": 0.408,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -22726,8 +23464,10 @@
         "planning_applications": [],
         "site_area_ha": 0.114,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -22838,8 +23578,10 @@
         "planning_applications": [],
         "site_area_ha": 0.051,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -23271,8 +24013,10 @@
         ],
         "site_area_ha": 1.388,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -23366,8 +24110,20 @@
         ],
         "site_area_ha": 0.047,
         "val_n_props": 1,
+        "val_property_numbers": "854109",
         "val_total_nav": 3580.0,
         "val_uses": "-, YARD (STANDALONE)",
+        "valuation_properties": [
+          {
+            "address": "42 BRIDGEFOOT STREET, DUBLIN 8",
+            "category": "INDUSTRIAL USES",
+            "nav": 3580,
+            "property_number": 854109,
+            "publication_date": "2013-12-31",
+            "uses": "-, YARD (STANDALONE)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -23503,8 +24259,20 @@
         ],
         "site_area_ha": 0.064,
         "val_n_props": 1,
+        "val_property_numbers": "672899",
         "val_total_nav": 9250.0,
         "val_uses": "-, WORKSHOP",
+        "valuation_properties": [
+          {
+            "address": "60-61 KING STREET NORTH, DUBLIN 7",
+            "category": "INDUSTRIAL USES",
+            "nav": 9250,
+            "property_number": 672899,
+            "publication_date": "2013-12-31",
+            "uses": "-, WORKSHOP",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -23587,8 +24355,20 @@
         "planning_applications": [],
         "site_area_ha": 0.053,
         "val_n_props": 1,
+        "val_property_numbers": "771946",
         "val_total_nav": 5530.0,
         "val_uses": "ADVERTISING STATION, SHEET 48",
+        "valuation_properties": [
+          {
+            "address": "24A Summerhill Parade, Dublin 1",
+            "category": "MISCELLANEOUS",
+            "nav": 5530,
+            "property_number": 771946,
+            "publication_date": "2014-08-08",
+            "uses": "ADVERTISING STATION, SHEET 48",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -23683,8 +24463,10 @@
         "planning_applications": [],
         "site_area_ha": 0.043,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -23799,8 +24581,10 @@
         "planning_applications": [],
         "site_area_ha": 0.012,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -23920,8 +24704,10 @@
         ],
         "site_area_ha": 0.02,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -24223,8 +25009,29 @@
         ],
         "site_area_ha": 0.212,
         "val_n_props": 2,
+        "val_property_numbers": "815393; 815397",
         "val_total_nav": 61760.0,
         "val_uses": "ADVERTISING STATION, SHEET 48; PUB, -",
+        "valuation_properties": [
+          {
+            "address": "8-9 Richmond Street South, Dublin 2, DUBLIN 2",
+            "category": "MISCELLANEOUS",
+            "nav": 1760,
+            "property_number": 815393,
+            "publication_date": "2013-12-31",
+            "uses": "ADVERTISING STATION, SHEET 48",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "LICENSED SHOP, 11,12 RICHMOND STREET SOUTH, DUBLIN 2",
+            "category": "HOSPITALITY",
+            "nav": 60000,
+            "property_number": 815397,
+            "publication_date": "2013-12-31",
+            "uses": "PUB, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -24427,8 +25234,10 @@
         "planning_applications": [],
         "site_area_ha": 0.338,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -25996,8 +26805,10 @@
         ],
         "site_area_ha": 3.474,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
@@ -26145,8 +26956,10 @@
         ],
         "site_area_ha": 0.831,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -26326,8 +27139,10 @@
         ],
         "site_area_ha": 0.109,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -26531,8 +27346,20 @@
         ],
         "site_area_ha": 0.031,
         "val_n_props": 1,
+        "val_property_numbers": "856213",
         "val_total_nav": 1250.0,
         "val_uses": "STORE, -",
+        "valuation_properties": [
+          {
+            "address": "STORES, 6B PARNELL STREET, DUBLIN 1",
+            "category": "INDUSTRIAL USES",
+            "nav": 1250,
+            "property_number": 856213,
+            "publication_date": "2013-12-31",
+            "uses": "STORE, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -26702,8 +27529,10 @@
         ],
         "site_area_ha": 0.032,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -26773,8 +27602,10 @@
         ],
         "site_area_ha": 0.018,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -26892,8 +27723,38 @@
         ],
         "site_area_ha": 0.05,
         "val_n_props": 3,
+        "val_property_numbers": "837474; 837475; 837476",
         "val_total_nav": 62600.0,
         "val_uses": "-, GARAGE; -, OFFICE (OWN DOOR); SHOP, -",
+        "valuation_properties": [
+          {
+            "address": "18-19 LOMBARD ST EAST,, DUBLIN 2.",
+            "category": "INDUSTRIAL USES",
+            "nav": 20400,
+            "property_number": 837474,
+            "publication_date": "2013-12-31",
+            "uses": "-, GARAGE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "19A LOMBARD ST EAST,, DUBLIN 2.",
+            "category": "OFFICE",
+            "nav": 10800,
+            "property_number": 837475,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (OWN DOOR)",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "20 LOMBARD ST EAST,, DUBLIN 2.",
+            "category": "RETAIL (SHOPS)",
+            "nav": 31400,
+            "property_number": 837476,
+            "publication_date": "2013-12-31",
+            "uses": "SHOP, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -27097,8 +27958,29 @@
         ],
         "site_area_ha": 0.156,
         "val_n_props": 2,
+        "val_property_numbers": "10034479; 10034480",
         "val_total_nav": 25620.0,
         "val_uses": "SHOP",
+        "valuation_properties": [
+          {
+            "address": "Level -1, 0, 95 Marlborough Street, Dublin 1, Dublin",
+            "category": "RETAIL (SHOPS)",
+            "nav": 13080,
+            "property_number": 10034479,
+            "publication_date": "2025-12-08",
+            "uses": "SHOP",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Level -1, 0, 94 Marlborough Street, Dublin 1, Dublin",
+            "category": "RETAIL (SHOPS)",
+            "nav": 12540,
+            "property_number": 10034480,
+            "publication_date": "2025-12-08",
+            "uses": "SHOP",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -27232,8 +28114,29 @@
         ],
         "site_area_ha": 0.029,
         "val_n_props": 2,
+        "val_property_numbers": "732154; 732155",
         "val_total_nav": 10280.0,
         "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN); SHOP, -",
+        "valuation_properties": [
+          {
+            "address": "GROUND FLOOR, 78 (PT) MARLBOROUGH STREET, DUBLIN 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 6910,
+            "property_number": 732154,
+            "publication_date": "2013-12-31",
+            "uses": "SHOP, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "BASEMENT + RETURN, 78 MARLBOROUGH STREET, DUBLIN 1",
+            "category": "OFFICE",
+            "nav": 3370,
+            "property_number": 732155,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (GEORGIAN / VICTORIAN)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -27399,8 +28302,10 @@
         ],
         "site_area_ha": 0.019,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -27651,8 +28556,10 @@
         "planning_applications": [],
         "site_area_ha": 0.335,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve neighbourhood facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z3 - Neighbourhood Centres"
@@ -28004,8 +28911,10 @@
         ],
         "site_area_ha": 0.257,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -28105,8 +29014,20 @@
         ],
         "site_area_ha": 0.031,
         "val_n_props": 1,
+        "val_property_numbers": "856382",
         "val_total_nav": 158900.0,
         "val_uses": "CLOTHES SHOP, -",
+        "valuation_properties": [
+          {
+            "address": "SHOP and STORES, 79-80 TALBOT STREET, DUBLIN 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 158900,
+            "property_number": 856382,
+            "publication_date": "2013-12-31",
+            "uses": "CLOTHES SHOP, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28185,8 +29106,10 @@
         "planning_applications": [],
         "site_area_ha": 0.015,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28396,8 +29319,38 @@
         ],
         "site_area_ha": 0.062,
         "val_n_props": 3,
+        "val_property_numbers": "788092; 788111; 788114",
         "val_total_nav": 45160.0,
         "val_uses": "FURNISHINGS, -; HAIRDRESSING SALON, -",
+        "valuation_properties": [
+          {
+            "address": "Ground floor and Basement, 22 Aungier Street, Dublin 2",
+            "category": "RETAIL (SHOPS)",
+            "nav": 16730,
+            "property_number": 788092,
+            "publication_date": "2013-12-31",
+            "uses": "HAIRDRESSING SALON, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "SHOWROOMS (GR FLR), 23 AUNGIER STREET, DUBLIN 2",
+            "category": "RETAIL (SHOPS)",
+            "nav": 18900,
+            "property_number": 788111,
+            "publication_date": "2013-12-31",
+            "uses": "FURNISHINGS, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "23a Aungier Street, Dublin 2",
+            "category": "RETAIL (SHOPS)",
+            "nav": 9530,
+            "property_number": 788114,
+            "publication_date": "2013-12-31",
+            "uses": "HAIRDRESSING SALON, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28611,8 +29564,20 @@
         ],
         "site_area_ha": 0.153,
         "val_n_props": 1,
+        "val_property_numbers": "672915",
         "val_total_nav": 10320.0,
         "val_uses": "-, SURGERY",
+        "valuation_properties": [
+          {
+            "address": "87 KING STREET NORTH, DUBLIN 7",
+            "category": "RETAIL (SHOPS)",
+            "nav": 10320,
+            "property_number": 672915,
+            "publication_date": "2013-12-31",
+            "uses": "-, SURGERY",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28734,8 +29699,56 @@
         ],
         "site_area_ha": 0.119,
         "val_n_props": 5,
+        "val_property_numbers": "748507; 748508; 748509; 748510; 748659",
         "val_total_nav": 91320.0,
         "val_uses": "SHOP, -; STORE, -; STORE, OFFICE; WAREHOUSE CASH &CARRY, -",
+        "valuation_properties": [
+          {
+            "address": "Ground Floor(part) Wholesale Retail Unit, 13-14 Chancery Street, Dublin 7",
+            "category": "RETAIL (SHOPS)",
+            "nav": 19620,
+            "property_number": 748507,
+            "publication_date": "2013-12-31",
+            "uses": "SHOP, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Ground and First Floor, 15 Chancery Street, Dublin 7",
+            "category": "RETAIL (SHOPS)",
+            "nav": 28200,
+            "property_number": 748508,
+            "publication_date": "2013-12-31",
+            "uses": "SHOP, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Ground and First Floor, 16-17 Chancery Street, Dublin 7",
+            "category": "INDUSTRIAL USES",
+            "nav": 24700,
+            "property_number": 748509,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE CASH &CARRY, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Ground and First Floor, 18 Chancery Street, Dublin 7",
+            "category": "INDUSTRIAL USES",
+            "nav": 9000,
+            "property_number": 748510,
+            "publication_date": "2013-12-31",
+            "uses": "STORE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Ground Floor, 1 St Michans Place, Dublin 7",
+            "category": "INDUSTRIAL USES",
+            "nav": 9800,
+            "property_number": 748659,
+            "publication_date": "2013-12-31",
+            "uses": "STORE, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28851,8 +29864,20 @@
         ],
         "site_area_ha": 0.031,
         "val_n_props": 1,
+        "val_property_numbers": "707320",
         "val_total_nav": 13870.0,
         "val_uses": "CONVENIENCE STORE [<200 SQ. M.], -",
+        "valuation_properties": [
+          {
+            "address": "32 INFIRMARY ROAD, DUBLIN 7",
+            "category": "RETAIL (SHOPS)",
+            "nav": 13870,
+            "property_number": 707320,
+            "publication_date": "2013-12-31",
+            "uses": "CONVENIENCE STORE [<200 SQ. M.], -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -28979,8 +30004,10 @@
         "planning_applications": [],
         "site_area_ha": 0.068,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -29086,8 +30113,47 @@
         ],
         "site_area_ha": 0.009,
         "val_n_props": 4,
+        "val_property_numbers": "731838; 731839; 731840; 731841",
         "val_total_nav": 20050.0,
         "val_uses": "-, OFFICE (OVER THE SHOP); SHOP, -; STORE, OFFICE (OVER THE SHOP)",
+        "valuation_properties": [
+          {
+            "address": "OFFICE STORE (1ST FLOOR), 47 ABBEY STREET MIDDLE, DUBLIN 1",
+            "category": "OFFICE",
+            "nav": 6460,
+            "property_number": 731838,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (OVER THE SHOP)",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "OFFICES GRD FLR BACK , WORKROOM BACK BA, 47 ABBEY STREET MIDDLE, DUBLIN 1",
+            "category": "OFFICE",
+            "nav": 4360,
+            "property_number": 731839,
+            "publication_date": "2013-12-31",
+            "uses": "-, OFFICE (OVER THE SHOP)",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "SHOP (GROUND FLOOR FRONT), PT 47 ABBEY STREET MIDDLE, DUBLIN 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 7390,
+            "property_number": 731840,
+            "publication_date": "2013-12-31",
+            "uses": "SHOP, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "STORE FRONT BASEMENT, 47 ABBEY STREET MIDDLE, DUBLIN 1",
+            "category": "OFFICE",
+            "nav": 1840,
+            "property_number": 731841,
+            "publication_date": "2013-12-31",
+            "uses": "STORE, OFFICE (OVER THE SHOP)",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -29247,8 +30313,10 @@
         ],
         "site_area_ha": 0.121,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -29410,8 +30478,10 @@
         ],
         "site_area_ha": 0.02,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -29590,8 +30660,10 @@
         "planning_applications": [],
         "site_area_ha": 0.25,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -29741,8 +30813,10 @@
         ],
         "site_area_ha": 0.192,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -29890,8 +30964,10 @@
         ],
         "site_area_ha": 0.07,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -29989,8 +31065,10 @@
         ],
         "site_area_ha": 0.026,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30126,8 +31204,10 @@
         ],
         "site_area_ha": 0.011,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30222,8 +31302,20 @@
         "planning_applications": [],
         "site_area_ha": 0.026,
         "val_n_props": 1,
+        "val_property_numbers": "781288",
         "val_total_nav": 6470.0,
         "val_uses": "-, SURGERY",
+        "valuation_properties": [
+          {
+            "address": "55 AMIENS STREET, DUBLIN 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 6470,
+            "property_number": 781288,
+            "publication_date": "2013-12-31",
+            "uses": "-, SURGERY",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30313,8 +31405,10 @@
         ],
         "site_area_ha": 0.011,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30408,8 +31502,10 @@
         ],
         "site_area_ha": 0.033,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30525,8 +31621,10 @@
         ],
         "site_area_ha": 0.015,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30604,8 +31702,29 @@
         ],
         "site_area_ha": 0.02,
         "val_n_props": 2,
+        "val_property_numbers": "2185413; 746200",
         "val_total_nav": 35920.0,
         "val_uses": "CAFE, -; STORE",
+        "valuation_properties": [
+          {
+            "address": "Ground Floor Retail Unit, Millennium Walkway, 21 -23 Abbey Street Upper, Dublin 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 26900,
+            "property_number": 2185413,
+            "publication_date": "2013-12-31",
+            "uses": "CAFE, -",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Garage and Store, 1-3 Abbey Street Upper, Dublin 1",
+            "category": "INDUSTRIAL USES",
+            "nav": 9020,
+            "property_number": 746200,
+            "publication_date": "2024-04-22",
+            "uses": "STORE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30688,8 +31807,20 @@
         "planning_applications": [],
         "site_area_ha": 0.01,
         "val_n_props": 1,
+        "val_property_numbers": "801147",
         "val_total_nav": 12340.0,
         "val_uses": "CAFE, -",
+        "valuation_properties": [
+          {
+            "address": "80 THOMAS STREET, DUBLIN 8",
+            "category": "RETAIL (SHOPS)",
+            "nav": 12340,
+            "property_number": 801147,
+            "publication_date": "2013-12-31",
+            "uses": "CAFE, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30760,8 +31891,10 @@
         "planning_applications": [],
         "site_area_ha": 0.035,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -30887,8 +32020,20 @@
         ],
         "site_area_ha": 0.028,
         "val_n_props": 1,
+        "val_property_numbers": "732092",
         "val_total_nav": 6170.0,
         "val_uses": "SHOP, -",
+        "valuation_properties": [
+          {
+            "address": "SHOP, 10A CATHEDRAL STREET, DUBLIN 1",
+            "category": "RETAIL (SHOPS)",
+            "nav": 6170,
+            "property_number": 732092,
+            "publication_date": "2013-12-31",
+            "uses": "SHOP, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
@@ -30976,8 +32121,20 @@
         ],
         "site_area_ha": 0.024,
         "val_n_props": 1,
+        "val_property_numbers": "802872",
         "val_total_nav": 40000.0,
         "val_uses": "PUB, -",
+        "valuation_properties": [
+          {
+            "address": "LICD HOUSE, 1-2 CHAMBER STREET, DUBLIN 8",
+            "category": "HOSPITALITY",
+            "nav": 40000,
+            "property_number": 802872,
+            "publication_date": "2013-12-31",
+            "uses": "PUB, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31135,8 +32292,29 @@
         ],
         "site_area_ha": 0.087,
         "val_n_props": 2,
+        "val_property_numbers": "5003410; 596091",
         "val_total_nav": 142700.0,
         "val_uses": "OFFICE (OVER THE SHOP), RESTAURANT; PUB, -",
+        "valuation_properties": [
+          {
+            "address": "67 CRUMLIN VILLAGE, DUBLIN 12",
+            "category": "RETAIL (SHOPS)",
+            "nav": 22700,
+            "property_number": 5003410,
+            "publication_date": "2013-12-31",
+            "uses": "OFFICE (OVER THE SHOP), RESTAURANT",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "67 CRUMLIN VILLAGE, DUBLIN 12",
+            "category": "HOSPITALITY",
+            "nav": 120000,
+            "property_number": 596091,
+            "publication_date": "2013-12-31",
+            "uses": "PUB, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31219,8 +32397,10 @@
         "planning_applications": [],
         "site_area_ha": 0.037,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve neighbourhood facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z3 - Neighbourhood Centres"
@@ -31295,8 +32475,10 @@
         "planning_applications": [],
         "site_area_ha": 0.009,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31487,8 +32669,10 @@
         "planning_applications": [],
         "site_area_ha": 0.518,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To seek the social, economic and physical development and/or regeneration of an area with mixed-use, of which residential would be the predominant use.",
         "zone_gzt": "R3",
         "zone_orig": "Z14 - Strategic Development and Regeneration Areas (SDRAs)"
@@ -31555,8 +32739,10 @@
         "planning_applications": [],
         "site_area_ha": 0.091,
         "val_n_props": 0,
+        "val_property_numbers": null,
         "val_total_nav": null,
         "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31635,8 +32821,29 @@
         "planning_applications": [],
         "site_area_ha": 0.045,
         "val_n_props": 2,
+        "val_property_numbers": "2149910; 812825",
         "val_total_nav": 187900.0,
         "val_uses": "OFFICE (OVER THE SHOP), RESTAURANT; PUB, -",
+        "valuation_properties": [
+          {
+            "address": "Upper Floors, 2/4 Terenure Road East, Rathgar, Dublin 6.",
+            "category": "OFFICE",
+            "nav": 51400,
+            "property_number": 2149910,
+            "publication_date": "2014-08-08",
+            "uses": "OFFICE (OVER THE SHOP), RESTAURANT",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "LICENSED SHOP (GROUND FLOOR), 2.4.6 TERENURE ROAD EAST, DUBLIN 6",
+            "category": "HOSPITALITY",
+            "nav": 136500,
+            "property_number": 812825,
+            "publication_date": "2015-04-22",
+            "uses": "PUB, -",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To provide for and improve mixed-services facilities.",
         "zone_gzt": "M3",
         "zone_orig": "Z4 - Key Urban Villages/Urban Villages"
@@ -31862,8 +33069,65 @@
         ],
         "site_area_ha": 0.747,
         "val_n_props": 6,
+        "val_property_numbers": "593083; 593084; 593085; 593086; 593087; 593088",
         "val_total_nav": 152760.0,
         "val_uses": "-, WAREHOUSE; OFFICE (INDUSTRIAL), WORKSHOP; WAREHOUSE; WAREHOUSE, OFFICE",
+        "valuation_properties": [
+          {
+            "address": "Herberton Road, DUBLIN 12",
+            "category": "INDUSTRIAL USES",
+            "nav": 19850,
+            "property_number": 593083,
+            "publication_date": "2013-12-31",
+            "uses": "OFFICE (INDUSTRIAL), WORKSHOP",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "HERBERTON ROAD, RIALTO, DUBLIN 12",
+            "category": "INDUSTRIAL USES",
+            "nav": 58200,
+            "property_number": 593084,
+            "publication_date": "2015-07-02",
+            "uses": "-, WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Herberton Road, DUBLIN 12",
+            "category": "INDUSTRIAL USES",
+            "nav": 25400,
+            "property_number": 593085,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE, OFFICE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Herberton Road, DUBLIN 12",
+            "category": "INDUSTRIAL USES",
+            "nav": 14280,
+            "property_number": 593086,
+            "publication_date": "2013-12-31",
+            "uses": "OFFICE (INDUSTRIAL), WORKSHOP",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Herberton Road, DUBLIN 12",
+            "category": "INDUSTRIAL USES",
+            "nav": 23100,
+            "property_number": 593087,
+            "publication_date": "2013-12-31",
+            "uses": "-, WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          },
+          {
+            "address": "Herberton Road, DUBLIN 12",
+            "category": "INDUSTRIAL USES",
+            "nav": 11930,
+            "property_number": 593088,
+            "publication_date": "2013-12-31",
+            "uses": "WAREHOUSE",
+            "valuation_date": "2011-04-07"
+          }
+        ],
         "zone_desc": "To consolidate and facilitate the development of inner city and inner suburban sites for mixed-uses.",
         "zone_gzt": "M1",
         "zone_orig": "Z10 - Inner Suburban and Inner City Sustainable Mixed-Uses"
