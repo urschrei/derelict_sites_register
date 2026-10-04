@@ -29,8 +29,11 @@ The four layers, all joined in Irish Transverse Mercator (EPSG:2157):
    opendata.tailte.ie). Every rateable property in Dublin City with its net
    annual value (NAV) and category; coordinates are already ITM. Missing
    NAVs (confidential categories) stay null rather than zero. If this API
-   is unreachable the three val_* fields are written as null and the run
-   still succeeds, with the manifest flagging the layer unavailable.
+   is unreachable or returns no properties, the run still succeeds: the
+   val_* fields are carried forward from the previous output, and the
+   manifest records the layer as carried_forward with the date of the last
+   successful fetch (or unavailable, with null fields, when there is no
+   previous output).
 4. Building footprints (OpenStreetMap via Overpass, ODbL). One bbox query
    for the whole parcel set; way and multipolygon geometries are assembled
    locally and each parcel gets the unioned footprint coverage ratio.
@@ -495,6 +498,12 @@ def fetch_valuations(offline: bool, stats: dict):
     )
     if not isinstance(payload, list):
         raise RuntimeError(f"Unexpected valuation payload: {type(payload)}")
+    if not payload:
+        # Dublin City always has rateable properties, so an empty list is an
+        # upstream fault, not data. Drop it from the cache so the next run
+        # asks again instead of replaying it.
+        cache_key(VALUATION_URL, params, None).unlink(missing_ok=True)
+        raise RuntimeError("Valuation API returned no properties")
     return payload
 
 
@@ -524,11 +533,37 @@ def join_valuations(parcels, properties):
     return results
 
 
-def null_valuations(parcels):
-    return {
-        parcel_id: {"val_n_props": None, "val_total_nav": None, "val_uses": None}
-        for parcel_id, _ in parcels
-    }
+VALUATION_FIELDS = ("val_n_props", "val_total_nav", "val_uses")
+
+
+def carry_forward_valuations(parcels, previous_path=OUTPUT_GEOJSON):
+    """The previous output's val_* fields, for a run whose fetch failed.
+
+    Returns (valuations, carried): parcels absent from the previous output
+    get nulls, and carried counts the parcels whose fields came across.
+    """
+    previous = {}
+    if previous_path.exists():
+        for feature in json.loads(previous_path.read_text())["features"]:
+            props = feature["properties"]
+            previous[props["parcel_id"]] = {f: props.get(f) for f in VALUATION_FIELDS}
+    null = dict.fromkeys(VALUATION_FIELDS)
+    valuations = {pid: previous.get(pid, null) for pid, _ in parcels}
+    carried = sum(1 for pid, _ in parcels if pid in previous)
+    return valuations, carried
+
+
+def last_valuation_fetch(previous_manifest_path=MANIFEST_PATH):
+    """When the valuations being carried forward were actually fetched."""
+    if not previous_manifest_path.exists():
+        return None
+    manifest = json.loads(previous_manifest_path.read_text())
+    state = manifest.get("layers", {}).get("valuation")
+    if state == "ok":
+        return manifest.get("run")
+    if state == "carried_forward":
+        return manifest.get("sources", {}).get("valuation", {}).get("fetched_at")
+    return None
 
 
 # --- Layer 4: OSM building footprints ---------------------------------------
@@ -731,10 +766,27 @@ def main() -> int:
         )
     except RuntimeError as exc:
         # The valuation API is the one layer allowed to fail without
-        # failing the run.
-        log.warning("Valuation layer unavailable: %s", exc)
-        valuations = null_valuations(parcels)
-        manifest["layers"]["valuation"] = "unavailable"
+        # failing the run; keep the last good values rather than blanking
+        # them.
+        valuations, carried = carry_forward_valuations(parcels)
+        if carried:
+            fetched_at = last_valuation_fetch()
+            manifest["sources"]["valuation"] = {
+                "url": VALUATION_URL,
+                "fetched": 0,
+                "fetched_at": fetched_at,
+            }
+            manifest["layers"]["valuation"] = "carried_forward"
+            log.warning(
+                "Valuation layer unavailable (%s); carried forward %d parcels "
+                "from the fetch of %s",
+                exc,
+                carried,
+                fetched_at,
+            )
+        else:
+            manifest["layers"]["valuation"] = "unavailable"
+            log.warning("Valuation layer unavailable: %s", exc)
 
     footprints = fetch_buildings(parcels, args.offline, stats, repairs)
     buildings = join_buildings(parcels, footprints)

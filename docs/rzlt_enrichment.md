@@ -171,9 +171,12 @@ because the two datasets share no common key either.
   cache and reproduces the output byte-for-byte.
 - **Resilience.** Every request has a 30 s timeout and three retries with
   exponential backoff and jitter; Overpass gets an extra 60 s pause on a
-  429/504. If only the valuation API is unreachable, its three fields are
-  written null and the run still succeeds, with the layer flagged in the
-  manifest; any other layer failing aborts the run.
+  429/504. If only the valuation API is unreachable or returns no properties
+  (an empty response is treated as a fault, and dropped from the cache so
+  the next run retries), the run still succeeds: its three fields are
+  carried forward from the previous output, and the manifest flags the
+  layer `carried_forward` with the date of the last successful fetch. Any
+  other layer failing aborts the run.
 - **Determinism.** Parcels are sorted by `parcel_id`, derived floats are
   rounded, and files are written to a temp path then renamed, so identical
   inputs give identical output.

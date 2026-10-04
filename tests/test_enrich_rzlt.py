@@ -4,9 +4,11 @@ No network: each test drives one helper with small in-memory fixtures.
 """
 
 import importlib.util
+import json
 from datetime import date
 from pathlib import Path
 
+import pytest
 import shapely
 
 SPEC = importlib.util.spec_from_file_location(
@@ -276,3 +278,70 @@ def test_detect_crs():
     }
     assert enrich.detect_parcels_crs(wgs84) == "EPSG:4326"
     assert enrich.detect_parcels_crs(itm) == "EPSG:2157"
+
+
+def test_empty_valuation_payload_is_a_fault(monkeypatch, tmp_path):
+    monkeypatch.setattr(enrich, "CACHE_DIR", tmp_path)
+    params = {
+        "Fields": "*",
+        "LocalAuthority": "DUBLIN CITY COUNCIL",
+        "Format": "json",
+    }
+    cached = enrich.cache_key(enrich.VALUATION_URL, params, None)
+    cached.write_text("[]")
+    monkeypatch.setattr(enrich, "fetch", lambda *a, **k: [])
+    with pytest.raises(RuntimeError, match="no properties"):
+        enrich.fetch_valuations(offline=False, stats={})
+    assert not cached.exists()
+
+
+def test_carry_forward_valuations(tmp_path):
+    previous = tmp_path / "previous.geojson"
+    previous.write_text(
+        json.dumps(
+            {
+                "features": [
+                    {
+                        "properties": {
+                            "parcel_id": "A",
+                            "val_n_props": 2,
+                            "val_total_nav": 50000.0,
+                            "val_uses": "PUB",
+                        }
+                    }
+                ]
+            }
+        )
+    )
+    parcels = [("A", None), ("B", None)]
+    valuations, carried = enrich.carry_forward_valuations(parcels, previous)
+    assert carried == 1
+    assert valuations["A"] == {
+        "val_n_props": 2,
+        "val_total_nav": 50000.0,
+        "val_uses": "PUB",
+    }
+    assert valuations["B"] == dict.fromkeys(enrich.VALUATION_FIELDS)
+    valuations, carried = enrich.carry_forward_valuations(
+        parcels, tmp_path / "missing.geojson"
+    )
+    assert carried == 0
+
+
+def test_last_valuation_fetch_follows_carried_runs(tmp_path):
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text(
+        json.dumps({"run": "2026-07-21T12:49:20Z", "layers": {"valuation": "ok"}})
+    )
+    assert enrich.last_valuation_fetch(manifest) == "2026-07-21T12:49:20Z"
+    manifest.write_text(
+        json.dumps(
+            {
+                "run": "2026-10-11T03:17:00Z",
+                "layers": {"valuation": "carried_forward"},
+                "sources": {"valuation": {"fetched_at": "2026-07-21T12:49:20Z"}},
+            }
+        )
+    )
+    assert enrich.last_valuation_fetch(manifest) == "2026-07-21T12:49:20Z"
+    assert enrich.last_valuation_fetch(tmp_path / "missing.json") is None
