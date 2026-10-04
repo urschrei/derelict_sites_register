@@ -121,6 +121,10 @@ its geometry type.
 - **Fields:** count of rateable properties, total NAV (summing only non-null
   values — confidential categories such as hotels return no NAV and are kept
   null, not zero), and the distinct uses.
+- **Data quality:** records with coordinates outside Ireland's ITM range are
+  dropped individually, and a failed or empty fetch carries the previous
+  values forward; see
+  [`valuation_methodology.md`](valuation_methodology.md).
 
 ### 4. Building footprints → `bld_*`
 
@@ -175,8 +179,9 @@ because the two datasets share no common key either.
   (an empty response is treated as a fault, and dropped from the cache so
   the next run retries), the run still succeeds: its three fields are
   carried forward from the previous output, and the manifest flags the
-  layer `carried_forward` with the date of the last successful fetch. Any
-  other layer failing aborts the run.
+  layer `carried_forward` with the date of the last successful fetch (see
+  [`valuation_methodology.md`](valuation_methodology.md)). Any other layer
+  failing aborts the run.
 - **Determinism.** Parcels are sorted by `parcel_id`, derived floats are
   rounded, and files are written to a temp path then renamed, so identical
   inputs give identical output.

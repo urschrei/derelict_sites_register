@@ -28,12 +28,15 @@ The four layers, all joined in Irish Transverse Mercator (EPSG:2157):
 3. Commercial valuations (Tailte Eireann Valuation Open Data API,
    opendata.tailte.ie). Every rateable property in Dublin City with its net
    annual value (NAV) and category; coordinates are already ITM. Missing
-   NAVs (confidential categories) stay null rather than zero. If this API
-   is unreachable or returns no properties, the run still succeeds: the
-   val_* fields are carried forward from the previous output, and the
-   manifest records the layer as carried_forward with the date of the last
-   successful fetch (or unavailable, with null fields, when there is no
-   previous output).
+   NAVs (confidential categories) stay null rather than zero. Records whose
+   coordinates fall outside Ireland's ITM range are dropped and listed in
+   the manifest, unless more than 1% do, which fails the layer as a likely
+   CRS error. If the layer fails, or the API is unreachable or returns no
+   properties, the run still succeeds: the val_* fields are carried forward
+   from the previous output, and the manifest records the layer as
+   carried_forward with the date of the last successful fetch (or
+   unavailable, with null fields, when there is no previous output). See
+   docs/valuation_methodology.md.
 4. Building footprints (OpenStreetMap via Overpass, ODbL). One bbox query
    for the whole parcel set; way and multipolygon geometries are assembled
    locally and each parcel gets the unioned footprint coverage ratio.
@@ -507,17 +510,49 @@ def fetch_valuations(offline: bool, stats: dict):
     return payload
 
 
+# Share of located valuation records that may fall outside Ireland's ITM
+# range before the layer as a whole is treated as being in the wrong CRS.
+# Below it, such records are individual geocoding faults and are dropped;
+# see docs/valuation_methodology.md.
+MAX_OUT_OF_RANGE = 0.01
+
+
+def in_itm_range(x: float, y: float) -> bool:
+    (x_lo, x_hi), (y_lo, y_hi) = ITM_RANGE["x"], ITM_RANGE["y"]
+    return x_lo <= x <= x_hi and y_lo <= y <= y_hi
+
+
 def join_valuations(parcels, properties):
+    """Point-in-parcel valuation aggregates.
+
+    Returns (results, dropped), where dropped lists the PropertyNumbers of
+    records whose coordinates fall outside Ireland's ITM range.
+    """
     points = []
     rows = []
+    dropped = []
     for prop in properties:
         x, y = prop.get("Xitm"), prop.get("Yitm")
         if not x or not y:
             continue
+        if not in_itm_range(x, y):
+            dropped.append(prop.get("PropertyNumber"))
+            continue
         points.append(shapely.Point(x, y))
         rows.append(prop)
-    if points:
-        assert_itm_bbox(points, "valuations")
+    located = len(points) + len(dropped)
+    if located and len(dropped) / located > MAX_OUT_OF_RANGE:
+        raise RuntimeError(
+            f"valuations: {len(dropped)} of {located} points outside Ireland's "
+            "ITM range - wrong CRS?"
+        )
+    if dropped:
+        log.warning(
+            "Valuation: dropped %d of %d records outside Ireland's ITM range: %s",
+            len(dropped),
+            located,
+            dropped,
+        )
     tree = STRtree(points) if points else None
     results = {}
     for parcel_id, geom in parcels:
@@ -530,7 +565,7 @@ def join_valuations(parcels, properties):
             "val_total_nav": round(float(sum(navs)), 2) if navs else None,
             "val_uses": "; ".join(uses) or None,
         }
-    return results
+    return results, sorted(dropped, key=str)
 
 
 VALUATION_FIELDS = ("val_n_props", "val_total_nav", "val_uses")
@@ -753,10 +788,11 @@ def main() -> int:
 
     try:
         properties = fetch_valuations(args.offline, stats)
-        valuations = join_valuations(parcels, properties)
+        valuations, dropped = join_valuations(parcels, properties)
         manifest["sources"]["valuation"] = {
             "url": VALUATION_URL,
             "fetched": len(properties),
+            "dropped_out_of_range": dropped,
         }
         manifest["layers"]["valuation"] = "ok"
         log.info(

@@ -124,7 +124,9 @@ locally with `uv run python scripts/enrich_rzlt.py`; tests are in
 [`docs/rzlt_enrichment.md`](docs/rzlt_enrichment.md) explains the enrichment
 workflow in full: what each layer contributes, how the parcels are linked to
 it (all spatial, since the RZLT parcel id is shared by no other source), and
-every source URL and licence.
+every source URL and licence. [`docs/valuation_methodology.md`](docs/valuation_methodology.md)
+records how faults in the valuation data (empty responses, mis-geocoded
+records) are detected and handled.
 
 The council does not publish a site-to-application list, so each link is
 reconstructed from two independent signals that must agree: the application

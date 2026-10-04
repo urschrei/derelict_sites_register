@@ -345,3 +345,38 @@ def test_last_valuation_fetch_follows_carried_runs(tmp_path):
     )
     assert enrich.last_valuation_fetch(manifest) == "2026-07-21T12:49:20Z"
     assert enrich.last_valuation_fetch(tmp_path / "missing.json") is None
+
+
+def _valuation(number, x, y, nav=1000.0):
+    return {
+        "PropertyNumber": number,
+        "Xitm": x,
+        "Yitm": y,
+        "Valuation": nav,
+        "Uses": "OFFICE",
+    }
+
+
+def test_join_valuations_drops_out_of_range_records():
+    parcel = ("A", _square(715000, 734000, 100))
+    # 199 good points inside the parcel, plus the EXO Building record from
+    # 2026-10-04, whose longitude lost its sign before projection.
+    props = [_valuation(i, 715050, 734050) for i in range(199)]
+    props.append(_valuation(10029125, 1543960.92, 827841.2, nav=828000))
+    results, dropped = enrich.join_valuations([parcel], props)
+    assert dropped == [10029125]
+    assert results["A"]["val_n_props"] == 199
+    assert results["A"]["val_total_nav"] == 199000.0
+
+
+def test_join_valuations_rejects_a_wrong_crs_layer():
+    parcel = ("A", _square(715000, 734000, 100))
+    # Irish Grid coordinates for the same place: every point out of range.
+    props = [_valuation(i, 315050, 234050) for i in range(50)]
+    with pytest.raises(RuntimeError, match="wrong CRS"):
+        enrich.join_valuations([parcel], props)
+    # Just over the 1% threshold also fails.
+    props = [_valuation(i, 715050, 734050) for i in range(98)]
+    props += [_valuation(900 + i, 1543960.92, 827841.2) for i in range(2)]
+    with pytest.raises(RuntimeError, match="2 of 100"):
+        enrich.join_valuations([parcel], props)
