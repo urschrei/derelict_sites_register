@@ -307,6 +307,8 @@ def test_carry_forward_valuations(tmp_path):
                             "val_n_props": 2,
                             "val_total_nav": 50000.0,
                             "val_uses": "PUB",
+                            "val_property_numbers": "801575",
+                            "valuation_properties": [{"property_number": 801575}],
                         }
                     }
                 ]
@@ -320,6 +322,8 @@ def test_carry_forward_valuations(tmp_path):
         "val_n_props": 2,
         "val_total_nav": 50000.0,
         "val_uses": "PUB",
+        "val_property_numbers": "801575",
+        "valuation_properties": [{"property_number": 801575}],
     }
     assert valuations["B"] == dict.fromkeys(enrich.VALUATION_FIELDS)
     valuations, carried = enrich.carry_forward_valuations(
@@ -380,3 +384,46 @@ def test_join_valuations_rejects_a_wrong_crs_layer():
     props += [_valuation(900 + i, 1543960.92, 827841.2) for i in range(2)]
     with pytest.raises(RuntimeError, match="2 of 100"):
         enrich.join_valuations([parcel], props)
+
+
+def test_join_valuations_lists_matched_properties():
+    parcel = ("A", _square(715000, 734000, 100))
+    props = [
+        {
+            "PropertyNumber": 804174,
+            "Xitm": 715050,
+            "Yitm": 734050,
+            "Valuation": 2230,
+            "Uses": "SHOP, -",
+            "Category": "RETAIL (SHOPS)",
+            "Address1": "31 Donore Avenue     ",
+            "Address2": "South Circular Road",
+            "Address3": "Dublin 8",
+            "ValuationDate": "07/04/2011",
+            "PublicationDate": "31/12/2013",
+        },
+        _valuation(12, 715060, 734060),
+        _valuation(99, 716000, 735000),  # outside the parcel
+    ]
+    results, _ = enrich.join_valuations([parcel], props)
+    a = results["A"]
+    assert a["val_property_numbers"] == "12; 804174"
+    assert [r["property_number"] for r in a["valuation_properties"]] == [12, 804174]
+    assert a["valuation_properties"][1] == {
+        "property_number": 804174,
+        "address": "31 Donore Avenue, South Circular Road, Dublin 8",
+        "category": "RETAIL (SHOPS)",
+        "uses": "SHOP, -",
+        "nav": 2230,
+        "valuation_date": "2011-04-07",
+        "publication_date": "2013-12-31",
+    }
+    empty, _ = enrich.join_valuations([("B", _square(700000, 730000, 10))], props)
+    assert empty["B"]["val_property_numbers"] is None
+    assert empty["B"]["valuation_properties"] == []
+
+
+def test_dmy_to_iso():
+    assert enrich.dmy_to_iso("07/08/2026") == "2026-08-07"
+    assert enrich.dmy_to_iso(None) is None
+    assert enrich.dmy_to_iso("2026-08-07") is None

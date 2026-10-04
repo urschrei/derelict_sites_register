@@ -133,6 +133,7 @@ ENRICHMENT_FIELDS = [
     "val_n_props",
     "val_total_nav",
     "val_uses",
+    "val_property_numbers",
     "bld_coverage",
     "bld_n_buildings",
 ]
@@ -557,18 +558,56 @@ def join_valuations(parcels, properties):
     results = {}
     for parcel_id, geom in parcels:
         idx = tree.query(geom, predicate="covers") if tree else []
-        hits = [rows[i] for i in idx]
+        hits = sorted(
+            (rows[i] for i in idx), key=lambda p: str(p.get("PropertyNumber"))
+        )
         navs = [p["Valuation"] for p in hits if p.get("Valuation") is not None]
         uses = sorted({p["Uses"] for p in hits if p.get("Uses")})
+        numbers = [str(p["PropertyNumber"]) for p in hits if p.get("PropertyNumber")]
         results[parcel_id] = {
             "val_n_props": len(hits),
             "val_total_nav": round(float(sum(navs)), 2) if navs else None,
             "val_uses": "; ".join(uses) or None,
+            "val_property_numbers": "; ".join(numbers) or None,
+            "valuation_properties": [valuation_record(p) for p in hits],
         }
     return results, sorted(dropped, key=str)
 
 
-VALUATION_FIELDS = ("val_n_props", "val_total_nav", "val_uses")
+VALUATION_FIELDS = (
+    "val_n_props",
+    "val_total_nav",
+    "val_uses",
+    "val_property_numbers",
+    "valuation_properties",
+)
+
+
+def dmy_to_iso(value) -> str | None:
+    """Tailte dates are DD/MM/YYYY strings."""
+    try:
+        day, month, year = str(value).split("/")
+        return date(int(year), int(month), int(day)).isoformat()
+    except (TypeError, ValueError):
+        return None
+
+
+def valuation_record(prop: dict) -> dict:
+    """A valuation-list entry as carried on the parcel, for auditing joins."""
+    address = ", ".join(
+        " ".join(str(part).split())
+        for part in (prop.get(f"Address{i}") for i in range(1, 6))
+        if part and str(part).strip()
+    )
+    return {
+        "property_number": prop.get("PropertyNumber"),
+        "address": address or None,
+        "category": prop.get("Category") or None,
+        "uses": prop.get("Uses") or None,
+        "nav": prop.get("Valuation"),
+        "valuation_date": dmy_to_iso(prop.get("ValuationDate")),
+        "publication_date": dmy_to_iso(prop.get("PublicationDate")),
+    }
 
 
 def carry_forward_valuations(parcels, previous_path=OUTPUT_GEOJSON):
@@ -858,9 +897,10 @@ def main() -> int:
     geojson_text = json.dumps(out, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
     atomic_write(OUTPUT_GEOJSON, geojson_text)
 
-    # The per-application list is a nested field carried only in the GeoJSON;
-    # the flat CSV keeps the scalar columns and drops it via extrasaction.
-    skip = set(ENRICHMENT_FIELDS) | {"planning_applications"}
+    # The per-application and per-property lists are nested fields carried
+    # only in the GeoJSON; the flat CSV keeps the scalar columns (including
+    # val_property_numbers) and drops them via extrasaction.
+    skip = set(ENRICHMENT_FIELDS) | {"planning_applications", "valuation_properties"}
     base_fields = [k for k in enriched[0]["properties"] if k not in skip]
     csv_fields = base_fields + ENRICHMENT_FIELDS
     buffer = io.StringIO()

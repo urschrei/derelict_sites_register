@@ -150,3 +150,19 @@ The record is worth reporting to Tailte Éireann.
 
 The workflow log repeats the same information as warnings
 (`Valuation: dropped …`, `Valuation layer unavailable (…); carried forward …`).
+
+Per parcel, the enriched output records which valuation records joined:
+`val_property_numbers` (in the GeoJSON and CSV) and the nested
+`valuation_properties` list (GeoJSON and GeoParquet), with each record's
+address, category, uses, NAV, and dates. Diffing either between commits
+shows exactly which records entered or left a parcel. Carried-forward runs
+copy both along with the other `val_*` fields.
+
+This was added after parcel DCC000064181 (the St Teresa's Gardens
+regeneration site, Dublin 8) went from six matched records in July 2026 to
+none in October. The aggregates showed the drop but not which records had
+gone, and the July response had not been kept, so the records' identities
+could only be inferred: none of the six uses reappeared within plausible
+re-geocoding distance (the nearest butcher was 530 m away), and no current
+record is addressed at St Teresa's Gardens, consistent with the estate's
+shop units leaving the valuation list after demolition.

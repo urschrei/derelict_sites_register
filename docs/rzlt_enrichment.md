@@ -65,8 +65,8 @@ Geometry is WGS84 polygons. Nothing else about the land is published here.
 
 ## What we grab, and how each layer is linked
 
-`scripts/enrich_rzlt.py` adds sixteen scalar fields plus a nested
-`planning_applications` list. Each layer uses the spatial predicate that fits
+`scripts/enrich_rzlt.py` adds seventeen scalar fields plus two nested lists,
+`planning_applications` and `valuation_properties`. Each layer uses the spatial predicate that fits
 its geometry type.
 
 ### 1. Planning applications → `plan_*` and `planning_applications`
@@ -111,7 +111,7 @@ its geometry type.
 - **Robustness:** both geometries are passed through `make_valid` before
   intersection, and any repair is logged.
 
-### 3. Commercial valuations → `val_*`
+### 3. Commercial valuations → `val_*` and `valuation_properties`
 
 - **Source:** the Tailte Éireann Valuation open-data API. Every rateable
   commercial property in Dublin City, with its net annual value (NAV), use
@@ -120,7 +120,13 @@ its geometry type.
   coordinates are already in ITM, so no reprojection is needed for this layer.
 - **Fields:** count of rateable properties, total NAV (summing only non-null
   values — confidential categories such as hotels return no NAV and are kept
-  null, not zero), and the distinct uses.
+  null, not zero), the distinct uses, and the matched records' Tailte
+  property numbers (`val_property_numbers`, semicolon-separated).
+- **Per-property list:** the GeoJSON also carries `valuation_properties`,
+  one entry per matched record (property number, address, category, uses,
+  NAV, valuation and publication dates, ordered by property number), so a
+  change in a parcel's aggregates can be traced to the records that joined
+  or left.
 - **Data quality:** records with coordinates outside Ireland's ITM range are
   dropped individually, and a failed or empty fetch carries the previous
   values forward; see
@@ -199,8 +205,8 @@ because the two datasets share no common key either.
 
 | File | Contents |
 |------|----------|
-| `data/rzlt_sites_enriched.geojson` | Parcels with all enrichment fields, including the nested `planning_applications` list |
-| `data/rzlt_sites_enriched.csv` | The scalar columns only (no nested list) |
+| `data/rzlt_sites_enriched.geojson` | Parcels with all enrichment fields, including the nested `planning_applications` and `valuation_properties` lists |
+| `data/rzlt_sites_enriched.csv` | The scalar columns only (no nested lists) |
 | `data/rzlt_run_manifest.json` | Per-run provenance and attribution |
 
 Tests for the pipeline's pure logic (pagination, date conversion, the sliver

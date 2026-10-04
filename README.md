@@ -96,14 +96,16 @@ other fetch scripts in CI.
 keyed spatially rather than by identifier (the RZLT map publishes only a
 parcel id, no address or folio), and writes:
 
-- `data/rzlt_sites_enriched.geojson` / `.csv` - the parcels with 16 added
+- `data/rzlt_sites_enriched.geojson` / `.csv` - the parcels with 17 added
   fields: planning-application aggregates over the last ten years
   (`plan_*`), state/council ownership flags and folios (`own_*`), commercial
-  valuation counts and net annual value (`val_*`), and OSM building-coverage
-  ratios (`bld_*`). The GeoJSON additionally carries the full per-application
-  list (`planning_applications`, newest first, each with a Granted / Refused
-  outcome), which the site renders as status badges; the flat CSV keeps only
-  the scalar aggregates
+  valuation counts, net annual value, and matched property numbers
+  (`val_*`), and OSM building-coverage ratios (`bld_*`). The GeoJSON
+  additionally carries the full per-application list
+  (`planning_applications`, newest first, each with a Granted / Refused
+  outcome), which the site renders as status badges, and the matched
+  valuation records (`valuation_properties`); the flat CSV keeps only the
+  scalar aggregates
 - `data/rzlt_run_manifest.json` - per-run provenance: source URLs and record
   counts, the decision-string normalisation map, layers skipped or
   unavailable, geometry repairs, and the output hash
