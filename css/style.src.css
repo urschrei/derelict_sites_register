@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Tailwind scans every non-ignored file for class names; the pipeline
+   scripts are not markup, and prose in them (e.g. "transform") would
+   otherwise emit stray utilities. */
+@source not "../scripts";
+
 /* The visitor's resolved theme is stamped on <html> as data-theme by an inline
    head script, so the dark variant keys off that attribute rather than the OS
    media query. */
