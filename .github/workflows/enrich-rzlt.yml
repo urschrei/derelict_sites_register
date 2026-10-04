@@ -44,14 +44,17 @@ jobs:
       - name: Enrich RZLT parcels
         run: uv run python scripts/enrich_rzlt.py
 
+      - name: Export GeoParquet
+        run: uv run python scripts/export_geoparquet.py
+
       - name: Commit and push if enrichment changed
         run: |
-          if git diff --quiet -- data/rzlt_sites_enriched.geojson data/rzlt_sites_enriched.csv; then
+          if git diff --quiet -- data/rzlt_sites_enriched.geojson data/rzlt_sites_enriched.csv data/rzlt_sites_enriched.parquet; then
             echo "No changes to enriched RZLT data"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/rzlt_sites_enriched.geojson data/rzlt_sites_enriched.csv data/rzlt_run_manifest.json data/rzlt_sites.geojson data/rzlt_sites.csv
+          git add data/rzlt_sites_enriched.geojson data/rzlt_sites_enriched.csv data/rzlt_sites_enriched.parquet data/rzlt_run_manifest.json data/rzlt_sites.geojson data/rzlt_sites.csv data/rzlt_sites.parquet
           git commit -m "Enrich RZLT parcels ($(date -u +%Y-%m-%dT%H:%MZ))"
           git push

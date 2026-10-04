@@ -6,12 +6,14 @@ requires-python = ">=3.11"
 # The twice-daily fetch scripts (fetch_data.py, fetch_vacant_sites.py,
 # fetch_rzlt.py, update_changelog.py) use only the standard library so they
 # run in CI without installation. These dependencies are for the heavier,
-# separately scheduled enrichment and linking scripts.
+# separately scheduled enrichment and linking scripts, and for the GeoParquet
+# export (pyarrow, shapely) that follows each fetch.
 dependencies = [
     "shapely>=2.0",
     "pyproj>=3.6",
     "requests>=2.31",
     "numpy>=1.26",
+    "pyarrow>=17",
 ]
 
 [dependency-groups]
