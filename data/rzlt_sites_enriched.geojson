@@ -939,22 +939,22 @@
         "own_public_pct": 0.0,
         "parcel_id": "DCC000064088",
         "plan_latest_app_no": "WEB2567/26",
-        "plan_latest_decision": null,
+        "plan_latest_decision": "APPLICATION DECLARED INVALID",
         "plan_latest_received": "2026-06-24",
-        "plan_latest_status": "Registered Application",
+        "plan_latest_status": "Decision Notice Issued",
         "plan_live_permission": false,
         "plan_n_apps_10yr": 8,
         "plan_n_granted_10yr": 4,
         "planning_applications": [
           {
             "app_type": "Permission",
-            "decision": null,
-            "outcome": "Undecided",
+            "decision": "APPLICATION DECLARED INVALID",
+            "outcome": "Refused",
             "plan_ref": "WEB2567/26",
             "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2567%2F26",
             "proposal": "Combine two existing retail units (51 sqm & 39 sqm) into one single retail unit (90 sqm) unit (ground floor) with ancillary off-licence use (7.8 sqm) and a fresh produce display along the northern façade together with removal able external seating. The development will also include minor alterations to the shopfront a…",
             "registration_date": "2026-06-24",
-            "status": "Registered Application"
+            "status": "Decision Notice Issued"
           },
           {
             "app_type": "Permission",
@@ -4107,8 +4107,8 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.289,
-        "bld_n_buildings": 2,
+        "bld_coverage": 0.318,
+        "bld_n_buildings": 3,
         "date_added": "2022-01-01",
         "former_vacant_sites": "",
         "own_bodies": null,
@@ -4748,7 +4748,7 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.167,
+        "bld_coverage": 0.166,
         "bld_n_buildings": 6,
         "date_added": "2022-01-01",
         "former_vacant_sites": "",
@@ -6144,7 +6144,7 @@
         "plan_latest_app_no": "WEB2729/24",
         "plan_latest_decision": "GRANT PERMISSION",
         "plan_latest_received": "2024-12-16",
-        "plan_latest_status": "Decision Appealed",
+        "plan_latest_status": "Appeal Decided",
         "plan_live_permission": false,
         "plan_n_apps_10yr": 2,
         "plan_n_granted_10yr": 1,
@@ -6157,7 +6157,7 @@
             "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2729%2F24",
             "proposal": "The proposed development comprises:\r\n-  Demolition of the existing buildings and structures (it is noted the structures or part thereof may be demolished in compliance with a Dangerous Buildings Notice prior to a decision being made);\r\n\r\n- Construction of a building up to 14 storeys in height (61.05 metres above groun…",
             "registration_date": "2024-12-16",
-            "status": "Decision Appealed"
+            "status": "Appeal Decided"
           },
           {
             "app_type": "Permission",
@@ -6958,7 +6958,7 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.232,
+        "bld_coverage": 0.24,
         "bld_n_buildings": 3,
         "date_added": "2022-01-01",
         "former_vacant_sites": "VS-0124",
@@ -7425,7 +7425,7 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.767,
+        "bld_coverage": 0.77,
         "bld_n_buildings": 4,
         "date_added": "2022-01-01",
         "former_vacant_sites": "",
@@ -12763,8 +12763,8 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.065,
-        "bld_n_buildings": 4,
+        "bld_coverage": 0.076,
+        "bld_n_buildings": 5,
         "date_added": "2022-01-01",
         "former_vacant_sites": "VS-0011",
         "own_bodies": "Local Authorities",
@@ -13323,14 +13323,34 @@
         "own_is_public": true,
         "own_public_pct": 38.38,
         "parcel_id": "DCC000064145",
-        "plan_latest_app_no": "WEB2163/26",
-        "plan_latest_decision": "GRANT PERMISSION",
-        "plan_latest_received": "2026-05-13",
-        "plan_latest_status": "Decision Notice Issued",
+        "plan_latest_app_no": "WEB2868/26",
+        "plan_latest_decision": null,
+        "plan_latest_received": "2026-07-28",
+        "plan_latest_status": "Registered Application",
         "plan_live_permission": false,
-        "plan_n_apps_10yr": 8,
+        "plan_n_apps_10yr": 10,
         "plan_n_granted_10yr": 6,
         "planning_applications": [
+          {
+            "app_type": "Permission",
+            "decision": null,
+            "outcome": "Undecided",
+            "plan_ref": "WEB2868/26",
+            "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2868%2F26",
+            "proposal": "Planning permission is sought for an external, backlight illuminated signage, with the name 'The Coombe Hospital', measuring 1.73m in height by 4m in width, to be positioned approximately 13m above ground level along the front (west) elevation of the Main Building fronting onto Dolphins Barn Street. The proposed signa…",
+            "registration_date": "2026-07-28",
+            "status": "Registered Application"
+          },
+          {
+            "app_type": "Permission",
+            "decision": "APPLICATION DECLARED INVALID",
+            "outcome": "Refused",
+            "plan_ref": "WEB2822/26",
+            "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2822%2F26",
+            "proposal": "Planning permission is sought for an external, backlight illuminated signage, with the name ‘The Coombe Hospital’, measuring 1.73m in height by 4m in width, to be positioned approximately 13m above ground level along the front (west) elevation of the Main Building fronting onto Dolphins Barn Street. The proposed signa…",
+            "registration_date": "2026-07-23",
+            "status": "Decision Notice Issued"
+          },
           {
             "app_type": "Permission",
             "decision": "GRANT PERMISSION",
@@ -13549,22 +13569,22 @@
         "own_public_pct": 100.0,
         "parcel_id": "DCC000064146",
         "plan_latest_app_no": "WEBDSDZ2405/26",
-        "plan_latest_decision": null,
+        "plan_latest_decision": "GRANT PERMISSION",
         "plan_latest_received": "2026-06-09",
-        "plan_latest_status": "Registered Application",
+        "plan_latest_status": "Decision Notice Issued",
         "plan_live_permission": false,
         "plan_n_apps_10yr": 21,
-        "plan_n_granted_10yr": 16,
+        "plan_n_granted_10yr": 17,
         "planning_applications": [
           {
             "app_type": "Permission",
-            "decision": null,
-            "outcome": "Undecided",
+            "decision": "GRANT PERMISSION",
+            "outcome": "Granted",
             "plan_ref": "WEBDSDZ2405/26",
             "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEBDSDZ2405%2F26",
             "proposal": "PROTECTED STRUCTURE: SFDC Ireland Ltd. intend to apply for planning permission for development at this c.1.34 ha site located at the junction of North Wall Quay and New Wapping Street, Salesforce Tower, Station Square, Block 7, Spencer Dock, Dublin 1. The application site includes the former British Rail Hotel on 58-5…",
             "registration_date": "2026-06-09",
-            "status": "Registered Application"
+            "status": "Decision Notice Issued"
           },
           {
             "app_type": "Permission",
@@ -17523,7 +17543,7 @@
         "plan_latest_app_no": "WEB2729/24",
         "plan_latest_decision": "GRANT PERMISSION",
         "plan_latest_received": "2024-12-16",
-        "plan_latest_status": "Decision Appealed",
+        "plan_latest_status": "Appeal Decided",
         "plan_live_permission": false,
         "plan_n_apps_10yr": 3,
         "plan_n_granted_10yr": 2,
@@ -17536,7 +17556,7 @@
             "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2729%2F24",
             "proposal": "The proposed development comprises:\r\n-  Demolition of the existing buildings and structures (it is noted the structures or part thereof may be demolished in compliance with a Dangerous Buildings Notice prior to a decision being made);\r\n\r\n- Construction of a building up to 14 storeys in height (61.05 metres above groun…",
             "registration_date": "2024-12-16",
-            "status": "Decision Appealed"
+            "status": "Appeal Decided"
           },
           {
             "app_type": "Permission",
@@ -18626,14 +18646,24 @@
         "own_is_public": false,
         "own_public_pct": 0.0,
         "parcel_id": "DCC000064170",
-        "plan_latest_app_no": "4826/19",
-        "plan_latest_decision": "GRANT PERMISSION",
-        "plan_latest_received": "2019-12-23",
-        "plan_latest_status": "Appeal Decided",
+        "plan_latest_app_no": "WEB2894/26",
+        "plan_latest_decision": null,
+        "plan_latest_received": "2026-07-30",
+        "plan_latest_status": "Registered Application",
         "plan_live_permission": false,
-        "plan_n_apps_10yr": 1,
+        "plan_n_apps_10yr": 2,
         "plan_n_granted_10yr": 1,
         "planning_applications": [
+          {
+            "app_type": "Permission",
+            "decision": null,
+            "outcome": "Undecided",
+            "plan_ref": "WEB2894/26",
+            "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2894%2F26",
+            "proposal": "PROTECTED STRUCTURE:  Esprit Investments Limited intend to apply for permission for development at this c. 0.078 Ha site at Nos. 32-35 Pearse Street, Dublin 2 (all Protected Structures). The site is generally bound to the south by Pearse Street and to the north by Brunswick Villas, Dublin 2.  \r\n\r\nThe proposed developm…",
+            "registration_date": "2026-07-30",
+            "status": "Registered Application"
+          },
           {
             "app_type": "Permission",
             "decision": "GRANT PERMISSION",
@@ -21934,8 +21964,8 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.179,
-        "bld_n_buildings": 2,
+        "bld_coverage": 0.927,
+        "bld_n_buildings": 3,
         "date_added": "2022-01-01",
         "former_vacant_sites": "",
         "own_bodies": null,
@@ -26236,7 +26266,7 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.006,
+        "bld_coverage": 0.001,
         "bld_n_buildings": 1,
         "date_added": "2025-01-01",
         "former_vacant_sites": "",
@@ -26413,7 +26443,7 @@
         "plan_latest_app_no": "WEB1155/26",
         "plan_latest_decision": "GRANT PERMISSION",
         "plan_latest_received": "2026-01-23",
-        "plan_latest_status": "Decision Appealed",
+        "plan_latest_status": "Appeal Decided",
         "plan_live_permission": false,
         "plan_n_apps_10yr": 8,
         "plan_n_granted_10yr": 6,
@@ -26426,7 +26456,7 @@
             "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB1155%2F26",
             "proposal": "PROTECTED STRUCTURE The development will consist of, alterations to previously approved planning permission reg. Ref. no. 3281/20 to include signage as follows:  (i) A large sign consisting of individual illuminated raised lettering at high level on the 5th floor facing Capel street and at high level on the 4th floor…",
             "registration_date": "2026-01-23",
-            "status": "Decision Appealed"
+            "status": "Appeal Decided"
           },
           {
             "app_type": "Permission",
@@ -26841,14 +26871,25 @@
         "own_is_public": false,
         "own_public_pct": 0.0,
         "parcel_id": "DCC000064298",
-        "plan_latest_app_no": null,
+        "plan_latest_app_no": "WEB2846/26",
         "plan_latest_decision": null,
-        "plan_latest_received": null,
-        "plan_latest_status": null,
+        "plan_latest_received": "2026-07-24",
+        "plan_latest_status": "Registered Application",
         "plan_live_permission": false,
-        "plan_n_apps_10yr": 0,
+        "plan_n_apps_10yr": 1,
         "plan_n_granted_10yr": 0,
-        "planning_applications": [],
+        "planning_applications": [
+          {
+            "app_type": "Permission",
+            "decision": null,
+            "outcome": "Undecided",
+            "plan_ref": "WEB2846/26",
+            "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2846%2F26",
+            "proposal": "We, ORHRE Management Services Limited, intend to apply for permission for development at this site at 19-20 Lombard Street East and 112-113 & 114 Townsend Street, Dublin 2. The proposals comprise amendments to planning permission DCC Reg. Ref.: WEB2350/25. \r\n\r\nThe development will consist of the demolition of existing…",
+            "registration_date": "2026-07-24",
+            "status": "Registered Application"
+          }
+        ],
         "site_area_ha": 0.05,
         "val_n_props": 3,
         "val_total_nav": 62600.0,
@@ -26956,8 +26997,8 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.842,
-        "bld_n_buildings": 5,
+        "bld_coverage": 0.111,
+        "bld_n_buildings": 4,
         "date_added": "2025-01-01",
         "former_vacant_sites": "",
         "own_bodies": null,
@@ -28653,22 +28694,22 @@
         "own_public_pct": 0.0,
         "parcel_id": "DCC000064308",
         "plan_latest_app_no": "WEB2293/26",
-        "plan_latest_decision": null,
+        "plan_latest_decision": "GRANT PERMISSION",
         "plan_latest_received": "2026-05-27",
-        "plan_latest_status": "Registered Application",
+        "plan_latest_status": "Decision Notice Issued",
         "plan_live_permission": false,
         "plan_n_apps_10yr": 3,
-        "plan_n_granted_10yr": 2,
+        "plan_n_granted_10yr": 3,
         "planning_applications": [
           {
             "app_type": "Permission",
-            "decision": null,
-            "outcome": "Undecided",
+            "decision": "GRANT PERMISSION",
+            "outcome": "Granted",
             "plan_ref": "WEB2293/26",
             "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2293%2F26",
             "proposal": "Atria Living Limited intends to apply for permission for development at this c. 0.03 Ha site located on Saint Michan’s Street, Dublin 7. The site is generally bound: to the east by Saint Michan’s Street; to the south and west by Fegan’s, No. 13–18 Chancery Street and No. 1–1a Saint Michan’s Place; and to the north by…",
             "registration_date": "2026-05-27",
-            "status": "Registered Application"
+            "status": "Decision Notice Issued"
           },
           {
             "app_type": "Permission",
@@ -29769,7 +29810,7 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.091,
+        "bld_coverage": 0.088,
         "bld_n_buildings": 2,
         "date_added": "2025-01-01",
         "former_vacant_sites": "",
@@ -31053,14 +31094,24 @@
         "own_is_public": false,
         "own_public_pct": 0.0,
         "parcel_id": "DCC000064393",
-        "plan_latest_app_no": "WEB2725/26",
-        "plan_latest_decision": "APPLICATION DECLARED INVALID",
-        "plan_latest_received": "2026-07-10",
-        "plan_latest_status": "Decision Notice Issued",
+        "plan_latest_app_no": "WEB2766/26",
+        "plan_latest_decision": null,
+        "plan_latest_received": "2026-07-16",
+        "plan_latest_status": "Registered Application",
         "plan_live_permission": false,
-        "plan_n_apps_10yr": 2,
+        "plan_n_apps_10yr": 3,
         "plan_n_granted_10yr": 1,
         "planning_applications": [
+          {
+            "app_type": "Permission",
+            "decision": null,
+            "outcome": "Undecided",
+            "plan_ref": "WEB2766/26",
+            "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB2766%2F26",
+            "proposal": "Planning Permission is sought by Treslam Limited for the following Development on this site “The Hub” Saint Agnes Road\r\n& Windmill Road Intersection, Crumlin, Dublin 12, D12TR23. The extension at ground, first and set back second floor levels, the enovation, alterations and extensions to the existing disused licence p…",
+            "registration_date": "2026-07-16",
+            "status": "Registered Application"
+          },
           {
             "app_type": "Permission",
             "decision": "APPLICATION DECLARED INVALID",
