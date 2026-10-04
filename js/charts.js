@@ -261,3 +261,101 @@ export function renderDataTable(container, rows, columns) {
     .text((d) => d);
   container.replaceChildren(table.node());
 }
+
+const bisectDate = d3.bisector((d) => d.date).right;
+
+// Dates in the data files are UTC; format in UTC so a date near midnight does
+// not slip a day in the viewer's time zone.
+export const DATE = new Intl.DateTimeFormat("en-IE", {
+  day: "numeric",
+  month: "short",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
+// A step sparkline for a stat tile: a running total that changes at discrete
+// dates. points: [{ date: Date, value }] in date order; the last value is
+// held to opts.end. The SVG stretches to the tile width (non-scaling stroke),
+// and the end and hover markers are HTML so they stay round at any width.
+// opts: colour (CSS colour, e.g. a var()), format(value), label(point),
+// ariaLabel.
+export function renderSparkline(container, points, opts = {}) {
+  if (!points.length) {
+    container.replaceChildren();
+    return;
+  }
+  const height = 28;
+  const pad = 4;
+  const end = opts.end ?? points.at(-1).date;
+  const series = [...points, { date: end, value: points.at(-1).value }];
+  const x = d3
+    .scaleTime()
+    .domain([points[0].date, end])
+    .range([0, 100]);
+  const y = d3
+    .scaleLinear()
+    .domain([0, d3.max(points, (d) => d.value) || 1])
+    .range([height - pad, pad]);
+  const line = d3
+    .line()
+    .curve(d3.curveStepAfter)
+    .x((d) => x(d.date))
+    .y((d) => y(d.value));
+
+  const svg = d3
+    .create("svg")
+    .attr("viewBox", `0 0 100 ${height}`)
+    .attr("preserveAspectRatio", "none")
+    .attr("aria-hidden", "true");
+  svg
+    .append("path")
+    .attr("d", line(series))
+    .attr("fill", "none")
+    .style("stroke", opts.colour)
+    .attr("stroke-width", 2)
+    .attr("stroke-linejoin", "round")
+    .attr("vector-effect", "non-scaling-stroke");
+
+  const marker = (cls, point) => {
+    const el = document.createElement("span");
+    el.className = cls;
+    el.style.background = opts.colour;
+    place(el, point);
+    return el;
+  };
+  const place = (el, point) => {
+    el.style.left = `${x(point.date)}%`;
+    el.style.top = `${y(point.value)}px`;
+  };
+  const endDot = marker("spark-dot", { date: end, value: points.at(-1).value });
+  const hoverDot = marker("spark-dot spark-hover", points.at(-1));
+  hoverDot.hidden = true;
+
+  const show = (event, point, at = point.date) => {
+    place(hoverDot, { date: at, value: point.value });
+    hoverDot.hidden = false;
+    showTooltip(event, opts.format(point.value), opts.label(point));
+  };
+  const hide = () => {
+    hoverDot.hidden = true;
+    hideTooltip();
+  };
+
+  container.setAttribute("role", "img");
+  container.setAttribute("tabindex", "0");
+  container.setAttribute("aria-label", opts.ariaLabel ?? "Trend");
+  container.onpointermove = (event) => {
+    const rect = container.getBoundingClientRect();
+    const frac = (event.clientX - rect.left) / rect.width;
+    const date = x.invert(Math.min(Math.max(frac, 0), 1) * 100);
+    const i = Math.max(bisectDate(points, date) - 1, 0);
+    show(event, points[i], date);
+  };
+  container.onpointerleave = hide;
+  container.onfocus = () => {
+    const rect = container.getBoundingClientRect();
+    show({ clientX: rect.right, clientY: rect.top }, points.at(-1), end);
+  };
+  container.onblur = hide;
+  container.replaceChildren(svg.node(), endDot, hoverDot);
+}

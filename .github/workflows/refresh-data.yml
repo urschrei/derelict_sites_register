@@ -24,6 +24,12 @@ jobs:
       - name: Fetch latest RZLT data
         run: python3 scripts/fetch_rzlt.py
 
+      # Runs on every refresh, not only when the fetched files changed, so an
+      # area change committed by the weekly RZLT workflow is still logged.
+      # It writes only when a total changes, so the diff check below holds.
+      - name: Record area history
+        run: python3 scripts/update_area_history.py
+
       # The fetch scripts are stdlib-only; the GeoParquet export needs pyarrow,
       # pyproj, and shapely, so it runs under uv.
       - name: Install uv
