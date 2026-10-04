@@ -6,6 +6,7 @@
 
 import { setRzltData, focusRzltParcel, onRzltSelect } from "./map.js";
 import { RZLT_ZONES } from "./tokens.js";
+import { DATE, renderSparkline } from "./charts.js";
 import { selectSite as selectVacantSite, planningItem } from "./vacant.js";
 
 const EURO = new Intl.NumberFormat("en-IE", {
@@ -71,6 +72,7 @@ function renderKpis() {
 
   const hectares = props.reduce((sum, p) => sum + (p.site_area_ha ?? 0), 0);
   set("rkpi-area", `${hectares.toFixed(1)} ha`);
+  renderAreaTrend();
 
   const former = props.filter((p) => p.former_vacant_sites).length;
   set("rkpi-former", String(former));
@@ -95,6 +97,38 @@ function renderKpis() {
     set("rkpi-new", String(added));
     if (publicTile) publicTile.textContent = "–";
   }
+}
+
+// Total parcel area over time, from the change log the refresh workflow
+// keeps (data/area_history.json): one entry per change, held to today.
+function renderAreaTrend() {
+  fetch("data/area_history.json")
+    .then((response) => (response.ok ? response.json() : null))
+    .then((history) => {
+      const points = (history?.rzlt ?? []).map((entry) => ({
+        date: new Date(entry.date),
+        value: entry.hectares,
+      }));
+      if (!points.length) return;
+      const since = DATE.format(points[0].date);
+      const [start, now] = [points[0].value, points.at(-1).value].map((v) =>
+        v.toFixed(1)
+      );
+      const flat = points.every((p) => p.value === points[0].value);
+      renderSparkline(document.getElementById("rkpi-area-trend"), points, {
+        colour: "var(--rzlt-accent)",
+        end: new Date(),
+        format: (value) => `${value.toFixed(1)} ha`,
+        label: (point) => `from ${DATE.format(point.date)}`,
+        ariaLabel: flat
+          ? `Total area unchanged at ${now} ha since ${since}`
+          : `Total area ${start} ha on ${since}, now ${now} ha`,
+      });
+      document.getElementById("rkpi-area-note").textContent = flat
+        ? `unchanged since ${since}`
+        : `tracked since ${since}`;
+    })
+    .catch(() => {});
 }
 
 function buildList() {

@@ -136,10 +136,17 @@ regeneration areas. Two sites have no strongly-overlapping application to
 anchor the cross-check and fall back to the spatial signal alone; their links
 are flagged `council_confirmed = false`.
 
+`data/area_history.json` records the total area of the RZLT parcels over
+time (the sum of `site_area_ha`), one entry per change, for the sparkline in
+the RZLT view's area tile. `scripts/update_area_history.py` appends to it on
+each refresh; `--backfill` rebuilds it from git history, which starts in July
+2026.
+
 A GitHub Actions workflow runs the three fetch scripts at 00:01 and 12:01 UTC,
-regenerates the GeoParquet copies (which needs `pyarrow`, `pyproj`, and
-`shapely`, so that step runs under uv), and commits the result only when the
-data has changed. A second workflow runs the RZLT enrichment weekly.
+updates the area history, regenerates the GeoParquet copies (which needs
+`pyarrow`, `pyproj`, and `shapely`, so that step runs under uv), and commits
+the result only when the data has changed. A second workflow runs the RZLT
+enrichment weekly.
 
 Sources: Dublin City Council, DCC Derelict Sites Register Public points view
 (ArcGIS Online feature service); DCC Vacant Sites Register (MapZone planning
