@@ -210,6 +210,53 @@ function factNodes(label, value) {
   return row;
 }
 
+// Tailte "Uses" pairs a primary and secondary use with "-" for a blank,
+// e.g. "PUB, -" or "-, PHARMACY"; drop the blanks for display.
+function tidyUses(uses) {
+  return (uses ?? "")
+    .split(",")
+    .map((part) => part.trim())
+    .filter((part) => part && part !== "-")
+    .join(" · ");
+}
+
+// One valuation-list entry, in the same card style as the planning list.
+function valuationItem(rec) {
+  const item = document.createElement("li");
+  item.className = "vp-item";
+
+  const head = document.createElement("div");
+  head.className = "vp-head";
+  if (rec.category) {
+    const badge = document.createElement("span");
+    badge.className = "vp-badge";
+    badge.textContent = rec.category;
+    head.append(badge);
+  }
+  const nav = document.createElement("span");
+  nav.className = "vp-date";
+  nav.textContent =
+    rec.nav != null ? `${EURO.format(rec.nav)} NAV` : "NAV not published";
+  const number = document.createElement("span");
+  number.className = "vp-type";
+  number.textContent = `No. ${rec.property_number}`;
+  head.append(nav, number);
+
+  const address = document.createElement("p");
+  address.className = "vp-proposal";
+  address.textContent = rec.address ?? "Address not published";
+  item.append(head, address);
+
+  const uses = tidyUses(rec.uses);
+  if (uses) {
+    const line = document.createElement("span");
+    line.className = "vp-type";
+    line.textContent = uses;
+    item.append(line);
+  }
+  return item;
+}
+
 function renderDetail(feature) {
   const p = feature.properties;
   const panel = document.getElementById("rzlt-detail");
@@ -300,6 +347,48 @@ function renderDetail(feature) {
       ol.className = "vp-list";
       for (const app of apps) ol.append(planningItem(app));
       panel.append(ol);
+    }
+  }
+
+  // The valuation records behind the rateable-properties figure. Absent
+  // (rather than empty) when the data predates the per-property list.
+  if (enriched && Array.isArray(p.valuation_properties)) {
+    const props = p.valuation_properties;
+    const heading = document.createElement("h3");
+    heading.className = "vacant-planning-title";
+    heading.textContent = `Valuation list (${props.length})`;
+    panel.append(heading);
+
+    const note = document.createElement("p");
+    note.className = "vacant-planning-note";
+    note.textContent = props.length
+      ? "Commercial properties on Tailte Éireann's valuation list whose " +
+        "location falls inside this parcel. Residential property is not " +
+        "rated and does not appear here."
+      : "No commercial properties on Tailte Éireann's valuation list fall " +
+        "inside this parcel.";
+    panel.append(note);
+
+    if (props.length) {
+      // Busy parcels can match dozens of records; show the first few and
+      // fold the rest away.
+      const SHOWN = 5;
+      const ol = document.createElement("ol");
+      ol.className = "vp-list";
+      for (const rec of props.slice(0, SHOWN)) ol.append(valuationItem(rec));
+      panel.append(ol);
+      if (props.length > SHOWN) {
+        const more = document.createElement("details");
+        more.className = "vp-more";
+        const summary = document.createElement("summary");
+        summary.textContent = `Show ${props.length - SHOWN} more`;
+        const rest = document.createElement("ol");
+        rest.className = "vp-list";
+        rest.start = SHOWN + 1;
+        for (const rec of props.slice(SHOWN)) rest.append(valuationItem(rec));
+        more.append(summary, rest);
+        panel.append(more);
+      }
     }
   }
 

@@ -1491,6 +1491,17 @@ body.view-rzlt .derelict-only {
   text-decoration: underline;
 }
 
+.vp-more {
+  margin-top: 0.6rem;
+}
+
+.vp-more > summary {
+  font-size: 0.8rem;
+  color: var(--series-1);
+  cursor: pointer;
+  margin-bottom: 0.6rem;
+}
+
 @media (max-width: 720px) {
   .vacant-layout {
     grid-template-columns: 1fr;
