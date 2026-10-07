@@ -3992,7 +3992,7 @@
       "id": 114,
       "properties": {
         "OID": 114,
-        "num_active": 1
+        "num_active": 0
       },
       "type": "Feature"
     },
@@ -7422,7 +7422,7 @@
       "id": 212,
       "properties": {
         "OID": 212,
-        "num_active": 3
+        "num_active": 4
       },
       "type": "Feature"
     },
