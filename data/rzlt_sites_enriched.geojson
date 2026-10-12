@@ -592,7 +592,7 @@
         "val_n_props": 1,
         "val_property_numbers": "665662",
         "val_total_nav": 50000.0,
-        "val_uses": "PUB, -",
+        "val_uses": "-, PUB",
         "valuation_properties": [
           {
             "address": "2A FAUSSAGH AVENUE, DUBLIN 7",
@@ -600,7 +600,7 @@
             "nav": 50000,
             "property_number": 665662,
             "publication_date": "2013-12-31",
-            "uses": "PUB, -",
+            "uses": "-, PUB",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -1200,7 +1200,7 @@
         "val_n_props": 1,
         "val_property_numbers": "714401",
         "val_total_nav": 110000.0,
-        "val_uses": "PUB, -",
+        "val_uses": "-, PUB",
         "valuation_properties": [
           {
             "address": "59 60 62 MAIN STREET FINGLAS, DUBLIN 11",
@@ -1208,7 +1208,7 @@
             "nav": 110000,
             "property_number": 714401,
             "publication_date": "2013-12-31",
-            "uses": "PUB, -",
+            "uses": "-, PUB",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -1988,7 +1988,7 @@
         "val_n_props": 3,
         "val_property_numbers": "2177800; 2177801; 2211053",
         "val_total_nav": 202950.0,
-        "val_uses": "-, PHARMACY; -, SUPERMARKET 2 [500-2500 SQ. M.]; OPTICIAN, -",
+        "val_uses": "-, OPTICIAN; -, PHARMACY; -, SUPERMARKET 2 [500-2500 SQ. M.]",
         "valuation_properties": [
           {
             "address": "Supermarket, Unit 1-7 College View Road, Main Street, Dublin 9",
@@ -2014,7 +2014,7 @@
             "nav": 10350,
             "property_number": 2211053,
             "publication_date": "2013-12-31",
-            "uses": "OPTICIAN, -",
+            "uses": "-, OPTICIAN",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -3202,7 +3202,7 @@
         "val_n_props": 2,
         "val_property_numbers": "2202889; 747081",
         "val_total_nav": 48250.0,
-        "val_uses": "-, MOTOR SHOWROOM; MOTOR SHOWROOM, YARD",
+        "val_uses": "-, MOTOR SHOWROOM; YARD, MOTOR SHOWROOM",
         "valuation_properties": [
           {
             "address": "84-88/1 Dorset Street Lower, Dublin 1",
@@ -3219,7 +3219,7 @@
             "nav": 35600,
             "property_number": 747081,
             "publication_date": "2013-12-31",
-            "uses": "MOTOR SHOWROOM, YARD",
+            "uses": "YARD, MOTOR SHOWROOM",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -4784,7 +4784,7 @@
         "val_n_props": 2,
         "val_property_numbers": "731583; 731584",
         "val_total_nav": 3770.0,
-        "val_uses": "-, CAR PARK (OFFICE); -, YARD",
+        "val_uses": "-, YARD; CAR PARK (OFFICE), -",
         "valuation_properties": [
           {
             "address": "Car Park, 146 Abbey Street Upper, Dublin 1",
@@ -4792,7 +4792,7 @@
             "nav": 1820,
             "property_number": 731583,
             "publication_date": "2013-12-31",
-            "uses": "-, CAR PARK (OFFICE)",
+            "uses": "CAR PARK (OFFICE), -",
             "valuation_date": "2011-04-07"
           },
           {
@@ -5440,7 +5440,7 @@
         "val_n_props": 1,
         "val_property_numbers": "732426",
         "val_total_nav": 1120.0,
-        "val_uses": "RIGHT OF TRADING, -",
+        "val_uses": "-, RIGHT OF TRADING",
         "valuation_properties": [
           {
             "address": "RIGHT OF STREET TRADING (E1), MARLBOROUGH STREET, DUBLIN 1",
@@ -5448,7 +5448,7 @@
             "nav": 1120,
             "property_number": 732426,
             "publication_date": "2013-12-31",
-            "uses": "RIGHT OF TRADING, -",
+            "uses": "-, RIGHT OF TRADING",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -15223,7 +15223,7 @@
         "val_n_props": 32,
         "val_property_numbers": "2174388; 2174389; 2174390; 2174391; 2174392; 2174393; 2174394; 2174395; 2174396; 2174397; 2174399; 2174401; 2174402; 2174404; 2174406; 2174408; 2174413; 2174414; 2174415; 2174416; 2174417; 2174418; 2174419; 2174420; 2174421; 2174423; 2174424; 2174425; 2174426; 2174435; 2174436; 5027182",
         "val_total_nav": 768260.0,
-        "val_uses": "-, WAREHOUSE; -, WORKSHOP; OFFICE, BAKERY; STORE, OFFICE; WAREHOUSE, OFFICE",
+        "val_uses": "-, WAREHOUSE; -, WORKSHOP; BAKERY, OFFICE; STORE, OFFICE; WAREHOUSE, OFFICE",
         "valuation_properties": [
           {
             "address": "Unit 5/1 Finglas Business Centre, Jamestown Road, Finglas, Dublin 11",
@@ -15393,7 +15393,7 @@
             "nav": 33300,
             "property_number": 2174415,
             "publication_date": "2013-12-31",
-            "uses": "OFFICE, BAKERY",
+            "uses": "BAKERY, OFFICE",
             "valuation_date": "2011-04-07"
           },
           {
@@ -18075,7 +18075,7 @@
         "val_n_props": 1,
         "val_property_numbers": "2135265",
         "val_total_nav": 40000.0,
-        "val_uses": "-, CAR PARK (SURFACE)",
+        "val_uses": "CAR PARK (SURFACE), -",
         "valuation_properties": [
           {
             "address": "Carspaces, 100-101 Amien Street, Dublin 1",
@@ -18083,7 +18083,7 @@
             "nav": 40000,
             "property_number": 2135265,
             "publication_date": "2013-12-31",
-            "uses": "-, CAR PARK (SURFACE)",
+            "uses": "CAR PARK (SURFACE), -",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -18230,7 +18230,7 @@
         "val_n_props": 1,
         "val_property_numbers": "836588",
         "val_total_nav": 85000.0,
-        "val_uses": "-, CAR PARK (SURFACE)",
+        "val_uses": "CAR PARK (SURFACE), -",
         "valuation_properties": [
           {
             "address": "5-6 CITY QUAY, DUBLIN 2",
@@ -18238,7 +18238,7 @@
             "nav": 85000,
             "property_number": 836588,
             "publication_date": "2013-12-31",
-            "uses": "-, CAR PARK (SURFACE)",
+            "uses": "CAR PARK (SURFACE), -",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -20239,7 +20239,7 @@
         "val_n_props": 2,
         "val_property_numbers": "854075; 854078",
         "val_total_nav": 32690.0,
-        "val_uses": "-, WORKSHOP; MOTOR ACCESSORIES, -",
+        "val_uses": "-, MOTOR ACCESSORIES; -, WORKSHOP",
         "valuation_properties": [
           {
             "address": "11 USHER'S ISLAND, DUBLIN 8",
@@ -20247,7 +20247,7 @@
             "nav": 17670,
             "property_number": 854075,
             "publication_date": "2014-08-08",
-            "uses": "MOTOR ACCESSORIES, -",
+            "uses": "-, MOTOR ACCESSORIES",
             "valuation_date": "2011-04-07"
           },
           {
@@ -25011,7 +25011,7 @@
         "val_n_props": 2,
         "val_property_numbers": "815393; 815397",
         "val_total_nav": 61760.0,
-        "val_uses": "ADVERTISING STATION, SHEET 48; PUB, -",
+        "val_uses": "-, PUB; ADVERTISING STATION, SHEET 48",
         "valuation_properties": [
           {
             "address": "8-9 Richmond Street South, Dublin 2, DUBLIN 2",
@@ -25028,7 +25028,7 @@
             "nav": 60000,
             "property_number": 815397,
             "publication_date": "2013-12-31",
-            "uses": "PUB, -",
+            "uses": "-, PUB",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -27725,7 +27725,7 @@
         "val_n_props": 3,
         "val_property_numbers": "837474; 837475; 837476",
         "val_total_nav": 62600.0,
-        "val_uses": "-, GARAGE; -, OFFICE (OWN DOOR); SHOP, -",
+        "val_uses": "-, GARAGE; -, OFFICE (OWN DOOR); -, SHOP",
         "valuation_properties": [
           {
             "address": "18-19 LOMBARD ST EAST,, DUBLIN 2.",
@@ -27751,7 +27751,7 @@
             "nav": 31400,
             "property_number": 837476,
             "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
+            "uses": "-, SHOP",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -28116,7 +28116,7 @@
         "val_n_props": 2,
         "val_property_numbers": "732154; 732155",
         "val_total_nav": 10280.0,
-        "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN); SHOP, -",
+        "val_uses": "-, OFFICE (GEORGIAN / VICTORIAN); -, SHOP",
         "valuation_properties": [
           {
             "address": "GROUND FLOOR, 78 (PT) MARLBOROUGH STREET, DUBLIN 1",
@@ -28124,7 +28124,7 @@
             "nav": 6910,
             "property_number": 732154,
             "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
+            "uses": "-, SHOP",
             "valuation_date": "2011-04-07"
           },
           {
@@ -29321,7 +29321,7 @@
         "val_n_props": 3,
         "val_property_numbers": "788092; 788111; 788114",
         "val_total_nav": 45160.0,
-        "val_uses": "FURNISHINGS, -; HAIRDRESSING SALON, -",
+        "val_uses": "-, FURNISHINGS; -, HAIRDRESSING SALON",
         "valuation_properties": [
           {
             "address": "Ground floor and Basement, 22 Aungier Street, Dublin 2",
@@ -29329,7 +29329,7 @@
             "nav": 16730,
             "property_number": 788092,
             "publication_date": "2013-12-31",
-            "uses": "HAIRDRESSING SALON, -",
+            "uses": "-, HAIRDRESSING SALON",
             "valuation_date": "2011-04-07"
           },
           {
@@ -29338,7 +29338,7 @@
             "nav": 18900,
             "property_number": 788111,
             "publication_date": "2013-12-31",
-            "uses": "FURNISHINGS, -",
+            "uses": "-, FURNISHINGS",
             "valuation_date": "2011-04-07"
           },
           {
@@ -29347,7 +29347,7 @@
             "nav": 9530,
             "property_number": 788114,
             "publication_date": "2013-12-31",
-            "uses": "HAIRDRESSING SALON, -",
+            "uses": "-, HAIRDRESSING SALON",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -29566,7 +29566,7 @@
         "val_n_props": 1,
         "val_property_numbers": "672915",
         "val_total_nav": 10320.0,
-        "val_uses": "-, SURGERY",
+        "val_uses": "SURGERY, -",
         "valuation_properties": [
           {
             "address": "87 KING STREET NORTH, DUBLIN 7",
@@ -29574,7 +29574,7 @@
             "nav": 10320,
             "property_number": 672915,
             "publication_date": "2013-12-31",
-            "uses": "-, SURGERY",
+            "uses": "SURGERY, -",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -29701,7 +29701,7 @@
         "val_n_props": 5,
         "val_property_numbers": "748507; 748508; 748509; 748510; 748659",
         "val_total_nav": 91320.0,
-        "val_uses": "SHOP, -; STORE, -; STORE, OFFICE; WAREHOUSE CASH &CARRY, -",
+        "val_uses": "-, SHOP; -, WAREHOUSE CASH &CARRY; STORE, -; STORE, OFFICE",
         "valuation_properties": [
           {
             "address": "Ground Floor(part) Wholesale Retail Unit, 13-14 Chancery Street, Dublin 7",
@@ -29709,7 +29709,7 @@
             "nav": 19620,
             "property_number": 748507,
             "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
+            "uses": "-, SHOP",
             "valuation_date": "2011-04-07"
           },
           {
@@ -29718,7 +29718,7 @@
             "nav": 28200,
             "property_number": 748508,
             "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
+            "uses": "-, SHOP",
             "valuation_date": "2011-04-07"
           },
           {
@@ -29727,7 +29727,7 @@
             "nav": 24700,
             "property_number": 748509,
             "publication_date": "2013-12-31",
-            "uses": "WAREHOUSE CASH &CARRY, -",
+            "uses": "-, WAREHOUSE CASH &CARRY",
             "valuation_date": "2011-04-07"
           },
           {
@@ -29866,7 +29866,7 @@
         "val_n_props": 1,
         "val_property_numbers": "707320",
         "val_total_nav": 13870.0,
-        "val_uses": "CONVENIENCE STORE [<200 SQ. M.], -",
+        "val_uses": "-, CONVENIENCE STORE [<200 SQ. M.]",
         "valuation_properties": [
           {
             "address": "32 INFIRMARY ROAD, DUBLIN 7",
@@ -29874,7 +29874,7 @@
             "nav": 13870,
             "property_number": 707320,
             "publication_date": "2013-12-31",
-            "uses": "CONVENIENCE STORE [<200 SQ. M.], -",
+            "uses": "-, CONVENIENCE STORE [<200 SQ. M.]",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -30115,7 +30115,7 @@
         "val_n_props": 4,
         "val_property_numbers": "731838; 731839; 731840; 731841",
         "val_total_nav": 20050.0,
-        "val_uses": "-, OFFICE (OVER THE SHOP); SHOP, -; STORE, OFFICE (OVER THE SHOP)",
+        "val_uses": "-, OFFICE (OVER THE SHOP); -, SHOP; STORE, OFFICE (OVER THE SHOP)",
         "valuation_properties": [
           {
             "address": "OFFICE STORE (1ST FLOOR), 47 ABBEY STREET MIDDLE, DUBLIN 1",
@@ -30141,7 +30141,7 @@
             "nav": 7390,
             "property_number": 731840,
             "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
+            "uses": "-, SHOP",
             "valuation_date": "2011-04-07"
           },
           {
@@ -31304,7 +31304,7 @@
         "val_n_props": 1,
         "val_property_numbers": "781288",
         "val_total_nav": 6470.0,
-        "val_uses": "-, SURGERY",
+        "val_uses": "SURGERY, -",
         "valuation_properties": [
           {
             "address": "55 AMIENS STREET, DUBLIN 1",
@@ -31312,7 +31312,7 @@
             "nav": 6470,
             "property_number": 781288,
             "publication_date": "2013-12-31",
-            "uses": "-, SURGERY",
+            "uses": "SURGERY, -",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -31704,7 +31704,7 @@
         "val_n_props": 2,
         "val_property_numbers": "2185413; 746200",
         "val_total_nav": 35920.0,
-        "val_uses": "CAFE, -; STORE",
+        "val_uses": "-, CAFE; STORE",
         "valuation_properties": [
           {
             "address": "Ground Floor Retail Unit, Millennium Walkway, 21 -23 Abbey Street Upper, Dublin 1",
@@ -31712,7 +31712,7 @@
             "nav": 26900,
             "property_number": 2185413,
             "publication_date": "2013-12-31",
-            "uses": "CAFE, -",
+            "uses": "-, CAFE",
             "valuation_date": "2011-04-07"
           },
           {
@@ -31809,7 +31809,7 @@
         "val_n_props": 1,
         "val_property_numbers": "801147",
         "val_total_nav": 12340.0,
-        "val_uses": "CAFE, -",
+        "val_uses": "-, CAFE",
         "valuation_properties": [
           {
             "address": "80 THOMAS STREET, DUBLIN 8",
@@ -31817,7 +31817,7 @@
             "nav": 12340,
             "property_number": 801147,
             "publication_date": "2013-12-31",
-            "uses": "CAFE, -",
+            "uses": "-, CAFE",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -32022,7 +32022,7 @@
         "val_n_props": 1,
         "val_property_numbers": "732092",
         "val_total_nav": 6170.0,
-        "val_uses": "SHOP, -",
+        "val_uses": "-, SHOP",
         "valuation_properties": [
           {
             "address": "SHOP, 10A CATHEDRAL STREET, DUBLIN 1",
@@ -32030,7 +32030,7 @@
             "nav": 6170,
             "property_number": 732092,
             "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
+            "uses": "-, SHOP",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -32123,7 +32123,7 @@
         "val_n_props": 1,
         "val_property_numbers": "802872",
         "val_total_nav": 40000.0,
-        "val_uses": "PUB, -",
+        "val_uses": "-, PUB",
         "valuation_properties": [
           {
             "address": "LICD HOUSE, 1-2 CHAMBER STREET, DUBLIN 8",
@@ -32131,7 +32131,7 @@
             "nav": 40000,
             "property_number": 802872,
             "publication_date": "2013-12-31",
-            "uses": "PUB, -",
+            "uses": "-, PUB",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -32294,7 +32294,7 @@
         "val_n_props": 2,
         "val_property_numbers": "5003410; 596091",
         "val_total_nav": 142700.0,
-        "val_uses": "OFFICE (OVER THE SHOP), RESTAURANT; PUB, -",
+        "val_uses": "-, PUB; RESTAURANT, OFFICE (OVER THE SHOP)",
         "valuation_properties": [
           {
             "address": "67 CRUMLIN VILLAGE, DUBLIN 12",
@@ -32302,7 +32302,7 @@
             "nav": 22700,
             "property_number": 5003410,
             "publication_date": "2013-12-31",
-            "uses": "OFFICE (OVER THE SHOP), RESTAURANT",
+            "uses": "RESTAURANT, OFFICE (OVER THE SHOP)",
             "valuation_date": "2011-04-07"
           },
           {
@@ -32311,7 +32311,7 @@
             "nav": 120000,
             "property_number": 596091,
             "publication_date": "2013-12-31",
-            "uses": "PUB, -",
+            "uses": "-, PUB",
             "valuation_date": "2011-04-07"
           }
         ],
@@ -32823,7 +32823,7 @@
         "val_n_props": 2,
         "val_property_numbers": "2149910; 812825",
         "val_total_nav": 187900.0,
-        "val_uses": "OFFICE (OVER THE SHOP), RESTAURANT; PUB, -",
+        "val_uses": "-, PUB; OFFICE (OVER THE SHOP), RESTAURANT",
         "valuation_properties": [
           {
             "address": "Upper Floors, 2/4 Terenure Road East, Rathgar, Dublin 6.",
@@ -32840,7 +32840,7 @@
             "nav": 136500,
             "property_number": 812825,
             "publication_date": "2015-04-22",
-            "uses": "PUB, -",
+            "uses": "-, PUB",
             "valuation_date": "2011-04-07"
           }
         ],
