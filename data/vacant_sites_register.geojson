@@ -2323,10 +2323,24 @@
         "address": "297 North Circular Road, Dublin 7",
         "date_registered": "2017-07-28",
         "folio_reference": "DN98928F",
-        "linked_planning_ref_count": 8,
+        "linked_planning_ref_count": 9,
         "owner_address": "Building 1 Swift Square, Northwood Park, Northwood, Dublin 9, D09 A0E4",
         "ownership": "Lilacstone Limited",
         "planning_applications": [
+          {
+            "app_type": "Permission                              ",
+            "applicant": "Jeremiah O’Reilly & Associates Limited",
+            "council_confirmed": true,
+            "decision": null,
+            "decision_date": null,
+            "outcome": "Undecided",
+            "overlap_pct": 92.6,
+            "plan_ref": "WEB3516/26",
+            "planning_portal_url": "https://webapps.dublincity.ie/PublicAccess_Live/SearchResult/RunThirdPartySearch?FileSystemId=PL&Folder1_Ref=WEB3516%2F26",
+            "proposal": "PROTECTED STRUCTURE:  The development will principally consist of: (i) the conse",
+            "register_number": "VS-0055",
+            "registration_date": "2026-10-13"
+          },
           {
             "app_type": "Permission                              ",
             "applicant": "Jeremiah O’Reilly & Associates Limited",
