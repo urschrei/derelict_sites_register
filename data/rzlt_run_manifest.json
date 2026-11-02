@@ -34,14 +34,14 @@
     "planning": "ok",
     "valuation": "ok"
   },
-  "output_sha256": "269ed4a421c98656a4bf4f17a8b99576562dbdd45ea25f838e9fce1192f29cf0",
+  "output_sha256": "383e8467f7f0644c5d8282863384fa57598e5c280b072f014bae0a6c0cb40179",
   "parcels_in": 148,
   "parcels_out": 148,
   "planning_received_cutoff": "2016-01-01",
-  "run": "2026-10-26T08:48:16Z",
+  "run": "2026-11-02T10:55:45Z",
   "sources": {
     "buildings": {
-      "fetched": 241970,
+      "fetched": 241987,
       "url": "https://overpass-api.de/api/interpreter"
     },
     "ownership": {
@@ -59,7 +59,7 @@
       "dropped_out_of_range": [
         10029125
       ],
-      "fetched": 19792,
+      "fetched": 19790,
       "url": "https://opendata.tailte.ie/api/Property/GetProperties"
     }
   }

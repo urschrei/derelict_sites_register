@@ -29649,8 +29649,8 @@
         "type": "Polygon"
       },
       "properties": {
-        "bld_coverage": 0.738,
-        "bld_n_buildings": 2,
+        "bld_coverage": 0.0,
+        "bld_n_buildings": 1,
         "date_added": "2025-01-01",
         "former_vacant_sites": "",
         "own_bodies": null,
