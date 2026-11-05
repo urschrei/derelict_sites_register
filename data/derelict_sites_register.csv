@@ -21,7 +21,7 @@ DS937,6 Creighton Street Dublin 2 D02CF66,South East,On Derelict Sites Register,
 DS953,5 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20PF29,South Central,On Derelict Sites Register,Yes,Yes,No,Yes,2019-04-10,04/11/2026,"Mulberry Cottages, 5, Martin's Row, Chapelizod, Dublin 20",53.3501413599,-6.345363001
 DS980,No Address,South Central,On Derelict Sites Register,Yes,Yes,No,No,2017-05-17,04/11/2026,"Hanover Lane, adj. No.34, Dublin 8",53.3404139299,-6.273557605
 DS982,8 Ferguson Road Dublin 9 D09E3E5,Central,On Derelict Sites Register,Yes,Yes,No,Yes,2017-09-28,04/11/2026,"Ferguson Road, 8, Drumcondra, Dublin 9",53.3707937699,-6.259915267
-DS1006,23 Blessington Street Dublin 7 D07DT6D,Central,On Derelict Sites Register,Yes,Yes,No,No,2017-09-29,04/11/2026,"Blessington Street, 23, Dublin 7",53.3567665,-6.267470368
+DS1006,"23 Blessington Street, Dublin 7, D07 DT6D",Central,On Derelict Sites Register,Yes,Yes,No,No,2017-09-29,05/11/2026,"Blessington Street, 23, Dublin 7",53.3567665,-6.2674704
 DS1053,"11 Bass Place, Dublin 2, D02 R5P3",South East,On Derelict Sites Register,Yes,Yes,No,Yes,2023-04-04,04/11/2026,"Bass Place, 11, Dublin 2",53.3421656,-6.2470868
 DS1371,7 Terrace Place Dublin 1~|~8 Terrace Place Dublin 1,Central,On Derelict Sites Register,Yes,Yes,No,Yes,2019-06-14,04/11/2026,"Terrace Place, 7 & 8, Dublin 1",53.3544649911,-6.2513834136
 DS1417,"2 Church Street, Finglas, Dublin 11, D11 EP1K",North West,On Derelict Sites Register,Yes,Yes,No,No,2024-01-30,04/11/2026,"Church Street, 2, Finglas, Dublin 11",53.3879806599,-6.300714415
@@ -81,7 +81,7 @@ DS1161,23 James's Street Dublin 8 D08V3P2,South Central,On Derelict Sites Regist
 DS851,Wharton Hall Harolds Cross Dublin 6W D6WW838,South East,On Derelict Sites Register,Yes,Yes,No,No,2014-04-01,04/11/2026,"Wharton Terrace, Wharton Hall, Harold's Cross, Dublin 6W",53.3291122399,-6.275328937
 DS1280B,53 Clanbrassil Street Lower Dublin 8,South East,On Derelict Sites Register,Yes,Yes,No,No,2024-06-11,04/11/2026,"Clanbrassil Street Lower, 53, Dublin 8",53.3324638815,-6.2749442542
 DS1844,"5 Saint Patrick's Road, Dublin 9, D09 N2R0",Central,On Derelict Sites Register,Yes,Yes,No,No,2024-08-20,04/11/2026,"Saint Patrick's Road, 5, Dublin 9",53.3627698,-6.2610578
-DS1218,4 Spencer Place Dublin 3 D03X651,Central,On Derelict Sites Register,Yes,Yes,No,No,2023-06-27,04/11/2026,"Spencer Place, 4, North Strand, Dublin 3",53.35787423,-6.239423188
+DS1218,"4 Spencer Place, Dublin 3, D03 X651",Central,On Derelict Sites Register,Yes,Yes,No,No,2023-06-27,05/11/2026,"Spencer Place, 4, North Strand, Dublin 3",53.3578742,-6.2394232
 DS2117,,Central,On Derelict Sites Register,Yes,Yes,No,No,2026-08-27,04/11/2026,"Saint Philomena's Road, 2, Glasnevin, Dublin 11",53.36753638,-6.274148756
 DS1562,91 Raheny Road Dublin 5 D05F9W2,North Central,On Derelict Sites Register,Yes,Yes,No,No,2025-10-13,04/11/2026,"Raheny Road, 91, Raheny, Dublin 5",53.3845918899,-6.1756283449
 DS2062,607 Clonard Road Dublin 12 D12F2D0,South East,On Derelict Sites Register,Yes,Yes,No,No,2025-01-22,04/11/2026,"Clonard Road, 607, Kimmage, Dublin 12",53.3184614399,-6.300362061

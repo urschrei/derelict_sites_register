@@ -691,7 +691,7 @@
     {
       "geometry": {
         "coordinates": [
-          -6.267470368,
+          -6.2674704,
           53.3567665
         ],
         "type": "Point"
@@ -705,17 +705,17 @@
         "derelict_site_description": "Blessington Street, 23, Dublin 7",
         "derelict_site_reference_number": "DS1006",
         "derelict_site_status": "On Derelict Sites Register",
-        "full_address": "23 Blessington Street Dublin 7 D07DT6D",
+        "full_address": "23 Blessington Street, Dublin 7, D07 DT6D",
         "is_active_derelict_site_case": "Yes",
         "is_active_derelict_site_case_COUNT": 1,
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
         "is_owned_by_dublin_city_council": "No",
-        "most_recent_update_date": "04/11/2026",
-        "ref_site_master_uuid": "f08caa9e-7db6-4100-8402-83f7778996b5",
+        "most_recent_update_date": "05/11/2026",
+        "ref_site_master_uuid": "F08CAA9E-7DB6-4100-8402-83F7778996B5",
         "site_location_latitude": 53.3567665,
-        "site_location_longitude": -6.267470368
+        "site_location_longitude": -6.2674704
       },
       "type": "Feature"
     },
@@ -2551,8 +2551,8 @@
     {
       "geometry": {
         "coordinates": [
-          -6.239423188,
-          53.35787423
+          -6.2394232,
+          53.3578742
         ],
         "type": "Point"
       },
@@ -2565,17 +2565,17 @@
         "derelict_site_description": "Spencer Place, 4, North Strand, Dublin 3",
         "derelict_site_reference_number": "DS1218",
         "derelict_site_status": "On Derelict Sites Register",
-        "full_address": "4 Spencer Place Dublin 3 D03X651",
+        "full_address": "4 Spencer Place, Dublin 3, D03 X651",
         "is_active_derelict_site_case": "Yes",
         "is_active_derelict_site_case_COUNT": 1,
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
         "is_owned_by_dublin_city_council": "No",
-        "most_recent_update_date": "04/11/2026",
-        "ref_site_master_uuid": "6d0e2885-dbce-4120-9f6a-a78695c5382e",
-        "site_location_latitude": 53.35787423,
-        "site_location_longitude": -6.239423188
+        "most_recent_update_date": "05/11/2026",
+        "ref_site_master_uuid": "6D0E2885-DBCE-4120-9F6A-A78695C5382E",
+        "site_location_latitude": 53.3578742,
+        "site_location_longitude": -6.2394232
       },
       "type": "Feature"
     },
