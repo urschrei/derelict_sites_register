@@ -27,7 +27,7 @@ DS1371,7 Terrace Place Dublin 1~|~8 Terrace Place Dublin 1,Central,On Derelict S
 DS1417,"2 Church Street, Finglas, Dublin 11, D11 EP1K",North West,On Derelict Sites Register,Yes,Yes,No,No,2024-01-30,05/11/2026,"Church Street, 2, Finglas, Dublin 11",53.3879806599,-6.300714415
 DS2004,5 Willow Park Road Dublin 11 D11P898,North West,On Derelict Sites Register,Yes,Yes,No,No,2024-08-29,05/11/2026,"Willow Park Road, 5, Ballymun, Dublin 11",53.3911684599,-6.2797533559
 DS2030,No Address,Central,On Derelict Sites Register,Yes,Yes,No,No,2024-11-29,05/11/2026,"West Road, Coady's Yard, North Strand, Dublin 3",53.35640745,-6.2391310539
-DS250,144 Harold's Cross Road Dublin 6W,South East,On Derelict Sites Register,Yes,Yes,No,Yes,2007-06-08,05/11/2026,"Harold's Cross Road, 144, Dublin 6W",53.32453796,-6.279611808
+DS250,"144 Harold's Cross Road, Dublin 6W",South East,On Derelict Sites Register,Yes,Yes,No,Yes,2007-06-08,06/11/2026,"Harold's Cross Road, 144, Dublin 6W",53.32453796,-6.279611808
 DS575A,6 LEESON STREET LOWER DUBLIN 2 D02H283  ,South East,On Derelict Sites Register,Yes,Yes,No,No,2019-04-16,05/11/2026,"Leeson Street Lower, 6, Dublin 2",53.33573904,-6.2568554689
 DS912,18 Cadogan Road Dublin 3 D03K650,North Central,On Derelict Sites Register,Yes,Yes,No,Yes,2022-07-08,05/11/2026,"Cadogan Road, 18, Fairview, Dublin 3",53.36181523,-6.239097538
 DS954,6 Mulberry Cottages Martin's Row Chapelizod Dublin 20 D20ED28,South Central,On Derelict Sites Register,Yes,Yes,No,Yes,2019-04-10,05/11/2026,"Mulberry Cottages, 6, Martin's Row, Chapelizod, Dublin 20",53.35011054,-6.345303913
@@ -136,7 +136,7 @@ DS1797,25 Moss Street Dublin 2~|~1-4 CITY QUAY DUBLIN 2 D02KT32  ~|~,South East,
 DS2073,TYPEWRITER SHOP.IE 120 DORSET STREET UPPER DUBLIN 1 D01RX53 ,Central,On Derelict Sites Register,Yes,Yes,No,No,2025-09-02,05/11/2026,"Dorset Street Upper, 120, Dublin 1",53.3544372,-6.266933647
 DS1516,2 Clanawley Road Dublin 5 D05E516,North Central,On Derelict Sites Register,Yes,Yes,No,No,2025-06-25,05/11/2026,"Clanawley Road, 2, Clontarf, Dublin 5",53.37456931,-6.2081793239
 DS2326,,South East,On Derelict Sites Register,Yes,Yes,No,No,2026-10-15,05/11/2026,"Herberton Road, Former G4S Site, Crumlin, Dublin 12",53.33322691,-6.29889503
-DS2344,,North Central,On Derelict Sites Register,Yes,Yes,No,No,2026-10-21,05/11/2026,"Saint Declan's Road, 54, Marino, Dublin 3",53.369018524,-6.2316134036
+DS2344,"54 Saint Declan's Road, Marino, Dublin 3, D03 K6F9",North Central,On Derelict Sites Register,Yes,Yes,No,No,2026-10-21,06/11/2026,"Saint Declan's Road, 54, Marino, Dublin 3",53.3690185,-6.2316134
 DS2283,,Central,On Derelict Sites Register,Yes,Yes,No,No,2026-08-26,05/11/2026,"Gardiner Street Middle, 30, Hill 16 Pub, Dublin 1 (TF)",53.3550546999,-6.2573155
 DS2347,,South Central,On Derelict Sites Register,Yes,Yes,No,No,2026-09-10,05/11/2026,"South Circular Road, 520, Rialto, Dublin 8",53.33601737,-6.29715135
 DS2356,"131 Elm Mount Road, Beaumont, Dublin 9, D09 N934",North Central,On Derelict Sites Register,Yes,Yes,No,No,2026-09-18,05/11/2026,"Elm Mount Road 131, Dublin 9 ",53.3803533,-6.2230093

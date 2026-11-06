@@ -891,15 +891,15 @@
         "derelict_site_description": "Harold's Cross Road, 144, Dublin 6W",
         "derelict_site_reference_number": "DS250",
         "derelict_site_status": "On Derelict Sites Register",
-        "full_address": "144 Harold's Cross Road Dublin 6W",
+        "full_address": "144 Harold's Cross Road, Dublin 6W",
         "is_active_derelict_site_case": "Yes",
         "is_active_derelict_site_case_COUNT": 1,
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
         "is_owned_by_dublin_city_council": "Yes",
-        "most_recent_update_date": "05/11/2026",
-        "ref_site_master_uuid": "faab8459-fe11-472e-bedb-d6e86f931d79",
+        "most_recent_update_date": "06/11/2026",
+        "ref_site_master_uuid": "FAAB8459-FE11-472E-BEDB-D6E86F931D79",
         "site_location_latitude": 53.32453796,
         "site_location_longitude": -6.279611808
       },
@@ -4256,8 +4256,8 @@
     {
       "geometry": {
         "coordinates": [
-          -6.2316134036,
-          53.369018524
+          -6.2316134,
+          53.3690185
         ],
         "type": "Point"
       },
@@ -4270,17 +4270,17 @@
         "derelict_site_description": "Saint Declan's Road, 54, Marino, Dublin 3",
         "derelict_site_reference_number": "DS2344",
         "derelict_site_status": "On Derelict Sites Register",
-        "full_address": null,
+        "full_address": "54 Saint Declan's Road, Marino, Dublin 3, D03 K6F9",
         "is_active_derelict_site_case": "Yes",
         "is_active_derelict_site_case_COUNT": 1,
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
         "is_owned_by_dublin_city_council": "No",
-        "most_recent_update_date": "05/11/2026",
-        "ref_site_master_uuid": "0f309edf-0f98-4799-a758-fee684f4eb8a",
-        "site_location_latitude": 53.369018524,
-        "site_location_longitude": -6.2316134036
+        "most_recent_update_date": "06/11/2026",
+        "ref_site_master_uuid": "0F309EDF-0F98-4799-A758-FEE684F4EB8A",
+        "site_location_latitude": 53.3690185,
+        "site_location_longitude": -6.2316134
       },
       "type": "Feature"
     },
