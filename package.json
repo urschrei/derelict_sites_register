@@ -7,7 +7,7 @@
     "build:css": "tailwindcss -i css/style.src.css -o css/style.css --minify"
   },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.0",
+    "@tailwindcss/cli": "^4.3.5",
     "tailwindcss": "^4.1.0"
   }
 }
