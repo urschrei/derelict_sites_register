@@ -29698,57 +29698,11 @@
           }
         ],
         "site_area_ha": 0.119,
-        "val_n_props": 5,
-        "val_property_numbers": "748507; 748508; 748509; 748510; 748659",
-        "val_total_nav": 91320.0,
-        "val_uses": "SHOP, -; STORE, -; STORE, OFFICE; WAREHOUSE CASH &CARRY, -",
-        "valuation_properties": [
-          {
-            "address": "Ground Floor(part) Wholesale Retail Unit, 13-14 Chancery Street, Dublin 7",
-            "category": "RETAIL (SHOPS)",
-            "nav": 19620,
-            "property_number": 748507,
-            "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
-            "valuation_date": "2011-04-07"
-          },
-          {
-            "address": "Ground and First Floor, 15 Chancery Street, Dublin 7",
-            "category": "RETAIL (SHOPS)",
-            "nav": 28200,
-            "property_number": 748508,
-            "publication_date": "2013-12-31",
-            "uses": "SHOP, -",
-            "valuation_date": "2011-04-07"
-          },
-          {
-            "address": "Ground and First Floor, 16-17 Chancery Street, Dublin 7",
-            "category": "INDUSTRIAL USES",
-            "nav": 24700,
-            "property_number": 748509,
-            "publication_date": "2013-12-31",
-            "uses": "WAREHOUSE CASH &CARRY, -",
-            "valuation_date": "2011-04-07"
-          },
-          {
-            "address": "Ground and First Floor, 18 Chancery Street, Dublin 7",
-            "category": "INDUSTRIAL USES",
-            "nav": 9000,
-            "property_number": 748510,
-            "publication_date": "2013-12-31",
-            "uses": "STORE, OFFICE",
-            "valuation_date": "2011-04-07"
-          },
-          {
-            "address": "Ground Floor, 1 St Michans Place, Dublin 7",
-            "category": "INDUSTRIAL USES",
-            "nav": 9800,
-            "property_number": 748659,
-            "publication_date": "2013-12-31",
-            "uses": "STORE, -",
-            "valuation_date": "2011-04-07"
-          }
-        ],
+        "val_n_props": 0,
+        "val_property_numbers": null,
+        "val_total_nav": null,
+        "val_uses": null,
+        "valuation_properties": [],
         "zone_desc": "To consolidate and facilitate the development of the central area, and to identify, reinforce, strengthen and protect its civic design character and dignity.",
         "zone_gzt": "M2",
         "zone_orig": "Z5 - City Centre"
