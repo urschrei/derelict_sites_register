@@ -1869,8 +1869,8 @@
     {
       "geometry": {
         "coordinates": [
-          -6.2368559579,
-          53.35855493
+          -6.236856,
+          53.3585549
         ],
         "type": "Point"
       },
@@ -1883,17 +1883,17 @@
         "derelict_site_description": "Faith Avenue, 20, Dublin 3",
         "derelict_site_reference_number": "DS1916",
         "derelict_site_status": "On Derelict Sites Register",
-        "full_address": "20 Faith Avenue Dublin 3 D03PP21",
+        "full_address": "20 Faith Avenue, Dublin 3, D03 PP21",
         "is_active_derelict_site_case": "Yes",
         "is_active_derelict_site_case_COUNT": 1,
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
         "is_owned_by_dublin_city_council": "No",
-        "most_recent_update_date": "10/11/2026",
-        "ref_site_master_uuid": "2f891138-e82d-4c99-a290-b72234faf01b",
-        "site_location_latitude": 53.35855493,
-        "site_location_longitude": -6.2368559579
+        "most_recent_update_date": "11/11/2026",
+        "ref_site_master_uuid": "2F891138-E82D-4C99-A290-B72234FAF01B",
+        "site_location_latitude": 53.3585549,
+        "site_location_longitude": -6.236856
       },
       "type": "Feature"
     },
