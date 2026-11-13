@@ -4473,8 +4473,8 @@
     {
       "geometry": {
         "coordinates": [
-          -6.1624906022234,
-          53.3331431614671
+          -6.2016879599,
+          53.313528532
         ],
         "type": "Point"
       },
@@ -4487,17 +4487,17 @@
         "derelict_site_description": "Merrion Road, 294, Former Swiftcall Building, Dublin 4",
         "derelict_site_reference_number": "DS1369",
         "derelict_site_status": "On Derelict Sites Register",
-        "full_address": "294 Merrion Road, Dublin 4, D04E8E8",
+        "full_address": "294 Merrion Road, Former Swiftcall Building, Dublin 4",
         "is_active_derelict_site_case": "Yes",
         "is_active_derelict_site_case_COUNT": 1,
         "is_on_current_derelict_sites_register": "Yes",
         "is_on_current_derelict_sites_register_COUNT": 1,
         "is_on_current_record_of_protected_structures": "No",
         "is_owned_by_dublin_city_council": "No",
-        "most_recent_update_date": "12/11/2026",
-        "ref_site_master_uuid": "36c1ced9-7ffa-4afd-9128-e1a8b1e948de",
-        "site_location_latitude": 53.333143161467135,
-        "site_location_longitude": -6.162490602223398
+        "most_recent_update_date": "13/11/2026",
+        "ref_site_master_uuid": "36C1CED9-7FFA-4AFD-9128-E1A8B1E948DE",
+        "site_location_latitude": 53.313528532,
+        "site_location_longitude": -6.2016879599
       },
       "type": "Feature"
     },
