@@ -4797,7 +4797,7 @@
       "id": 137,
       "properties": {
         "OID": 137,
-        "num_active": 5
+        "num_active": 3
       },
       "type": "Feature"
     },
@@ -5952,7 +5952,7 @@
       "id": 170,
       "properties": {
         "OID": 170,
-        "num_active": 11
+        "num_active": 10
       },
       "type": "Feature"
     },
